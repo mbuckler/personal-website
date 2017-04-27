@@ -38,17 +38,17 @@ weight = 1
 
 # Biography
 
-I'm currently a PhD student in the Electrical and Computer Engineering 
+I'm currently a PhD student in the Electrical and Computer Engineering
 department here at Cornell University. I'm advised by [Prof Adrian
 Sampson](http://www.cs.cornell.edu/~asampson/).
 
-My graduate work focusses on hardware for embedded computer vision. In
-my work I've found that abstractions can simplify the
-design process, but breaking down boundaries through hardware-software
-co-design can produce superior results. For this reason I see myself as a
-system creator rather than a hardware or software engineer.
+My graduate research focusses on hardware for embedded computer vision.
+In my work I've found that abstractions can simplify the design process,
+but breaking down boundaries through hardware-software codesign can
+produce superior results. For this reason I see myself as a system
+creator rather than a hardware or software developer.
 
-As an entrepreneurial engineer I quickly gravitated to both industrial
+As an entrepreneurial researcher I quickly gravitated to both industrial
 and academic research. While finishing my M.S. at UMass Amherst I formed
 [Firebrand Innovations](http://www.firebrandinnovations.com/) as a way
 of monetizing intellectual property I developed while in highschool.
