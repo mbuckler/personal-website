@@ -1,5 +1,5 @@
-baseurl = "https://markbuckler.com"
-title = "Academic"
+baseurl = "http://markbuckler.com"
+title = "Mark Buckler"
 copyright = "&copy; 2017 Mark Buckler"
 theme = "cornellcsl"
 enableEmoji = true
@@ -31,8 +31,8 @@ defaultContentLanguageInSubdir = false
   #phone = "888 888 88 88"
   #skype = "echo123"
   #telegram = ""
-  search_placeholder="Search"
-  search_url = "//www.google.com/?q=markbuckler.com"
+  #search_placeholder="Search"
+  #search_url = "//www.google.com/?q=markbuckler.com"
 
 
   # Enable Keybase in Contact section by entering your keybase.io username.
