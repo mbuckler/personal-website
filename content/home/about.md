@@ -48,7 +48,7 @@ but breaking down boundaries through hardware-software codesign can
 produce superior results. For this reason I see myself as a system
 creator rather than a hardware or software developer.
 
-As an entrepreneurial researcher I quickly gravitated to both industrial
+As an entrepreneurial engineer I quickly gravitated to both industrial
 and academic research. While finishing my M.S. at UMass Amherst I formed
 [Firebrand Innovations](http://www.firebrandinnovations.com/) as a way
 of monetizing intellectual property I developed while in highschool.
