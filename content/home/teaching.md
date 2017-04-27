@@ -14,5 +14,5 @@ weight = 60
 
 +++
 
-ECE 3140 (Embedded Systems) - Teaching Assistant - Cornell University
+ECE 3140 (Embedded Systems) Spring 2015 - Teaching Assistant - Cornell University
 
