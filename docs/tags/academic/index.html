@@ -207,33 +207,6 @@
 
   
   
-  <div>
-    <h2><a href="https://markbuckler.com/post/getting-started/">Getting started with the Academic framework for Hugo</a></h2>
-    <div class="article-style">
-      
-      Create a beautifully simple personal or academic website in under 10 minutes.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="https://markbuckler.com/post/widgets/">Customizing the homepage with widgets</a></h2>
-    <div class="article-style">
-      
-      Enable/disable and configure widgets to customize your homepage.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="https://markbuckler.com/post/managing-content/">Managing content</a></h2>
-    <div class="article-style">
-      
-      This is a brief guide to managing content with the Academic framework. Content can include publications, projects, talks, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about <a href="https://markbuckler.com/post/writing-markdown-latex/" target="_blank">writing content with Markdown, LaTeX, and Shortcodes</a>.
-      
-    </div>
-  </div>
-  
 
   
 
@@ -251,6 +224,26 @@
     <script src="/js/cornellcsl.js"></script>
     
 
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-98211041-1', 'auto');
+        ga('send', 'pageview');
+
+         
+        var links = document.querySelectorAll('a');
+        Array.prototype.map.call(links, function(item) {
+            if (item.host != document.location.host) {
+                item.addEventListener('click', function() {
+                    var action = item.getAttribute('data-action') || 'follow';
+                    ga('send', 'event', 'outbound', action, item.href);
+                });
+            }
+        });
+    </script>
     
 
     

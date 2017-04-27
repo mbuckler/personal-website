@@ -4,6 +4,14 @@
     
     
     <url>
+      <loc>https://markbuckler.com/publication/arxiv2017/</loc>
+      <lastmod>2017-04-26T19:37:01-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>https://markbuckler.com/post/docker-use/</loc>
       <lastmod>2017-04-25T16:25:31-04:00</lastmod>
     </url>
@@ -68,48 +76,8 @@
     
     
     <url>
-      <loc>https://markbuckler.com/post/getting-started/</loc>
-      <lastmod>2016-04-20T12:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://markbuckler.com/post/widgets/</loc>
-      <lastmod>2016-04-20T11:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://markbuckler.com/post/managing-content/</loc>
-      <lastmod>2016-04-20T11:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://markbuckler.com/post/writing-markdown-latex/</loc>
-      <lastmod>2016-04-20T10:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://markbuckler.com/publication/nocs2014/</loc>
       <lastmod>2014-09-17T19:37:01-04:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://markbuckler.com/post/migrate-from-jekyll/</loc>
-      <lastmod>2014-03-10T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -133,7 +101,7 @@
     
     <url>
       <loc>https://markbuckler.com/publication_types/1/</loc>
-      <lastmod>2014-09-17T19:37:01-04:00</lastmod>
+      <lastmod>2017-04-26T19:37:01-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -176,24 +144,6 @@
     
     
     <url>
-      <loc>https://markbuckler.com/tags/hugo/</loc>
-      <lastmod>2016-04-20T12:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://markbuckler.com/tags/jekyll/</loc>
-      <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://markbuckler.com/project/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -204,7 +154,7 @@
     
     <url>
       <loc>https://markbuckler.com/publication_types/</loc>
-      <lastmod>2014-09-17T19:37:01-04:00</lastmod>
+      <lastmod>2017-04-26T19:37:01-04:00</lastmod>
       <priority>0</priority>
     </url>
     
