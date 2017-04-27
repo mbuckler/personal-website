@@ -127,11 +127,6 @@ defaultContentLanguageInSubdir = false
   #   Full list: https://jpswalsh.github.io/academicons/
 
   [[params.social]]
-    icon = "envelope"
-    icon_pack = "fa"
-    link = "mailto:mab598@cornell.edu"
-
-  [[params.social]]
     icon = "github"
     icon_pack = "fa"
     link = "https://github.com/mbuckler"
@@ -151,7 +146,10 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "https://soundcloud.com/quoththeraver"
 
-
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fa"
+    link = "mailto:mab598@cornell.edu"
 
 
 # Navigation Links
