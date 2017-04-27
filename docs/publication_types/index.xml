@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publication_types on Academic</title>
-    <link>https://markbuckler.com/publication_types/</link>
-    <description>Recent content in Publication_types on Academic</description>
+    <title>Publication_types on Mark Buckler</title>
+    <link>http://markbuckler.com/publication_types/</link>
+    <description>Recent content in Publication_types on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
@@ -12,10 +12,10 @@
     
     <item>
       <title>1</title>
-      <link>https://markbuckler.com/publication_types/1/</link>
+      <link>http://markbuckler.com/publication_types/1/</link>
       <pubDate>Wed, 26 Apr 2017 19:37:01 -0400</pubDate>
       
-      <guid>https://markbuckler.com/publication_types/1/</guid>
+      <guid>http://markbuckler.com/publication_types/1/</guid>
       <description></description>
     </item>
     

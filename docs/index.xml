@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic on Academic</title>
-    <link>https://markbuckler.com/</link>
-    <description>Recent content in Academic on Academic</description>
+    <title>Mark Buckler on Mark Buckler</title>
+    <link>http://markbuckler.com/</link>
+    <description>Recent content in Mark Buckler on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
@@ -12,38 +12,38 @@
     
     <item>
       <title>Reconfiguring the Imaging Pipeline for Computer Vision</title>
-      <link>https://markbuckler.com/publication/arxiv2017/</link>
+      <link>http://markbuckler.com/publication/arxiv2017/</link>
       <pubDate>Wed, 26 Apr 2017 19:37:01 -0400</pubDate>
       
-      <guid>https://markbuckler.com/publication/arxiv2017/</guid>
+      <guid>http://markbuckler.com/publication/arxiv2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Developing in Docker</title>
-      <link>https://markbuckler.com/post/docker-use/</link>
+      <link>http://markbuckler.com/post/docker-use/</link>
       <pubDate>Tue, 25 Apr 2017 16:25:31 -0400</pubDate>
       
-      <guid>https://markbuckler.com/post/docker-use/</guid>
+      <guid>http://markbuckler.com/post/docker-use/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Example Talk</title>
-      <link>https://markbuckler.com/talk/example-talk/</link>
+      <link>http://markbuckler.com/talk/example-talk/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://markbuckler.com/talk/example-talk/</guid>
+      <guid>http://markbuckler.com/talk/example-talk/</guid>
       <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Deep Learning</title>
-      <link>https://markbuckler.com/project/deep-learning/</link>
+      <link>http://markbuckler.com/project/deep-learning/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://markbuckler.com/project/deep-learning/</guid>
+      <guid>http://markbuckler.com/project/deep-learning/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
@@ -58,37 +58,37 @@
     
     <item>
       <title>External Project</title>
-      <link>https://markbuckler.com/project/example-external-project/</link>
+      <link>http://markbuckler.com/project/example-external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://markbuckler.com/project/example-external-project/</guid>
+      <guid>http://markbuckler.com/project/example-external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dynamic synchronizer flip-flop performance in FinFET technologies</title>
-      <link>https://markbuckler.com/publication/nocs2014/</link>
+      <link>http://markbuckler.com/publication/nocs2014/</link>
       <pubDate>Wed, 17 Sep 2014 19:37:01 -0400</pubDate>
       
-      <guid>https://markbuckler.com/publication/nocs2014/</guid>
+      <guid>http://markbuckler.com/publication/nocs2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Predictive synchronization for DVFS-enabled multi-processor systems</title>
-      <link>https://markbuckler.com/publication/isqed2014/</link>
+      <link>http://markbuckler.com/publication/isqed2014/</link>
       <pubDate>Wed, 05 Mar 2014 19:37:01 -0400</pubDate>
       
-      <guid>https://markbuckler.com/publication/isqed2014/</guid>
+      <guid>http://markbuckler.com/publication/isqed2014/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Low-power networks-on-chip: Progress and remaining challenges</title>
-      <link>https://markbuckler.com/publication/islped2013/</link>
+      <link>http://markbuckler.com/publication/islped2013/</link>
       <pubDate>Fri, 06 Sep 2013 19:37:01 -0400</pubDate>
       
-      <guid>https://markbuckler.com/publication/islped2013/</guid>
+      <guid>http://markbuckler.com/publication/islped2013/</guid>
       <description></description>
     </item>
     

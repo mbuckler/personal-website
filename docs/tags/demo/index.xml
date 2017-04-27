@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Demo on Academic</title>
-    <link>https://markbuckler.com/tags/demo/</link>
-    <description>Recent content in Demo on Academic</description>
+    <title>Demo on Mark Buckler</title>
+    <link>http://markbuckler.com/tags/demo/</link>
+    <description>Recent content in Demo on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
@@ -12,10 +12,10 @@
     
     <item>
       <title>External Project</title>
-      <link>https://markbuckler.com/project/example-external-project/</link>
+      <link>http://markbuckler.com/project/example-external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://markbuckler.com/project/example-external-project/</guid>
+      <guid>http://markbuckler.com/project/example-external-project/</guid>
       <description></description>
     </item>
     

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Academic</title>
-    <link>https://markbuckler.com/post/</link>
-    <description>Recent content in Posts on Academic</description>
+    <title>Posts on Mark Buckler</title>
+    <link>http://markbuckler.com/post/</link>
+    <description>Recent content in Posts on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Developing in Docker</title>
-      <link>https://markbuckler.com/post/docker-use/</link>
+      <link>http://markbuckler.com/post/docker-use/</link>
       <pubDate>Tue, 25 Apr 2017 16:25:31 -0400</pubDate>
       
-      <guid>https://markbuckler.com/post/docker-use/</guid>
+      <guid>http://markbuckler.com/post/docker-use/</guid>
       <description></description>
     </item>
     
