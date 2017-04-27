@@ -25,12 +25,12 @@ defaultContentLanguageInSubdir = false
   organization = "Cornell University"
   organization_url = "https://www.cornell.edu/"
   avatar = "portrait.jpg"
-  email = "test@example.org"
-  address = "Building 1 Room 1, Stanford University, California, 90210, USA"
-  office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  phone = "888 888 88 88"
-  skype = "echo123"
-  telegram = ""
+  email = "mab598@cornell.edu"
+  address = "Rhodes Hall, Room 471E, Cornell University, New York, Ithaca, 14850, USA"
+  #office_hours = "Monday 10:00 to 13:00 or email for appointment"
+  #phone = "888 888 88 88"
+  #skype = "echo123"
+  #telegram = ""
   search_placeholder="Search"
   search_url = "//www.google.com/?q=markbuckler.com"
 
@@ -129,22 +129,29 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:test@example.org"
-
-  [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/GeorgeCushen"
-
-  [[params.social]]
-    icon = "google-scholar"
-    icon_pack = "ai"
-    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+    link = "mailto:mab598@cornell.edu"
 
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/gcushen"
+    link = "https://github.com/mbuckler"
+
+  [[params.social]]
+    icon = "google-scholar"
+    icon_pack = "ai"
+    link = "https://scholar.google.co.uk/citations?user=pb8dVvsAAAAJ"
+
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "https://www.linkedin.com/in/markbuckler/"
+
+  [[params.social]]
+    icon = "soundcloud"
+    icon_pack = "fa"
+    link = "https://soundcloud.com/quoththeraver"
+
+
 
 
 # Navigation Links
