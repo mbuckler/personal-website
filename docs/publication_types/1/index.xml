@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Academic</title>
+    <link>https://markbuckler.com/publication_types/1/</link>
+    <description>Recent content in 1 on Academic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Your Name</copyright>
+    <lastBuildDate>Wed, 17 Sep 2014 19:37:01 -0400</lastBuildDate>
+    <atom:link href="/publication_types/1/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dynamic synchronizer flip-flop performance in FinFET technologies</title>
+      <link>https://markbuckler.com/publication/nocs2014/</link>
+      <pubDate>Wed, 17 Sep 2014 19:37:01 -0400</pubDate>
+      
+      <guid>https://markbuckler.com/publication/nocs2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predictive synchronization for DVFS-enabled multi-processor systems</title>
+      <link>https://markbuckler.com/publication/isqed2014/</link>
+      <pubDate>Wed, 05 Mar 2014 19:37:01 -0400</pubDate>
+      
+      <guid>https://markbuckler.com/publication/isqed2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Low-power networks-on-chip: Progress and remaining challenges</title>
+      <link>https://markbuckler.com/publication/islped2013/</link>
+      <pubDate>Fri, 06 Sep 2013 19:37:01 -0400</pubDate>
+      
+      <guid>https://markbuckler.com/publication/islped2013/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
