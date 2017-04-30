@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Mark Buckler</title>
-    <link>http://markbuckler.com/project/</link>
-    <description>Recent content in Projects on Mark Buckler</description>
+    <title>Imaging on Mark Buckler</title>
+    <link>http://markbuckler.com/tags/imaging/</link>
+    <description>Recent content in Imaging on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
     <lastBuildDate>Thu, 06 Apr 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/project/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/imaging/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>YouTube BoundingBox Dataset Downloader</title>
@@ -29,15 +29,6 @@
     </item>
     
     <item>
-      <title>Neural Network Accelerator with Logarithmic Number System</title>
-      <link>http://markbuckler.com/project/lns-neural-accel/</link>
-      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/project/lns-neural-accel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Configurable Imaging Sensor</title>
       <link>http://markbuckler.com/project/image-sensor/</link>
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
@@ -47,24 +38,6 @@
 
 &lt;p&gt;My task was to write Verilog RTL to describe a state machine based controller for implementing both the rolling-shutter readout as well as the control for the column power gating. I then pushed my design through Synopsys synthesis in the IBM 130nm technology, and for integration Suren connected my digital logic to his analog sensing circuitry.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Network-on-Chip Synchronization</title>
-      <link>http://markbuckler.com/project/ms-thesis/</link>
-      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/project/ms-thesis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VideoConversation</title>
-      <link>http://markbuckler.com/project/videoconversation/</link>
-      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/project/videoconversation/</guid>
-      <description></description>
     </item>
     
   </channel>

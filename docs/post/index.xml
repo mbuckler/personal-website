@@ -19,5 +19,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Developing in Docker</title>
+      <link>http://markbuckler.com/post/latex-in-vim/</link>
+      <pubDate>Tue, 25 Apr 2017 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/latex-in-vim/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

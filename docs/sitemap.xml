@@ -20,6 +20,62 @@
     
     
     <url>
+      <loc>http://markbuckler.com/post/latex-in-vim/</loc>
+      <lastmod>2017-04-25T16:25:31-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>http://markbuckler.com/project/youtube-bb/</loc>
+      <lastmod>2017-04-06T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>http://markbuckler.com/project/reversible-pipeline/</loc>
+      <lastmod>2017-04-05T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>http://markbuckler.com/project/lns-neural-accel/</loc>
+      <lastmod>2017-04-04T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>http://markbuckler.com/project/image-sensor/</loc>
+      <lastmod>2017-04-03T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>http://markbuckler.com/project/ms-thesis/</loc>
+      <lastmod>2017-04-02T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>http://markbuckler.com/project/videoconversation/</loc>
+      <lastmod>2017-04-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>http://markbuckler.com/tags/academic/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -54,22 +110,6 @@
     <url>
       <loc>http://markbuckler.com/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>http://markbuckler.com/project/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>http://markbuckler.com/project/example-external-project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -117,8 +157,8 @@
     
     
     <url>
-      <loc>http://markbuckler.com/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <loc>http://markbuckler.com/tags/computer-architecture/</loc>
+      <lastmod>2017-04-04T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -126,8 +166,26 @@
     
     
     <url>
-      <loc>http://markbuckler.com/tags/demo/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <loc>http://markbuckler.com/tags/entrepreneurship/</loc>
+      <lastmod>2017-04-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>http://markbuckler.com/tags/imaging/</loc>
+      <lastmod>2017-04-06T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>http://markbuckler.com/tags/machine-learning/</loc>
+      <lastmod>2017-04-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -144,8 +202,17 @@
     
     
     <url>
+      <loc>http://markbuckler.com/tags/neural-networks/</loc>
+      <lastmod>2017-04-04T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>http://markbuckler.com/project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-04-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -164,6 +231,15 @@
     <url>
       <loc>http://markbuckler.com/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>http://markbuckler.com/tags/video/</loc>
+      <lastmod>2017-04-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

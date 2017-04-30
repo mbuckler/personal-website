@@ -29,6 +29,72 @@
     </item>
     
     <item>
+      <title>Developing in Docker</title>
+      <link>http://markbuckler.com/post/latex-in-vim/</link>
+      <pubDate>Tue, 25 Apr 2017 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/latex-in-vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>YouTube BoundingBox Dataset Downloader</title>
+      <link>http://markbuckler.com/project/youtube-bb/</link>
+      <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/project/youtube-bb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reversible Imaging Pipeline</title>
+      <link>http://markbuckler.com/project/reversible-pipeline/</link>
+      <pubDate>Wed, 05 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/project/reversible-pipeline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural Network Accelerator with Logarithmic Number System</title>
+      <link>http://markbuckler.com/project/lns-neural-accel/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/project/lns-neural-accel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Configurable Imaging Sensor</title>
+      <link>http://markbuckler.com/project/image-sensor/</link>
+      <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/project/image-sensor/</guid>
+      <description>&lt;p&gt;While most image sensors can be configured to output a subset of their total resolution, unfortunately this doesn&amp;rsquo;t usually lead to energy savings as might have been expected &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=2464448&#34; target=&#34;_blank&#34;&gt;[LiKamWa-2013]&lt;/a&gt;. While LiKamWa et al. explored energy saving methods possible when using existing sensors, this project focused on making a new image sensor which is energy-proportional. &lt;a href=&#34;http://www.andrew.cmu.edu/user/sjayasur/website.html&#34; target=&#34;_blank&#34;&gt;Suren Jayasuriya&lt;/a&gt; and I did this by adding power gating transistors to the amplifier and ADC in each of the sensor&amp;rsquo;s readout columns.&lt;/p&gt;
+
+&lt;p&gt;My task was to write Verilog RTL to describe a state machine based controller for implementing both the rolling-shutter readout as well as the control for the column power gating. I then pushed my design through Synopsys synthesis in the IBM 130nm technology, and for integration Suren connected my digital logic to his analog sensing circuitry.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Network-on-Chip Synchronization</title>
+      <link>http://markbuckler.com/project/ms-thesis/</link>
+      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/project/ms-thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VideoConversation</title>
+      <link>http://markbuckler.com/project/videoconversation/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/project/videoconversation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Example Talk</title>
       <link>http://markbuckler.com/talk/example-talk/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
@@ -36,33 +102,6 @@
       <guid>http://markbuckler.com/talk/example-talk/</guid>
       <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Deep Learning</title>
-      <link>http://markbuckler.com/project/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/project/deep-learning/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>External Project</title>
-      <link>http://markbuckler.com/project/example-external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/project/example-external-project/</guid>
-      <description></description>
     </item>
     
     <item>
