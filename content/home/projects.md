@@ -26,8 +26,20 @@ view = 1
   tag = "*"
   
 [[filter]]
-  name = "Deep Learning"
-  tag = ".deep-learning"
+  name = "Computer Architecture"
+  tag = ".computer architecture"
+
+[[filter]]
+  name = "Machine Learning"
+  tag = ".machine learning"
+
+[[filter]]
+  name = "Imaging"
+  tag = ".imaging"
+
+[[filter]]
+  name = "Video"
+  tag = ".video"
 
 [[filter]]
   name = "Other"
