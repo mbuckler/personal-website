@@ -1,6 +1,6 @@
 +++
 # Date this page was created.
-date = "2017-04-30"
+date = "2017-04-06"
 
 # Project title.
 title = "YouTube BoundingBox Dataset Downloader"
@@ -12,7 +12,7 @@ summary = "Helpful scripts I wrote for downloading and parsing Google's huge vid
 #image_preview = "videoconversation_logo.png"
 
 # Tags: can be used for filtering projects.
-tags = ["machine learning","video","imaging"]
+tags = ["machine-learning","video","imaging"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = "https://github.com/mbuckler/youtube-bb"

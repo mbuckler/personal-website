@@ -27,11 +27,11 @@ view = 1
   
 [[filter]]
   name = "Computer Architecture"
-  tag = ".computer architecture"
+  tag = ".computer-architecture"
 
 [[filter]]
   name = "Machine Learning"
-  tag = ".machine learning"
+  tag = ".machine-learning"
 
 [[filter]]
   name = "Imaging"

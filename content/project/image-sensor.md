@@ -1,6 +1,6 @@
 +++
 # Date this page was created.
-date = "2017-04-30"
+date = "2017-04-03"
 
 # Project title.
 title = "Configurable Imaging Sensor"
