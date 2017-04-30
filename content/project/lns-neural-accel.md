@@ -12,7 +12,7 @@ summary = "Hardware accelerator for neural network computation using the LNS"
 #image_preview = ""
 
 # Tags: can be used for filtering projects.
-tags = ["computer architecture","neural networks"]
+tags = ["machine learning","computer architecture","neural networks"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = "https://github.com/cucapra/log-neural-accel"

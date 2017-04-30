@@ -12,7 +12,7 @@ summary = "Helpful scripts I wrote for downloading and parsing Google's huge vid
 #image_preview = "videoconversation_logo.png"
 
 # Tags: can be used for filtering projects.
-tags = ["datasets","video","imaging"]
+tags = ["machine learning","video","imaging"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = "https://github.com/mbuckler/youtube-bb"
