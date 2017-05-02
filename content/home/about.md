@@ -44,7 +44,7 @@ Sampson](http://www.cs.cornell.edu/~asampson/).
 
 My graduate research focusses on hardware for embedded computer vision.
 In my work I've found that abstractions can simplify the design process,
-but breaking down boundaries through hardware-software codesign can
+but breaking down boundaries through hardware-software co-design can
 produce superior results. For this reason I see myself as a system
 creator rather than a hardware or software developer.
 
