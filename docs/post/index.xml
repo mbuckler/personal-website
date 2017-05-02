@@ -29,5 +29,131 @@ the day!&lt;/p&gt;
 </description>
     </item>
     
+    <item>
+      <title>How to Install NVIDIA GPU Drivers &amp; CUDA</title>
+      <link>http://markbuckler.com/post/install-cuda/</link>
+      <pubDate>Tue, 25 Apr 2017 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/install-cuda/</guid>
+      <description>&lt;p&gt;Anyone who&amp;rsquo;s set up a new Linux based, GPU enabled, deep learning system
+knows the horror that is driver installation. While it is technically
+possible to install NVIDIA drivers and CUDA from your package manager,
+the most up to date versions aren&amp;rsquo;t available and in the worst case you
+might even break graphics on your machine. After a great deal of
+difficulties installing and reinstalling, I finally found a viable
+strategy: installing both CUDA and proprietary Linux drivers from an
+NVIDA run file without OpenGL libraries.&lt;/p&gt;
+
+&lt;p&gt;The installation instructions shown below are largely taken from a two
+year old
+&lt;a href=&#34;https://devtalk.nvidia.com/default/topic/878117/-solved-titan-x-for-cuda-7-5-login-loop-error-ubuntu-14-04-/&#34; target=&#34;_blank&#34;&gt;forum
+post&lt;/a&gt;
+on NVIDIA&amp;rsquo;s developer forum with a question asked by a user called
+NeuroSurfer and answered by txbob. I think it is worth reposting the
+instructions here because I&amp;rsquo;ve added a few things, and also because
+I think a formal post will help bring more exposure to this solution.&lt;/p&gt;
+
+&lt;p&gt;Without further ado, here is how to install NVIDIA drivers and CUDA on
+your Linux machine. I have tested these instructions on systems running
+Ubuntu 14.04 and 16.04 and with Titan X and GTX 980 cards.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Preferably start with a fresh install of your OS, but if you are
+hoping to avoid a full OS re-install you first need to purge your
+system of any existing NVIDIA drivers installed via the package manager.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get remove --purge nvidia-*
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Download the run file for the CUDA version that you want. You can
+find the download link
+&lt;a href=&#34;https://developer.nvidia.com/cuda-downloads&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. Make sure to get
+the run file and not the debian installer. Change the permissions of it
+so that it can be executed.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;chmod a+x .
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Verify that build-essential is installed&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install build-essential
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Remove your xorg.conf if it exists&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo rm /etc/X11/xorg.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Create a blacklist file for nouveau (default Ubuntu graphics) at
+&lt;code&gt;/etc/modprobe.d/blacklist-nouveau.conf&lt;/code&gt;. Put in the following contents:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;blacklist nouveau
+options nouveau modeset=0
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Update your kernel&amp;rsquo;s ramdisk&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo update-initramfs -u
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Reboot your machine, nothing should have changed&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Use &lt;code&gt;Ctrl-Alt-F1&lt;/code&gt; to drop to a terminal, log in.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Stop your display manager. Lightdm is default for Ubuntu&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo service lightdm stop
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Navigate back to where you downloaded your run file. Run it and
+explicitly avoid installing OpenGL libraries with the command line
+option.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Accept the EULA&lt;/li&gt;
+&lt;li&gt;Install the driver? Yes&lt;/li&gt;
+&lt;li&gt;Update the Xserver config? No&lt;/li&gt;
+&lt;li&gt;Install CUDA? Yes&lt;/li&gt;
+&lt;li&gt;Install the CUDA samples? Yes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo ./cuda-X.Y.ZZ_linux.run --no-opengl-libs
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Install nvidia-modprobe. This avoids that annoying
+&amp;ldquo;cudaGetDeviceCount returned 30 -&amp;gt; unknown error&amp;rdquo; issue.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install nvidia-modprobe
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Edit your ~/.bashrc to update your path variables&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export PATH=/usr/local/cuda-7.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-7.0/lib64:$LD_LIBRARY_PATH
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Update your paths&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Check that the CUDA version is correct.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nvcc -V
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Check that your GPU&amp;rsquo;s are visible to the system and have the right
+driver versions.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nvidia-smi
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Reboot your system, pray to our Lord and Savior Elon Musk. If his
+kindly gaze falls upon you, you will have a fully functional CUDA
+enabled Linux machine. Enjoy!&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

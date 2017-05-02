@@ -33,11 +33,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://markbuckler.com/post/docker-use/">
+  <link rel="canonical" href="http://markbuckler.com/post/install-cuda/">
 
   
 
-  <title>Developing in Docker | Mark Buckler</title>
+  <title>How to Install NVIDIA GPU Drivers &amp; CUDA | Mark Buckler</title>
 
 </head>
 <body data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -161,7 +161,7 @@
   
 
   <div class="article-container">
-    <h1 itemprop="name">Developing in Docker</h1>
+    <h1 itemprop="name">How to Install NVIDIA GPU Drivers &amp; CUDA</h1>
     
 
 <div class="article-metadata">
@@ -185,35 +185,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fmarkbuckler.com%2fpost%2fdocker-use%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fmarkbuckler.com%2fpost%2finstall-cuda%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Developing%20in%20Docker&amp;url=http%3a%2f%2fmarkbuckler.com%2fpost%2fdocker-use%2f"
+         href="https://twitter.com/intent/tweet?text=How%20to%20Install%20NVIDIA%20GPU%20Drivers%20%26%20CUDA&amp;url=http%3a%2f%2fmarkbuckler.com%2fpost%2finstall-cuda%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fmarkbuckler.com%2fpost%2fdocker-use%2f&amp;title=Developing%20in%20Docker"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fmarkbuckler.com%2fpost%2finstall-cuda%2f&amp;title=How%20to%20Install%20NVIDIA%20GPU%20Drivers%20%26%20CUDA"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fmarkbuckler.com%2fpost%2fdocker-use%2f&amp;title=Developing%20in%20Docker"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fmarkbuckler.com%2fpost%2finstall-cuda%2f&amp;title=How%20to%20Install%20NVIDIA%20GPU%20Drivers%20%26%20CUDA"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Developing%20in%20Docker&amp;body=http%3a%2f%2fmarkbuckler.com%2fpost%2fdocker-use%2f">
+         href="mailto:?subject=How%20to%20Install%20NVIDIA%20GPU%20Drivers%20%26%20CUDA&amp;body=http%3a%2f%2fmarkbuckler.com%2fpost%2finstall-cuda%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -226,16 +226,123 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <p>Most of us academic/industrial ECE/CS researchers want to make our
-results as reproducible as possible. Its good for the integrity of our
-field and it also helps future researchers and developers who
-want to build on our prior work. <a href="https://github.com/" target="_blank">GitHub</a> is great
-for distributing
-software, but code can rarely be
-compiled and run on its own as nearly all modern software relies
-heavily on packages and dependencies. Thankfully,
-<a href="https://www.docker.com/" target="_blank">Docker</a> is here to save
-the day!</p>
+      <p>Anyone who&rsquo;s set up a new Linux based, GPU enabled, deep learning system
+knows the horror that is driver installation. While it is technically
+possible to install NVIDIA drivers and CUDA from your package manager,
+the most up to date versions aren&rsquo;t available and in the worst case you
+might even break graphics on your machine. After a great deal of
+difficulties installing and reinstalling, I finally found a viable
+strategy: installing both CUDA and proprietary Linux drivers from an
+NVIDA run file without OpenGL libraries.</p>
+
+<p>The installation instructions shown below are largely taken from a two
+year old
+<a href="https://devtalk.nvidia.com/default/topic/878117/-solved-titan-x-for-cuda-7-5-login-loop-error-ubuntu-14-04-/" target="_blank">forum
+post</a>
+on NVIDIA&rsquo;s developer forum with a question asked by a user called
+NeuroSurfer and answered by txbob. I think it is worth reposting the
+instructions here because I&rsquo;ve added a few things, and also because
+I think a formal post will help bring more exposure to this solution.</p>
+
+<p>Without further ado, here is how to install NVIDIA drivers and CUDA on
+your Linux machine. I have tested these instructions on systems running
+Ubuntu 14.04 and 16.04 and with Titan X and GTX 980 cards.</p>
+
+<ol>
+<li><p>Preferably start with a fresh install of your OS, but if you are
+hoping to avoid a full OS re-install you first need to purge your
+system of any existing NVIDIA drivers installed via the package manager.</p>
+
+<pre><code>sudo apt-get remove --purge nvidia-*
+</code></pre></li>
+
+<li><p>Download the run file for the CUDA version that you want. You can
+find the download link
+<a href="https://developer.nvidia.com/cuda-downloads" target="_blank">here</a>. Make sure to get
+the run file and not the debian installer. Change the permissions of it
+so that it can be executed.</p>
+
+<pre><code>chmod a+x .
+</code></pre></li>
+
+<li><p>Verify that build-essential is installed</p>
+
+<pre><code>sudo apt-get install build-essential
+</code></pre></li>
+
+<li><p>Remove your xorg.conf if it exists</p>
+
+<pre><code>sudo rm /etc/X11/xorg.conf
+</code></pre></li>
+
+<li><p>Create a blacklist file for nouveau (default Ubuntu graphics) at
+<code>/etc/modprobe.d/blacklist-nouveau.conf</code>. Put in the following contents:</p>
+
+<pre><code>blacklist nouveau
+options nouveau modeset=0
+</code></pre></li>
+
+<li><p>Update your kernel&rsquo;s ramdisk</p>
+
+<pre><code>sudo update-initramfs -u
+</code></pre></li>
+
+<li><p>Reboot your machine, nothing should have changed</p></li>
+
+<li><p>Use <code>Ctrl-Alt-F1</code> to drop to a terminal, log in.</p></li>
+
+<li><p>Stop your display manager. Lightdm is default for Ubuntu</p>
+
+<pre><code>sudo service lightdm stop
+</code></pre></li>
+
+<li><p>Navigate back to where you downloaded your run file. Run it and
+explicitly avoid installing OpenGL libraries with the command line
+option.</p>
+
+<ul>
+<li>Accept the EULA</li>
+<li>Install the driver? Yes</li>
+<li>Update the Xserver config? No</li>
+<li>Install CUDA? Yes</li>
+<li>Install the CUDA samples? Yes</li>
+</ul>
+
+<pre><code>sudo ./cuda-X.Y.ZZ_linux.run --no-opengl-libs
+</code></pre></li>
+
+<li><p>Install nvidia-modprobe. This avoids that annoying
+&ldquo;cudaGetDeviceCount returned 30 -&gt; unknown error&rdquo; issue.</p>
+
+<pre><code>sudo apt-get install nvidia-modprobe
+</code></pre></li>
+
+<li><p>Edit your ~/.bashrc to update your path variables</p>
+
+<pre><code>export PATH=/usr/local/cuda-7.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-7.0/lib64:$LD_LIBRARY_PATH
+</code></pre></li>
+
+<li><p>Update your paths</p>
+
+<pre><code>source ~/.bashrc
+</code></pre></li>
+
+<li><p>Check that the CUDA version is correct.</p>
+
+<pre><code>nvcc -V
+</code></pre></li>
+
+<li><p>Check that your GPU&rsquo;s are visible to the system and have the right
+driver versions.</p>
+
+<pre><code>nvidia-smi
+</code></pre></li>
+
+<li><p>Reboot your system, pray to our Lord and Savior Elon Musk. If his
+kindly gaze falls upon you, you will have a fully functional CUDA
+enabled Linux machine. Enjoy!</p></li>
+</ol>
 
     </div>
   </div>
@@ -246,10 +353,10 @@ the day!</p>
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://markbuckler.com/post/install-cuda/"><span
-      aria-hidden="true">&larr;</span> How to Install NVIDIA GPU Drivers &amp; CUDA</a></li>
-    
 
+    
+    <li class="next"><a href="http://markbuckler.com/post/docker-use/">Developing in Docker <span
+      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
