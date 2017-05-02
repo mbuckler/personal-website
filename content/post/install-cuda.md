@@ -137,3 +137,8 @@ driver versions.
 16. Reboot your system, pray to our Lord and Savior Elon Musk. If his
 kindly gaze falls upon you, you will have a fully functional CUDA
 enabled Linux machine. Enjoy!
+
+Because this installation doesn't go through the package manager you may
+experience issues when upgrading your kernel. If you'd like a way to
+automatically re-install on an update you may be interested in [this
+solution](https://ubuntuforums.org/showthread.php?t=835573) as well.
