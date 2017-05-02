@@ -90,15 +90,16 @@ so that it can be executed.
 10. Navigate back to where you downloaded your run file. Run it and
 explicitly avoid installing OpenGL libraries with the command line
 option.
+
+	```
+	sudo ./cuda-X.Y.ZZ_linux.run --no-opengl-libs
+	```
   * Accept the EULA
   * Install the driver? Yes
   * Update the Xserver config? No
   * Install CUDA? Yes
   * Install the CUDA samples? Yes
 
-	```
-	sudo ./cuda-X.Y.ZZ_linux.run --no-opengl-libs
-	```
 
 11. Install nvidia-modprobe. This avoids that annoying
 "cudaGetDeviceCount returned 30 -> unknown error" issue.
