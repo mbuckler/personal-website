@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="cornellcsl">
-  <meta name="generator" content="Hugo 0.20.6" />
+  <meta name="generator" content="Hugo 0.20.2" />
   <meta name="author" content="Mark Buckler">
   <meta name="description" content="PhD Student">
 
@@ -24,11 +24,12 @@
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/academicons.min.css">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
   <link rel="stylesheet" href="/css/cornellcsl.css">
   
 
   <link rel="alternate" href="http://markbuckler.com/index.xml" type="application/rss+xml" title="Mark Buckler">
+  <link rel="feed" href="http://markbuckler.com/index.xml" type="application/rss+xml" title="Mark Buckler">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
@@ -37,7 +38,7 @@
 
   
 
-  <title>Developing in Docker | Mark Buckler</title>
+  <title>Writing LaTeX in Vim | Mark Buckler</title>
 
 </head>
 <body data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -45,22 +46,38 @@
     
     <a class="sr-only" href="#content">Skip to main content</a>
     <header id="top" class="cu-banner">
-    
+    <div class="container">
+        <form action="//" id="cu-search"
+        method="get" role="search" class="collapse">
+        <div class="input-group col-xs-12">
+            <input autocomplete="off" id="search-query" name="q"
+            placeholder=""
+            required type="search" class="col-xs-12 cu-search-box">
+            <label for="search-query" class="sr-only">
+                 
+            </label>
+        </div>
+        </form>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-xs-10 cu-csl-logo-div">
-	    
-                <a href="https://www.cornell.edu/" target="_blank">
-            
 		    <img src="/img/org-logo.svg"
-		        class="img-responsive"
-                        alt="Cornell University"
-		        style="margin: 0;" />
-            
-                </a>
-            
+                class="img-responsive"
+                alt="Cornell University"
+		style="margin: 0;" />
             </div>
-	    
+            <div class="col-xs-2 col-middle cu-search-toggle-div">
+                <span class="pull-right">
+                    <button class="btn btn-cu-banner" type="button"
+                    data-toggle="collapse" data-target="#cu-search"
+                    id="cu-search-toggle" style="position:relative;">
+                        <span class="sr-only">Toggle search</span>
+                        <span class="cu-search-toggle glyphicon glyphicon-search">
+                        </span>
+                    </button>
+                </span>
+            </div>
         </div>
     </div>
     </header>
@@ -104,7 +121,7 @@
         
 
         <li class="nav-item">
-          <a href="/#publications_selected">
+          <a href="/#publications">
             
             <span>Publications</span>
           </a>
@@ -140,18 +157,6 @@
         
 
         <li class="nav-item">
-          <a href="/#teaching">
-            
-            <span>Teaching</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
           <a href="/#contact">
             
             <span>Contact</span>
@@ -173,14 +178,14 @@
   
 
   <div class="article-container">
-    <h1 itemprop="name">Developing in Docker</h1>
+    <h1 itemprop="name">Writing LaTeX in Vim</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2017-04-25T16:25:31-04:00" itemprop="datePublished">
-      Tue, Apr 25, 2017
+    <time datetime="2017-04-03 16:25:31 -0400 EDT" itemprop="datePublished">
+      Mon, Apr 3, 2017
     </time>
   </span>
 
@@ -204,28 +209,28 @@
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Developing%20in%20Docker&amp;url=http%3a%2f%2fmarkbuckler.com%2fpost%2flatex-in-vim%2f"
+         href="https://twitter.com/intent/tweet?text=Writing%20LaTeX%20in%20Vim&amp;url=http%3a%2f%2fmarkbuckler.com%2fpost%2flatex-in-vim%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fmarkbuckler.com%2fpost%2flatex-in-vim%2f&amp;title=Developing%20in%20Docker"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fmarkbuckler.com%2fpost%2flatex-in-vim%2f&amp;title=Writing%20LaTeX%20in%20Vim"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fmarkbuckler.com%2fpost%2flatex-in-vim%2f&amp;title=Developing%20in%20Docker"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fmarkbuckler.com%2fpost%2flatex-in-vim%2f&amp;title=Writing%20LaTeX%20in%20Vim"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Developing%20in%20Docker&amp;body=http%3a%2f%2fmarkbuckler.com%2fpost%2flatex-in-vim%2f">
+         href="mailto:?subject=Writing%20LaTeX%20in%20Vim&amp;body=http%3a%2f%2fmarkbuckler.com%2fpost%2flatex-in-vim%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -238,7 +243,93 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      
+      <p>As an academic I am often writing LaTeX code for publications or general
+documentation. I used to use <a href="https://www.sharelatex.com/" target="_blank">ShareLatex</a>
+and <a href="https://www.overleaf.com/" target="_blank">Overleaf</a> because I have a secret love
+of GUIs (Lord forgive me!), but recently my co-authors have prefered
+to worth in LaTeX repos shared on <a href="https://github.com/" target="_blank">GitHub</a>. For
+this reason my most recent paper was actually written entirely in Vim!
+This post isn&rsquo;t meant to be a complete description of the best way to
+edit LaTeX in Vim, but instead I want to
+share some of the tools, tricks, and tips that I&rsquo;ve
+found useful when writing LaTeX in Vim.</p>
+
+<ul>
+<li><p>Vim environment setup</p>
+
+<p>I&rsquo;ve made a nice little <a href="https://github.com/mbuckler/vim-config" target="_blank">GitHub
+repo</a> to host my Vim
+configuration settings (.vimrc) so that porting it between my machines
+is made easier. No need to copy my .vimrc wholesale if you don&rsquo;t like
+everything, but these are a few options that I use:</p>
+
+<ol>
+<li><p>Installing <a href="https://github.com/VundleVim/Vundle.vim" target="_blank">Vundle</a> for Vim
+package management and <a href="https://github.com/tpope/vim-sensible" target="_blank">sensible.vim</a>
+for near-universal improvements to the default Vim settings.</p></li>
+
+<li><p>Tabs vs spaces&hellip; We could <a href="https://www.youtube.com/watch?v=SsoOG6ZeyUI" target="_blank">fight all
+day</a> about using tabs or
+spaces, but you&rsquo;ll want to put your preferred settings in your .vimrc.</p></li>
+
+<li><p>Automatic text wrapping with <code>set wrap</code>. This is one of the most
+useful settings when writing LaTeX in Vim.</p></li>
+
+<li><p>Change out that ugly red column border with a nice grey column border
+with <code>set colorcolumn=+1</code> and <code>hi ColorColumn ctermbg=7</code>.</p></li>
+
+<li><p>Show line numbers for easy reference: <code>set number</code></p></li>
+
+<li><p>Set your preferred spell check default. As an American I do <code>set
+spelllang=en_us</code></p></li>
+</ol></li>
+
+<li><p>Useful Vim commands</p>
+
+<p>In addition to having a good setup for Vim, here are a few commands that
+I am constantly using.</p>
+
+<ol>
+<li><p>Search: <code>/foo</code></p></li>
+
+<li><p>Search and replace: <code>:%s/foo/bar/g</code></p></li>
+
+<li><p>Toggle line numbers: <code>set nu</code>, <code>set nu!</code></p></li>
+
+<li><p>Enable pasting without auto-indentation: <code>set paste</code>, <code>set paste!</code></p></li>
+
+<li><p>Turn on and off spell checking: <code>set spell</code>, <code>set spell!</code></p></li>
+
+<li><p>Automatically wrap a block of text: First select with <code>v</code> for
+visual, and then use <code>gq</code> to perform the wrapping.</p></li>
+
+<li><p>Indent an entire section: First select with <code>v</code> and then indent
+with <code>&gt;&gt;</code>.</p></li>
+</ol></li>
+
+<li><p>Automatic LaTeX compilation</p>
+
+<p>This isn&rsquo;t Vim specific, but you&rsquo;re going to need a
+complation method to turn your LaTeX in to a PDF. On Ubuntu this works
+very well for me:</p>
+
+<ol>
+<li><p>Install texlive and latexmk from your package manager. This will require more
+than a Gigabyte of space on your disk and so will take a while, but that
+sure beats having to selectively install LaTeX packages.</p>
+
+<pre><code>sudo apt-get install texlive-full latexmk
+</code></pre></li>
+
+<li><p>Start a background process to automatically compile your LaTeX and
+generate a PDF. You can edit your document in a separate terminal tab
+and have the PDF on the other side of your screen. Seemless editing!</p>
+
+<pre><code>latexmk -pvc -pdf main.tex &amp;
+</code></pre></li>
+</ol></li>
+</ul>
+
     </div>
   </div>
 
@@ -248,10 +339,10 @@
   <nav>
   <ul class="pager">
     
-
+    <li class="previous"><a href="http://markbuckler.com/post/docker-use/"><span
+      aria-hidden="true">&larr;</span> Developing in Docker</a></li>
     
-    <li class="next"><a href="http://markbuckler.com/post/docker-use/">Developing in Docker <span
-      aria-hidden="true">&rarr;</span></a></li>
+
     
   </ul>
 </nav>

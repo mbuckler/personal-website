@@ -19,11 +19,12 @@
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/academicons.min.css">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
   <link rel="stylesheet" href="/css/cornellcsl.css">
   
 
   <link rel="alternate" href="http://markbuckler.com/post/index.xml" type="application/rss+xml" title="Mark Buckler">
+  <link rel="feed" href="http://markbuckler.com/post/index.xml" type="application/rss+xml" title="Mark Buckler">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
@@ -40,22 +41,38 @@
     
     <a class="sr-only" href="#content">Skip to main content</a>
     <header id="top" class="cu-banner">
-    
+    <div class="container">
+        <form action="//" id="cu-search"
+        method="get" role="search" class="collapse">
+        <div class="input-group col-xs-12">
+            <input autocomplete="off" id="search-query" name="q"
+            placeholder=""
+            required type="search" class="col-xs-12 cu-search-box">
+            <label for="search-query" class="sr-only">
+                 
+            </label>
+        </div>
+        </form>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-xs-10 cu-csl-logo-div">
-	    
-                <a href="https://www.cornell.edu/" target="_blank">
-            
 		    <img src="/img/org-logo.svg"
-		        class="img-responsive"
-                        alt="Cornell University"
-		        style="margin: 0;" />
-            
-                </a>
-            
+                class="img-responsive"
+                alt="Cornell University"
+		style="margin: 0;" />
             </div>
-	    
+            <div class="col-xs-2 col-middle cu-search-toggle-div">
+                <span class="pull-right">
+                    <button class="btn btn-cu-banner" type="button"
+                    data-toggle="collapse" data-target="#cu-search"
+                    id="cu-search-toggle" style="position:relative;">
+                        <span class="sr-only">Toggle search</span>
+                        <span class="cu-search-toggle glyphicon glyphicon-search">
+                        </span>
+                    </button>
+                </span>
+            </div>
         </div>
     </div>
     </header>
@@ -163,14 +180,14 @@
   
   <div>
     
-    <h2><a href="http://markbuckler.com/post/docker-use/">Developing in Docker</a></h2>
+    <h2><a href="http://markbuckler.com/post/latex-in-vim/">Writing LaTeX in Vim</a></h2>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2017-04-25T16:25:31-04:00" itemprop="datePublished">
-      Tue, Apr 25, 2017
+    <time datetime="2017-04-03 16:25:31 -0400 EDT" itemprop="datePublished">
+      Mon, Apr 3, 2017
     </time>
   </span>
 
@@ -187,7 +204,38 @@
 
     <div class="article-style"><p>
       
-      Most of us academic/industrial ECE/CS researchers want to make our results as reproducible as possible. Its good for the integrity of our field and it also helps future researchers and developers who want to build on our prior work. GitHub is great for distributing software, but code can rarely be compiled and run on its own as nearly all modern software relies heavily on packages and dependencies. Thankfully, Docker is here to save the day!
+      As an academic I am often writing LaTeX code for publications or general documentation. I used to use ShareLatex and Overleaf because I have a secret love of GUIs (Lord forgive me!), but recently my co-authors have prefered to worth in LaTeX repos shared on GitHub. For this reason my most recent paper was actually written entirely in Vim! This post isn&rsquo;t meant to be a complete description of the best way to edit LaTeX in Vim, but instead I want to share some of the tools, tricks, and tips that I&rsquo;ve found useful when writing LaTeX in Vim.
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
+    <h2><a href="http://markbuckler.com/post/docker-use/">Developing in Docker</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-04-02 16:25:31 -0400 EDT" itemprop="datePublished">
+      Sun, Apr 2, 2017
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      Most of us academic/industrial ECE/CS researchers want to make our results as reproducible as possible. Its good for the integrity of our field and it also helps future researchers and developers to build on our prior work. GitHub is great for distributing software, but code can rarely be compiled and run on its own as nearly all modern software relies heavily on packages and dependencies. Installing these dependencies can be incredibly frustrating or possibly even impossible depending on how long ago the code was written.
       
     </p></div>
   </div>
@@ -200,8 +248,8 @@
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2017-04-25T16:25:31-04:00" itemprop="datePublished">
-      Tue, Apr 25, 2017
+    <time datetime="2017-04-01 16:25:31 -0400 EDT" itemprop="datePublished">
+      Sat, Apr 1, 2017
     </time>
   </span>
 
