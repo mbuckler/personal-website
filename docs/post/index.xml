@@ -11,9 +11,104 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Writing LaTeX in Vim</title>
+      <link>http://markbuckler.com/post/latex-in-vim/</link>
+      <pubDate>Mon, 03 Apr 2017 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/latex-in-vim/</guid>
+      <description>&lt;p&gt;As an academic I am often writing LaTeX code for publications or general
+documentation. I used to use &lt;a href=&#34;https://www.sharelatex.com/&#34; target=&#34;_blank&#34;&gt;ShareLatex&lt;/a&gt;
+and &lt;a href=&#34;https://www.overleaf.com/&#34; target=&#34;_blank&#34;&gt;Overleaf&lt;/a&gt; because I have a secret love
+of GUIs (Lord forgive me!), but recently my co-authors have prefered
+to worth in LaTeX repos shared on &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;. For
+this reason my most recent paper was actually written entirely in Vim!
+This post isn&amp;rsquo;t meant to be a complete description of the best way to
+edit LaTeX in Vim, but instead I want to
+share some of the tools, tricks, and tips that I&amp;rsquo;ve
+found useful when writing LaTeX in Vim.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Vim environment setup&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve made a nice little &lt;a href=&#34;https://github.com/mbuckler/vim-config&#34; target=&#34;_blank&#34;&gt;GitHub
+repo&lt;/a&gt; to host my Vim
+configuration settings (.vimrc) so that porting it between my machines
+is made easier. No need to copy my .vimrc wholesale if you don&amp;rsquo;t like
+everything, but these are a few options that I use:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Installing &lt;a href=&#34;https://github.com/VundleVim/Vundle.vim&#34; target=&#34;_blank&#34;&gt;Vundle&lt;/a&gt; for Vim
+package management and &lt;a href=&#34;https://github.com/tpope/vim-sensible&#34; target=&#34;_blank&#34;&gt;sensible.vim&lt;/a&gt;
+for near-universal improvements to the default Vim settings.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tabs vs spaces&amp;hellip; We could &lt;a href=&#34;https://www.youtube.com/watch?v=SsoOG6ZeyUI&#34; target=&#34;_blank&#34;&gt;fight all
+day&lt;/a&gt; about using tabs or
+spaces, but you&amp;rsquo;ll want to put your preferred settings in your .vimrc.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Automatic text wrapping with &lt;code&gt;set wrap&lt;/code&gt;. This is one of the most
+useful settings when writing LaTeX in Vim.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Change out that ugly red column border with a nice grey column border
+with &lt;code&gt;set colorcolumn=+1&lt;/code&gt; and &lt;code&gt;hi ColorColumn ctermbg=7&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Show line numbers for easy reference: &lt;code&gt;set number&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Set your preferred spell check default. As an American I do &lt;code&gt;set
+spelllang=en_us&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Useful Vim commands&lt;/p&gt;
+
+&lt;p&gt;In addition to having a good setup for Vim, here are a few commands that
+I am constantly using.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Search: &lt;code&gt;/foo&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Search and replace: &lt;code&gt;:%s/foo/bar/g&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Toggle line numbers: &lt;code&gt;set nu&lt;/code&gt;, &lt;code&gt;set nu!&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Enable pasting without auto-indentation: &lt;code&gt;set paste&lt;/code&gt;, &lt;code&gt;set paste!&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Turn on and off spell checking: &lt;code&gt;set spell&lt;/code&gt;, &lt;code&gt;set spell!&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Automatically wrap a block of text: First select with &lt;code&gt;v&lt;/code&gt; for
+visual, and then use &lt;code&gt;gq&lt;/code&gt; to perform the wrapping.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Indent an entire section: First select with &lt;code&gt;v&lt;/code&gt; and then indent
+with &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Automatic LaTeX compilation&lt;/p&gt;
+
+&lt;p&gt;This isn&amp;rsquo;t Vim specific, but you&amp;rsquo;re going to need a
+complation method to turn your LaTeX in to a PDF. On Ubuntu this works
+very well for me:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Install texlive and latexmk from your package manager. This will require more
+than a Gigabyte of space on your disk and so will take a while, but that
+sure beats having to selectively install LaTeX packages.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install texlive-full latexmk
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Start a background process to automatically compile your LaTeX and
+generate a PDF. You can edit your document in a separate terminal tab
+and have the PDF on the other side of your screen. Seemless editing!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;latexmk -pvc -pdf main.tex &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Developing in Docker</title>
       <link>http://markbuckler.com/post/docker-use/</link>
-      <pubDate>Tue, 25 Apr 2017 16:25:31 -0400</pubDate>
+      <pubDate>Sun, 02 Apr 2017 16:25:31 -0400</pubDate>
       
       <guid>http://markbuckler.com/post/docker-use/</guid>
       <description>&lt;p&gt;Most of us academic/industrial ECE/CS researchers want to make our
@@ -185,7 +280,7 @@ sensitive volumes.&lt;/p&gt;&lt;/li&gt;
     <item>
       <title>How to Install NVIDIA GPU Drivers &amp; CUDA</title>
       <link>http://markbuckler.com/post/install-cuda/</link>
-      <pubDate>Tue, 25 Apr 2017 16:25:31 -0400</pubDate>
+      <pubDate>Sat, 01 Apr 2017 16:25:31 -0400</pubDate>
       
       <guid>http://markbuckler.com/post/install-cuda/</guid>
       <description>&lt;p&gt;Anyone who&amp;rsquo;s set up a new Linux based, GPU enabled, deep learning system

@@ -12,22 +12,6 @@
     
     
     <url>
-      <loc>http://markbuckler.com/post/docker-use/</loc>
-      <lastmod>2017-04-25T16:25:31-04:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>http://markbuckler.com/post/install-cuda/</loc>
-      <lastmod>2017-04-25T16:25:31-04:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>http://markbuckler.com/project/youtube-bb/</loc>
       <lastmod>2017-04-06T00:00:00+00:00</lastmod>
     </url>
@@ -52,6 +36,14 @@
     
     
     <url>
+      <loc>http://markbuckler.com/post/latex-in-vim/</loc>
+      <lastmod>2017-04-03T16:25:31-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>http://markbuckler.com/project/image-sensor/</loc>
       <lastmod>2017-04-03T00:00:00+00:00</lastmod>
     </url>
@@ -60,8 +52,24 @@
     
     
     <url>
+      <loc>http://markbuckler.com/post/docker-use/</loc>
+      <lastmod>2017-04-02T16:25:31-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>http://markbuckler.com/project/ms-thesis/</loc>
       <lastmod>2017-04-02T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>http://markbuckler.com/post/install-cuda/</loc>
+      <lastmod>2017-04-01T16:25:31-04:00</lastmod>
     </url>
     
   
