@@ -343,7 +343,18 @@ driver versions.</p>
 <li><p>Reboot your system, pray to our Lord and Savior Elon Musk. If his
 kindly gaze falls upon you, you will have a fully functional CUDA
 enabled Linux machine. Enjoy!</p></li>
+
+<li><p>Troubleshooting and final thoughts</p></li>
 </ol>
+
+<p>If you experience a login loop (are able to get to the login screen but
+when you try to log in you are kicked back to the login screen) then it
+is likely that you forgot to include the <code>--no-opengl-libs</code> command when
+running the installation runfile.</p>
+
+<p>If after booting you see a black screen with a blinking unresponsive
+cursor, then you likely have something wrong with your display manager.
+Re-install lightdm or install and switch to gdm.</p>
 
 <p>Because this installation doesn&rsquo;t go through the package manager you may
 experience issues when upgrading your kernel. If you&rsquo;d like a way to
