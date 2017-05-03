@@ -16,7 +16,6 @@ selected = false
 title = "Reconfiguring the Imaging Pipeline for Computer Vision"
 url_code = ""
 url_dataset = ""
-url_pdf = "https://arxiv.org/"
 url_project = ""
 url_slides = ""
 url_video = ""

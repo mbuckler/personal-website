@@ -16,10 +16,11 @@ selected = false
 title = "Low-power networks-on-chip: Progress and remaining challenges"
 url_code = ""
 url_dataset = ""
-url_pdf = "https://doi.org/10.1109/ISLPED.2013.6629279"
+url_pdf_rel = "pdf/islped-2013.pdf"
 url_project = ""
 url_slides = ""
 url_video = ""
+doi="10.1109/ISLPED.2013.6629279"
 
 [header]
   caption = ""
