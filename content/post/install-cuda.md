@@ -140,16 +140,16 @@ enabled Linux machine. Enjoy!
 
 17. Troubleshooting and final thoughts
 
-If you experience a login loop (are able to get to the login screen but 
-when you try to log in you are kicked back to the login screen) then it
-is likely that you forgot to include the `--no-opengl-libs` command when
-running the installation runfile.
+	If you experience a login loop (are able to get to the login screen but 
+	when you try to log in you are kicked back to the login screen) then it
+	is likely that you forgot to include the `--no-opengl-libs` command when
+	running the installation runfile.
 
-If after booting you see a black screen with a blinking unresponsive 
-cursor, then you likely have something wrong with your display manager.
-Re-install lightdm or install and switch to gdm.
+	If after booting you see a black screen with a blinking unresponsive 
+	cursor, then you likely have something wrong with your display manager.
+	Re-install lightdm or install and switch to gdm.
 
-Because this installation doesn't go through the package manager you may
-experience issues when upgrading your kernel. If you'd like a way to
-automatically re-install on an update you may be interested in [this
-solution](https://ubuntuforums.org/showthread.php?t=835573) as well.
+	Because this installation doesn't go through the package manager you may
+	experience issues when upgrading your kernel. If you'd like a way to
+	automatically re-install on an update you may be interested in [this
+	solution](https://ubuntuforums.org/showthread.php?t=835573) as well.
