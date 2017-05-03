@@ -7,7 +7,7 @@ footnotereturnlinkcontents = "<sup>^</sup>"
 publishDir = "docs"
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+disqusShortname = "markbuckler"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = "UA-98211041-1"
