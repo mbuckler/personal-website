@@ -142,7 +142,7 @@ Thankfully, [Docker](https://www.docker.com/) is here to save the day!
 	touch.
 
 		```
-		XAUTH=$HOME/.Xauthority`
+		XAUTH=$HOME/.Xauthority
 		touch $XAUTH
 		```
 
