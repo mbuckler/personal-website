@@ -33,11 +33,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://markbuckler.com/publication/nocs2014/">
+  <link rel="canonical" href="http://markbuckler.com/patent/8847647/">
 
   
 
-  <title>Dynamic synchronizer flip-flop performance in FinFET technologies | Mark Buckler</title>
+  <title>Synchronizer Circuits With Failure-Condition Detection and Correction | Mark Buckler</title>
 
 </head>
 <body data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -172,10 +172,10 @@
   
 
   <div class="container pub-title">
-    <h1 itemprop="name">Dynamic synchronizer flip-flop performance in FinFET technologies</h1>
+    <h1 itemprop="name">Synchronizer Circuits With Failure-Condition Detection and Correction</h1>
     <span class="pub-authors">
       
-      <span itemprop="author">Mark Buckler</span>, <span itemprop="author">Arpan Vaidya</span>, <span itemprop="author">Xiaobin Liu</span>, <span itemprop="author">Wayne Burleson
+      <span itemprop="author">Mark Buckler
       </span>
     </span>
     <span class="pull-right">
@@ -184,35 +184,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fmarkbuckler.com%2fpublication%2fnocs2014%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fmarkbuckler.com%2fpatent%2f8847647%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Dynamic%20synchronizer%20flip-flop%20performance%20in%20FinFET%20technologies&amp;url=http%3a%2f%2fmarkbuckler.com%2fpublication%2fnocs2014%2f"
+         href="https://twitter.com/intent/tweet?text=Synchronizer%20Circuits%20With%20Failure-Condition%20Detection%20and%20Correction&amp;url=http%3a%2f%2fmarkbuckler.com%2fpatent%2f8847647%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fmarkbuckler.com%2fpublication%2fnocs2014%2f&amp;title=Dynamic%20synchronizer%20flip-flop%20performance%20in%20FinFET%20technologies"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fmarkbuckler.com%2fpatent%2f8847647%2f&amp;title=Synchronizer%20Circuits%20With%20Failure-Condition%20Detection%20and%20Correction"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fmarkbuckler.com%2fpublication%2fnocs2014%2f&amp;title=Dynamic%20synchronizer%20flip-flop%20performance%20in%20FinFET%20technologies"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fmarkbuckler.com%2fpatent%2f8847647%2f&amp;title=Synchronizer%20Circuits%20With%20Failure-Condition%20Detection%20and%20Correction"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Dynamic%20synchronizer%20flip-flop%20performance%20in%20FinFET%20technologies&amp;body=http%3a%2f%2fmarkbuckler.com%2fpublication%2fnocs2014%2f">
+         href="mailto:?subject=Synchronizer%20Circuits%20With%20Failure-Condition%20Detection%20and%20Correction&amp;body=http%3a%2f%2fmarkbuckler.com%2fpatent%2f8847647%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -228,21 +228,17 @@
   
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text">The use of fine-grain Dynamic Voltage and Frequency Scaling (DVFS) has increased the number of distinct clock domains on a given Network-on-Chip (NoC). This necessitates robust synchronizers to prevent clock domain communication failures, even as FinFET devices have begun to replace planar devices. This paper presents simulation results and comparisons between dynamic (requiring reset) and non-dynamic synchronizer flip-flops implemented in predictive models for both planar technologies and future FinFET technologies. Results demonstrate that synchronizers built with FinFET devices 1) exhibit a tau value which continues to scale with fan-out of four delay and 2) can be improved with forward biasing, but 3) are more sensitive to temperature. Dynamic flip-flops settled metastability fastest when using standard technology voltages, but previously couldn&#39;t be used in non-dynamic systems. For this reason, a new synchronizer design is also presented which exploits the benefits of dynamic flip-flops without the need for a dedicated reset signal.</p>
+  <p class="pub-abstract" itemprop="text">An input signal and a reset signal are provided to respective inputs of a resettable flip-flop. The resettable flip-flop generates an output signal. The output signal transitions from a first logic state to a second logic state in response to corresponding transitions of the input signal and transitions from the second logic state to the first logic state in response to assertion of the reset signal. A warning signal is asserted in response to transitions of the input signal from the second logic state to the first logic state. A logic gate forwards the output signal when the warning signal is de-asserted and provides a signal in the first logic state in response to assertion of the warning signal.</p>
 
   
-  <div class="row">
+	<div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
-        <div class="col-xs-12 col-sm-9">
-          
-          <a href="/publication/#1">
-            Conference proceedings
-          </a>
-          
-        </div>
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Filed</div>
+       <time class="col-xs-12 col-sm-9" datetime = "2013-09-11" itemprop="datePublished">
+          September 11, 2013
+        </time> 
       </div>
     </div>
     <div class="col-sm-1"></div>
@@ -250,31 +246,22 @@
   <div class="visible-xs space-below"></div>
   
 
-  <div class="row">
+  
+	<div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-10">
       <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-        <div class="col-xs-12 col-sm-9">IEEE Symposium on Networks-on-Chip</div>
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Granted</div>
+       <time class="col-xs-12 col-sm-9" datetime = "2014-09-30" itemprop="datePublished">
+          September 30, 2014
+        </time> 
       </div>
     </div>
     <div class="col-sm-1"></div>
   </div>
   <div class="visible-xs space-below"></div>
+  
 
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
-        <time class="col-xs-12 col-sm-9" datetime = "2014-09-17" itemprop="datePublished">
-          September, 2014
-        </time>
-      </div>
-    </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
 
   <div class="row" style="padding-top: 10px">
     <div class="col-sm-1"></div>
@@ -288,16 +275,20 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="//dx.doi.org/10.1109/NOCS.2014.7008768" target="_blank" itemprop="sameAs">
-  DOI
+<a class="btn btn-primary btn-outline"
+	href="//patents.google.com/patent/US8847647B2" target="_blank" itemprop="sameAs">
+  Google Patents
+</a>
+
+
+<a class="btn btn-primary btn-outline"
+	href="//patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/8847647" target="_blank" itemprop="sameAs">
+  USPTO
 </a>
 
 
 
 
-<a class="btn btn-primary btn-outline" href="/pdf/nocs-2014.pdf">
-  PDF
-</a>
 
 
 
@@ -325,12 +316,12 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://markbuckler.com/publication/isqed2014/"><span
-      aria-hidden="true">&larr;</span> Predictive synchronization for DVFS-enabled multi-processor systems</a></li>
+    <li class="previous"><a href="http://markbuckler.com/patent/8289363/"><span
+      aria-hidden="true">&larr;</span> Video Conferencing</a></li>
     
 
     
-    <li class="next"><a href="http://markbuckler.com/publication/arxiv2017/">Reconfiguring the Imaging Pipeline for Computer Vision <span
+    <li class="next"><a href="http://markbuckler.com/patent/9143315/">Predictive Periodic Synchronization Using Phase-Locked Loop Digital Ratio Updates <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
