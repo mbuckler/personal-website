@@ -15,7 +15,7 @@ As an academic I am often writing LaTeX code for publications or general
 documentation. I used to use [ShareLatex](https://www.sharelatex.com/)
 and [Overleaf](https://www.overleaf.com/) because I have a secret love
 of GUIs (Lord forgive me!), but recently my co-authors have prefered
-to worth in LaTeX repos shared on [GitHub](https://github.com/). For
+to work in LaTeX repos shared on [GitHub](https://github.com/). For
 this reason my most recent paper was actually written entirely in Vim!
 This post isn't meant to be a complete description of the best way to
 edit LaTeX in Vim, but instead I want to
