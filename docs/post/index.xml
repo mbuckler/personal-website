@@ -11,6 +11,32 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>My Old Electronic Music Blog</title>
+      <link>http://markbuckler.com/post/quoth_the_raver/</link>
+      <pubDate>Tue, 02 May 2017 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/quoth_the_raver/</guid>
+      <description>&lt;p&gt;Back in 2010 I started a blog dedicated to electronic music called Quoth
+the Raver (a play on Quoth the Raven). It was a huge amount of fun
+sharing the music I found with everyone on the site, and it inspired me
+to get even more familiar with the various genres, artists, and labels.
+These days electronic music (also known as EDM) has exploded in
+popularity, so the novelty of sharing new artists has worn off to a
+certain extent. For this reason I haven&amp;rsquo;t updated the blog in quite a
+long time, but I did recently go through to fix up some boken components
+for archiving the site.&lt;/p&gt;
+
+&lt;p&gt;If anyone is curious to see what I was listening to and raving about
+back then feel free to &lt;a href=&#34;https://quoththeraverarchive.wordpress.com/&#34; target=&#34;_blank&#34;&gt;check out the
+website!&lt;/a&gt; If you&amp;rsquo;re more
+interested in what I&amp;rsquo;m listening to these days, go ahead and check out
+what I love on &lt;a href=&#34;https://soundcloud.com/quoththeraver&#34; target=&#34;_blank&#34;&gt;SoundCloud&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/quoth_the_raver.jpg&#34; alt=&#34;Quoth the Raver&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Writing LaTeX in Vim</title>
       <link>http://markbuckler.com/post/latex-in-vim/</link>
       <pubDate>Mon, 03 Apr 2017 16:25:31 -0400</pubDate>
