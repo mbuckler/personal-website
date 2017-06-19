@@ -18,7 +18,7 @@ to get even more familiar with the various genres, artists, and labels.
 These days electronic music (also known as EDM) has exploded in
 popularity, so the novelty of sharing new artists has worn off to a
 certain extent. For this reason I haven't updated the blog in quite a
-long time, but I did recently go through to fix up some boken components
+long time, but I did recently go through to fix up some broken components
 for archiving the site.
 
 If anyone is curious to see what I was listening to and raving about
