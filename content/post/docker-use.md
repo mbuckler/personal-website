@@ -55,7 +55,7 @@ Thankfully, [Docker](https://www.docker.com/) is here to save the day!
 	using `docker run` to create Docker containers. It is in these
 	containers that you will run or develop your code. If you would like
 	other people to be able to use your Docker image you can push to
-	DockerHub (with `docker push`), and if you wan't to use someone else's
+	DockerHub (with `docker push`), and if you want to use someone else's
 	image you can pull from DockerHub (with `docker pull`).
 
 * How do I write a Dockerfile?
