@@ -11,6 +11,115 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Cutting Videos with FFmpeg</title>
+      <link>http://markbuckler.com/post/cutting-ffmpeg/</link>
+      <pubDate>Thu, 06 Jul 2017 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/cutting-ffmpeg/</guid>
+      <description>&lt;p&gt;While building the &lt;a href=&#34;https://github.com/mbuckler/youtube-bb&#34; target=&#34;_blank&#34;&gt;downloading and decoding
+scripts&lt;/a&gt; for the &lt;a href=&#34;https://research.google.com/youtube-bb/index.html&#34; target=&#34;_blank&#34;&gt;Youtube BoundingBoxes
+dataset&lt;/a&gt; I needed to
+accurately cut videos into smaller clips. Some of the annotated videos were
+quite long and the annotations rarely covered the full video, so to save space
+my scripts cut out and save only the annotated sections. If done incorrectly
+this video cutting can cause subtle frame timing issues which I didn&amp;rsquo;t fully
+understand when I started writing these scripts. If you want to avoid these
+problems read below for the proper way to accurately cut videos with
+&lt;a href=&#34;http://ffmpeg.org/&#34; target=&#34;_blank&#34;&gt;FFmpeg&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;First, a very quick review of video compression. Most modern video compression
+algorithms use a technique called &lt;a href=&#34;https://en.wikipedia.org/wiki/Motion_compensation&#34; target=&#34;_blank&#34;&gt;motion
+compensation&lt;/a&gt; to reduce the
+size of stored video files. All frames in MPEG are stored as either Key frames
+(I frames) or Predicted frames (P or B frames). Each Key frame is compressed
+with some variation on the &lt;a href=&#34;https://en.wikipedia.org/wiki/JPEG&#34; target=&#34;_blank&#34;&gt;JPEG compression
+codec&lt;/a&gt;, but Predicted frames are represented
+as motion compensated versions of earlier frames (as in P frames) or both
+earlier and later frames (as in B frames). Because these motion compensation
+references take up much less space than a compressed JPEG, overall the
+compressed video takes up less space. For (much) more detail you can see &lt;a href=&#34;https://users.cs.cf.ac.uk/Dave.Marshall/Multimedia/node255.html&#34; target=&#34;_blank&#34;&gt;Dave
+Marshall&amp;rsquo;s excellent
+explanation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now that we&amp;rsquo;ve reviewed video compression and the different kinds of encoded
+frames, we can talk about seeking. Seeking is the process used to find certain
+sections of the video to either extract a frame or cut out a portion. FFmpeg has
+implemented a few options for our use, but their differences in behavior and/or
+usage can be easy to overlook. Here we will discuss the three methods of seeking
+(and by extension cutting) video with FFmpeg, with each corresponding to a point
+on the speed/accuracy tradeoff.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Key Frame Seeking&lt;/p&gt;
+
+&lt;p&gt;The fastest way to extract a portion of video from a larger video (with a 60
+second clip starting 30 seconds in) would be the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ffmpeg -ss 30 -i input_vid.mp4 -t 60 -c copy output_clip.mp4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This method is so fast because it uses Key frames when performing seek, and
+there are far fewer Key frames than Predicted frames. It also is a &lt;a href=&#34;https://ffmpeg.org/ffmpeg.html#Stream-copy&#34; target=&#34;_blank&#34;&gt;stream
+copy&lt;/a&gt; meaning that the encoded data
+extracted from the original video is taken directly without decoding and then
+re-encoding. While this feature may be useful for some users who don&amp;rsquo;t care
+about frame accuracy, it doesn&amp;rsquo;t work for our purposes. This is because even
+though FFmpeg 2.1 enabled frame accurate Key frame seeking for frame extraction
+(&lt;a href=&#34;https://trac.ffmpeg.org/wiki/Seeking&#34; target=&#34;_blank&#34;&gt;more detail here&lt;/a&gt;) this behavior is not
+supported in FFmpeg 2.6 when cutting out clips of video. This means that the
+start of your video will be aligned with the nearest Key frame to 30 seconds,
+not the nearest frame independent of encoding format.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;All-Frame Seeking&lt;/p&gt;
+
+&lt;p&gt;A slightly slower and more accurate method of video cutting would be the
+following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ffmpeg -i input_vid.mp4 -ss 30 -t 60 -c copy output_clip.mp4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Can you tell the difference? It is frustratingly similar to the previous
+command&amp;hellip; It turns out that FFmpeg arguments are order sensitive, so choosing
+the clip&amp;rsquo;s start time after the input video causes a change in behavior! This
+method uses all-frame seeking, also known as &lt;a href=&#34;https://trac.ffmpeg.org/wiki/Seeking#Outputseeking&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;output
+seeking&amp;rdquo;&lt;/a&gt; by FFmpeg users.
+It is also a stream copy, but considers all frames (including Predicted frames)
+when performing a seek. This means that your output clip will start with the nearest frame
+to 30 seconds even if it is a predicted frame.&lt;/p&gt;
+
+&lt;p&gt;If you use this command and try to play your output clip, you may notice that
+the clip starts frozen, or with black frames in the beginning. Did FFmpeg do
+something wrong? No, that behavior is simply a result of the functionality that
+we requested when we performed an all-frame seek on a stream copy. If your 30
+second start happens to align with a Predicted frame, that Predicted frame will
+be copied into the output clip, along with the rest of the frames in the 60
+second portion. But as we already established, Predicted frames are simply
+motion compensated references to previous or following Key frames. By stream
+copying with all-frame seeking we have removed the reference Key frames which
+came before our first frame. This is why your video player displays frozen or
+black frames: the necessary data to represent the first portion of your
+video isn&amp;rsquo;t included in the file.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Full Re-Encoding&lt;/p&gt;
+
+&lt;p&gt;So Key frame seeking causes missalignment and All-frame seeking causes broken
+frames, is there another option? Yes, but some folks don&amp;rsquo;t like it. Instead of
+performing a stream copy we can decode the source video, and then re-encode the
+output clip:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ffmpeg -i input_vid.mp4 -ss 30 -strict -2 -t 60 output_clip.mp4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This isn&amp;rsquo;t perfect for two reasons: 1) Re-encoding can cause
+quality loss if done incorrectly, and 2) Re-encoding is far slower than stream
+copying. While both of these two points should be considered, if you want to
+copy a frame-exact section of video you have to re-encode. At least now you
+know!&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Approximate Vision Pipeline</title>
       <link>http://markbuckler.com/project/approx-vision/</link>
       <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
@@ -536,15 +645,6 @@ solution&lt;/a&gt; as well.&lt;/p&gt;&lt;/li&gt;
       <pubDate>Wed, 17 Sep 2014 19:37:01 -0400</pubDate>
       
       <guid>http://markbuckler.com/publication/nocs2014/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Predictive synchronization for DVFS-enabled multi-processor systems</title>
-      <link>http://markbuckler.com/publication/isqed2014/</link>
-      <pubDate>Wed, 05 Mar 2014 19:37:01 -0400</pubDate>
-      
-      <guid>http://markbuckler.com/publication/isqed2014/</guid>
       <description></description>
     </item>
     
