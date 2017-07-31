@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Mark Buckler</title>
+    <link>http://markbuckler.com/post/</link>
+    <description>Recent content in Posts on Mark Buckler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Mark Buckler</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cutting Videos with FFmpeg</title>
+      <link>http://markbuckler.com/post/cutting-ffmpeg/</link>
+      <pubDate>Thu, 06 Jul 2017 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/cutting-ffmpeg/</guid>
+      <description>&lt;p&gt;While building the &lt;a href=&#34;https://github.com/mbuckler/youtube-bb&#34; target=&#34;_blank&#34;&gt;downloading and decoding
+scripts&lt;/a&gt; for the &lt;a href=&#34;https://research.google.com/youtube-bb/index.html&#34; target=&#34;_blank&#34;&gt;Youtube BoundingBoxes
+dataset&lt;/a&gt; I needed to
+accurately cut videos into smaller clips. Some of the annotated videos were
+quite long and the annotations rarely covered the full video, so to save space
+my scripts cut out and save only the annotated sections. If done incorrectly
+this video cutting can cause subtle frame timing issues which I didn&amp;rsquo;t fully
+understand when I started writing these scripts. If you want to avoid these
+problems read below for the proper way to accurately cut videos with
+&lt;a href=&#34;http://ffmpeg.org/&#34; target=&#34;_blank&#34;&gt;FFmpeg&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;First, a very quick review of video compression. Most modern video compression
+algorithms use a technique called &lt;a href=&#34;https://en.wikipedia.org/wiki/Motion_compensation&#34; target=&#34;_blank&#34;&gt;motion
+compensation&lt;/a&gt; to reduce the
+size of stored video files. All frames in MPEG are stored as either Key frames
+(I frames) or Predicted frames (P or B frames). Each Key frame is compressed
+with some variation on the &lt;a href=&#34;https://en.wikipedia.org/wiki/JPEG&#34; target=&#34;_blank&#34;&gt;JPEG compression
+codec&lt;/a&gt;, but Predicted frames are represented
+as motion compensated versions of earlier frames (as in P frames) or both
+earlier and later frames (as in B frames). Because these motion compensation
+references take up much less space than a compressed JPEG, overall the
+compressed video takes up less space. For (much) more detail you can see &lt;a href=&#34;https://users.cs.cf.ac.uk/Dave.Marshall/Multimedia/node255.html&#34; target=&#34;_blank&#34;&gt;Dave
+Marshall&amp;rsquo;s excellent
+explanation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now that we&amp;rsquo;ve reviewed video compression and the different kinds of encoded
+frames, we can talk about seeking. Seeking is the process used to find certain
+sections of the video to either extract a frame or cut out a portion. FFmpeg has
+implemented a few options for our use, but their differences in behavior and/or
+usage can be easy to overlook. Here we will discuss the three methods of seeking
+(and by extension cutting) video with FFmpeg, with each corresponding to a point
+on the speed/accuracy tradeoff.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Key Frame Seeking&lt;/p&gt;
+
+&lt;p&gt;The fastest way to extract a portion of video from a larger video (with a 60
+second clip starting 30 seconds in) would be the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ffmpeg -ss 30 -i input_vid.mp4 -t 60 -c copy output_clip.mp4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This method is so fast because it uses Key frames when performing seek, and
+there are far fewer Key frames than Predicted frames. It also is a &lt;a href=&#34;https://ffmpeg.org/ffmpeg.html#Stream-copy&#34; target=&#34;_blank&#34;&gt;stream
+copy&lt;/a&gt; meaning that the encoded data
+extracted from the original video is taken directly without decoding and then
+re-encoding. While this feature may be useful for some users who don&amp;rsquo;t care
+about frame accuracy, it doesn&amp;rsquo;t work for our purposes. This is because even
+though FFmpeg 2.1 enabled frame accurate Key frame seeking for frame extraction
+(&lt;a href=&#34;https://trac.ffmpeg.org/wiki/Seeking&#34; target=&#34;_blank&#34;&gt;more detail here&lt;/a&gt;) this behavior is not
+supported in FFmpeg 2.6 when cutting out clips of video. This means that the
+start of your video will be aligned with the nearest Key frame to 30 seconds,
+not the nearest frame independent of encoding format.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;All-Frame Seeking&lt;/p&gt;
+
+&lt;p&gt;A slightly slower and more accurate method of video cutting would be the
+following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ffmpeg -i input_vid.mp4 -ss 30 -t 60 -c copy output_clip.mp4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Can you tell the difference? It is frustratingly similar to the previous
+command&amp;hellip; It turns out that FFmpeg arguments are order sensitive, so choosing
+the clip&amp;rsquo;s start time after the input video causes a change in behavior! This
+method uses all-frame seeking, also known as &lt;a href=&#34;https://trac.ffmpeg.org/wiki/Seeking#Outputseeking&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;output
+seeking&amp;rdquo;&lt;/a&gt; by FFmpeg users.
+It is also a stream copy, but considers all frames (including Predicted frames)
+when performing a seek. This means that your output clip will start with the nearest frame
+to 30 seconds even if it is a predicted frame.&lt;/p&gt;
+
+&lt;p&gt;If you use this command and try to play your output clip, you may notice that
+the clip starts frozen, or with black frames in the beginning. Did FFmpeg do
+something wrong? No, that behavior is simply a result of the functionality that
+we requested when we performed an all-frame seek on a stream copy. If your 30
+second start happens to align with a Predicted frame, that Predicted frame will
+be copied into the output clip, along with the rest of the frames in the 60
+second portion. But as we already established, Predicted frames are simply
+motion compensated references to previous or following Key frames. By stream
+copying with all-frame seeking we have removed the reference Key frames which
+came before our first frame. This is why your video player displays frozen or
+black frames: the necessary data to represent the first portion of your
+video isn&amp;rsquo;t included in the file.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Full Re-Encoding&lt;/p&gt;
+
+&lt;p&gt;So Key frame seeking causes missalignment and All-frame seeking causes broken
+frames, is there another option? Yes, but some folks don&amp;rsquo;t like it. Instead of
+performing a stream copy we can decode the source video, and then re-encode the
+output clip:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ffmpeg -i input_vid.mp4 -ss 30 -strict -2 -t 60 output_clip.mp4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This isn&amp;rsquo;t perfect for two reasons: 1) Re-encoding can cause
+quality loss if done incorrectly, and 2) Re-encoding is far slower than stream
+copying. While both of these two points should be considered, if you want to
+copy a frame-exact section of video you have to re-encode. At least now you
+know!&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Old Electronic Music Blog</title>
+      <link>http://markbuckler.com/post/quoth_the_raver/</link>
+      <pubDate>Tue, 02 May 2017 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/quoth_the_raver/</guid>
+      <description>&lt;p&gt;Back in 2010 I started a blog dedicated to electronic music called Quoth
+the Raver (a play on Quoth the Raven). It was a huge amount of fun
+sharing the music I found with everyone on the site, and it inspired me
+to get even more familiar with the various genres, artists, and labels.
+These days electronic music (also known as EDM) has exploded in
+popularity, so the novelty of sharing new artists has worn off to a
+certain extent. For this reason I haven&amp;rsquo;t updated the blog in quite a
+long time, but I did recently go through to fix up some broken components
+for archiving the site.&lt;/p&gt;
+
+&lt;p&gt;If anyone is curious to see what I was listening to and raving about
+back then feel free to &lt;a href=&#34;https://quoththeraverarchive.wordpress.com/&#34; target=&#34;_blank&#34;&gt;check out the
+website!&lt;/a&gt; If you&amp;rsquo;re more
+interested in what I&amp;rsquo;m listening to these days, go ahead and check out
+what I love on &lt;a href=&#34;https://soundcloud.com/quoththeraver&#34; target=&#34;_blank&#34;&gt;SoundCloud&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/quoth_the_raver.jpg&#34; alt=&#34;Quoth the Raver&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Writing LaTeX in Vim</title>
+      <link>http://markbuckler.com/post/latex-in-vim/</link>
+      <pubDate>Mon, 03 Apr 2017 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/latex-in-vim/</guid>
+      <description>&lt;p&gt;As an academic I am often writing LaTeX code for publications or general
+documentation. I used to use &lt;a href=&#34;https://www.sharelatex.com/&#34; target=&#34;_blank&#34;&gt;ShareLatex&lt;/a&gt;
+and &lt;a href=&#34;https://www.overleaf.com/&#34; target=&#34;_blank&#34;&gt;Overleaf&lt;/a&gt; because I have a secret love
+of GUIs (Lord forgive me!), but recently my co-authors have prefered
+to work in LaTeX repos shared on &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;. For
+this reason my most recent paper was actually written entirely in Vim!
+This post isn&amp;rsquo;t meant to be a complete description of the best way to
+edit LaTeX in Vim, but instead I want to
+share some of the tools, tricks, and tips that I&amp;rsquo;ve
+found useful when writing LaTeX in Vim.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Vim environment setup&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve made a nice little &lt;a href=&#34;https://github.com/mbuckler/vim-config&#34; target=&#34;_blank&#34;&gt;GitHub
+repo&lt;/a&gt; to host my Vim
+configuration settings (.vimrc) so that porting it between my machines
+is made easier. No need to copy my .vimrc wholesale if you don&amp;rsquo;t like
+everything, but these are a few options that I use:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Installing &lt;a href=&#34;https://github.com/VundleVim/Vundle.vim&#34; target=&#34;_blank&#34;&gt;Vundle&lt;/a&gt; for Vim
+package management and &lt;a href=&#34;https://github.com/tpope/vim-sensible&#34; target=&#34;_blank&#34;&gt;sensible.vim&lt;/a&gt;
+for near-universal improvements to the default Vim settings.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tabs vs spaces&amp;hellip; We could &lt;a href=&#34;https://www.youtube.com/watch?v=SsoOG6ZeyUI&#34; target=&#34;_blank&#34;&gt;fight all
+day&lt;/a&gt; about using tabs or
+spaces, but you&amp;rsquo;ll want to put your preferred settings in your .vimrc.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Automatic text wrapping with &lt;code&gt;set wrap&lt;/code&gt;. This is one of the most
+useful settings when writing LaTeX in Vim.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Change out that ugly red column border with a nice grey column border
+with &lt;code&gt;set colorcolumn=+1&lt;/code&gt; and &lt;code&gt;hi ColorColumn ctermbg=7&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Show line numbers for easy reference: &lt;code&gt;set number&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Set your preferred spell check default. As an American I do &lt;code&gt;set
+spelllang=en_us&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Useful Vim commands&lt;/p&gt;
+
+&lt;p&gt;In addition to having a good setup for Vim, here are a few commands that
+I am constantly using.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Search: &lt;code&gt;/foo&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Search and replace: &lt;code&gt;:%s/foo/bar/g&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Toggle line numbers: &lt;code&gt;set nu&lt;/code&gt;, &lt;code&gt;set nu!&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Enable pasting without auto-indentation: &lt;code&gt;set paste&lt;/code&gt;, &lt;code&gt;set paste!&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Turn on and off spell checking: &lt;code&gt;set spell&lt;/code&gt;, &lt;code&gt;set spell!&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Automatically wrap a block of text: First select with &lt;code&gt;v&lt;/code&gt; for
+visual, and then use &lt;code&gt;gq&lt;/code&gt; to perform the wrapping.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Indent an entire section: First select with &lt;code&gt;v&lt;/code&gt; and then indent
+with &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Automatic LaTeX compilation&lt;/p&gt;
+
+&lt;p&gt;This isn&amp;rsquo;t Vim specific, but you&amp;rsquo;re going to need a
+complation method to turn your LaTeX in to a PDF. On Ubuntu this works
+very well for me:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Install texlive and latexmk from your package manager. This will require more
+than a Gigabyte of space on your disk and so will take a while, but that
+sure beats having to selectively install LaTeX packages.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install texlive-full latexmk
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Start a background process to automatically compile your LaTeX and
+generate a PDF. You can edit your document in a separate terminal tab
+and have the PDF on the other side of your screen. Seemless editing!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;latexmk -pvc -pdf main.tex &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Developing in Docker</title>
+      <link>http://markbuckler.com/post/docker-use/</link>
+      <pubDate>Sun, 02 Apr 2017 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/docker-use/</guid>
+      <description>&lt;p&gt;Most of us academic/industrial ECE/CS researchers want to make our
+results as reproducible as possible. Its good for the integrity of our
+field and it also helps future researchers and developers to build on
+our prior work. &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; is great for distributing
+software, but code can rarely be compiled and run on its own as nearly
+all modern software relies heavily on packages and dependencies.
+Installing these dependencies can be incredibly frustrating or possibly
+even impossible depending on how long ago the code was written.
+Thankfully, &lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt; is here to save the day!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What benefits does Docker provide?&lt;/p&gt;
+
+&lt;p&gt;Running code or even product deployment without ever installing
+dependencies, enabling multiple dependency versions on a server without
+conflicts, &amp;ldquo;pulling&amp;rdquo; of environments from &lt;a href=&#34;https://hub.docker.com/&#34; target=&#34;_blank&#34;&gt;Docker
+Hub&lt;/a&gt; as simply and easily as cloning a GitHub
+repository, and all without noticeable performance degradation.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How does Docker provide all of this modularity and portability?&lt;/p&gt;
+
+&lt;p&gt;By very nearly being a Virtual Machine (VM) but not going the full way.
+&lt;a href=&#34;https://docs.docker.com/get-started/#containers-vs-virtual-machines&#34; target=&#34;_blank&#34;&gt;See here for more
+details&lt;/a&gt;,
+but rather than implementing an entire OS as a VM might do, an
+instantiation of a Docker image (called a &amp;ldquo;Container&amp;rdquo;) only implements
+binaries, libraries, and applications. This makes running a Windows
+image on Linux or vice versa tricky since they don&amp;rsquo;t have the same
+kernel, but since most of the folks I know develop on Linux this hasn&amp;rsquo;t
+been a problem for me. In case you&amp;rsquo;re interested in running Docker on
+macOS or Windows check out &lt;a href=&#34;http://containerjournal.com/2016/08/15/docker-not-just-linux-anymore/&#34; target=&#34;_blank&#34;&gt;this blog
+post&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;From a practical standpoint, how do I use Docker?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/docker_high_level.png&#34; alt=&#34;Docker at a high level&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First, write an installation script for all of your dependencies. This
+script is written with Docker specific syntax and is called a
+Dockerfile. Then, run these commands to build a Docker image of your
+environment by using &lt;code&gt;docker build&lt;/code&gt;. Once successfully built, you can
+instantiate copies of this image as many times as you would like by
+using &lt;code&gt;docker run&lt;/code&gt; to create Docker containers. It is in these
+containers that you will run or develop your code. If you would like
+other people to be able to use your Docker image you can push to
+DockerHub (with &lt;code&gt;docker push&lt;/code&gt;), and if you want to use someone else&amp;rsquo;s
+image you can pull from DockerHub (with &lt;code&gt;docker pull&lt;/code&gt;).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How do I write a Dockerfile?&lt;/p&gt;
+
+&lt;p&gt;You can check out the &lt;a href=&#34;https://docs.docker.com/engine/reference/builder/&#34; target=&#34;_blank&#34;&gt;full reference&lt;/a&gt;, but here is
+a simple example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Start with an existing Docker image to give yourself a head start
+FROM ubuntu:14.04
+
+# Change to a given directory
+WORKDIR /root
+
+# Run some shell commands to install dependencies
+RUN apt-get update &amp;amp;&amp;amp; apt-get upgrade &amp;amp;&amp;amp; apt-get install -y \
+    build-essential \
+    git \
+    etc...
+
+# Clone and build code not available through your package manager
+RUN git clone https://github.com/halide/Halide.git
+WORKDIR /root/Halide
+RUN make -j8
+
+# Set any necessary environment variables
+ENV LD_LIBRARY_PATH /root/Halide/bin:$LD_LIBRARY_PATH
+
+# Lastly, set your workdir to be your default when starting the image
+WORKDIR /root
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How do I run a Docker image (create a docker container)?&lt;/p&gt;
+
+&lt;p&gt;First, pull the image you&amp;rsquo;d like to use or build one from a Dockerfile
+like the one shown above.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker pull mbuckler/approx-vision
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, use the docker run command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker run \
+-v &amp;lt;path to datasets&amp;gt;:/datasets \
+-v &amp;lt;path to approx-vision&amp;gt;:/approx-vision \
+-it mbuckler/approx-vision \
+/bin/bash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the example command above you see that I start with &lt;code&gt;docker run&lt;/code&gt;, and
+then create two &lt;a href=&#34;https://docs.docker.com/engine/tutorials/dockervolumes/&#34; target=&#34;_blank&#34;&gt;docker
+volumes&lt;/a&gt;. These
+volumes allow me to interact with data outside of the docker container.
+Then I choose which image to run, and start myself off with a bash
+shell.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What if I want to use my GPU from within a Docker container?&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;re in luck! NVIDIA provides
+&lt;a href=&#34;https://github.com/NVIDIA/nvidia-docker&#34; target=&#34;_blank&#34;&gt;nvidia-docker&lt;/a&gt;, a specific
+application for linking NVIDIA GPU&amp;rsquo;s and docker.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What if I want to use X forwarding from within a Docker container?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://people.ece.cornell.edu/skand/&#34; target=&#34;_blank&#34;&gt;Skand Hurkat&lt;/a&gt; and I figured
+out a great way to do this. He&amp;rsquo;s posted the instructions
+&lt;a href=&#34;https://people.ece.cornell.edu/skand/post/x-forwarding-on-docker/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
+but I&amp;rsquo;ll cross-post them here for completeness.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Include the X packages within your Docker image by adding these
+commands to your Dockerfile.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;RUN apt-get update
+RUN apt-get install -qqy x11-apps
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Set the path to your &lt;code&gt;.Xauthority&lt;/code&gt; file. Your &lt;code&gt;.Xauthority&lt;/code&gt; file
+will automatically be created in your home directory if using X11
+forwarding on a server you&amp;rsquo;re accessing remotely, but if you&amp;rsquo;re using
+Docker on your local device then you&amp;rsquo;ll need to create the file with
+touch.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;XAUTH=$HOME/.Xauthority
+touch $XAUTH
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Run your Docker image. Use the host&amp;rsquo;s networking stack and
+connect both the display and Xauthority environment variables.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker run --network=host --env DISPLAY=$DISPLAY -v $XAUTH:/root/.Xauthority -it &amp;lt;dockerimagename&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;OK Docker fanboy, tell me the downsides&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;For one, creating/pulling lots of Docker images can take up a lot of
+disk space. The real downside however is that Docker users have sudo
+privileges on the local machine when running containers. You can find a
+really excellent blog post about this
+&lt;a href=&#34;https://fosterelli.co/privilege-escalation-via-docker.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, but
+at the end of the day you have two choices:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Require that users invoke sudo when executing docker commands.&lt;/p&gt;
+
+&lt;p&gt;This isn&amp;rsquo;t super attractive since it makes usage less convenient,
+but it is the safest option.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Create and use a docker group.&lt;/p&gt;
+
+&lt;p&gt;With this option anyone who is in the docker group can run docker
+commands without sudo. This is the option I use, where I only add users to the docker
+group that I would consider adding to the sudo group. I also inform new
+users about the dangers, as you can do a lot of damage by mounting
+sensitive volumes.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to Install NVIDIA GPU Drivers &amp; CUDA</title>
+      <link>http://markbuckler.com/post/install-cuda/</link>
+      <pubDate>Sat, 01 Apr 2017 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/install-cuda/</guid>
+      <description>&lt;p&gt;Anyone who&amp;rsquo;s set up a new Linux based, GPU enabled, deep learning system
+knows the horror that is driver installation. While it is technically
+possible to install NVIDIA drivers and CUDA from your package manager,
+the most up to date versions aren&amp;rsquo;t available and in the worst case you
+might even break graphics on your machine. After a great deal of
+difficulties installing and reinstalling, I finally found a viable
+strategy: installing both CUDA and proprietary Linux drivers from an
+NVIDA run file without OpenGL libraries.&lt;/p&gt;
+
+&lt;p&gt;The installation instructions shown below are largely taken from a two
+year old
+&lt;a href=&#34;https://devtalk.nvidia.com/default/topic/878117/-solved-titan-x-for-cuda-7-5-login-loop-error-ubuntu-14-04-/&#34; target=&#34;_blank&#34;&gt;forum
+post&lt;/a&gt;
+on NVIDIA&amp;rsquo;s developer forum with a question asked by a user called
+NeuroSurfer and answered by txbob. I think it is worth reposting the
+instructions here because I&amp;rsquo;ve added a few things, and also because
+I think a formal post will help bring more exposure to this solution.&lt;/p&gt;
+
+&lt;p&gt;Without further ado, here is how to install NVIDIA drivers and CUDA on
+your Linux machine. I have tested these instructions on systems running
+Ubuntu 14.04 and 16.04 and with Titan X and GTX 980 cards.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Preferably start with a fresh install of your OS, but if you are
+hoping to avoid a full OS re-install you first need to purge your
+system of any existing NVIDIA drivers installed via the package manager.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get remove --purge nvidia-*
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Download the run file for the CUDA version that you want. You can
+find the download link
+&lt;a href=&#34;https://developer.nvidia.com/cuda-downloads&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. Make sure to get
+the run file and not the debian installer. Change the permissions of it
+so that it can be executed.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;chmod a+x .
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Verify that build-essential is installed&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install build-essential
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Remove your xorg.conf if it exists&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo rm /etc/X11/xorg.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Create a blacklist file for nouveau (default Ubuntu graphics) at
+&lt;code&gt;/etc/modprobe.d/blacklist-nouveau.conf&lt;/code&gt;. Put in the following contents:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;blacklist nouveau
+options nouveau modeset=0
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Update your kernel&amp;rsquo;s ramdisk&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo update-initramfs -u
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Reboot your machine, nothing should have changed&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Use &lt;code&gt;Ctrl-Alt-F1&lt;/code&gt; to drop to a terminal, log in.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Stop your display manager. Lightdm is default for Ubuntu&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo service lightdm stop
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Navigate back to where you downloaded your run file. Run it and
+explicitly avoid installing OpenGL libraries with the command line
+option.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo ./cuda-X.Y.ZZ_linux.run --no-opengl-libs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Accept the EULA&lt;/li&gt;
+&lt;li&gt;Install the driver? Yes&lt;/li&gt;
+&lt;li&gt;Update the Xserver config? No&lt;/li&gt;
+&lt;li&gt;Install CUDA? Yes&lt;/li&gt;
+&lt;li&gt;Install the CUDA samples? Yes&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Install nvidia-modprobe. This avoids that annoying
+&amp;ldquo;cudaGetDeviceCount returned 30 -&amp;gt; unknown error&amp;rdquo; issue.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install nvidia-modprobe
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Edit your ~/.bashrc to update your path variables&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export PATH=/usr/local/cuda-7.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-7.0/lib64:$LD_LIBRARY_PATH
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Update your paths&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Check that the CUDA version is correct.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nvcc -V
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Check that your GPU&amp;rsquo;s are visible to the system and have the right
+driver versions.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nvidia-smi
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Reboot your system, pray to our Lord and Savior Elon Musk. If his
+kindly gaze falls upon you, you will have a fully functional CUDA
+enabled Linux machine. Enjoy!&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Troubleshooting and final thoughts&lt;/p&gt;
+
+&lt;p&gt;If you experience a login loop (are able to get to the login screen but
+when you try to log in you are kicked back to the login screen) then it
+is likely that you forgot to include the &lt;code&gt;--no-opengl-libs&lt;/code&gt; command when
+running the installation runfile.&lt;/p&gt;
+
+&lt;p&gt;If after booting you see a black screen with a blinking unresponsive
+cursor, then you likely have something wrong with your display manager.
+Re-install lightdm or install and switch to gdm.&lt;/p&gt;
+
+&lt;p&gt;Because this installation doesn&amp;rsquo;t go through the package manager you may
+experience issues when upgrading your kernel. If you&amp;rsquo;d like a way to
+automatically re-install on an update you may be interested in &lt;a href=&#34;https://ubuntuforums.org/showthread.php?t=835573&#34; target=&#34;_blank&#34;&gt;this
+solution&lt;/a&gt; as well.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

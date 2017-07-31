@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Mark Buckler</title>
+    <link>http://markbuckler.com/publication/</link>
+    <description>Recent content in Publications on Mark Buckler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Mark Buckler</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Reconfiguring the Imaging Pipeline for Computer Vision</title>
+      <link>http://markbuckler.com/publication/iccv2017/</link>
+      <pubDate>Wed, 26 Apr 2017 19:37:01 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/publication/iccv2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic synchronizer flip-flop performance in FinFET technologies</title>
+      <link>http://markbuckler.com/publication/nocs2014/</link>
+      <pubDate>Wed, 17 Sep 2014 19:37:01 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/publication/nocs2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predictive synchronization for DVFS-enabled multi-processor systems</title>
+      <link>http://markbuckler.com/publication/isqed2014/</link>
+      <pubDate>Wed, 05 Mar 2014 19:37:01 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/publication/isqed2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Low-power networks-on-chip: Progress and remaining challenges</title>
+      <link>http://markbuckler.com/publication/islped2013/</link>
+      <pubDate>Fri, 06 Sep 2013 19:37:01 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/publication/islped2013/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

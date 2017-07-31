@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video on Mark Buckler</title>
+    <link>http://markbuckler.com/tags/video/</link>
+    <description>Recent content in Video on Mark Buckler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Mark Buckler</copyright>
+    <lastBuildDate>Thu, 06 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/video/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>YouTube BoundingBox Dataset Downloader</title>
+      <link>http://markbuckler.com/project/youtube-bb/</link>
+      <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/project/youtube-bb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VideoConversation</title>
+      <link>http://markbuckler.com/project/videoconversation/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/project/videoconversation/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

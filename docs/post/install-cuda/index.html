@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="cornellcsl">
+  <meta name="generator" content="Hugo 0.20.2" />
+  <meta name="author" content="Mark Buckler">
+  <meta name="description" content="PhD Student">
+
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
+  <link rel="stylesheet" href="/css/cornellcsl.min.css">
+  
+
+  <link rel="alternate" href="http://markbuckler.com/index.xml" type="application/rss+xml" title="Mark Buckler">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://markbuckler.com/post/install-cuda/">
+
+  
+
+  <title>How to Install NVIDIA GPU Drivers &amp; CUDA | Mark Buckler</title>
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#ffffff",
+        "text": "#000000"
+      },
+      "button": {
+        "background": "#b31b1b",
+        "text": "#ffffff"
+      }
+    },
+    "showLink": false,
+    "content": {
+      "message": "This website uses cookies for analytics and to enable comments.",
+      "dismiss": "Cool! I get it."
+    }
+  })});
+  </script>
+</head>
+<body data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+    
+    <a class="sr-only" href="#content">Skip to main content</a>
+    <header id="top" class="cu-banner">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 cu-csl-logo-div">
+	    
+                <a href="https://www.cornell.edu/" target="_blank">
+            
+		    <img src="/img/org-logo.svg"
+		        class="img-responsive"
+                        alt="Cornell University"
+		        style="margin: 0;" />
+            
+                </a>
+            
+            </div>
+	    
+        </div>
+    </div>
+    </header>
+
+
+<div class="nav-wrapper">
+<nav class="navbar navbar-default" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Mark Buckler</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#publications">
+            
+            <span>Publications</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#patents">
+            
+            <span>Patents</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+</div>
+
+
+<article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+  
+
+  <div class="article-container">
+    <h1 itemprop="name headline">How to Install NVIDIA GPU Drivers &amp; CUDA</h1>
+    
+
+<div class="article-metadata">
+
+  
+  <span class="article-date">
+    <time datetime="2017-04-01T16:25:31-04:00" itemprop="datePublished">
+      Sat, Apr 1, 2017
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fmarkbuckler.com%2fpost%2finstall-cuda%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=How%20to%20Install%20NVIDIA%20GPU%20Drivers%20%26%20CUDA&amp;url=http%3a%2f%2fmarkbuckler.com%2fpost%2finstall-cuda%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fmarkbuckler.com%2fpost%2finstall-cuda%2f&amp;title=How%20to%20Install%20NVIDIA%20GPU%20Drivers%20%26%20CUDA"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fmarkbuckler.com%2fpost%2finstall-cuda%2f&amp;title=How%20to%20Install%20NVIDIA%20GPU%20Drivers%20%26%20CUDA"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=How%20to%20Install%20NVIDIA%20GPU%20Drivers%20%26%20CUDA&amp;body=http%3a%2f%2fmarkbuckler.com%2fpost%2finstall-cuda%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      <p>Anyone who&rsquo;s set up a new Linux based, GPU enabled, deep learning system
+knows the horror that is driver installation. While it is technically
+possible to install NVIDIA drivers and CUDA from your package manager,
+the most up to date versions aren&rsquo;t available and in the worst case you
+might even break graphics on your machine. After a great deal of
+difficulties installing and reinstalling, I finally found a viable
+strategy: installing both CUDA and proprietary Linux drivers from an
+NVIDA run file without OpenGL libraries.</p>
+
+<p>The installation instructions shown below are largely taken from a two
+year old
+<a href="https://devtalk.nvidia.com/default/topic/878117/-solved-titan-x-for-cuda-7-5-login-loop-error-ubuntu-14-04-/" target="_blank">forum
+post</a>
+on NVIDIA&rsquo;s developer forum with a question asked by a user called
+NeuroSurfer and answered by txbob. I think it is worth reposting the
+instructions here because I&rsquo;ve added a few things, and also because
+I think a formal post will help bring more exposure to this solution.</p>
+
+<p>Without further ado, here is how to install NVIDIA drivers and CUDA on
+your Linux machine. I have tested these instructions on systems running
+Ubuntu 14.04 and 16.04 and with Titan X and GTX 980 cards.</p>
+
+<ol>
+<li><p>Preferably start with a fresh install of your OS, but if you are
+hoping to avoid a full OS re-install you first need to purge your
+system of any existing NVIDIA drivers installed via the package manager.</p>
+
+<pre><code>sudo apt-get remove --purge nvidia-*
+</code></pre></li>
+
+<li><p>Download the run file for the CUDA version that you want. You can
+find the download link
+<a href="https://developer.nvidia.com/cuda-downloads" target="_blank">here</a>. Make sure to get
+the run file and not the debian installer. Change the permissions of it
+so that it can be executed.</p>
+
+<pre><code>chmod a+x .
+</code></pre></li>
+
+<li><p>Verify that build-essential is installed</p>
+
+<pre><code>sudo apt-get install build-essential
+</code></pre></li>
+
+<li><p>Remove your xorg.conf if it exists</p>
+
+<pre><code>sudo rm /etc/X11/xorg.conf
+</code></pre></li>
+
+<li><p>Create a blacklist file for nouveau (default Ubuntu graphics) at
+<code>/etc/modprobe.d/blacklist-nouveau.conf</code>. Put in the following contents:</p>
+
+<pre><code>blacklist nouveau
+options nouveau modeset=0
+</code></pre></li>
+
+<li><p>Update your kernel&rsquo;s ramdisk</p>
+
+<pre><code>sudo update-initramfs -u
+</code></pre></li>
+
+<li><p>Reboot your machine, nothing should have changed</p></li>
+
+<li><p>Use <code>Ctrl-Alt-F1</code> to drop to a terminal, log in.</p></li>
+
+<li><p>Stop your display manager. Lightdm is default for Ubuntu</p>
+
+<pre><code>sudo service lightdm stop
+</code></pre></li>
+
+<li><p>Navigate back to where you downloaded your run file. Run it and
+explicitly avoid installing OpenGL libraries with the command line
+option.</p>
+
+<pre><code>sudo ./cuda-X.Y.ZZ_linux.run --no-opengl-libs
+</code></pre>
+
+<ul>
+<li>Accept the EULA</li>
+<li>Install the driver? Yes</li>
+<li>Update the Xserver config? No</li>
+<li>Install CUDA? Yes</li>
+<li>Install the CUDA samples? Yes</li>
+</ul></li>
+
+<li><p>Install nvidia-modprobe. This avoids that annoying
+&ldquo;cudaGetDeviceCount returned 30 -&gt; unknown error&rdquo; issue.</p>
+
+<pre><code>sudo apt-get install nvidia-modprobe
+</code></pre></li>
+
+<li><p>Edit your ~/.bashrc to update your path variables</p>
+
+<pre><code>export PATH=/usr/local/cuda-7.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-7.0/lib64:$LD_LIBRARY_PATH
+</code></pre></li>
+
+<li><p>Update your paths</p>
+
+<pre><code>source ~/.bashrc
+</code></pre></li>
+
+<li><p>Check that the CUDA version is correct.</p>
+
+<pre><code>nvcc -V
+</code></pre></li>
+
+<li><p>Check that your GPU&rsquo;s are visible to the system and have the right
+driver versions.</p>
+
+<pre><code>nvidia-smi
+</code></pre></li>
+
+<li><p>Reboot your system, pray to our Lord and Savior Elon Musk. If his
+kindly gaze falls upon you, you will have a fully functional CUDA
+enabled Linux machine. Enjoy!</p></li>
+
+<li><p>Troubleshooting and final thoughts</p>
+
+<p>If you experience a login loop (are able to get to the login screen but
+when you try to log in you are kicked back to the login screen) then it
+is likely that you forgot to include the <code>--no-opengl-libs</code> command when
+running the installation runfile.</p>
+
+<p>If after booting you see a black screen with a blinking unresponsive
+cursor, then you likely have something wrong with your display manager.
+Re-install lightdm or install and switch to gdm.</p>
+
+<p>Because this installation doesn&rsquo;t go through the package manager you may
+experience issues when upgrading your kernel. If you&rsquo;d like a way to
+automatically re-install on an update you may be interested in <a href="https://ubuntuforums.org/showthread.php?t=835573" target="_blank">this
+solution</a> as well.</p></li>
+</ol>
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+
+    
+    <li class="next"><a href="http://markbuckler.com/post/docker-use/">Developing in Docker <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'markbuckler';
+    var disqus_identifier = 'http:\/\/markbuckler.com\/post\/install-cuda\/';
+    var disqus_title = 'How to Install NVIDIA GPU Drivers \x26 CUDA';
+    var disqus_url = 'http:\/\/markbuckler.com\/post\/install-cuda\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</section>
+
+
+</div>
+
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/cornellcsl.min.js"></script>
+    
+
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-98211041-1', 'auto');
+        ga('send', 'pageview');
+
+         
+        var links = document.querySelectorAll('a');
+        Array.prototype.map.call(links, function(item) {
+            if (item.host != document.location.host) {
+                item.addEventListener('click', function() {
+                    var action = item.getAttribute('data-action') || 'follow';
+                    ga('send', 'event', 'outbound', action, item.href);
+                });
+            }
+        });
+    </script>
+    
+
+    
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+
