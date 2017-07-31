@@ -32,7 +32,7 @@ to get even more familiar with the various genres, artists, and labels.
 These days electronic music (also known as EDM) has exploded in
 popularity, so the novelty of sharing new artists has worn off to a
 certain extent. For this reason I haven&amp;rsquo;t updated the blog in quite a
-long time, but I did recently go through to fix up some boken components
+long time, but I did recently go through to fix up some broken components
 for archiving the site.&lt;/p&gt;
 
 &lt;p&gt;If anyone is curious to see what I was listening to and raving about
@@ -47,10 +47,10 @@ what I love on &lt;a href=&#34;https://soundcloud.com/quoththeraver&#34; target=
     
     <item>
       <title>Reconfiguring the Imaging Pipeline for Computer Vision</title>
-      <link>http://markbuckler.com/publication/arxiv2017/</link>
+      <link>http://markbuckler.com/publication/iccv2017/</link>
       <pubDate>Wed, 26 Apr 2017 19:37:01 -0400</pubDate>
       
-      <guid>http://markbuckler.com/publication/arxiv2017/</guid>
+      <guid>http://markbuckler.com/publication/iccv2017/</guid>
       <description></description>
     </item>
     
@@ -239,7 +239,7 @@ instantiate copies of this image as many times as you would like by
 using &lt;code&gt;docker run&lt;/code&gt; to create Docker containers. It is in these
 containers that you will run or develop your code. If you would like
 other people to be able to use your Docker image you can push to
-DockerHub (with &lt;code&gt;docker push&lt;/code&gt;), and if you wan&amp;rsquo;t to use someone else&amp;rsquo;s
+DockerHub (with &lt;code&gt;docker push&lt;/code&gt;), and if you want to use someone else&amp;rsquo;s
 image you can pull from DockerHub (with &lt;code&gt;docker pull&lt;/code&gt;).&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;How do I write a Dockerfile?&lt;/p&gt;

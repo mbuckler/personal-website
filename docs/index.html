@@ -39,6 +39,28 @@
 
   <title>Mark Buckler</title>
 
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#ffffff",
+        "text": "#000000"
+      },
+      "button": {
+        "background": "#b31b1b",
+        "text": "#ffffff"
+      }
+    },
+    "showLink": false,
+    "content": {
+      "message": "This website uses cookies for analytics and to enable comments.",
+      "dismiss": "Cool! I get it."
+    }
+  })});
+  </script>
 </head>
 <body data-spy="scroll" data-target="#navbar-main" data-offset="71">
 
@@ -193,47 +215,48 @@
         <h2 itemprop="name">Mark Buckler</h2>
         <h3 itemprop="jobTitle">PhD Student</h3>
         
-        <h3 itemprop="worksFor">
-          <a href="https://www.cornell.edu/" target="_blank">
-          Cornell University
+        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <a href="https://www.cornell.edu/" target="_blank" itemprop="url">
+          <span itemprop="name">Cornell University</span>
           </a>
         </h3>
         
+      <link itemprop="url" href="http://markbuckler.com" >
       </div>
 
       <ul class="social-icon" aria-hidden="true">
         
         
         <li>
-          <a href="https://github.com/mbuckler" target="_blank">
+          <a href="https://github.com/mbuckler" target="_blank" itemprop="sameAs">
             <i class="fa fa-github big-icon"></i>
           </a>
         </li>
         
         
         <li>
-          <a href="https://scholar.google.co.uk/citations?user=pb8dVvsAAAAJ" target="_blank">
+          <a href="https://scholar.google.co.uk/citations?user=pb8dVvsAAAAJ" target="_blank" itemprop="sameAs">
             <i class="ai ai-google-scholar big-icon"></i>
           </a>
         </li>
         
         
         <li>
-          <a href="https://www.linkedin.com/in/markbuckler/" target="_blank">
+          <a href="https://www.linkedin.com/in/markbuckler/" target="_blank" itemprop="sameAs">
             <i class="fa fa-linkedin big-icon"></i>
           </a>
         </li>
         
         
         <li>
-          <a href="https://soundcloud.com/quoththeraver" target="_blank">
+          <a href="https://soundcloud.com/quoththeraver" target="_blank" itemprop="sameAs">
             <i class="fa fa-soundcloud big-icon"></i>
           </a>
         </li>
         
         
         <li>
-          <a href="mailto:mab598@cornell.edu" target="_blank">
+          <a href="mailto:mab598@cornell.edu" target="_blank" itemprop="sameAs">
             <i class="fa fa-envelope big-icon"></i>
           </a>
         </li>
@@ -242,7 +265,8 @@
 
     </div>
   </div>
-  <div class="col-xs-12 col-md-8" itemprop="description">
+  <div class="col-xs-12 col-md-8">
+    <div itemprop="description">
 
     
 
@@ -266,6 +290,8 @@ These days I can be found in Cornell&rsquo;s <a href="http://www.csl.cornell.edu
 Laboratory</a> plugging away at code for
 powerful new computer vision systems.</p>
 
+
+    </div>
 
     <div class="row">
 
@@ -297,7 +323,7 @@ powerful new computer vision systems.</p>
             <i class="fa-li fa fa-graduation-cap"></i>
             <div class="description">
               <p class="course">PhD in Computer Engineering</p>
-              <p class="institution">Cornell University</p>
+              <p class="institution"><span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><span itemprop="name">Cornell University</span></span></p>
             </div>
           </li>
           
@@ -305,7 +331,7 @@ powerful new computer vision systems.</p>
             <i class="fa-li fa fa-graduation-cap"></i>
             <div class="description">
               <p class="course">M.S. in Electrical and Computer Engineering, 2014</p>
-              <p class="institution">University of Massachusetts, Amherst</p>
+              <p class="institution"><span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><span itemprop="name">University of Massachusetts, Amherst</span></span></p>
             </div>
           </li>
           
@@ -313,7 +339,7 @@ powerful new computer vision systems.</p>
             <i class="fa-li fa fa-graduation-cap"></i>
             <div class="description">
               <p class="course">B.S. in Electrical Engineering, 2012</p>
-              <p class="institution">Rensselaer Polytechnic Institute</p>
+              <p class="institution"><span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><span itemprop="name">Rensselaer Polytechnic Institute</span></span></p>
             </div>
           </li>
           
@@ -353,10 +379,10 @@ powerful new computer vision systems.</p>
   <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span class="pub-authors">
     
-    <span itemprop="author">Mark Buckler</span>, <span itemprop="author">Suren Jayasuriya</span>, <span itemprop="author">Adrian Sampson</span>,
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mark Buckler</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Suren Jayasuriya</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Adrian Sampson</span></span>,
   </span>
   <span itemprop="name"><i>Reconfiguring the Imaging Pipeline for Computer Vision</i></span>, in
-  <span itemprop="isPartOf">Submission</span>.
+  <span itemprop="isPartOf">International Conference on Computer Vision</span>.
   <time datetime = "2017-04-26" itemprop="datePublished">
     April, 2017
   </time>
@@ -364,7 +390,7 @@ powerful new computer vision systems.</p>
 
 
 
-<a class="btn btn-primary btn-outline btn-xs" href="http://markbuckler.com/publication/arxiv2017/">
+<a class="btn btn-primary btn-outline btn-xs" href="http://markbuckler.com/publication/iccv2017/">
   Details
 </a>
 
@@ -376,7 +402,7 @@ powerful new computer vision systems.</p>
 
 
 
-<a class="btn btn-primary btn-outline btn-xs" href="/pdf/archive-2017.pdf">
+<a class="btn btn-primary btn-outline btn-xs" href="/pdf/iccv-2017.pdf">
   PDF
 </a>
 
@@ -394,7 +420,7 @@ powerful new computer vision systems.</p>
   <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span class="pub-authors">
     
-    <span itemprop="author">Mark Buckler</span>, <span itemprop="author">Arpan Vaidya</span>, <span itemprop="author">Xiaobin Liu</span>, <span itemprop="author">Wayne Burleson</span>,
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mark Buckler</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Arpan Vaidya</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Xiaobin Liu</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Wayne Burleson</span></span>,
   </span>
   <span itemprop="name"><i>Dynamic synchronizer flip-flop performance in FinFET technologies</i></span>, in
   <span itemprop="isPartOf">IEEE Symposium on Networks-on-Chip</span>.
@@ -435,7 +461,7 @@ powerful new computer vision systems.</p>
   <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span class="pub-authors">
     
-    <span itemprop="author">Mark Buckler</span>, <span itemprop="author">Wayne Burleson</span>,
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mark Buckler</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Wayne Burleson</span></span>,
   </span>
   <span itemprop="name"><i>Predictive synchronization for DVFS-enabled multi-processor systems</i></span>, in
   <span itemprop="isPartOf">IEEE Symposium on Quality Electronic Design</span>.
@@ -476,7 +502,7 @@ powerful new computer vision systems.</p>
   <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span class="pub-authors">
     
-    <span itemprop="author">Mark Buckler</span>, <span itemprop="author">Wayne Burleson</span>, <span itemprop="author">Greg Sadowski</span>,
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mark Buckler</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Wayne Burleson</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Greg Sadowski</span></span>,
   </span>
   <span itemprop="name"><i>Low-power networks-on-chip: Progress and remaining challenges</i></span>, in
   <span itemprop="isPartOf">IEEE Symposium on Low Power Electronics and Design</span>.

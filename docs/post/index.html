@@ -34,6 +34,28 @@
 
   <title>Posts | Mark Buckler</title>
 
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#ffffff",
+        "text": "#000000"
+      },
+      "button": {
+        "background": "#b31b1b",
+        "text": "#ffffff"
+      }
+    },
+    "showLink": false,
+    "content": {
+      "message": "This website uses cookies for analytics and to enable comments.",
+      "dismiss": "Cool! I get it."
+    }
+  })});
+  </script>
 </head>
 <body data-spy="scroll" data-target="#navbar-main" data-offset="71">
 
@@ -173,9 +195,9 @@
 
   
   
-  <div>
+  <div itemscope itemtype="http://schema.org/BlogPosting">
     
-    <h2><a href="http://markbuckler.com/post/quoth_the_raver/">My Old Electronic Music Blog</a></h2>
+    <h2><a itemprop="url" href="http://markbuckler.com/post/quoth_the_raver/"><span itemprop="name headline">My Old Electronic Music Blog</span></a></h2>
     
 
 <div class="article-metadata">
@@ -198,16 +220,16 @@
 
 </div>
 
-    <div class="article-style"><p>
+    <div class="article-style" itemprop="articleBody"><p>
       
       Back in 2010 I started a blog dedicated to electronic music called Quoth the Raver (a play on Quoth the Raven). It was a huge amount of fun sharing the music I found with everyone on the site, and it inspired me to get even more familiar with the various genres, artists, and labels. These days electronic music (also known as EDM) has exploded in popularity, so the novelty of sharing new artists has worn off to a certain extent.
       
     </p></div>
   </div>
   
-  <div>
+  <div itemscope itemtype="http://schema.org/BlogPosting">
     
-    <h2><a href="http://markbuckler.com/post/latex-in-vim/">Writing LaTeX in Vim</a></h2>
+    <h2><a itemprop="url" href="http://markbuckler.com/post/latex-in-vim/"><span itemprop="name headline">Writing LaTeX in Vim</span></a></h2>
     
 
 <div class="article-metadata">
@@ -230,16 +252,16 @@
 
 </div>
 
-    <div class="article-style"><p>
+    <div class="article-style" itemprop="articleBody"><p>
       
       As an academic I am often writing LaTeX code for publications or general documentation. I used to use ShareLatex and Overleaf because I have a secret love of GUIs (Lord forgive me!), but recently my co-authors have prefered to work in LaTeX repos shared on GitHub. For this reason my most recent paper was actually written entirely in Vim! This post isn&rsquo;t meant to be a complete description of the best way to edit LaTeX in Vim, but instead I want to share some of the tools, tricks, and tips that I&rsquo;ve found useful when writing LaTeX in Vim.
       
     </p></div>
   </div>
   
-  <div>
+  <div itemscope itemtype="http://schema.org/BlogPosting">
     
-    <h2><a href="http://markbuckler.com/post/docker-use/">Developing in Docker</a></h2>
+    <h2><a itemprop="url" href="http://markbuckler.com/post/docker-use/"><span itemprop="name headline">Developing in Docker</span></a></h2>
     
 
 <div class="article-metadata">
@@ -262,16 +284,16 @@
 
 </div>
 
-    <div class="article-style"><p>
+    <div class="article-style" itemprop="articleBody"><p>
       
       Most of us academic/industrial ECE/CS researchers want to make our results as reproducible as possible. Its good for the integrity of our field and it also helps future researchers and developers to build on our prior work. GitHub is great for distributing software, but code can rarely be compiled and run on its own as nearly all modern software relies heavily on packages and dependencies. Installing these dependencies can be incredibly frustrating or possibly even impossible depending on how long ago the code was written.
       
     </p></div>
   </div>
   
-  <div>
+  <div itemscope itemtype="http://schema.org/BlogPosting">
     
-    <h2><a href="http://markbuckler.com/post/install-cuda/">How to Install NVIDIA GPU Drivers &amp; CUDA</a></h2>
+    <h2><a itemprop="url" href="http://markbuckler.com/post/install-cuda/"><span itemprop="name headline">How to Install NVIDIA GPU Drivers &amp; CUDA</span></a></h2>
     
 
 <div class="article-metadata">
@@ -294,7 +316,7 @@
 
 </div>
 
-    <div class="article-style"><p>
+    <div class="article-style" itemprop="articleBody"><p>
       
       Anyone who&rsquo;s set up a new Linux based, GPU enabled, deep learning system knows the horror that is driver installation. While it is technically possible to install NVIDIA drivers and CUDA from your package manager, the most up to date versions aren&rsquo;t available and in the worst case you might even break graphics on your machine. After a great deal of difficulties installing and reinstalling, I finally found a viable strategy: installing both CUDA and proprietary Linux drivers from an NVIDA run file without OpenGL libraries.
       

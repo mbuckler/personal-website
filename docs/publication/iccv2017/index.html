@@ -33,11 +33,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://markbuckler.com/project/ms-thesis/">
+  <link rel="canonical" href="http://markbuckler.com/publication/iccv2017/">
 
   
 
-  <title>Network-on-Chip Synchronization | Mark Buckler</title>
+  <title>Reconfiguring the Imaging Pipeline for Computer Vision | Mark Buckler</title>
 
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
@@ -189,53 +189,52 @@
 </nav>
 </div>
 
-
-<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+<div class="pub" itemscope itemtype="http://schema.org/ScholarlyArticle">
 
   
 
-    <div class="container pub-title">
-      <h1 itemprop="name">Network-on-Chip Synchronization</h1>
-      <span class="pub-authors" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">
+  <div class="container pub-title">
+    <h1 itemprop="name headline">Reconfiguring the Imaging Pipeline for Computer Vision</h1>
+    <span class="pub-authors">
       
-        </span>
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mark Buckler</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Suren Jayasuriya</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Adrian Sampson
       </span>
-      <span class="pull-right">
-        
+    </span>
+    <span class="pull-right">
+      
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fmarkbuckler.com%2fproject%2fms-thesis%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fmarkbuckler.com%2fpublication%2ficcv2017%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Network-on-Chip%20Synchronization&amp;url=http%3a%2f%2fmarkbuckler.com%2fproject%2fms-thesis%2f"
+         href="https://twitter.com/intent/tweet?text=Reconfiguring%20the%20Imaging%20Pipeline%20for%20Computer%20Vision&amp;url=http%3a%2f%2fmarkbuckler.com%2fpublication%2ficcv2017%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fmarkbuckler.com%2fproject%2fms-thesis%2f&amp;title=Network-on-Chip%20Synchronization"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fmarkbuckler.com%2fpublication%2ficcv2017%2f&amp;title=Reconfiguring%20the%20Imaging%20Pipeline%20for%20Computer%20Vision"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fmarkbuckler.com%2fproject%2fms-thesis%2f&amp;title=Network-on-Chip%20Synchronization"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fmarkbuckler.com%2fpublication%2ficcv2017%2f&amp;title=Reconfiguring%20the%20Imaging%20Pipeline%20for%20Computer%20Vision"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Network-on-Chip%20Synchronization&amp;body=http%3a%2f%2fmarkbuckler.com%2fproject%2fms-thesis%2f">
+         href="mailto:?subject=Reconfiguring%20the%20Imaging%20Pipeline%20for%20Computer%20Vision&amp;body=http%3a%2f%2fmarkbuckler.com%2fpublication%2ficcv2017%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -243,38 +242,115 @@
 </div>
 
 
-      </span>
+    </span>
+  </div>
+
+<div class="article-container">
+
+  
+
+  <h3>Abstract</h3>
+  <p class="pub-abstract" itemprop="text">Advancements in deep learning have ignited an explosion of research on efficient hardware for embedded computer vision. Hardware vision acceleration, however, does not address the cost of capturing and processing the image data that feeds these algorithms. We examine the role of the image signal processing (ISP) pipeline in computer vision to identify opportunities to reduce computation and save energy. The key insight is that imaging pipelines should be designed to be configurable: to switch between a traditional photography mode and a low-power vision mode that produces lower-quality image data suitable only for computer vision. We use eight computer vision algorithms and a reversible pipeline simulation tool to study the imaging system&#39;s impact on vision performance. For both CNN-based and classical vision algorithms, we observe that only two ISP stages, demosaicing and gamma compression, are critical for task performance. We propose a new image sensor design that can compensate for skipping these stages. The sensor design features an adjustable resolution and tunable analog-to-digital converters (ADCs). Our proposed imaging system&#39;s vision mode disables the ISP entirely and configures the sensor to produce subsampled, lower-precision image data. This vision mode can save ~75% of the average energy of a baseline photography mode while having only a small impact on vision task accuracy.</p>
+
+  
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
+        <div class="col-xs-12 col-sm-9">
+          
+          <a href="/publication/#1">
+            Conference proceedings
+          </a>
+          
+        </div>
+      </div>
     </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
+  
 
-    
-    <a class="btn btn-primary btn-outline" href="http://scholarworks.umass.edu/masters_theses_2/74/" target="_blank">Go to Project Site</a>
-    
-
-  <div class="article-container">
-
-    <div class="article-style" itemprop="articleBody">
-      
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
+        <div class="col-xs-12 col-sm-9" itemprop="isPartOf" itemscope itemtype="http://schema.org/CreativeWork"><span itemprop="name">International Conference on Computer Vision</span></div>
+      </div>
     </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
 
-    
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+        <time class="col-xs-12 col-sm-9" datetime = "2017-04-26" itemprop="datePublished">
+          April, 2017
+        </time>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
+
+  <div class="row" style="padding-top: 10px">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+        <div class="col-xs-12 col-sm-9">
+
+          
+
+
+
+
+
+<a class="btn btn-primary btn-outline" href="//arxiv.org/abs/1705.04352" target="_blank" itemprop="sameAs">
+  arXiv
+</a>
+
+
+
+<a class="btn btn-primary btn-outline" href="/pdf/iccv-2017.pdf">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
   </div>
   <div class="visible-xs space-below"></div>
 
   <div class="space-below"></div>
-  </div>
-</article>
+
+  <div class="article-style"></div>
+
+</div>
+</div>
 
 <div class="container">
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://markbuckler.com/project/videoconversation/"><span
-      aria-hidden="true">&larr;</span> VideoConversation</a></li>
+    <li class="previous"><a href="http://markbuckler.com/publication/nocs2014/"><span
+      aria-hidden="true">&larr;</span> Dynamic synchronizer flip-flop performance in FinFET technologies</a></li>
     
 
-    
-    <li class="next"><a href="http://markbuckler.com/project/image-sensor/">Configurable Imaging Sensor <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
