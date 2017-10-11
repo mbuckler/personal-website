@@ -15,7 +15,7 @@ image_preview = "videoconversation_logo.png"
 tags = ["video","entrepreneurship"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "http://alexjohnson.io/firebrandinnovations.com/videoconversation.htm"
+external_link = "http://firebrandinnovations.com/videoconversation.htm"
 
 # Does the project detail page use math formatting?
 math = false
