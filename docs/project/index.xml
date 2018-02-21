@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
     <lastBuildDate>Fri, 16 Jun 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/project/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://markbuckler.com/project/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Approximate Vision Pipeline</title>
@@ -52,10 +54,7 @@
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/image-sensor/</guid>
-      <description>&lt;p&gt;While most image sensors can be configured to output a subset of their total resolution, unfortunately this doesn&amp;rsquo;t usually lead to energy savings as might have been expected &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=2464448&#34; target=&#34;_blank&#34;&gt;[LiKamWa-2013]&lt;/a&gt;. While LiKamWa et al. explored energy saving methods possible when using existing sensors, this project focused on making a new image sensor which is energy-proportional. &lt;a href=&#34;http://www.andrew.cmu.edu/user/sjayasur/website.html&#34; target=&#34;_blank&#34;&gt;Suren Jayasuriya&lt;/a&gt; and I did this by adding power gating transistors to the amplifier and ADC in each of the sensor&amp;rsquo;s readout columns.&lt;/p&gt;
-
-&lt;p&gt;My task was to write Verilog RTL to describe a state machine based controller for implementing both the rolling-shutter readout as well as the control for the column power gating. I then pushed my design through Synopsys synthesis in the IBM 130nm technology, and for integration Suren connected my digital logic to his analog sensing circuitry.&lt;/p&gt;
-</description>
+      <description>While most image sensors can be configured to output a subset of their total resolution, unfortunately this doesn&amp;rsquo;t usually lead to energy savings as might have been expected [LiKamWa-2013]. While LiKamWa et al. explored energy saving methods possible when using existing sensors, this project focused on making a new image sensor which is energy-proportional. Suren Jayasuriya and I did this by adding power gating transistors to the amplifier and ADC in each of the sensor&amp;rsquo;s readout columns.</description>
     </item>
     
     <item>
