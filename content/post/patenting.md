@@ -130,18 +130,33 @@ to the inventor(s).
 	As long as you aren't under a CIIAA then yes, you can patent on your own.
 Fees from the patent office will be reduced because you as a person are a
 ["micro entity"](https://www.uspto.gov/learning-and-resources/newsletter/inventors-eye/new-fees-and-micro-entity-status-take-effect-march),
-but the cost of hiring a skilled patent attorney may be significant.
+but the cost of hiring a skilled patent attorney may be significant. The best
+bet for individual inventors (and sometimes even organizations) is to first file
+for a provisional patent application.
 
+* Should I file a provisional patent application?
 
+	While a provisional patent application will not be reviewed by the patent
+office and will not become a patent without further applications, it sets the
+all important filing date. A lot of work goes into building the claims in a
+formal patent application, and so the provisional application allows for a way
+to set the date of filing before time has been spent on developing these claims.
+Even skilled patent attorneys will often suggest filing a provisional patent
+application before continuing to the claims. Provisional applications are also
+very low cost as their fees are much smaller than that of a full application.
+This makes them a good option for individual or small patent applicants who
+haven't yet raised funds for a patent attorney. Keep in mind though that a
+provisional application only holds power for a year unless a full patent
+application has been filed in that time.
 
 * When should I file?
 
 	In a phrase: As Soon As Possible. You might remember being told in school
-to date every single entry in your lab/design notebook. That was because
-at the time (pre-2013) the US had a "first-to-invent" patenting system. If
-someone else was to file for a patent that you had invented first (as proven by
-your dated lab notebook), the other person's patent would be invalidated. This
-is no longer the case however as the US has
+that you should date every single entry in your lab/design notebook. That was
+because at the time (pre-2013) the US had a "first-to-invent" patenting system.
+If someone else was to file for a patent that you had invented first (as proven
+by your dated lab notebook), the other person's patent would be invalidated.
+This is no longer the case however as the US has
 [changed to "first-inventor-to-file"](https://en.wikipedia.org/wiki/First_to_file_and_first_to_invent#USA_change_to_first-inventor-to-file_(FITF)).
 With this in mind, if you want to patent an invention in the US or any other
 "first-to-file" country you must file as soon after creating the invention as
@@ -160,7 +175,6 @@ relationship to publishing.
 technology
 	Closed source software
 
-* Should I file a provisional patent application?
 
 
 
