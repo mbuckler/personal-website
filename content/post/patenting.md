@@ -21,10 +21,11 @@ in [industry](https://patents.google.com/patent/US9344099B2),
 and most recently in academia.
 
 Because I can't cover the entire topic of [Intellectual Property (IP)](https://en.wikipedia.org/wiki/Intellectual_property) law in a single blog
-post, I will choose instead to focus on the process of filing a patent with a
-company or university. I hope other researchers and inventors like myself will
-find this information useful. Also, I am not a patent attorney, so please don't
-take anything that I say here as legal advice!
+post, I will choose instead to answer questions that someone might have if they
+were interested in patenting in a company or university. I hope other
+researchers and inventors like myself will find this information useful. Also, I
+am not a patent attorney, so please don't take anything that I say here as legal
+advice!
 
 * What is a patent?
 
@@ -45,7 +46,7 @@ be used to make money in a number of ways:
 	4. Suing for the profits made by an organization who used the patented ideas
 	   without your permission
 
-* What ideas can be patented?
+* What can be patented?
 
 	While patenting restrictions vary between countries and even over time,
 most countries now agree that a patentable idea must have all of the following
@@ -162,11 +163,17 @@ With this in mind, if you want to patent an invention in the US or any other
 "first-to-file" country you must file as soon after creating the invention as
 possible to prevent others from filing before you.
 
-	Another consideration to keep in mind however is when to patent in
-relationship to publishing.
-
-	One year rule, first to file in US. Different internationally
-
+	Another consideration to keep in mind is when to patent in
+relationship to publishing. In a university your main priority as a researcher
+is usually to publish your work. Some may think that this precludes you from
+patenting your work as well, but this isn't true! While some countries do
+prevent you from patenting after publishing your work, the US allows a one-year
+grace period. A much better strategy of course is to file a patent application
+before you publish. Thankfully, most conferences and journals enforce
+confidentiality on submissions, meaning that simply submitting your work for
+publication doesn't count as publication. So, if you verify that your
+publication venue supports submission confidentiality then you can begin filing
+for your patent immediately after finishing your submission.
 
 * Is my idea better protected as a patent or trade secret?
 
