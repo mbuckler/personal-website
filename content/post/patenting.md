@@ -134,12 +134,24 @@ but the cost of hiring a skilled patent attorney may be significant.
 
 
 
-
-* Who is an inventor?
-
 * When should I file?
 
+	In a phrase: As Soon As Possible. You might remember being told in school
+to date every single entry in your lab/design notebook. That was because
+at the time (pre-2013) the US had a "first-to-invent" patenting system. If
+someone else was to file for a patent that you had invented first (as proven by
+your dated lab notebook), the other person's patent would be invalidated. This
+is no longer the case however as the US has
+[changed to "first-inventor-to-file"](https://en.wikipedia.org/wiki/First_to_file_and_first_to_invent#USA_change_to_first-inventor-to-file_(FITF)).
+With this in mind, if you want to patent an invention in the US or any other
+"first-to-file" country you must file as soon after creating the invention as
+possible to prevent others from filing before you.
+
+	Another consideration to keep in mind however is when to patent in
+relationship to publishing.
+
 	One year rule, first to file in US. Different internationally
+
 
 * Is my idea better protected as a patent or trade secret?
 
@@ -148,9 +160,25 @@ but the cost of hiring a skilled patent attorney may be significant.
 technology
 	Closed source software
 
+* Should I file a provisional patent application?
+
+
+
+* Is there such a thing as an international patent?
+
+	Nope! At least at the time of writing there is no such thing as an
+international patent or patent office. There is however an International Patent
+Cooperation Union which fascilitates a
+[single patent filing system](https://en.wikipedia.org/wiki/Patent_Cooperation_Treaty)
+for all member countries. While no patent is granted through such an
+application, it does provide a unified system for filing dates and applicants
+are provided with some written opinions about the patentability of the
+invention.
+
 * The Invention Disclosure Form (IDF)
 
-	1. Test
+	Most companies or universities provide a form for you to file with their
+center for technology licensing. 
 
 
-
+* Who is an inventor?
