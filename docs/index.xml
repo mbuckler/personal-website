@@ -11,6 +11,230 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Patenting in Academia and Industry</title>
+      <link>http://markbuckler.com/post/patenting/</link>
+      <pubDate>Sat, 24 Feb 2018 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/patenting/</guid>
+      <description>&lt;p&gt;We all get excited about doing scientific or engineering research for different
+reasons, but most of us seek the thrill of creating something entirely new.
+In this way, research can be just as wonderful as the creative arts. Publishing
+your new ideas is great for sharing information with the world, but sometimes
+you want to sell your ideas too. This is where filing for a patent can be very
+useful. Personally, I have patented inventions &lt;a href=&#34;http://patents.google.com/patent/US8289363B2&#34; target=&#34;_blank&#34;&gt;on my own&lt;/a&gt;,
+in &lt;a href=&#34;https://patents.google.com/patent/US9344099B2&#34; target=&#34;_blank&#34;&gt;industry&lt;/a&gt;,
+and most recently in academia.&lt;/p&gt;
+
+&lt;p&gt;Because I can&amp;rsquo;t cover the entire topic of &lt;a href=&#34;https://en.wikipedia.org/wiki/Intellectual_property&#34; target=&#34;_blank&#34;&gt;Intellectual Property (IP)&lt;/a&gt; law in a single blog
+post, I will choose instead to answer questions that someone might have if they
+were interested in patenting in a company or university. I hope other
+researchers and inventors like myself will find this information useful. Also, I
+am not a patent attorney, so please don&amp;rsquo;t take anything that I say here as legal
+advice!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What is a patent?&lt;/p&gt;
+
+&lt;p&gt;In case you don&amp;rsquo;t already know, a
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Patent&#34; target=&#34;_blank&#34;&gt;patent&lt;/a&gt; on a specific idea gives
+exclusive usage rights of that idea to whoever holds the patent. In theory, this
+means that the patent holder can prevent certain people from using the idea. The
+person who creates the invention is referred to as the &lt;em&gt;inventor&lt;/em&gt;, and the person
+or organization who holds the patent once approved is the &lt;em&gt;assignee&lt;/em&gt;. A patent can
+be used to make money in a number of ways:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Making and selling products or services with the patented idea&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Selling the patent to another organization&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Licensing out the patent in exchange for a percentage of sales&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Suing for the profits made by an organization who used the patented ideas
+without your permission&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What can be patented?&lt;/p&gt;
+
+&lt;p&gt;While patenting restrictions vary between countries and even over time,
+most countries now agree that a patentable idea must have all of the following
+properties:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Non-abstract&lt;/p&gt;
+
+&lt;p&gt;Mathematical formulas and pure algorithms may be amazing, but these
+abstract ideas are not considered to be patentable. What ideas are or are not
+abstract can be controversial, and so there are many examples of courts
+&lt;a href=&#34;https://www.theiplawblog.com/2017/03/articles/patent-law/more-patent-invalidated-as-abstract-ideas/&#34; target=&#34;_blank&#34;&gt;invalidating patents after they were issued&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Man-made&lt;/p&gt;
+
+&lt;p&gt;Natural laws and natural phenomena are also not patentable. One of the
+most prominent examples of a patent portfolio being invalidated for being
+natural is the case against Myriad Genetics who previously held a patent on
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Myriad_Genetics#Controversies&#34; target=&#34;_blank&#34;&gt;breast cancer genes&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Novel&lt;/p&gt;
+
+&lt;p&gt;Similar to a publication in a research conference or journal, patentable
+ideas must be significantly different from what has been published in the past.
+Academics usually refer to existing publications as &amp;ldquo;related work&amp;rdquo;, while patent
+attorneys refer to it as &amp;ldquo;prior art&amp;rdquo;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Useful&lt;/p&gt;
+
+&lt;p&gt;This is by far the easiest requirement to meet. All that you need to
+demonstrate is that your idea successfully accomplishes some goal. That goal
+need not be considered useful by a majority of people, it just needs to be
+possible and legal. There are all kinds of hilarious
+&lt;a href=&#34;https://www.oddee.com/item_96675.aspx&#34; target=&#34;_blank&#34;&gt;patents with dubious usefulness&lt;/a&gt;
+that got approved by the US patent office.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Non-obvious&lt;/p&gt;
+
+&lt;p&gt;Every field of engineering and design has a certain set of common
+knowledge that an expert in the field would be familiar with. If such an expert
+would find an idea to be obvious or common knowledge, then that idea is
+considered to be &amp;ldquo;obvious&amp;rdquo;. Of course this is often a subjective judgement, and
+so &lt;a href=&#34;http://www.ipwatchdog.com/2014/02/01/when-is-an-invention-obvious/id=47709/&#34; target=&#34;_blank&#34;&gt;see here&lt;/a&gt;
+for more details.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Why should I bother patenting if I&amp;rsquo;m not the assignee?&lt;/p&gt;
+
+&lt;p&gt;Because inventions can be very valuable, most companies and universities
+require that you sign some form of a Confidential Information and Inventions
+Assignment Agreement (CIIAA) before you join them. The specifics of each CIIAA
+vary, but most CIIAA forms force you to give your assignee rights to your
+employer for all inventions that you create while employed by them. This means
+that if you invent a new product while employed, only your employer can file for
+a patent on this invention. Your employer still needs you to perform
+your duties as inventor (disclosing your invention and explaining how it works
+to the attorneys) though, so companies and universities usually provide inventor
+incentives.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Incentives in industry&lt;/p&gt;
+
+&lt;p&gt;First of all, while you do give up your assignee rights while employed
+you never give up your inventorship. This means that if you file a patent with
+your organization then you will still get credit for creating the idea even if
+you don&amp;rsquo;t own it. This can be a great option if your organization prohibits
+publishing. Second, companies will often provide cash bonuses to you if your
+invention disclosure gets approved for filing and also if your filed invention
+gets accepted by the patent office.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Incentives in academia&lt;/p&gt;
+
+&lt;p&gt;Beyond being self employed or in a startup incubator, academia is the
+best work environment to build intellectual property in. A university&amp;rsquo;s goal is
+to launch your career rather than make large profits, and as such they usually
+give you some amount of profits from and control over your inventions. While
+every research university is different it is not uncommon for there to be a
+preference to licence patents to inventors themselves in startup companies. Most
+universities also give a share of any profits to the inventors. For example,
+&lt;a href=&#34;http://www.ctl.cornell.edu/inventors/marketing-inventions.php&#34; target=&#34;_blank&#34;&gt;Cornell allocates a third of the profits&lt;/a&gt;
+to the inventor(s).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Can I patent on my own?&lt;/p&gt;
+
+&lt;p&gt;As long as you aren&amp;rsquo;t under a CIIAA then yes, you can patent on your own.
+Fees from the patent office will be reduced because you as a person are a
+&lt;a href=&#34;https://www.uspto.gov/learning-and-resources/newsletter/inventors-eye/new-fees-and-micro-entity-status-take-effect-march&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;micro entity&amp;rdquo;&lt;/a&gt;,
+but the cost of hiring a skilled patent attorney may be significant. The best
+bet for individual inventors (and sometimes even organizations) is to first file
+for a provisional patent application.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Should I file a provisional patent application?&lt;/p&gt;
+
+&lt;p&gt;While a provisional patent application will not be reviewed by the patent
+office and will not become a patent without further applications, it sets the
+all important filing date. A lot of work goes into building the claims in a
+formal patent application, and so the provisional application allows for a way
+to set the date of filing before time has been spent on developing these claims.
+Even skilled patent attorneys will often suggest filing a provisional patent
+application before continuing to the claims. Provisional applications are also
+very low cost as their fees are much smaller than that of a full application.
+This makes them a good option for individual or small patent applicants who
+haven&amp;rsquo;t yet raised funds for a patent attorney. Keep in mind though that a
+provisional application only holds power for a year unless a full patent
+application has been filed in that time.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;When should I file?&lt;/p&gt;
+
+&lt;p&gt;In a phrase: As Soon As Possible. You might remember being told in school
+that you should date every single entry in your lab/design notebook. That was
+because at the time (pre-2013) the US had a &amp;ldquo;first-to-invent&amp;rdquo; patenting system.
+If someone else was to file for a patent that you had invented first (as proven
+by your dated lab notebook), the other person&amp;rsquo;s patent would be invalidated.
+This is no longer the case however as the US has
+&lt;a href=&#34;https://en.wikipedia.org/wiki/First_to_file_and_first_to_invent#USA_change_to_first-inventor-to-file_(FITF)&#34; target=&#34;_blank&#34;&gt;changed to &amp;ldquo;first-inventor-to-file&amp;rdquo;&lt;/a&gt;.
+With this in mind, if you want to patent an invention in the US or any other
+&amp;ldquo;first-to-file&amp;rdquo; country you must file as soon after creating the invention as
+possible to prevent others from filing before you.&lt;/p&gt;
+
+&lt;p&gt;Another consideration is when to patent in relationship to publishing. In a
+university your main priority as a researcher is usually to publish your work.
+Some may think that this precludes you from patenting your work as well, but
+this isn&amp;rsquo;t true! While some countries do prevent you from patenting after
+publishing your work, the US allows a one-year grace period. A much better
+strategy of course is to file a patent application before you publish.
+Thankfully, most conferences and journals enforce confidentiality on
+submissions, meaning that simply submitting your work for publication doesn&amp;rsquo;t
+count as publication. So, if you verify that your publication venue supports
+submission confidentiality then you can begin filing for your patent immediately
+after finishing your submission.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Is my invention better protected as a patent or trade secret?&lt;/p&gt;
+
+&lt;p&gt;Before patenting, there was very little monetary incentive to publish new
+inventions. Keeping your inventions a secret ensured that no one else could use
+them. If no one is sharing ideas then it is very hard for a society to progress
+technologically. Patenting was proposed as a bargain with inventors: publish
+exactly how your inventions work in exchange for the right to prevent others
+from using these inventions for a set time period.&lt;/p&gt;
+
+&lt;p&gt;While patenting makes sense in theory, there have been
+&lt;a href=&#34;https://www.youtube.com/watch?v=3bxcc3SM_KA&#34; target=&#34;_blank&#34;&gt;many issues&lt;/a&gt;
+with our implementation of the system. One such issue is that it can be quite
+hard to prove that someone is using your invention. Closed source software is a
+perfect example of a system which is hard to reverse engineer, as the actual
+written code is obfuscated by the compilation process. Without the ability to
+prove that someone is violating your patent, the patent is useless. Also,
+publishing your invention via the patenting process could provide others with
+enough information to design around you. Your patent attorney will try to make
+your patent&amp;rsquo;s claims as general as possible, but clever engineers may be able to
+create a new system without violating your claims that still gets the same
+benefit. So, before patenting your invention consider that the people that you
+hope to compete with may either hide their use of your patent or circumvent it
+through clever design.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Is there such a thing as an international patent?&lt;/p&gt;
+
+&lt;p&gt;Nope! At least at the time of writing there is no such thing as an
+international patent or patent office. There is however an International Patent
+Cooperation Union which facilitates a
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Patent_Cooperation_Treaty&#34; target=&#34;_blank&#34;&gt;single patent filing system&lt;/a&gt;
+for all member countries. While no patent is granted through such an
+application, it does provide a unified system for filing dates and applicants
+are provided with some written opinions about the patentability of the
+invention.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The Invention Disclosure Form (IDF)&lt;/p&gt;
+
+&lt;p&gt;Lets say that after reading all of this you are convinced that you have a
+great invention that would be well protected by a patent. Congratulations! If
+you are in a company or university your next step is to fill out and submit an
+Invention Disclosure Form with your organization. This process can be complex in
+and of itself, and so I have written about it in its own separate blog post.
+Click here if you&amp;rsquo;d like to read on!&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Cutting Videos with FFmpeg</title>
       <link>http://markbuckler.com/post/cutting-ffmpeg/</link>
       <pubDate>Thu, 06 Jul 2017 16:25:31 -0400</pubDate>
@@ -637,15 +861,6 @@ solution&lt;/a&gt; as well.&lt;/p&gt;&lt;/li&gt;
       <guid>http://markbuckler.com/talk/example-talk/</guid>
       <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Dynamic synchronizer flip-flop performance in FinFET technologies</title>
-      <link>http://markbuckler.com/publication/nocs2014/</link>
-      <pubDate>Wed, 17 Sep 2014 19:37:01 -0400</pubDate>
-      
-      <guid>http://markbuckler.com/publication/nocs2014/</guid>
-      <description></description>
     </item>
     
   </channel>
