@@ -80,7 +80,7 @@ demonstrate is that your idea successfully accomplishes some goal. That goal
 need not be considered useful by a majority of people, it just needs to be
 possible and legal. There are all kinds of hilarious
 [patents with dubious usefulness](https://www.oddee.com/item_96675.aspx)
-that got approved by the USPTO.
+that got approved by the US patent office.
 
 	5. Non-obvious
 
@@ -163,33 +163,47 @@ With this in mind, if you want to patent an invention in the US or any other
 "first-to-file" country you must file as soon after creating the invention as
 possible to prevent others from filing before you.
 
-	Another consideration to keep in mind is when to patent in
-relationship to publishing. In a university your main priority as a researcher
-is usually to publish your work. Some may think that this precludes you from
-patenting your work as well, but this isn't true! While some countries do
-prevent you from patenting after publishing your work, the US allows a one-year
-grace period. A much better strategy of course is to file a patent application
-before you publish. Thankfully, most conferences and journals enforce
-confidentiality on submissions, meaning that simply submitting your work for
-publication doesn't count as publication. So, if you verify that your
-publication venue supports submission confidentiality then you can begin filing
-for your patent immediately after finishing your submission.
+	Another consideration is when to patent in relationship to publishing. In a
+university your main priority as a researcher is usually to publish your work.
+Some may think that this precludes you from patenting your work as well, but
+this isn't true! While some countries do prevent you from patenting after
+publishing your work, the US allows a one-year grace period. A much better
+strategy of course is to file a patent application before you publish.
+Thankfully, most conferences and journals enforce confidentiality on
+submissions, meaning that simply submitting your work for publication doesn't
+count as publication. So, if you verify that your publication venue supports
+submission confidentiality then you can begin filing for your patent immediately
+after finishing your submission.
 
-* Is my idea better protected as a patent or trade secret?
+* Is my invention better protected as a patent or trade secret?
 
-	Avoiding publication at all helps avoid people designing around a patent
-	Especially useful when it is hard to detect if a competitor is using your
-technology
-	Closed source software
+	Before patenting, there was very little monetary incentive to publish new
+inventions. Keeping your inventions a secret ensured that no one else could use
+them. If no one is sharing ideas then it is very hard for a society to progress
+technologically. Patenting was proposed as a bargain with inventors: publish
+exactly how your inventions work in exchange for the right to prevent others
+from using these inventions for a set time period.
 
-
-
+	While patenting makes sense in theory, there have been
+[many issues](https://www.youtube.com/watch?v=3bxcc3SM_KA)
+with our implementation of the system. One such issue is that it can be quite
+hard to prove that someone is using your invention. Closed source software is a
+perfect example of a system which is hard to reverse engineer, as the actual
+written code is obfuscated by the compilation process. Without the ability to
+prove that someone is violating your patent, the patent is useless. Also,
+publishing your invention via the patenting process could provide others with
+enough information to design around you. Your patent attorney will try to make
+your patent's claims as general as possible, but clever engineers may be able to
+create a new system without violating your claims that still gets the same
+benefit. So, before patenting your invention consider that the people that you
+hope to compete with may either hide their use of your patent or circumvent it
+through clever design.
 
 * Is there such a thing as an international patent?
 
 	Nope! At least at the time of writing there is no such thing as an
 international patent or patent office. There is however an International Patent
-Cooperation Union which fascilitates a
+Cooperation Union which facilitates a
 [single patent filing system](https://en.wikipedia.org/wiki/Patent_Cooperation_Treaty)
 for all member countries. While no patent is granted through such an
 application, it does provide a unified system for filing dates and applicants
@@ -198,8 +212,10 @@ invention.
 
 * The Invention Disclosure Form (IDF)
 
-	Most companies or universities provide a form for you to file with their
-center for technology licensing. 
+	Lets say that after reading all of this you are convinced that you have a
+great invention that would be well protected by a patent. Congratulations! If
+you are in a company or university your next step is to fill out and submit an
+Invention Disclosure Form with your organization. This process can be complex in
+and of itself, and so I have written about it in its own separate blog post.
+Click here if you'd like to read on!
 
-
-* Who is an inventor?
