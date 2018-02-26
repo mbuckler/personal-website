@@ -30,8 +30,31 @@ answering these questions well.
 
 1. Who are the inventors?
 
+	Oh boy, the big question! In some cases the answer will be very
+straightforward. Perhaps you were the only person on the project in which you
+created the invention and you never discussed the invention with others. Most of
+the time however the determination of who may or may not be considered an
+inventor is a matter of discussion.
+
+	While *authorship* on papers is generally given to people who have made
+important contributions when building prototypes, performing testing, and
+writing text for the paper, *inventorship* is legally different. Patent law
+defines an inventor of a patentable invention as someone who conceives of an
+original, useful, and non-obvious idea. This can but does not necessarily
+include students, professors, your boss, your employees, and other
+collaborators. Use your best judgement to ask all collaborators who you believe
+may have contributed to the idea considered in the invention disclosure. Once
+everyone involved agrees then the inventor list will be settled. Keep in mind
+that inventorship should not be used for charity or flattery. Patents can and
+have been invalidated for an incorrect list of inventors. For more information
+about this topic, see
+[this helpful PDF](https://otl.stanford.edu/documents/who_is_inv.pdf)
+provided by Stanford's Office of Technology Licensing.
+
 2. What problem does the invention solve?
 
+	You can think about this section like a combination of the *Background* and
+*Motivation* sections in a research paper.
 	Provide scientific and technical backround material here
 
 3. What prior art are you aware of?
@@ -58,7 +81,7 @@ answering these questions well.
 
 	Making the claims as broad as possible
 
-10. What methods exist for detecting if this invention is being used?
+10. How can the use of this invention be detected?
 
 
 
