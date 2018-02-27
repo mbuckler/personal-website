@@ -74,7 +74,7 @@ This is similar to the *related work* section in a research paper. If there is a
 very large body of work in your field then try to focus on citing survey papers
 for the general background and then limit your more specific citations to work
 which is closely related. Also, do your best to list any other groups,
-researchers, or companies who work in your area as it will help the attorney's
+researchers, or companies who work in your area as it will help the attorneys
 in their further prior art search.
 
 4. What competitors are you aware of?
@@ -156,7 +156,7 @@ invention before it has been patented may prevent you from creating a stealth
 mode startup. Make sure to communicate often and effectively with your
 university's office to avoid such an issue. Your business plan may be a part of
 convincing the office to license to you instead of a large company, so prepare
-your plan as early as possible.
+your business plan as early as possible.
 
 After answering these 10 questions you will have successfully filled out your
 first IDF. Congratulations!  As you can see, a great deal of the questions asked
