@@ -101,17 +101,63 @@ broad and others very specialized.
 
 	In engineering we often need to make design decisions to optimize the
 performance of our design or simplify the design process. Your final prototype
-represents only one possible result for each of the design decisions which
-needed to be made in creating the system. If a competitor chooses to 
-
-While you have probably built only one or two prototype of your invention, Making the claims as broad as possible
-
+represents only one possible result for each of the possible options in each
+design decision. To prevent someone from designing around your patent by
+making an insignificantly different choice in design, your patent attorney will
+try to make the claims of your patent as general as possible. You can help your
+attorney by describing not just the specifics of your tested prototype, but also
+the entire possible design space. This can include variations that you haven't
+tested, or even variations that you have tested and have determined to be
+inferior to your final prototype.
 
 8. How could the invention be used?
 
-	
+	Here you lay out all possible use cases for your invention. Ease of use is
+important important in evaluating the value of a potential patent. Overly
+onerous inventions may not be worth the benefit they provide. If possible,
+provide examples of other products or inventions with similar use cases. In a
+similar spirit to listing alternative versions of your invention, do your best
+to think of alternative uses for your invention as well. Alternative uses for
+your work may make it more valuable and enable broader claims.
 
 9. How can the use of this invention be detected?
 
+	As I discuss in my post on
+[patenting in academia and industry](http://www.markbuckler.com/post/patenting/),
+part of a patent's value is how easy it is to detect when the invention is
+being used without permission. Without the ability to detect the use of the
+invention, the patent can't be enforced and is therefore useless. Your patent
+attorney may be more familiar with common methods for detecting use in your
+field since this isn't a common thought for researchers, but list whatever
+methods you are aware of in this section.
+
 10. Who might want to purchase or license the potential patent?
+
+	This question is most relevant in academia where the assumption is not that
+the patent will be used directly by your organization. Universities don't make
+products, and so a patent only has value if there is a demand for it! If this
+question is on your IDF, list any people or organizations who might be
+interested in buying or licensing the potential patent from your organization.
+This can include both the most prominent companies in your field as well as any
+any startups you may be aware of. Some technology offices may even begin
+marketing your idea before deciding to patent your invention as a way of
+determining demand.
+
+	If you are in a university and hope to launch a company using this patent,
+be extremely up front about this. You may even want to contact the technology
+licencing office before submitting an IDF to explain your intentions. Without
+knowing your goals the technology licencing office may sell the patent to an
+outside party without ever consulting you. Make sure to communicate often and
+effectively with your university's office to avoid such an issue. Part of
+convincing the office to license to you instead of a large company may your
+business plan, so prepare that as early as you can.
+
+After answering these 10 questions you will have successfully filled out your
+first IDF. Congratulations!  As you can see, a great deal of the questions asked
+in an IDF are similar to material that you may have already prepared for a
+technical report or research publication. Feel free to directly copy and paste
+from previous writing that you've done, and attach the original document to your
+IDF for ease of reading. With any luck your organization will be interested in
+filing a patent on your invention. May lots of patent filing bonuses or
+licencing revenue flow your way!
 
