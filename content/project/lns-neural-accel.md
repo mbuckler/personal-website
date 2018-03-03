@@ -9,7 +9,7 @@ title = "Neural Network Accelerator with Logarithmic Number System"
 summary = "Hardware accelerator for neural network computation using the LNS"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-#image_preview = ""
+image_preview = "LNS_Accel.PNG"
 
 # Tags: can be used for filtering projects.
 tags = ["machine-learning","computer-architecture","neural-networks"]

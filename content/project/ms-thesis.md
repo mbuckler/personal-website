@@ -9,7 +9,7 @@ title = "Network-on-Chip Synchronization"
 summary = "My M.S. thesis on synchronization circuits and systems for multi-clock domain Networks-on-Chip"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-#image_preview = "videoconversation_logo.png"
+image_preview = "NoC.PNG"
 
 # Tags: can be used for filtering projects.
 tags = ["computer-architecture"]

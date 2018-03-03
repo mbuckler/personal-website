@@ -9,7 +9,7 @@ title = "YouTube BoundingBox Dataset Downloader"
 summary = "Helpful scripts I wrote for downloading and parsing Google's huge video dataset"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-#image_preview = "videoconversation_logo.png"
+image_preview = "bounding_box.PNG"
 
 # Tags: can be used for filtering projects.
 tags = ["machine-learning","video","imaging"]
