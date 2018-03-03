@@ -12,7 +12,7 @@ summary = "Using a reversible imaging pipeline to optimize sensor and ISP design
 image_preview = "CRIP.jpg"
 
 # Tags: can be used for filtering projects.
-tags = ["machine-learning","computer-architecture","imaging"]
+tags = ["machine-learning","imaging"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = "https://github.com/cucapra/approx-vision"
