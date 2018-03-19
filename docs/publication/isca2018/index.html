@@ -33,11 +33,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://markbuckler.com/publication/iccv2017/">
+  <link rel="canonical" href="http://markbuckler.com/publication/isca2018/">
 
   
 
-  <title>Reconfiguring the Imaging Pipeline for Computer Vision | Mark Buckler</title>
+  <title>EVA²: Exploiting Temporal Redundancy in Live Computer Vision | Mark Buckler</title>
 
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
@@ -194,10 +194,10 @@
   
 
   <div class="container pub-title">
-    <h1 itemprop="name headline">Reconfiguring the Imaging Pipeline for Computer Vision</h1>
+    <h1 itemprop="name headline">EVA²: Exploiting Temporal Redundancy in Live Computer Vision</h1>
     <span class="pub-authors">
       
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mark Buckler</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Suren Jayasuriya</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Adrian Sampson
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mark Buckler</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Philip Bedoukian</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Suren Jayasuriya</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Adrian Sampson
       </span>
     </span>
     <span class="pull-right">
@@ -206,35 +206,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fmarkbuckler.com%2fpublication%2ficcv2017%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fmarkbuckler.com%2fpublication%2fisca2018%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Reconfiguring%20the%20Imaging%20Pipeline%20for%20Computer%20Vision&amp;url=http%3a%2f%2fmarkbuckler.com%2fpublication%2ficcv2017%2f"
+         href="https://twitter.com/intent/tweet?text=EVA%c2%b2%3a%20Exploiting%20Temporal%20Redundancy%20in%20Live%20Computer%20Vision&amp;url=http%3a%2f%2fmarkbuckler.com%2fpublication%2fisca2018%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fmarkbuckler.com%2fpublication%2ficcv2017%2f&amp;title=Reconfiguring%20the%20Imaging%20Pipeline%20for%20Computer%20Vision"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fmarkbuckler.com%2fpublication%2fisca2018%2f&amp;title=EVA%c2%b2%3a%20Exploiting%20Temporal%20Redundancy%20in%20Live%20Computer%20Vision"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fmarkbuckler.com%2fpublication%2ficcv2017%2f&amp;title=Reconfiguring%20the%20Imaging%20Pipeline%20for%20Computer%20Vision"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fmarkbuckler.com%2fpublication%2fisca2018%2f&amp;title=EVA%c2%b2%3a%20Exploiting%20Temporal%20Redundancy%20in%20Live%20Computer%20Vision"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Reconfiguring%20the%20Imaging%20Pipeline%20for%20Computer%20Vision&amp;body=http%3a%2f%2fmarkbuckler.com%2fpublication%2ficcv2017%2f">
+         href="mailto:?subject=EVA%c2%b2%3a%20Exploiting%20Temporal%20Redundancy%20in%20Live%20Computer%20Vision&amp;body=http%3a%2f%2fmarkbuckler.com%2fpublication%2fisca2018%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -250,7 +250,7 @@
   
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text">Advancements in deep learning have ignited an explosion of research on efficient hardware for embedded computer vision. Hardware vision acceleration, however, does not address the cost of capturing and processing the image data that feeds these algorithms. We examine the role of the image signal processing (ISP) pipeline in computer vision to identify opportunities to reduce computation and save energy. The key insight is that imaging pipelines should be designed to be configurable: to switch between a traditional photography mode and a low-power vision mode that produces lower-quality image data suitable only for computer vision. We use eight computer vision algorithms and a reversible pipeline simulation tool to study the imaging system&#39;s impact on vision performance. For both CNN-based and classical vision algorithms, we observe that only two ISP stages, demosaicing and gamma compression, are critical for task performance. We propose a new image sensor design that can compensate for skipping these stages. The sensor design features an adjustable resolution and tunable analog-to-digital converters (ADCs). Our proposed imaging system&#39;s vision mode disables the ISP entirely and configures the sensor to produce subsampled, lower-precision image data. This vision mode can save ~75% of the average energy of a baseline photography mode while having only a small impact on vision task accuracy.</p>
+  <p class="pub-abstract" itemprop="text">Hardware support for deep convolutional neural networks (CNNs) is critical to advanced computer vision in mobile and embedded devices. Current designs, however, accelerate generic CNNs; they do not exploit the unique characteristics of real-time vision. We propose to use the temporal redundancy in natural video to avoid unnecessary computation on most frames. A new algorithm, activation motion compensation, detects changes in the visual input and incrementally updates a previously-computed output. The technique takes inspiration from video compression and applies well-known motion estimation techniques to adapt to visual changes. We use an adaptive key frame rate to control the trade-off between efficiency and vision quality as the input changes. We implement the technique in hardware as an extension to existing state-of-the-art CNN accelerator designs. The new unit reduces the average energy per frame by 54.2%, 61.7%, and 87.6% for three CNNs with less than 1% loss in vision accuracy.</p>
 
   
   <div class="row">
@@ -277,7 +277,7 @@
     <div class="col-sm-10">
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-        <div class="col-xs-12 col-sm-9" itemprop="isPartOf" itemscope itemtype="http://schema.org/CreativeWork"><span itemprop="name">International Conference on Computer Vision</span></div>
+        <div class="col-xs-12 col-sm-9" itemprop="isPartOf" itemscope itemtype="http://schema.org/CreativeWork"><span itemprop="name">International Symposium on Computer Architecture</span></div>
       </div>
     </div>
     <div class="col-sm-1"></div>
@@ -289,8 +289,8 @@
     <div class="col-sm-10">
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
-        <time class="col-xs-12 col-sm-9" datetime = "2017-04-26" itemprop="datePublished">
-          April, 2017
+        <time class="col-xs-12 col-sm-9" datetime = "2018-03-18" itemprop="datePublished">
+          March, 2018
         </time>
       </div>
     </div>
@@ -310,25 +310,17 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="//dx.doi.org/10.1109/ICCV.2017.111" target="_blank" itemprop="sameAs">
-  DOI
-</a>
 
-
-<a class="btn btn-primary btn-outline" href="//arxiv.org/abs/1705.04352" target="_blank" itemprop="sameAs">
+<a class="btn btn-primary btn-outline" href="//arxiv.org/abs/1803.06312" target="_blank" itemprop="sameAs">
   arXiv
 </a>
 
 
 
-<a class="btn btn-primary btn-outline" href="/pdf/iccv-2017.pdf">
+<a class="btn btn-primary btn-outline" href="/pdf/isca-2018.pdf">
   PDF
 </a>
 
-
-<a class="btn btn-primary btn-outline" href="http://markbuckler.com/pdf/iccv-2017-slides.pdf">
-  Slides
-</a>
 
 
 
@@ -355,13 +347,10 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://markbuckler.com/publication/nocs2014/"><span
-      aria-hidden="true">&larr;</span> Dynamic synchronizer flip-flop performance in FinFET technologies</a></li>
+    <li class="previous"><a href="http://markbuckler.com/publication/iccv2017/"><span
+      aria-hidden="true">&larr;</span> Reconfiguring the Imaging Pipeline for Computer Vision</a></li>
     
 
-    
-    <li class="next"><a href="http://markbuckler.com/publication/isca2018/">EVA²: Exploiting Temporal Redundancy in Live Computer Vision <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
