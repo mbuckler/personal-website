@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
     <lastBuildDate>Fri, 16 Jun 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/computer-architecture/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://markbuckler.com/tags/computer-architecture/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Approximate Vision Pipeline</title>
@@ -25,33 +27,7 @@
       <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/lns-neural-accel/</guid>
-      <description>&lt;p&gt;For my final project in Cornell&amp;rsquo;s &lt;a href=&#34;https://web.csl.cornell.edu/courses/ece5745/&#34; target=&#34;_blank&#34;&gt;Complex ASIC Design
-course&lt;/a&gt; I built a neural network
-accelerator which used the &lt;a href=&#34;https://en.wikipedia.org/wiki/Logarithmic_number_system&#34; target=&#34;_blank&#34;&gt;Logarithmic Number System
-(LNS)&lt;/a&gt;. There has been
-some interest in &lt;a href=&#34;https://arxiv.org/pdf/1603.01025.pdf&#34; target=&#34;_blank&#34;&gt;using the LNS with neural
-networks&lt;/a&gt; as neural computation is
-multiplication heavy and multiplications in the LNS can be implemented with a
-simple adder. I augmented a
-&lt;a href=&#34;http://www.csl.cornell.edu/~cbatten/pdfs/lockhart-pymtl-micro2014.pdf&#34; target=&#34;_blank&#34;&gt;PyMTL&lt;/a&gt;
-implementation of a single threaded
-&lt;a href=&#34;https://web.csl.cornell.edu/courses/ece4750/handouts/ece4750-parc-isa.pdf&#34; target=&#34;_blank&#34;&gt;PARCv2&lt;/a&gt;
-processor with instructions to convert between LNS and fixed point, add LNS
-numbers, and multiply LNS numbers. I also built a matrix multiplication
-accelerator which could either use fixed point or the LNS. After integrating the
-accelerator with the processor and evaluating the various possible designs, it
-became clear that the delay and energy benefits gained by using the accelerator
-(generic cpu vs custom data and control path) far outweighed any savings in the
-ALU (LNS vs fixed point). This is due to two properties of matrix
-multiplication: 1) it has a regular dataflow that custom hardware can exploit
-well, and 2) benefits from cheap LNS multiplications wash out when the expensive
-but necessary LNS additions are used as well.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/cucapra/log-neural-accel&#34; target=&#34;_blank&#34;&gt;The code&lt;/a&gt; for this project is
-currently set to private due to the fact that I can&amp;rsquo;t release details about my
-baseline processor. Depending on your needs I may still be able to help you
-though, so contact me if you&amp;rsquo;re interested.&lt;/p&gt;
-</description>
+      <description>For my final project in Cornell&amp;rsquo;s Complex ASIC Design course I built a neural network accelerator which used the Logarithmic Number System (LNS). There has been some interest in using the LNS with neural networks as neural computation is multiplication heavy and multiplications in the LNS can be implemented with a simple adder. I augmented a PyMTL implementation of a single threaded PARCv2 processor with instructions to convert between LNS and fixed point, add LNS numbers, and multiply LNS numbers.</description>
     </item>
     
     <item>

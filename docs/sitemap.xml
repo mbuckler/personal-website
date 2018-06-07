@@ -1,354 +1,262 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/publication/isca2018/</loc>
-      <lastmod>2018-03-18T19:37:01-04:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/home/about/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/project/squeeze-precision/</loc>
-      <lastmod>2018-03-02T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/home/publications/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/post/idf/</loc>
-      <lastmod>2018-02-26T16:25:31-04:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/home/patents/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/post/patenting/</loc>
-      <lastmod>2018-02-24T16:25:31-04:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/home/posts/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/post/cutting-ffmpeg/</loc>
-      <lastmod>2017-07-06T16:25:31-04:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/home/projects/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/project/approx-vision/</loc>
-      <lastmod>2017-06-16T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/home/contact/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/post/quoth_the_raver/</loc>
-      <lastmod>2017-05-02T16:25:31-04:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/publication/isca2018/</loc>
+    <lastmod>2018-03-18T19:37:01-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/publication/iccv2017/</loc>
-      <lastmod>2017-04-26T19:37:01-04:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/project/squeeze-precision/</loc>
+    <lastmod>2018-03-02T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/project/youtube-bb/</loc>
-      <lastmod>2017-04-06T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/post/idf/</loc>
+    <lastmod>2018-02-26T16:25:31-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/project/reversible-pipeline/</loc>
-      <lastmod>2017-04-05T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/post/patenting/</loc>
+    <lastmod>2018-02-24T16:25:31-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/project/lns-neural-accel/</loc>
-      <lastmod>2017-04-04T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/post/cutting-ffmpeg/</loc>
+    <lastmod>2017-07-06T16:25:31-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/post/latex-in-vim/</loc>
-      <lastmod>2017-04-03T16:25:31-04:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/project/approx-vision/</loc>
+    <lastmod>2017-06-16T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/project/image-sensor/</loc>
-      <lastmod>2017-04-03T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/post/quoth_the_raver/</loc>
+    <lastmod>2017-05-02T16:25:31-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/post/docker-use/</loc>
-      <lastmod>2017-04-02T16:25:31-04:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/publication/iccv2017/</loc>
+    <lastmod>2017-04-26T19:37:01-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/project/ms-thesis/</loc>
-      <lastmod>2017-04-02T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/project/youtube-bb/</loc>
+    <lastmod>2017-04-06T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/post/install-cuda/</loc>
-      <lastmod>2017-04-01T16:25:31-04:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/project/reversible-pipeline/</loc>
+    <lastmod>2017-04-05T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/project/videoconversation/</loc>
-      <lastmod>2017-04-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/project/lns-neural-accel/</loc>
+    <lastmod>2017-04-04T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/tags/academic/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/post/latex-in-vim/</loc>
+    <lastmod>2017-04-03T16:25:31-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/talk/example-talk/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/project/image-sensor/</loc>
+    <lastmod>2017-04-03T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/post/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/post/docker-use/</loc>
+    <lastmod>2017-04-02T16:25:31-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/patent/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/project/ms-thesis/</loc>
+    <lastmod>2017-04-02T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/publication/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/post/install-cuda/</loc>
+    <lastmod>2017-04-01T16:25:31-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/project/videoconversation/</loc>
+    <lastmod>2017-04-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/publication/nocs2014/</loc>
-      <lastmod>2014-09-17T19:37:01-04:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/tags/academic/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/publication/isqed2014/</loc>
-      <lastmod>2014-03-05T19:37:01-04:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/talk/example-talk/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/publication/islped2013/</loc>
-      <lastmod>2013-09-06T19:37:01-04:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/post/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/publication_types/1/</loc>
-      <lastmod>2018-03-18T19:37:01-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/patent/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/publication/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/tags/computer-architecture/</loc>
-      <lastmod>2017-06-16T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/talk/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/patent/9344099/</loc>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/publication/nocs2014/</loc>
+    <lastmod>2014-09-17T19:37:01-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/tags/entrepreneurship/</loc>
-      <lastmod>2017-04-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/publication/isqed2014/</loc>
+    <lastmod>2014-03-05T19:37:01-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/tags/imaging/</loc>
-      <lastmod>2017-06-16T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/publication/islped2013/</loc>
+    <lastmod>2013-09-06T19:37:01-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/tags/machine-learning/</loc>
-      <lastmod>2018-03-02T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/publication_types/1/</loc>
+    <lastmod>2018-03-18T19:37:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/</loc>
-      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/categories/</loc>
+    <priority>0</priority>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/patent/9294263/</loc>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/tags/computer-architecture/</loc>
+    <lastmod>2017-06-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/tags/neural-networks/</loc>
-      <lastmod>2018-03-02T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/patent/9344099/</loc>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/patent/9143315/</loc>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/tags/entrepreneurship/</loc>
+    <lastmod>2017-04-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/project/</loc>
-      <lastmod>2018-03-02T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/home/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/publication_types/</loc>
-      <lastmod>2018-03-18T19:37:01-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/tags/imaging/</loc>
+    <lastmod>2017-06-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/patent/8847647/</loc>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/tags/machine-learning/</loc>
+    <lastmod>2018-03-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/tags/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/tags/video/</loc>
-      <lastmod>2017-04-06T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/patent/9294263/</loc>
+  </url>
   
-    
-    
-    <url>
-      <loc>http://markbuckler.com/patent/8289363/</loc>
-    </url>
-    
+  <url>
+    <loc>http://markbuckler.com/tags/neural-networks/</loc>
+    <lastmod>2018-03-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://markbuckler.com/patent/9143315/</loc>
+  </url>
+  
+  <url>
+    <loc>http://markbuckler.com/project/</loc>
+    <lastmod>2018-03-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://markbuckler.com/publication_types/</loc>
+    <lastmod>2018-03-18T19:37:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://markbuckler.com/patent/8847647/</loc>
+  </url>
+  
+  <url>
+    <loc>http://markbuckler.com/tags/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://markbuckler.com/tags/video/</loc>
+    <lastmod>2017-04-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://markbuckler.com/patent/8289363/</loc>
+  </url>
   
 </urlset>

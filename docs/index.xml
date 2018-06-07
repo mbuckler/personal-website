@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mark Buckler on Mark Buckler</title>
+    <title>Mark Buckler</title>
     <link>http://markbuckler.com/</link>
-    <description>Recent content in Mark Buckler on Mark Buckler</description>
+    <description>Recent content on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://markbuckler.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://markbuckler.com/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/home/about/</guid>
+      <description>Biography I&amp;rsquo;m currently a PhD student in the Electrical and Computer Engineering department here at Cornell University. I&amp;rsquo;m advised by Prof Adrian Sampson.
+My graduate research focusses on hardware for embedded computer vision. In my work I&amp;rsquo;ve found that abstractions can simplify the design process, but breaking down boundaries through hardware-software co-design can produce superior results. For this reason I see myself as a system creator rather than a hardware or software developer.</description>
+    </item>
+    
+    <item>
+      <title>Selected Publications</title>
+      <link>http://markbuckler.com/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selected Patents</title>
+      <link>http://markbuckler.com/home/patents/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/home/patents/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>http://markbuckler.com/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://markbuckler.com/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://markbuckler.com/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/home/contact/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>EVA²: Exploiting Temporal Redundancy in Live Computer Vision</title>
@@ -34,164 +91,7 @@
       <pubDate>Mon, 26 Feb 2018 16:25:31 -0400</pubDate>
       
       <guid>http://markbuckler.com/post/idf/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;ve read my post about
-&lt;a href=&#34;http://www.markbuckler.com/post/patenting/&#34; target=&#34;_blank&#34;&gt;patenting in academia and industry&lt;/a&gt;
-then you know why you might want to file a patent with your university or
-company. The first step to filing a patent in most organizations (after creating
-the invention of course!) is filling out an Invention Disclosure Form or IDF.
-These forms will be created, provided by, and reviewed by your organization&amp;rsquo;s
-technology transfer office or center for technology licensing. While IDFs tend
-to differ between organizations they are all intended as a way for the inventor
-to communicate to the organization how a new invention works and why it is
-worth patenting. If the result of the organization&amp;rsquo;s review is that the
-invention should be patented then in-person meetings with patent attorneys will
-be arranged to discuss in more detail.&lt;/p&gt;
-
-&lt;p&gt;This post is written as a guide for those of you who might be filling out your
-first IDF. This may also be helpful to any of you who are creating the first
-standard disclosure form for your organization. I&amp;rsquo;ll describe some common
-questions in IDFs and strategies for answering these questions well. As I say in
-my &lt;a href=&#34;http://www.markbuckler.com/post/patenting/&#34; target=&#34;_blank&#34;&gt;previous post&lt;/a&gt;, I am not a
-patent attorney so please don&amp;rsquo;t take any of what I say here as legal advice!&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Who are the inventors?&lt;/p&gt;
-
-&lt;p&gt;In some cases the answer to this question will be very straightforward.
-Perhaps you were the only person on the project in which you created the
-invention and you never discussed the invention with others. Most of the time,
-however, people collaborate. If your invention was made in a project with other
-people then the determination of who may or may not be considered an inventor is
-a matter of discussion.&lt;/p&gt;
-
-&lt;p&gt;While &lt;em&gt;authorship&lt;/em&gt; on papers is generally given to people who have made
-important contributions when building prototypes, performing testing, and
-writing text for the paper, &lt;em&gt;inventorship&lt;/em&gt; is legally different. Patent law
-defines an inventor of a patentable invention as someone who conceives of an
-original, useful, and non-obvious idea. This can but does not necessarily
-include students, professors, your boss, your employees, and other
-collaborators. Use your best judgement and ask all collaborators who you believe
-may have contributed to the idea considered in the invention disclosure. Only
-after everyone agrees will the inventor list be settled. Keep in mind that who
-gets to claim inventorship should not be based on charity, flattery, or spite.
-Patents can and have been invalidated for an incorrect list of inventors. For
-more information about this topic, see
-&lt;a href=&#34;https://otl.stanford.edu/documents/who_is_inv.pdf&#34; target=&#34;_blank&#34;&gt;this helpful PDF&lt;/a&gt;
-provided by Stanford&amp;rsquo;s Office of Technology Licensing.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What problem does the invention solve?&lt;/p&gt;
-
-&lt;p&gt;For an invention to be useful and therefore worthy of patent protection, it
-must solve some problem that exists in the world. If you are used to writing
-research papers, you can think of this like the &lt;em&gt;motivation&lt;/em&gt; section in a
-paper. Because the patent lawyers and other people reviewing this IDF won&amp;rsquo;t
-necessarily be experts in your field make sure to include any scientific or
-technical background that might be needed to understand why the invention is
-useful and how it may work. This is similar to the &lt;em&gt;background&lt;/em&gt; section in a
-paper.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What prior art are you aware of?&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Prior art&amp;rdquo; simply refers to any patents, papers, documentation, or other
-published information that you are aware of which is related to your invention.
-This is similar to the &lt;em&gt;related work&lt;/em&gt; section in a research paper. If there is a
-very large body of work in your field then try to focus on citing survey papers
-for the general background and then limit your more specific citations to work
-which is closely related. Also, do your best to list any other groups,
-researchers, or companies who work in your area as it will help the attorneys
-in their further prior art search.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What competitors are you aware of?&lt;/p&gt;
-
-&lt;p&gt;Here you list any competing products or inventions that you&amp;rsquo;re aware of.
-Stress the flaws or drawbacks of each of your competitors so that you can more
-easily demonstrate your advantage. If there aren&amp;rsquo;t yet any true solutions to the
-problem that your invention solves then list any workarounds that you
-might be aware of.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What are the unique features of the invention?&lt;/p&gt;
-
-&lt;p&gt;Here you describe your invention&amp;rsquo;s competitive advantage and which
-specific elements of your invention are novel. You can think about this like the
-&lt;em&gt;contributions&lt;/em&gt; section in a paper. Try to focus both on why you are different
-from the competition and why this difference results in a superior product or
-method. Use your best sales skills!&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;How does the invention work?&lt;/p&gt;
-
-&lt;p&gt;This is often the most complex section of the IDF. Use pictures and visual
-aids whenever possible. You could also consider including a glossary with
-definitions of the jargon used throughout the IDF. Keep in mind that the readers
-may not be as familiar with your subject area as you are. Technology offices try
-to match inventions as closely to experts as possible, but some disciplines can
-be very broad and others very specialized.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Are there any alternative versions of the invention?&lt;/p&gt;
-
-&lt;p&gt;In engineering we often need to make design decisions to optimize the
-performance of our design or simplify the design process. Your final prototype
-represents only one possible choice for each design decision. To prevent someone
-from designing around your patent by making an insignificantly different choice
-in their design, your patent attorney will try to make the claims of your patent
-as general as possible. You can help your attorney by describing not just the
-specifics of your tested prototype, but also the entire possible design space.
-This can include variations that you haven&amp;rsquo;t tested, or even variations that you
-have tested and have determined to be inferior to your final prototype.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;How could the invention be used?&lt;/p&gt;
-
-&lt;p&gt;Here you lay out all possible use cases for your invention. Ease of use is
-important in evaluating the value of a potential patent. Overly onerous
-inventions may not be worth the benefit they provide. If possible, provide
-examples of other products or inventions with similar use cases. In a similar
-spirit to listing alternative versions of your invention, get creative and try
-to think of alternative uses for your invention as well. Alternative uses for
-your work may make it more valuable and enable broader claims.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;How can the use of this invention be detected?&lt;/p&gt;
-
-&lt;p&gt;As I discuss in my post on
-&lt;a href=&#34;http://www.markbuckler.com/post/patenting/&#34; target=&#34;_blank&#34;&gt;patenting in academia and industry&lt;/a&gt;,
-part of a patent&amp;rsquo;s value is how easy it is to detect when the invention is
-being used without permission. Without the ability to detect the use of the
-invention, the patent can&amp;rsquo;t be enforced and is therefore useless. Your patent
-attorney may be more familiar with common methods for detecting use in your
-field since this isn&amp;rsquo;t a common thought for researchers, but list whatever
-methods you are aware of.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Who might want to purchase or license the potential patent?&lt;/p&gt;
-
-&lt;p&gt;This question is most relevant in academia where the assumption is not that
-the patent will be used directly by your organization. Universities don&amp;rsquo;t make
-products, and so a patent only has value if there is a demand for it! To answer
-this question list any people or organizations who might be interested in buying
-or licensing the potential patent from your organization. This can include the
-most prominent companies in your field as well as any any startups you may be
-aware of. Some technology offices may even begin marketing your idea before
-deciding to patent your invention as a way of determining demand, so give them
-as much help as you can.&lt;/p&gt;
-
-&lt;p&gt;If you are in a university and hope to launch a company using this patent,
-be extremely up front about your goals. You may even want to contact the
-technology licencing office before submitting an IDF to explain your intentions.
-Without knowing your goals the technology licencing office may sell the patent
-to an outside party without ever consulting you. Even simply marketing your
-invention before it has been patented may prevent you from creating a stealth
-mode startup. Make sure to communicate often and effectively with your
-university&amp;rsquo;s office to avoid such an issue. Your business plan may be a part of
-convincing the office to license to you instead of a large company, so prepare
-your business plan as early as possible.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;After answering these 10 questions you will have successfully filled out your
-first IDF. Congratulations!  As you can see, a great deal of the questions asked
-in an IDF are similar to material that you may have already prepared for a
-technical report or research publication. Feel free to directly copy and paste
-from previous writing that you&amp;rsquo;ve done, and attach the original document to your
-IDF for ease of reading. With any luck your organization will be interested in
-filing a patent on your invention. May lots of patent filing bonuses or
-licencing revenue flow your way!&lt;/p&gt;
-</description>
+      <description>If you&amp;rsquo;ve read my post about patenting in academia and industry then you know why you might want to file a patent with your university or company. The first step to filing a patent in most organizations (after creating the invention of course!) is filling out an Invention Disclosure Form or IDF. These forms will be created, provided by, and reviewed by your organization&amp;rsquo;s technology transfer office or center for technology licensing.</description>
     </item>
     
     <item>
@@ -200,225 +100,7 @@ licencing revenue flow your way!&lt;/p&gt;
       <pubDate>Sat, 24 Feb 2018 16:25:31 -0400</pubDate>
       
       <guid>http://markbuckler.com/post/patenting/</guid>
-      <description>&lt;p&gt;We all get excited about doing scientific or engineering research for different
-reasons, but most of us seek the thrill of creating something entirely new.
-In this way, research can be just as wonderful as the creative arts. Publishing
-your new ideas is great for sharing information with the world, but sometimes
-you want to sell your ideas too. This is where filing for a patent can be very
-useful. I have some experience in this area as I have patented inventions
-&lt;a href=&#34;http://patents.google.com/patent/US8289363B2&#34; target=&#34;_blank&#34;&gt;on my own&lt;/a&gt;,
-in &lt;a href=&#34;https://patents.google.com/patent/US9344099B2&#34; target=&#34;_blank&#34;&gt;industry&lt;/a&gt;,
-and most recently in academia.&lt;/p&gt;
-
-&lt;p&gt;Because I can&amp;rsquo;t cover the entire topic of
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Intellectual_property&#34; target=&#34;_blank&#34;&gt;Intellectual Property (IP) law&lt;/a&gt;
-in a single blog post, I will choose instead to answer questions that someone
-might have if they were interested in patenting at a company or university. I
-hope other researchers and inventors like myself will find this information
-useful. Also, I am not a patent attorney, so please don&amp;rsquo;t take anything that I
-say here as legal advice!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;What is a patent?&lt;/p&gt;
-
-&lt;p&gt;In case you don&amp;rsquo;t already know, a
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Patent&#34; target=&#34;_blank&#34;&gt;patent&lt;/a&gt; on a specific idea gives
-exclusive usage rights of that idea to whoever holds the patent. In theory, this
-means that the patent holder can prevent others from using the idea. The person
-who creates the invention is referred to as the &lt;em&gt;inventor&lt;/em&gt;, and the person or
-organization who holds the patent is the &lt;em&gt;assignee&lt;/em&gt;. A patent can be used to
-make money in a number of ways:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Making and selling products or services with the patented idea&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Selling the patent to another organization&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Licensing out the patent in exchange for a percentage of sales&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Suing for the profits made by an organization who used the patented ideas
-without your permission&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What can be patented?&lt;/p&gt;
-
-&lt;p&gt;While patenting restrictions vary between countries and over time,
-most countries agree that a patentable idea must have all of the following
-properties:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Non-abstract&lt;/p&gt;
-
-&lt;p&gt;Mathematical formulas and pure algorithms may be amazing, but these
-abstract ideas are not considered to be patentable. Which ideas are
-abstract can be controversial, and so there are many examples of courts
-&lt;a href=&#34;https://www.theiplawblog.com/2017/03/articles/patent-law/more-patent-invalidated-as-abstract-ideas/&#34; target=&#34;_blank&#34;&gt;invalidating patents after they were issued&lt;/a&gt;
-due to disagreements on this issue.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Man-made&lt;/p&gt;
-
-&lt;p&gt;Natural laws and natural phenomena are also not patentable. One of the
-most prominent examples of a patent portfolio being invalidated for being
-natural is the case against Myriad Genetics who previously held a patent on
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Myriad_Genetics#Controversies&#34; target=&#34;_blank&#34;&gt;breast cancer genes&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Novel&lt;/p&gt;
-
-&lt;p&gt;Similar to a publication in a research conference or journal, patentable
-ideas must be significantly different from what has been published in the past.
-Academics usually refer to existing publications as &amp;ldquo;related work&amp;rdquo;, while patent
-attorneys refer to them as &amp;ldquo;prior art&amp;rdquo;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Useful&lt;/p&gt;
-
-&lt;p&gt;This is by far the easiest requirement to meet. All that you need to
-demonstrate is that your idea successfully accomplishes some goal. That goal
-need not be considered useful by a majority of people, it just needs to be
-possible and legal. There are all kinds of hilarious
-&lt;a href=&#34;https://www.oddee.com/item_96675.aspx&#34; target=&#34;_blank&#34;&gt;patents with dubious usefulness&lt;/a&gt;
-that got approved by the US patent office.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Non-obvious&lt;/p&gt;
-
-&lt;p&gt;Every field of engineering and design has a certain set of common
-knowledge that an expert in the field would be familiar with. If such an expert
-would find an idea to be obvious or common knowledge, then that idea is
-considered to be &amp;ldquo;obvious&amp;rdquo;. This is often a subjective judgement, so
-&lt;a href=&#34;http://www.ipwatchdog.com/2014/02/01/when-is-an-invention-obvious/id=47709/&#34; target=&#34;_blank&#34;&gt;see here&lt;/a&gt;
-for further discussion.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Why should I bother patenting if I&amp;rsquo;m not the assignee?&lt;/p&gt;
-
-&lt;p&gt;Most companies and universities require that you sign some form of a
-Confidential Information and Inventions Assignment Agreement (CIIAA) before you
-join them. The specifics of each CIIAA vary, but most force you to
-give your assignee rights to your employer for all inventions that you create
-while employed by them. This means that if you invent something new while
-employed, only your employer can file for a patent on this invention. It is
-important to remember however that your employer still needs you to perform your
-duties as inventor (disclosing your invention and explaining how it works to the
-attorneys), so companies and universities usually provide inventor incentives.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Incentives in industry&lt;/p&gt;
-
-&lt;p&gt;First of all, while you do give up your assignee rights while employed
-you never give up your inventorship. This means that if you file a patent with
-your organization then you will still get credit for creating the idea even if
-you don&amp;rsquo;t own it. This can be a great option to get your name out there if your
-organization prohibits publishing but encourages patenting. Second, companies
-will often provide cash bonuses to you if your invention disclosure gets
-approved for filing and/or if a patent is issued for an invention of yours.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Incentives in academia&lt;/p&gt;
-
-&lt;p&gt;Beyond being self employed or in a startup incubator, academia is the
-best work environment to build intellectual property in. A university&amp;rsquo;s goal is
-to launch your career rather than make large profits, and as such they usually
-give you some amount of profits from and control over your inventions. While
-every research university is different, it is not uncommon for there to be a
-preference to licence patents to inventors themselves if they choose to start a
-company. Most universities also give a share of any profits to the inventors.
-For example,
-&lt;a href=&#34;http://www.ctl.cornell.edu/inventors/marketing-inventions.php&#34; target=&#34;_blank&#34;&gt;Cornell allocates a third of patent profits&lt;/a&gt;
-to the inventor(s).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Can I patent on my own?&lt;/p&gt;
-
-&lt;p&gt;As long as you aren&amp;rsquo;t under a CIIAA then yes, you can patent on your own.
-Fees from the patent office will be reduced because you as a person are a
-&lt;a href=&#34;https://www.uspto.gov/learning-and-resources/newsletter/inventors-eye/new-fees-and-micro-entity-status-take-effect-march&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;micro entity&amp;rdquo;&lt;/a&gt;,
-but the cost of hiring a skilled patent attorney may be significant. The best
-bet for individual inventors (and sometimes even organizations) is to first file
-for a provisional patent application.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Should I file a provisional patent application?&lt;/p&gt;
-
-&lt;p&gt;A provisional patent application will not be reviewed by the patent office
-and will not become a patent without further applications, but it serves the all
-important function of setting the filing date. A lot of work goes into building
-the claims in a formal patent application, and so the provisional application
-provides a way to set the date of filing before time has been spent on
-developing claims. Even skilled patent attorneys will often suggest filing a
-provisional patent application before continuing to the claims. Provisional
-applications are also very low cost as their fees are much smaller than that of
-a full application. This makes them a good option for individual or small patent
-applicants who haven&amp;rsquo;t yet raised funds for a patent attorney. Keep in mind
-though that a provisional application only holds power for a year unless a full
-patent application has been filed in that time.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;When should I file?&lt;/p&gt;
-
-&lt;p&gt;In a phrase: As Soon As Possible. You might remember being told in school
-that you should date every single entry in your lab/design notebook. That was
-because at the time (pre-2013) the US had a &amp;ldquo;first-to-invent&amp;rdquo; patenting system.
-If someone else was to file for a patent that you had invented first (as proven
-by your dated lab notebook), the other person&amp;rsquo;s patent would be invalidated.
-This is no longer the case however as the US has
-&lt;a href=&#34;https://en.wikipedia.org/wiki/First_to_file_and_first_to_invent#USA_change_to_first-inventor-to-file_(FITF)&#34; target=&#34;_blank&#34;&gt;changed to &amp;ldquo;first-inventor-to-file&amp;rdquo;&lt;/a&gt;.
-With this in mind, if you want to patent an invention in the US or any other
-&amp;ldquo;first-to-file&amp;rdquo; country you must file as soon after creating the invention as
-possible to prevent others from filing before you.&lt;/p&gt;
-
-&lt;p&gt;Another consideration is when to patent in relationship to publishing. In a
-university your main priority as a researcher is usually to publish your work.
-Some may think that this precludes you from patenting your work as well, but
-this isn&amp;rsquo;t true! While some countries do prevent you from patenting after
-publishing your work, the US allows a one-year grace period. A much better
-strategy of course is to file a patent application before you publish.
-Thankfully, most conferences and journals enforce confidentiality on
-submissions, meaning that simply submitting your work for publication doesn&amp;rsquo;t
-count as publication. So, if you verify that your publication venue supports
-submission confidentiality then you can begin filing for your patent immediately
-after finishing your submission.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Is my invention better protected as a patent or trade secret?&lt;/p&gt;
-
-&lt;p&gt;Before patenting, there was very little monetary incentive to publish new
-inventions. Keeping your inventions a secret ensured that no one else could use
-them. If no one is sharing ideas then it is very hard for a society to progress
-technologically. Patenting was proposed as a bargain with inventors: publish
-exactly how your inventions work in exchange for the right to prevent others
-from using those inventions for a set time period.&lt;/p&gt;
-
-&lt;p&gt;While patenting makes sense in theory, there have been
-&lt;a href=&#34;https://www.youtube.com/watch?v=3bxcc3SM_KA&#34; target=&#34;_blank&#34;&gt;many issues&lt;/a&gt;
-with our implementation of the system. One such issue is that it can be quite
-hard to prove that someone is using your invention. Closed source software is a
-perfect example of this as the actual written code is obfuscated by the
-compilation process. Without the ability to prove that someone is violating your
-patent, the patent is useless. Also, publishing your invention via the patenting
-process could provide others with enough information to design around you. Your
-patent attorney will try to make your patent&amp;rsquo;s claims as general as possible,
-but clever engineers may be able to create a new system without violating your
-claims that still gets the same benefit. So, before patenting your invention
-consider that your competitors may either hide their use of your patent or
-circumvent it through clever design.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Is there such a thing as an international patent?&lt;/p&gt;
-
-&lt;p&gt;Nope! At least at the time of writing there is no such thing as an
-international patent or patent office. There is however an International Patent
-Cooperation Union which facilitates a
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Patent_Cooperation_Treaty&#34; target=&#34;_blank&#34;&gt;single patent filing system&lt;/a&gt;
-for all member countries. While no patent is granted through such an
-application, it does provide a unified system for filing dates and applicants
-are provided with some written opinions about the patentability of the
-invention.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The Invention Disclosure Form (IDF)&lt;/p&gt;
-
-&lt;p&gt;Lets say that after reading all of this you are convinced that you have a
-great invention that would be well protected by a patent. Congratulations! If
-you are in a company or university your next step is to fill out and submit an
-Invention Disclosure Form. This process can be complex in and of itself, and so
-I have written about it in its own separate blog post.
-&lt;a href=&#34;http://www.markbuckler.com/post/idf/&#34; target=&#34;_blank&#34;&gt;Click here&lt;/a&gt;
-if you&amp;rsquo;d like to read on!&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>We all get excited about doing scientific or engineering research for different reasons, but most of us seek the thrill of creating something entirely new. In this way, research can be just as wonderful as the creative arts. Publishing your new ideas is great for sharing information with the world, but sometimes you want to sell your ideas too. This is where filing for a patent can be very useful. I have some experience in this area as I have patented inventions on my own, in industry, and most recently in academia.</description>
     </item>
     
     <item>
@@ -427,107 +109,7 @@ if you&amp;rsquo;d like to read on!&lt;/p&gt;&lt;/li&gt;
       <pubDate>Thu, 06 Jul 2017 16:25:31 -0400</pubDate>
       
       <guid>http://markbuckler.com/post/cutting-ffmpeg/</guid>
-      <description>&lt;p&gt;While building the &lt;a href=&#34;https://github.com/mbuckler/youtube-bb&#34; target=&#34;_blank&#34;&gt;downloading and decoding
-scripts&lt;/a&gt; for the &lt;a href=&#34;https://research.google.com/youtube-bb/index.html&#34; target=&#34;_blank&#34;&gt;Youtube BoundingBoxes
-dataset&lt;/a&gt; I needed to
-accurately cut videos into smaller clips. Some of the annotated videos were
-quite long and the annotations rarely covered the full video, so to save space
-my scripts cut out and save only the annotated sections. If done incorrectly
-this video cutting can cause subtle frame timing issues which I didn&amp;rsquo;t fully
-understand when I started writing these scripts. If you want to avoid these
-problems read below for the proper way to accurately cut videos with
-&lt;a href=&#34;http://ffmpeg.org/&#34; target=&#34;_blank&#34;&gt;FFmpeg&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;First, a very quick review of video compression. Most modern video compression
-algorithms use a technique called &lt;a href=&#34;https://en.wikipedia.org/wiki/Motion_compensation&#34; target=&#34;_blank&#34;&gt;motion
-compensation&lt;/a&gt; to reduce the
-size of stored video files. All frames in MPEG are stored as either Key frames
-(I frames) or Predicted frames (P or B frames). Each Key frame is compressed
-with some variation on the &lt;a href=&#34;https://en.wikipedia.org/wiki/JPEG&#34; target=&#34;_blank&#34;&gt;JPEG compression
-codec&lt;/a&gt;, but Predicted frames are represented
-as motion compensated versions of earlier frames (as in P frames) or both
-earlier and later frames (as in B frames). Because these motion compensation
-references take up much less space than a compressed JPEG, overall the
-compressed video takes up less space. For (much) more detail you can see &lt;a href=&#34;https://users.cs.cf.ac.uk/Dave.Marshall/Multimedia/node255.html&#34; target=&#34;_blank&#34;&gt;Dave
-Marshall&amp;rsquo;s excellent
-explanation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now that we&amp;rsquo;ve reviewed video compression and the different kinds of encoded
-frames, we can talk about seeking. Seeking is the process used to find certain
-sections of the video to either extract a frame or cut out a portion. FFmpeg has
-implemented a few options for our use, but their differences in behavior and/or
-usage can be easy to overlook. Here we will discuss the three methods of seeking
-(and by extension cutting) video with FFmpeg, with each corresponding to a point
-on the speed/accuracy tradeoff.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Key Frame Seeking&lt;/p&gt;
-
-&lt;p&gt;The fastest way to extract a portion of video from a larger video (with a 60
-second clip starting 30 seconds in) would be the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ffmpeg -ss 30 -i input_vid.mp4 -t 60 -c copy output_clip.mp4
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This method is so fast because it uses Key frames when performing seek, and
-there are far fewer Key frames than Predicted frames. It also is a &lt;a href=&#34;https://ffmpeg.org/ffmpeg.html#Stream-copy&#34; target=&#34;_blank&#34;&gt;stream
-copy&lt;/a&gt; meaning that the encoded data
-extracted from the original video is taken directly without decoding and then
-re-encoding. While this feature may be useful for some users who don&amp;rsquo;t care
-about frame accuracy, it doesn&amp;rsquo;t work for our purposes. This is because even
-though FFmpeg 2.1 enabled frame accurate Key frame seeking for frame extraction
-(&lt;a href=&#34;https://trac.ffmpeg.org/wiki/Seeking&#34; target=&#34;_blank&#34;&gt;more detail here&lt;/a&gt;) this behavior is not
-supported in FFmpeg 2.6 when cutting out clips of video. This means that the
-start of your video will be aligned with the nearest Key frame to 30 seconds,
-not the nearest frame independent of encoding format.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;All-Frame Seeking&lt;/p&gt;
-
-&lt;p&gt;A slightly slower and more accurate method of video cutting would be the
-following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ffmpeg -i input_vid.mp4 -ss 30 -t 60 -c copy output_clip.mp4
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Can you tell the difference? It is frustratingly similar to the previous
-command&amp;hellip; It turns out that FFmpeg arguments are order sensitive, so choosing
-the clip&amp;rsquo;s start time after the input video causes a change in behavior! This
-method uses all-frame seeking, also known as &lt;a href=&#34;https://trac.ffmpeg.org/wiki/Seeking#Outputseeking&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;output
-seeking&amp;rdquo;&lt;/a&gt; by FFmpeg users.
-It is also a stream copy, but considers all frames (including Predicted frames)
-when performing a seek. This means that your output clip will start with the nearest frame
-to 30 seconds even if it is a predicted frame.&lt;/p&gt;
-
-&lt;p&gt;If you use this command and try to play your output clip, you may notice that
-the clip starts frozen, or with black frames in the beginning. Did FFmpeg do
-something wrong? No, that behavior is simply a result of the functionality that
-we requested when we performed an all-frame seek on a stream copy. If your 30
-second start happens to align with a Predicted frame, that Predicted frame will
-be copied into the output clip, along with the rest of the frames in the 60
-second portion. But as we already established, Predicted frames are simply
-motion compensated references to previous or following Key frames. By stream
-copying with all-frame seeking we have removed the reference Key frames which
-came before our first frame. This is why your video player displays frozen or
-black frames: the necessary data to represent the first portion of your
-video isn&amp;rsquo;t included in the file.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Full Re-Encoding&lt;/p&gt;
-
-&lt;p&gt;So Key frame seeking causes missalignment and All-frame seeking causes broken
-frames, is there another option? Yes, but some folks don&amp;rsquo;t like it. Instead of
-performing a stream copy we can decode the source video, and then re-encode the
-output clip:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ffmpeg -i input_vid.mp4 -ss 30 -strict -2 -t 60 output_clip.mp4
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This isn&amp;rsquo;t perfect for two reasons: 1) Re-encoding can cause
-quality loss if done incorrectly, and 2) Re-encoding is far slower than stream
-copying. While both of these two points should be considered, if you want to
-copy a frame-exact section of video you have to re-encode. At least now you
-know!&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>While building the downloading and decoding scripts for the Youtube BoundingBoxes dataset I needed to accurately cut videos into smaller clips. Some of the annotated videos were quite long and the annotations rarely covered the full video, so to save space my scripts cut out and save only the annotated sections. If done incorrectly this video cutting can cause subtle frame timing issues which I didn&amp;rsquo;t fully understand when I started writing these scripts.</description>
     </item>
     
     <item>
@@ -545,24 +127,7 @@ know!&lt;/p&gt;&lt;/li&gt;
       <pubDate>Tue, 02 May 2017 16:25:31 -0400</pubDate>
       
       <guid>http://markbuckler.com/post/quoth_the_raver/</guid>
-      <description>&lt;p&gt;Back in 2010 I started a blog dedicated to electronic music called Quoth
-the Raver (a play on Quoth the Raven). It was a huge amount of fun
-sharing the music I found with everyone on the site, and it inspired me
-to get even more familiar with the various genres, artists, and labels.
-These days electronic music (also known as EDM) has exploded in
-popularity, so the novelty of sharing new artists has worn off to a
-certain extent. For this reason I haven&amp;rsquo;t updated the blog in quite a
-long time, but I did recently go through to fix up some broken components
-for archiving the site.&lt;/p&gt;
-
-&lt;p&gt;If anyone is curious to see what I was listening to and raving about
-back then feel free to &lt;a href=&#34;https://quoththeraverarchive.wordpress.com/&#34; target=&#34;_blank&#34;&gt;check out the
-website!&lt;/a&gt; If you&amp;rsquo;re more
-interested in what I&amp;rsquo;m listening to these days, go ahead and check out
-what I love on &lt;a href=&#34;https://soundcloud.com/quoththeraver&#34; target=&#34;_blank&#34;&gt;SoundCloud&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/quoth_the_raver.jpg&#34; alt=&#34;Quoth the Raver&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>Back in 2010 I started a blog dedicated to electronic music called Quoth the Raver (a play on Quoth the Raven). It was a huge amount of fun sharing the music I found with everyone on the site, and it inspired me to get even more familiar with the various genres, artists, and labels. These days electronic music (also known as EDM) has exploded in popularity, so the novelty of sharing new artists has worn off to a certain extent.</description>
     </item>
     
     <item>
@@ -598,33 +163,7 @@ what I love on &lt;a href=&#34;https://soundcloud.com/quoththeraver&#34; target=
       <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/lns-neural-accel/</guid>
-      <description>&lt;p&gt;For my final project in Cornell&amp;rsquo;s &lt;a href=&#34;https://web.csl.cornell.edu/courses/ece5745/&#34; target=&#34;_blank&#34;&gt;Complex ASIC Design
-course&lt;/a&gt; I built a neural network
-accelerator which used the &lt;a href=&#34;https://en.wikipedia.org/wiki/Logarithmic_number_system&#34; target=&#34;_blank&#34;&gt;Logarithmic Number System
-(LNS)&lt;/a&gt;. There has been
-some interest in &lt;a href=&#34;https://arxiv.org/pdf/1603.01025.pdf&#34; target=&#34;_blank&#34;&gt;using the LNS with neural
-networks&lt;/a&gt; as neural computation is
-multiplication heavy and multiplications in the LNS can be implemented with a
-simple adder. I augmented a
-&lt;a href=&#34;http://www.csl.cornell.edu/~cbatten/pdfs/lockhart-pymtl-micro2014.pdf&#34; target=&#34;_blank&#34;&gt;PyMTL&lt;/a&gt;
-implementation of a single threaded
-&lt;a href=&#34;https://web.csl.cornell.edu/courses/ece4750/handouts/ece4750-parc-isa.pdf&#34; target=&#34;_blank&#34;&gt;PARCv2&lt;/a&gt;
-processor with instructions to convert between LNS and fixed point, add LNS
-numbers, and multiply LNS numbers. I also built a matrix multiplication
-accelerator which could either use fixed point or the LNS. After integrating the
-accelerator with the processor and evaluating the various possible designs, it
-became clear that the delay and energy benefits gained by using the accelerator
-(generic cpu vs custom data and control path) far outweighed any savings in the
-ALU (LNS vs fixed point). This is due to two properties of matrix
-multiplication: 1) it has a regular dataflow that custom hardware can exploit
-well, and 2) benefits from cheap LNS multiplications wash out when the expensive
-but necessary LNS additions are used as well.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/cucapra/log-neural-accel&#34; target=&#34;_blank&#34;&gt;The code&lt;/a&gt; for this project is
-currently set to private due to the fact that I can&amp;rsquo;t release details about my
-baseline processor. Depending on your needs I may still be able to help you
-though, so contact me if you&amp;rsquo;re interested.&lt;/p&gt;
-</description>
+      <description>For my final project in Cornell&amp;rsquo;s Complex ASIC Design course I built a neural network accelerator which used the Logarithmic Number System (LNS). There has been some interest in using the LNS with neural networks as neural computation is multiplication heavy and multiplications in the LNS can be implemented with a simple adder. I augmented a PyMTL implementation of a single threaded PARCv2 processor with instructions to convert between LNS and fixed point, add LNS numbers, and multiply LNS numbers.</description>
     </item>
     
     <item>
@@ -633,93 +172,7 @@ though, so contact me if you&amp;rsquo;re interested.&lt;/p&gt;
       <pubDate>Mon, 03 Apr 2017 16:25:31 -0400</pubDate>
       
       <guid>http://markbuckler.com/post/latex-in-vim/</guid>
-      <description>&lt;p&gt;As an academic I am often writing LaTeX code for publications or general
-documentation. I used to use &lt;a href=&#34;https://www.sharelatex.com/&#34; target=&#34;_blank&#34;&gt;ShareLatex&lt;/a&gt;
-and &lt;a href=&#34;https://www.overleaf.com/&#34; target=&#34;_blank&#34;&gt;Overleaf&lt;/a&gt; because I have a secret love
-of GUIs (Lord forgive me!), but recently my co-authors have prefered
-to work in LaTeX repos shared on &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;. For
-this reason my most recent paper was actually written entirely in Vim!
-This post isn&amp;rsquo;t meant to be a complete description of the best way to
-edit LaTeX in Vim, but instead I want to
-share some of the tools, tricks, and tips that I&amp;rsquo;ve
-found useful when writing LaTeX in Vim.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Vim environment setup&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve made a nice little &lt;a href=&#34;https://github.com/mbuckler/vim-config&#34; target=&#34;_blank&#34;&gt;GitHub
-repo&lt;/a&gt; to host my Vim
-configuration settings (.vimrc) so that porting it between my machines
-is made easier. No need to copy my .vimrc wholesale if you don&amp;rsquo;t like
-everything, but these are a few options that I use:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Installing &lt;a href=&#34;https://github.com/VundleVim/Vundle.vim&#34; target=&#34;_blank&#34;&gt;Vundle&lt;/a&gt; for Vim
-package management and &lt;a href=&#34;https://github.com/tpope/vim-sensible&#34; target=&#34;_blank&#34;&gt;sensible.vim&lt;/a&gt;
-for near-universal improvements to the default Vim settings.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Tabs vs spaces&amp;hellip; We could &lt;a href=&#34;https://www.youtube.com/watch?v=SsoOG6ZeyUI&#34; target=&#34;_blank&#34;&gt;fight all
-day&lt;/a&gt; about using tabs or
-spaces, but you&amp;rsquo;ll want to put your preferred settings in your .vimrc.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Automatic text wrapping with &lt;code&gt;set wrap&lt;/code&gt;. This is one of the most
-useful settings when writing LaTeX in Vim.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Change out that ugly red column border with a nice grey column border
-with &lt;code&gt;set colorcolumn=+1&lt;/code&gt; and &lt;code&gt;hi ColorColumn ctermbg=7&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Show line numbers for easy reference: &lt;code&gt;set number&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Set your preferred spell check default. As an American I do &lt;code&gt;set
-spelllang=en_us&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Useful Vim commands&lt;/p&gt;
-
-&lt;p&gt;In addition to having a good setup for Vim, here are a few commands that
-I am constantly using.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Search: &lt;code&gt;/foo&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Search and replace: &lt;code&gt;:%s/foo/bar/g&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Toggle line numbers: &lt;code&gt;set nu&lt;/code&gt;, &lt;code&gt;set nu!&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Enable pasting without auto-indentation: &lt;code&gt;set paste&lt;/code&gt;, &lt;code&gt;set paste!&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Turn on and off spell checking: &lt;code&gt;set spell&lt;/code&gt;, &lt;code&gt;set spell!&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Automatically wrap a block of text: First select with &lt;code&gt;v&lt;/code&gt; for
-visual, and then use &lt;code&gt;gq&lt;/code&gt; to perform the wrapping.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Indent an entire section: First select with &lt;code&gt;v&lt;/code&gt; and then indent
-with &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Automatic LaTeX compilation&lt;/p&gt;
-
-&lt;p&gt;This isn&amp;rsquo;t Vim specific, but you&amp;rsquo;re going to need a
-complation method to turn your LaTeX in to a PDF. On Ubuntu this works
-very well for me:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Install texlive and latexmk from your package manager. This will require more
-than a Gigabyte of space on your disk and so will take a while, but that
-sure beats having to selectively install LaTeX packages.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get install texlive-full latexmk
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Start a background process to automatically compile your LaTeX and
-generate a PDF. You can edit your document in a separate terminal tab
-and have the PDF on the other side of your screen. Seemless editing!&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;latexmk -pvc -pdf main.tex &amp;amp;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>As an academic I am often writing LaTeX code for publications or general documentation. I used to use ShareLatex and Overleaf because I have a secret love of GUIs (Lord forgive me!), but recently my co-authors have prefered to work in LaTeX repos shared on GitHub. For this reason my most recent paper was actually written entirely in Vim! This post isn&amp;rsquo;t meant to be a complete description of the best way to edit LaTeX in Vim, but instead I want to share some of the tools, tricks, and tips that I&amp;rsquo;ve found useful when writing LaTeX in Vim.</description>
     </item>
     
     <item>
@@ -728,21 +181,7 @@ and have the PDF on the other side of your screen. Seemless editing!&lt;/p&gt;
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/image-sensor/</guid>
-      <description>&lt;p&gt;While most image sensors can be configured to output a subset of their total
-resolution, this doesn&amp;rsquo;t usually lead to energy savings as might have been
-expected &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=2464448&#34; target=&#34;_blank&#34;&gt;[LiKamWa-2013]&lt;/a&gt;. LiKamWa
-et al. explored energy saving methods possible when using existing sensors, but
-our project took the idea further by making a new energy-proportional image
-sensor. &lt;a href=&#34;http://www.andrew.cmu.edu/user/sjayasur/website.html&#34; target=&#34;_blank&#34;&gt;Suren Jayasuriya&lt;/a&gt;
-and I did this by adding power gating transistors to the amplifier and ADC in
-each of the sensor&amp;rsquo;s readout columns.&lt;/p&gt;
-
-&lt;p&gt;As the digital design lead on the project I wrote Verilog RTL to describe a
-state machine based controller for the rolling-shutter readout and control of
-the column power gating. I pushed my design through Synopsys synthesis and Suren
-connected the resulting digital layout to his pixels and other analog circuitry.
-We taped out this design in IBM&amp;rsquo;s 130nm technology.&lt;/p&gt;
-</description>
+      <description>While most image sensors can be configured to output a subset of their total resolution, this doesn&amp;rsquo;t usually lead to energy savings as might have been expected [LiKamWa-2013]. LiKamWa et al. explored energy saving methods possible when using existing sensors, but our project took the idea further by making a new energy-proportional image sensor. Suren Jayasuriya and I did this by adding power gating transistors to the amplifier and ADC in each of the sensor&amp;rsquo;s readout columns.</description>
     </item>
     
     <item>
@@ -751,170 +190,7 @@ We taped out this design in IBM&amp;rsquo;s 130nm technology.&lt;/p&gt;
       <pubDate>Sun, 02 Apr 2017 16:25:31 -0400</pubDate>
       
       <guid>http://markbuckler.com/post/docker-use/</guid>
-      <description>&lt;p&gt;Most of us academic/industrial ECE/CS researchers want to make our
-results as reproducible as possible. Its good for the integrity of our
-field and it also helps future researchers and developers to build on
-our prior work. &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; is great for distributing
-software, but code can rarely be compiled and run on its own as nearly
-all modern software relies heavily on packages and dependencies.
-Installing these dependencies can be incredibly frustrating or possibly
-even impossible depending on how long ago the code was written.
-Thankfully, &lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt; is here to save the day!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;What benefits does Docker provide?&lt;/p&gt;
-
-&lt;p&gt;Running code or even product deployment without ever installing
-dependencies, enabling multiple dependency versions on a server without
-conflicts, &amp;ldquo;pulling&amp;rdquo; of environments from &lt;a href=&#34;https://hub.docker.com/&#34; target=&#34;_blank&#34;&gt;Docker
-Hub&lt;/a&gt; as simply and easily as cloning a GitHub
-repository, and all without noticeable performance degradation.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;How does Docker provide all of this modularity and portability?&lt;/p&gt;
-
-&lt;p&gt;By very nearly being a Virtual Machine (VM) but not going the full way.
-&lt;a href=&#34;https://docs.docker.com/get-started/#containers-vs-virtual-machines&#34; target=&#34;_blank&#34;&gt;See here for more
-details&lt;/a&gt;,
-but rather than implementing an entire OS as a VM might do, an
-instantiation of a Docker image (called a &amp;ldquo;Container&amp;rdquo;) only implements
-binaries, libraries, and applications. This makes running a Windows
-image on Linux or vice versa tricky since they don&amp;rsquo;t have the same
-kernel, but since most of the folks I know develop on Linux this hasn&amp;rsquo;t
-been a problem for me. In case you&amp;rsquo;re interested in running Docker on
-macOS or Windows check out &lt;a href=&#34;http://containerjournal.com/2016/08/15/docker-not-just-linux-anymore/&#34; target=&#34;_blank&#34;&gt;this blog
-post&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;From a practical standpoint, how do I use Docker?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/docker_high_level.png&#34; alt=&#34;Docker at a high level&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;First, write an installation script for all of your dependencies. This
-script is written with Docker specific syntax and is called a
-Dockerfile. Then, run these commands to build a Docker image of your
-environment by using &lt;code&gt;docker build&lt;/code&gt;. Once successfully built, you can
-instantiate copies of this image as many times as you would like by
-using &lt;code&gt;docker run&lt;/code&gt; to create Docker containers. It is in these
-containers that you will run or develop your code. If you would like
-other people to be able to use your Docker image you can push to
-DockerHub (with &lt;code&gt;docker push&lt;/code&gt;), and if you want to use someone else&amp;rsquo;s
-image you can pull from DockerHub (with &lt;code&gt;docker pull&lt;/code&gt;).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;How do I write a Dockerfile?&lt;/p&gt;
-
-&lt;p&gt;You can check out the &lt;a href=&#34;https://docs.docker.com/engine/reference/builder/&#34; target=&#34;_blank&#34;&gt;full reference&lt;/a&gt;, but here is
-a simple example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# Start with an existing Docker image to give yourself a head start
-FROM ubuntu:14.04
-
-# Change to a given directory
-WORKDIR /root
-
-# Run some shell commands to install dependencies
-RUN apt-get update &amp;amp;&amp;amp; apt-get upgrade &amp;amp;&amp;amp; apt-get install -y \
-    build-essential \
-    git \
-    etc...
-
-# Clone and build code not available through your package manager
-RUN git clone https://github.com/halide/Halide.git
-WORKDIR /root/Halide
-RUN make -j8
-
-# Set any necessary environment variables
-ENV LD_LIBRARY_PATH /root/Halide/bin:$LD_LIBRARY_PATH
-
-# Lastly, set your workdir to be your default when starting the image
-WORKDIR /root
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;How do I run a Docker image (create a docker container)?&lt;/p&gt;
-
-&lt;p&gt;First, pull the image you&amp;rsquo;d like to use or build one from a Dockerfile
-like the one shown above.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;docker pull mbuckler/approx-vision
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then, use the docker run command.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;docker run \
--v &amp;lt;path to datasets&amp;gt;:/datasets \
--v &amp;lt;path to approx-vision&amp;gt;:/approx-vision \
--it mbuckler/approx-vision \
-/bin/bash
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the example command above you see that I start with &lt;code&gt;docker run&lt;/code&gt;, and
-then create two &lt;a href=&#34;https://docs.docker.com/engine/tutorials/dockervolumes/&#34; target=&#34;_blank&#34;&gt;docker
-volumes&lt;/a&gt;. These
-volumes allow me to interact with data outside of the docker container.
-Then I choose which image to run, and start myself off with a bash
-shell.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What if I want to use my GPU from within a Docker container?&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;re in luck! NVIDIA provides
-&lt;a href=&#34;https://github.com/NVIDIA/nvidia-docker&#34; target=&#34;_blank&#34;&gt;nvidia-docker&lt;/a&gt;, a specific
-application for linking NVIDIA GPU&amp;rsquo;s and docker.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What if I want to use X forwarding from within a Docker container?&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://people.ece.cornell.edu/skand/&#34; target=&#34;_blank&#34;&gt;Skand Hurkat&lt;/a&gt; and I figured
-out a great way to do this. He&amp;rsquo;s posted the instructions
-&lt;a href=&#34;https://people.ece.cornell.edu/skand/post/x-forwarding-on-docker/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
-but I&amp;rsquo;ll cross-post them here for completeness.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Include the X packages within your Docker image by adding these
-commands to your Dockerfile.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;RUN apt-get update
-RUN apt-get install -qqy x11-apps
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Set the path to your &lt;code&gt;.Xauthority&lt;/code&gt; file. Your &lt;code&gt;.Xauthority&lt;/code&gt; file
-will automatically be created in your home directory if using X11
-forwarding on a server you&amp;rsquo;re accessing remotely, but if you&amp;rsquo;re using
-Docker on your local device then you&amp;rsquo;ll need to create the file with
-touch.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;XAUTH=$HOME/.Xauthority
-touch $XAUTH
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Run your Docker image. Use the host&amp;rsquo;s networking stack and
-connect both the display and Xauthority environment variables.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;docker run --network=host --env DISPLAY=$DISPLAY -v $XAUTH:/root/.Xauthority -it &amp;lt;dockerimagename&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;OK Docker fanboy, tell me the downsides&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;For one, creating/pulling lots of Docker images can take up a lot of
-disk space. The real downside however is that Docker users have sudo
-privileges on the local machine when running containers. You can find a
-really excellent blog post about this
-&lt;a href=&#34;https://fosterelli.co/privilege-escalation-via-docker.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, but
-at the end of the day you have two choices:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Require that users invoke sudo when executing docker commands.&lt;/p&gt;
-
-&lt;p&gt;This isn&amp;rsquo;t super attractive since it makes usage less convenient,
-but it is the safest option.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Create and use a docker group.&lt;/p&gt;
-
-&lt;p&gt;With this option anyone who is in the docker group can run docker
-commands without sudo. This is the option I use, where I only add users to the docker
-group that I would consider adding to the sudo group. I also inform new
-users about the dangers, as you can do a lot of damage by mounting
-sensitive volumes.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Most of us academic/industrial ECE/CS researchers want to make our results as reproducible as possible. Its good for the integrity of our field and it also helps future researchers and developers to build on our prior work. GitHub is great for distributing software, but code can rarely be compiled and run on its own as nearly all modern software relies heavily on packages and dependencies. Installing these dependencies can be incredibly frustrating or possibly even impossible depending on how long ago the code was written.</description>
     </item>
     
     <item>
@@ -923,6 +199,105 @@ sensitive volumes.&lt;/p&gt;&lt;/li&gt;
       <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/ms-thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to Install NVIDIA GPU Drivers &amp; CUDA</title>
+      <link>http://markbuckler.com/post/install-cuda/</link>
+      <pubDate>Sat, 01 Apr 2017 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/install-cuda/</guid>
+      <description>Anyone who&amp;rsquo;s set up a new Linux based, GPU enabled, deep learning system knows the horror that is driver installation. While it is technically possible to install NVIDIA drivers and CUDA from your package manager, the most up to date versions aren&amp;rsquo;t available and in the worst case you might even break graphics on your machine. After a great deal of difficulties installing and reinstalling, I finally found a viable strategy: installing both CUDA and proprietary Linux drivers from an NVIDA run file without OpenGL libraries.</description>
+    </item>
+    
+    <item>
+      <title>VideoConversation</title>
+      <link>http://markbuckler.com/project/videoconversation/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/project/videoconversation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Example Talk</title>
+      <link>http://markbuckler.com/talk/example-talk/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/talk/example-talk/</guid>
+      <description>Embed your slides or video here using shortcodes. Further details can easily be added using Markdown and $\rm \LaTeX$ math code.</description>
+    </item>
+    
+    <item>
+      <title>Dynamic synchronizer flip-flop performance in FinFET technologies</title>
+      <link>http://markbuckler.com/publication/nocs2014/</link>
+      <pubDate>Wed, 17 Sep 2014 19:37:01 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/publication/nocs2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predictive synchronization for DVFS-enabled multi-processor systems</title>
+      <link>http://markbuckler.com/publication/isqed2014/</link>
+      <pubDate>Wed, 05 Mar 2014 19:37:01 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/publication/isqed2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Low-power networks-on-chip: Progress and remaining challenges</title>
+      <link>http://markbuckler.com/publication/islped2013/</link>
+      <pubDate>Fri, 06 Sep 2013 19:37:01 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/publication/islped2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Frequency Measurement for Predictive Periodic Synchronization</title>
+      <link>http://markbuckler.com/patent/9344099/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/patent/9344099/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Methods and Systems of Synchronizer Selection</title>
+      <link>http://markbuckler.com/patent/9294263/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/patent/9294263/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predictive Periodic Synchronization Using Phase-Locked Loop Digital Ratio Updates</title>
+      <link>http://markbuckler.com/patent/9143315/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/patent/9143315/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synchronizer Circuits With Failure-Condition Detection and Correction</title>
+      <link>http://markbuckler.com/patent/8847647/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/patent/8847647/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Video Conferencing</title>
+      <link>http://markbuckler.com/patent/8289363/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/patent/8289363/</guid>
       <description></description>
     </item>
     

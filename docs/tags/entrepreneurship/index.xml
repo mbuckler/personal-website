@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
     <lastBuildDate>Sat, 01 Apr 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/entrepreneurship/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://markbuckler.com/tags/entrepreneurship/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>VideoConversation</title>
