@@ -9,7 +9,7 @@ title = "Reversible Imaging Pipeline"
 summary = "A Halide implementation of a forward and reverse computational photography pipeline"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-#image_preview = "videoconversation_logo.png"
+image_preview = "camera.jpeg"
 
 # Tags: can be used for filtering projects.
 tags = ["imaging"]

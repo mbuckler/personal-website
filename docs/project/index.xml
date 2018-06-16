@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
-    <lastBuildDate>Fri, 16 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://markbuckler.com/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Low Precision SqueezeDet</title>
+      <link>http://markbuckler.com/project/squeeze-precision/</link>
+      <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/project/squeeze-precision/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Approximate Vision Pipeline</title>
@@ -45,7 +54,7 @@
       <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/lns-neural-accel/</guid>
-      <description></description>
+      <description>For my final project in Cornell&amp;rsquo;s Complex ASIC Design course I built a neural network accelerator which used the Logarithmic Number System (LNS). There has been some interest in using the LNS with neural networks as neural computation is multiplication heavy and multiplications in the LNS can be implemented with a simple adder. I augmented a PyMTL implementation of a single threaded PARCv2 processor with instructions to convert between LNS and fixed point, add LNS numbers, and multiply LNS numbers.</description>
     </item>
     
     <item>
@@ -54,7 +63,7 @@
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/image-sensor/</guid>
-      <description>While most image sensors can be configured to output a subset of their total resolution, unfortunately this doesn&amp;rsquo;t usually lead to energy savings as might have been expected [LiKamWa-2013]. While LiKamWa et al. explored energy saving methods possible when using existing sensors, this project focused on making a new image sensor which is energy-proportional. Suren Jayasuriya and I did this by adding power gating transistors to the amplifier and ADC in each of the sensor&amp;rsquo;s readout columns.</description>
+      <description>While most image sensors can be configured to output a subset of their total resolution, this doesn&amp;rsquo;t usually lead to energy savings as might have been expected [LiKamWa-2013]. LiKamWa et al. explored energy saving methods possible when using existing sensors, but our project took the idea further by making a new energy-proportional image sensor. Suren Jayasuriya and I did this by adding power gating transistors to the amplifier and ADC in each of the sensor&amp;rsquo;s readout columns.</description>
     </item>
     
     <item>

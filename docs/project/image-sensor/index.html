@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="cornellcsl">
-  <meta name="generator" content="Hugo 0.36.1" />
+  <meta name="generator" content="Hugo 0.41" />
   <meta name="author" content="Mark Buckler">
   <meta name="description" content="PhD Student">
 
@@ -251,9 +251,20 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      <p>While most image sensors can be configured to output a subset of their total resolution, unfortunately this doesn&rsquo;t usually lead to energy savings as might have been expected <a href="http://dl.acm.org/citation.cfm?id=2464448" target="_blank">[LiKamWa-2013]</a>. While LiKamWa et al. explored energy saving methods possible when using existing sensors, this project focused on making a new image sensor which is energy-proportional. <a href="http://www.andrew.cmu.edu/user/sjayasur/website.html" target="_blank">Suren Jayasuriya</a> and I did this by adding power gating transistors to the amplifier and ADC in each of the sensor&rsquo;s readout columns.</p>
+      <p>While most image sensors can be configured to output a subset of their total
+resolution, this doesn&rsquo;t usually lead to energy savings as might have been
+expected <a href="http://dl.acm.org/citation.cfm?id=2464448" target="_blank">[LiKamWa-2013]</a>. LiKamWa
+et al. explored energy saving methods possible when using existing sensors, but
+our project took the idea further by making a new energy-proportional image
+sensor. <a href="http://www.andrew.cmu.edu/user/sjayasur/website.html" target="_blank">Suren Jayasuriya</a>
+and I did this by adding power gating transistors to the amplifier and ADC in
+each of the sensor&rsquo;s readout columns.</p>
 
-<p>My task was to write Verilog RTL to describe a state machine based controller for implementing both the rolling-shutter readout as well as the control for the column power gating. I then pushed my design through Synopsys synthesis in the IBM 130nm technology, and for integration Suren connected my digital logic to his analog sensing circuitry.</p>
+<p>As the digital design lead on the project I wrote Verilog RTL to describe a
+state machine based controller for the rolling-shutter readout and control of
+the column power gating. I pushed my design through Synopsys synthesis and Suren
+connected the resulting digital layout to his pixels and other analog circuitry.
+We taped out this design in IBM&rsquo;s 130nm technology.</p>
 
     </div>
 

@@ -9,7 +9,7 @@ title = "Approximate Vision Pipeline"
 summary = "Using a reversible imaging pipeline to optimize sensor and ISP design for computer vision"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-#image_preview = ""
+image_preview = "CRIP.jpg"
 
 # Tags: can be used for filtering projects.
 tags = ["machine-learning","computer-architecture","imaging"]

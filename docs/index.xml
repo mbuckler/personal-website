@@ -11,6 +11,190 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>EVA²: Exploiting Temporal Redundancy in Live Computer Vision</title>
+      <link>http://markbuckler.com/publication/isca2018/</link>
+      <pubDate>Sun, 18 Mar 2018 19:37:01 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/publication/isca2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Low Precision SqueezeDet</title>
+      <link>http://markbuckler.com/project/squeeze-precision/</link>
+      <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/project/squeeze-precision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>All About Invention Disclosures</title>
+      <link>http://markbuckler.com/post/idf/</link>
+      <pubDate>Mon, 26 Feb 2018 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/idf/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;ve read my post about
+&lt;a href=&#34;http://www.markbuckler.com/post/patenting/&#34; target=&#34;_blank&#34;&gt;patenting in academia and industry&lt;/a&gt;
+then you know why you might want to file a patent with your university or
+company. The first step to filing a patent in most organizations (after creating
+the invention of course!) is filling out an Invention Disclosure Form or IDF.
+These forms will be created, provided by, and reviewed by your organization&amp;rsquo;s
+technology transfer office or center for technology licensing. While IDFs tend
+to differ between organizations they are all intended as a way for the inventor
+to communicate to the organization how a new invention works and why it is
+worth patenting. If the result of the organization&amp;rsquo;s review is that the
+invention should be patented then in-person meetings with patent attorneys will
+be arranged to discuss in more detail.&lt;/p&gt;
+
+&lt;p&gt;This post is written as a guide for those of you who might be filling out your
+first IDF. This may also be helpful to any of you who are creating the first
+standard disclosure form for your organization. I&amp;rsquo;ll describe some common
+questions in IDFs and strategies for answering these questions well. As I say in
+my &lt;a href=&#34;http://www.markbuckler.com/post/patenting/&#34; target=&#34;_blank&#34;&gt;previous post&lt;/a&gt;, I am not a
+patent attorney so please don&amp;rsquo;t take any of what I say here as legal advice!&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Who are the inventors?&lt;/p&gt;
+
+&lt;p&gt;In some cases the answer to this question will be very straightforward.
+Perhaps you were the only person on the project in which you created the
+invention and you never discussed the invention with others. Most of the time,
+however, people collaborate. If your invention was made in a project with other
+people then the determination of who may or may not be considered an inventor is
+a matter of discussion.&lt;/p&gt;
+
+&lt;p&gt;While &lt;em&gt;authorship&lt;/em&gt; on papers is generally given to people who have made
+important contributions when building prototypes, performing testing, and
+writing text for the paper, &lt;em&gt;inventorship&lt;/em&gt; is legally different. Patent law
+defines an inventor of a patentable invention as someone who conceives of an
+original, useful, and non-obvious idea. This can but does not necessarily
+include students, professors, your boss, your employees, and other
+collaborators. Use your best judgement and ask all collaborators who you believe
+may have contributed to the idea considered in the invention disclosure. Only
+after everyone agrees will the inventor list be settled. Keep in mind that who
+gets to claim inventorship should not be based on charity, flattery, or spite.
+Patents can and have been invalidated for an incorrect list of inventors. For
+more information about this topic, see
+&lt;a href=&#34;https://otl.stanford.edu/documents/who_is_inv.pdf&#34; target=&#34;_blank&#34;&gt;this helpful PDF&lt;/a&gt;
+provided by Stanford&amp;rsquo;s Office of Technology Licensing.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What problem does the invention solve?&lt;/p&gt;
+
+&lt;p&gt;For an invention to be useful and therefore worthy of patent protection, it
+must solve some problem that exists in the world. If you are used to writing
+research papers, you can think of this like the &lt;em&gt;motivation&lt;/em&gt; section in a
+paper. Because the patent lawyers and other people reviewing this IDF won&amp;rsquo;t
+necessarily be experts in your field make sure to include any scientific or
+technical background that might be needed to understand why the invention is
+useful and how it may work. This is similar to the &lt;em&gt;background&lt;/em&gt; section in a
+paper.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What prior art are you aware of?&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Prior art&amp;rdquo; simply refers to any patents, papers, documentation, or other
+published information that you are aware of which is related to your invention.
+This is similar to the &lt;em&gt;related work&lt;/em&gt; section in a research paper. If there is a
+very large body of work in your field then try to focus on citing survey papers
+for the general background and then limit your more specific citations to work
+which is closely related. Also, do your best to list any other groups,
+researchers, or companies who work in your area as it will help the attorneys
+in their further prior art search.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What competitors are you aware of?&lt;/p&gt;
+
+&lt;p&gt;Here you list any competing products or inventions that you&amp;rsquo;re aware of.
+Stress the flaws or drawbacks of each of your competitors so that you can more
+easily demonstrate your advantage. If there aren&amp;rsquo;t yet any true solutions to the
+problem that your invention solves then list any workarounds that you
+might be aware of.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What are the unique features of the invention?&lt;/p&gt;
+
+&lt;p&gt;Here you describe your invention&amp;rsquo;s competitive advantage and which
+specific elements of your invention are novel. You can think about this like the
+&lt;em&gt;contributions&lt;/em&gt; section in a paper. Try to focus both on why you are different
+from the competition and why this difference results in a superior product or
+method. Use your best sales skills!&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How does the invention work?&lt;/p&gt;
+
+&lt;p&gt;This is often the most complex section of the IDF. Use pictures and visual
+aids whenever possible. You could also consider including a glossary with
+definitions of the jargon used throughout the IDF. Keep in mind that the readers
+may not be as familiar with your subject area as you are. Technology offices try
+to match inventions as closely to experts as possible, but some disciplines can
+be very broad and others very specialized.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Are there any alternative versions of the invention?&lt;/p&gt;
+
+&lt;p&gt;In engineering we often need to make design decisions to optimize the
+performance of our design or simplify the design process. Your final prototype
+represents only one possible choice for each design decision. To prevent someone
+from designing around your patent by making an insignificantly different choice
+in their design, your patent attorney will try to make the claims of your patent
+as general as possible. You can help your attorney by describing not just the
+specifics of your tested prototype, but also the entire possible design space.
+This can include variations that you haven&amp;rsquo;t tested, or even variations that you
+have tested and have determined to be inferior to your final prototype.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How could the invention be used?&lt;/p&gt;
+
+&lt;p&gt;Here you lay out all possible use cases for your invention. Ease of use is
+important in evaluating the value of a potential patent. Overly onerous
+inventions may not be worth the benefit they provide. If possible, provide
+examples of other products or inventions with similar use cases. In a similar
+spirit to listing alternative versions of your invention, get creative and try
+to think of alternative uses for your invention as well. Alternative uses for
+your work may make it more valuable and enable broader claims.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How can the use of this invention be detected?&lt;/p&gt;
+
+&lt;p&gt;As I discuss in my post on
+&lt;a href=&#34;http://www.markbuckler.com/post/patenting/&#34; target=&#34;_blank&#34;&gt;patenting in academia and industry&lt;/a&gt;,
+part of a patent&amp;rsquo;s value is how easy it is to detect when the invention is
+being used without permission. Without the ability to detect the use of the
+invention, the patent can&amp;rsquo;t be enforced and is therefore useless. Your patent
+attorney may be more familiar with common methods for detecting use in your
+field since this isn&amp;rsquo;t a common thought for researchers, but list whatever
+methods you are aware of.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Who might want to purchase or license the potential patent?&lt;/p&gt;
+
+&lt;p&gt;This question is most relevant in academia where the assumption is not that
+the patent will be used directly by your organization. Universities don&amp;rsquo;t make
+products, and so a patent only has value if there is a demand for it! To answer
+this question list any people or organizations who might be interested in buying
+or licensing the potential patent from your organization. This can include the
+most prominent companies in your field as well as any any startups you may be
+aware of. Some technology offices may even begin marketing your idea before
+deciding to patent your invention as a way of determining demand, so give them
+as much help as you can.&lt;/p&gt;
+
+&lt;p&gt;If you are in a university and hope to launch a company using this patent,
+be extremely up front about your goals. You may even want to contact the
+technology licencing office before submitting an IDF to explain your intentions.
+Without knowing your goals the technology licencing office may sell the patent
+to an outside party without ever consulting you. Even simply marketing your
+invention before it has been patented may prevent you from creating a stealth
+mode startup. Make sure to communicate often and effectively with your
+university&amp;rsquo;s office to avoid such an issue. Your business plan may be a part of
+convincing the office to license to you instead of a large company, so prepare
+your business plan as early as possible.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After answering these 10 questions you will have successfully filled out your
+first IDF. Congratulations!  As you can see, a great deal of the questions asked
+in an IDF are similar to material that you may have already prepared for a
+technical report or research publication. Feel free to directly copy and paste
+from previous writing that you&amp;rsquo;ve done, and attach the original document to your
+IDF for ease of reading. With any luck your organization will be interested in
+filing a patent on your invention. May lots of patent filing bonuses or
+licencing revenue flow your way!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Patenting in Academia and Industry</title>
       <link>http://markbuckler.com/post/patenting/</link>
       <pubDate>Sat, 24 Feb 2018 16:25:31 -0400</pubDate>
@@ -414,7 +598,33 @@ what I love on &lt;a href=&#34;https://soundcloud.com/quoththeraver&#34; target=
       <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/lns-neural-accel/</guid>
-      <description></description>
+      <description>&lt;p&gt;For my final project in Cornell&amp;rsquo;s &lt;a href=&#34;https://web.csl.cornell.edu/courses/ece5745/&#34; target=&#34;_blank&#34;&gt;Complex ASIC Design
+course&lt;/a&gt; I built a neural network
+accelerator which used the &lt;a href=&#34;https://en.wikipedia.org/wiki/Logarithmic_number_system&#34; target=&#34;_blank&#34;&gt;Logarithmic Number System
+(LNS)&lt;/a&gt;. There has been
+some interest in &lt;a href=&#34;https://arxiv.org/pdf/1603.01025.pdf&#34; target=&#34;_blank&#34;&gt;using the LNS with neural
+networks&lt;/a&gt; as neural computation is
+multiplication heavy and multiplications in the LNS can be implemented with a
+simple adder. I augmented a
+&lt;a href=&#34;http://www.csl.cornell.edu/~cbatten/pdfs/lockhart-pymtl-micro2014.pdf&#34; target=&#34;_blank&#34;&gt;PyMTL&lt;/a&gt;
+implementation of a single threaded
+&lt;a href=&#34;https://web.csl.cornell.edu/courses/ece4750/handouts/ece4750-parc-isa.pdf&#34; target=&#34;_blank&#34;&gt;PARCv2&lt;/a&gt;
+processor with instructions to convert between LNS and fixed point, add LNS
+numbers, and multiply LNS numbers. I also built a matrix multiplication
+accelerator which could either use fixed point or the LNS. After integrating the
+accelerator with the processor and evaluating the various possible designs, it
+became clear that the delay and energy benefits gained by using the accelerator
+(generic cpu vs custom data and control path) far outweighed any savings in the
+ALU (LNS vs fixed point). This is due to two properties of matrix
+multiplication: 1) it has a regular dataflow that custom hardware can exploit
+well, and 2) benefits from cheap LNS multiplications wash out when the expensive
+but necessary LNS additions are used as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/cucapra/log-neural-accel&#34; target=&#34;_blank&#34;&gt;The code&lt;/a&gt; for this project is
+currently set to private due to the fact that I can&amp;rsquo;t release details about my
+baseline processor. Depending on your needs I may still be able to help you
+though, so contact me if you&amp;rsquo;re interested.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -518,9 +728,20 @@ and have the PDF on the other side of your screen. Seemless editing!&lt;/p&gt;
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/image-sensor/</guid>
-      <description>&lt;p&gt;While most image sensors can be configured to output a subset of their total resolution, unfortunately this doesn&amp;rsquo;t usually lead to energy savings as might have been expected &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=2464448&#34; target=&#34;_blank&#34;&gt;[LiKamWa-2013]&lt;/a&gt;. While LiKamWa et al. explored energy saving methods possible when using existing sensors, this project focused on making a new image sensor which is energy-proportional. &lt;a href=&#34;http://www.andrew.cmu.edu/user/sjayasur/website.html&#34; target=&#34;_blank&#34;&gt;Suren Jayasuriya&lt;/a&gt; and I did this by adding power gating transistors to the amplifier and ADC in each of the sensor&amp;rsquo;s readout columns.&lt;/p&gt;
+      <description>&lt;p&gt;While most image sensors can be configured to output a subset of their total
+resolution, this doesn&amp;rsquo;t usually lead to energy savings as might have been
+expected &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=2464448&#34; target=&#34;_blank&#34;&gt;[LiKamWa-2013]&lt;/a&gt;. LiKamWa
+et al. explored energy saving methods possible when using existing sensors, but
+our project took the idea further by making a new energy-proportional image
+sensor. &lt;a href=&#34;http://www.andrew.cmu.edu/user/sjayasur/website.html&#34; target=&#34;_blank&#34;&gt;Suren Jayasuriya&lt;/a&gt;
+and I did this by adding power gating transistors to the amplifier and ADC in
+each of the sensor&amp;rsquo;s readout columns.&lt;/p&gt;
 
-&lt;p&gt;My task was to write Verilog RTL to describe a state machine based controller for implementing both the rolling-shutter readout as well as the control for the column power gating. I then pushed my design through Synopsys synthesis in the IBM 130nm technology, and for integration Suren connected my digital logic to his analog sensing circuitry.&lt;/p&gt;
+&lt;p&gt;As the digital design lead on the project I wrote Verilog RTL to describe a
+state machine based controller for the rolling-shutter readout and control of
+the column power gating. I pushed my design through Synopsys synthesis and Suren
+connected the resulting digital layout to his pixels and other analog circuitry.
+We taped out this design in IBM&amp;rsquo;s 130nm technology.&lt;/p&gt;
 </description>
     </item>
     
@@ -703,167 +924,6 @@ sensitive volumes.&lt;/p&gt;&lt;/li&gt;
       
       <guid>http://markbuckler.com/project/ms-thesis/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>How to Install NVIDIA GPU Drivers &amp; CUDA</title>
-      <link>http://markbuckler.com/post/install-cuda/</link>
-      <pubDate>Sat, 01 Apr 2017 16:25:31 -0400</pubDate>
-      
-      <guid>http://markbuckler.com/post/install-cuda/</guid>
-      <description>&lt;p&gt;Anyone who&amp;rsquo;s set up a new Linux based, GPU enabled, deep learning system
-knows the horror that is driver installation. While it is technically
-possible to install NVIDIA drivers and CUDA from your package manager,
-the most up to date versions aren&amp;rsquo;t available and in the worst case you
-might even break graphics on your machine. After a great deal of
-difficulties installing and reinstalling, I finally found a viable
-strategy: installing both CUDA and proprietary Linux drivers from an
-NVIDA run file without OpenGL libraries.&lt;/p&gt;
-
-&lt;p&gt;The installation instructions shown below are largely taken from a two
-year old
-&lt;a href=&#34;https://devtalk.nvidia.com/default/topic/878117/-solved-titan-x-for-cuda-7-5-login-loop-error-ubuntu-14-04-/&#34; target=&#34;_blank&#34;&gt;forum
-post&lt;/a&gt;
-on NVIDIA&amp;rsquo;s developer forum with a question asked by a user called
-NeuroSurfer and answered by txbob. I think it is worth reposting the
-instructions here because I&amp;rsquo;ve added a few things, and also because
-I think a formal post will help bring more exposure to this solution.&lt;/p&gt;
-
-&lt;p&gt;Without further ado, here is how to install NVIDIA drivers and CUDA on
-your Linux machine. I have tested these instructions on systems running
-Ubuntu 14.04 and 16.04 and with Titan X and GTX 980 cards.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Preferably start with a fresh install of your OS, but if you are
-hoping to avoid a full OS re-install you first need to purge your
-system of any existing NVIDIA drivers installed via the package manager.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get remove --purge nvidia-*
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Download the run file for the CUDA version that you want. You can
-find the download link
-&lt;a href=&#34;https://developer.nvidia.com/cuda-downloads&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. Make sure to get
-the run file and not the debian installer. Change the permissions of it
-so that it can be executed.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;chmod a+x .
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Verify that build-essential is installed&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get install build-essential
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Remove your xorg.conf if it exists&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo rm /etc/X11/xorg.conf
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Create a blacklist file for nouveau (default Ubuntu graphics) at
-&lt;code&gt;/etc/modprobe.d/blacklist-nouveau.conf&lt;/code&gt;. Put in the following contents:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;blacklist nouveau
-options nouveau modeset=0
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Update your kernel&amp;rsquo;s ramdisk&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo update-initramfs -u
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Reboot your machine, nothing should have changed&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Use &lt;code&gt;Ctrl-Alt-F1&lt;/code&gt; to drop to a terminal, log in.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Stop your display manager. Lightdm is default for Ubuntu&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo service lightdm stop
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Navigate back to where you downloaded your run file. Run it and
-explicitly avoid installing OpenGL libraries with the command line
-option.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo ./cuda-X.Y.ZZ_linux.run --no-opengl-libs
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Accept the EULA&lt;/li&gt;
-&lt;li&gt;Install the driver? Yes&lt;/li&gt;
-&lt;li&gt;Update the Xserver config? No&lt;/li&gt;
-&lt;li&gt;Install CUDA? Yes&lt;/li&gt;
-&lt;li&gt;Install the CUDA samples? Yes&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Install nvidia-modprobe. This avoids that annoying
-&amp;ldquo;cudaGetDeviceCount returned 30 -&amp;gt; unknown error&amp;rdquo; issue.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get install nvidia-modprobe
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Edit your ~/.bashrc to update your path variables&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export PATH=/usr/local/cuda-7.0/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-7.0/lib64:$LD_LIBRARY_PATH
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Update your paths&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;source ~/.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Check that the CUDA version is correct.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;nvcc -V
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Check that your GPU&amp;rsquo;s are visible to the system and have the right
-driver versions.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;nvidia-smi
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Reboot your system, pray to our Lord and Savior Elon Musk. If his
-kindly gaze falls upon you, you will have a fully functional CUDA
-enabled Linux machine. Enjoy!&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Troubleshooting and final thoughts&lt;/p&gt;
-
-&lt;p&gt;If you experience a login loop (are able to get to the login screen but
-when you try to log in you are kicked back to the login screen) then it
-is likely that you forgot to include the &lt;code&gt;--no-opengl-libs&lt;/code&gt; command when
-running the installation runfile.&lt;/p&gt;
-
-&lt;p&gt;If after booting you see a black screen with a blinking unresponsive
-cursor, then you likely have something wrong with your display manager.
-Re-install lightdm or install and switch to gdm.&lt;/p&gt;
-
-&lt;p&gt;Because this installation doesn&amp;rsquo;t go through the package manager you may
-experience issues when upgrading your kernel. If you&amp;rsquo;d like a way to
-automatically re-install on an update you may be interested in &lt;a href=&#34;https://ubuntuforums.org/showthread.php?t=835573&#34; target=&#34;_blank&#34;&gt;this
-solution&lt;/a&gt; as well.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>VideoConversation</title>
-      <link>http://markbuckler.com/project/videoconversation/</link>
-      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/project/videoconversation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Example Talk</title>
-      <link>http://markbuckler.com/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/talk/example-talk/</guid>
-      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
     </item>
     
   </channel>

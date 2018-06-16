@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
-    <lastBuildDate>Fri, 16 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://markbuckler.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Low Precision SqueezeDet</title>
+      <link>http://markbuckler.com/project/squeeze-precision/</link>
+      <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/project/squeeze-precision/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Approximate Vision Pipeline</title>
@@ -36,7 +45,7 @@
       <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/lns-neural-accel/</guid>
-      <description></description>
+      <description>For my final project in Cornell&amp;rsquo;s Complex ASIC Design course I built a neural network accelerator which used the Logarithmic Number System (LNS). There has been some interest in using the LNS with neural networks as neural computation is multiplication heavy and multiplications in the LNS can be implemented with a simple adder. I augmented a PyMTL implementation of a single threaded PARCv2 processor with instructions to convert between LNS and fixed point, add LNS numbers, and multiply LNS numbers.</description>
     </item>
     
   </channel>
