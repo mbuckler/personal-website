@@ -13,12 +13,48 @@
     
     
     <item>
-      <title>Example Talk</title>
-      <link>http://markbuckler.com/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <title>The Imaging Pipeline</title>
+      <link>http://markbuckler.com/talk/imaging-pipeline/</link>
+      <pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/talk/example-talk/</guid>
-      <description>Embed your slides or video here using shortcodes. Further details can easily be added using Markdown and $\rm \LaTeX$ math code.</description>
+      <guid>http://markbuckler.com/talk/imaging-pipeline/</guid>
+      <description>Compact talk describing the imaging pipeline from photons to pixels</description>
+    </item>
+    
+    <item>
+      <title>EVA²: Exploiting Temporal Redundancy in Live Computer Vision</title>
+      <link>http://markbuckler.com/talk/isca2018/</link>
+      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/talk/isca2018/</guid>
+      <description>Hardware support for deep convolutional neural networks (CNNs) is critical to advanced computer vision in mobile and embedded devices. Current designs, however, accelerate generic CNNs; they do not exploit the unique characteristics of real-time vision. We propose to use the temporal redundancy in natural video to avoid unnecessary computation on most frames. A new algorithm, activation motion compensation, detects changes in the visual input and incrementally updates a previously-computed output. The technique takes inspiration from video compression and applies well-known motion estimation techniques to adapt to visual changes.</description>
+    </item>
+    
+    <item>
+      <title>Patenting</title>
+      <link>http://markbuckler.com/talk/patenting/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/talk/patenting/</guid>
+      <description>Useful information all about how to patent in both academia and industry.</description>
+    </item>
+    
+    <item>
+      <title>Reconfiguring The Imaging Pipeline For Computer Vision</title>
+      <link>http://markbuckler.com/talk/iccv2017/</link>
+      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/talk/iccv2017/</guid>
+      <description>Advancements in deep learning have ignited an explosion of research on efficient hardware for embedded computer vision. Hardware vision acceleration, however, does not address the cost of capturing and processing the image data that feeds these algorithms. We examine the role of the image signal processing (ISP) pipeline in computer vision to identify opportunities to reduce computation and save energy. The key insight is that imaging pipelines should be designed to be configurable: to switch between a traditional photography mode and a low-power vision mode that produces lower-quality image data suitable only for computer vision.</description>
+    </item>
+    
+    <item>
+      <title>Developing in Docker</title>
+      <link>http://markbuckler.com/talk/docker/</link>
+      <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/talk/docker/</guid>
+      <description>Docker is awesome, and this talk will tell you why.</description>
     </item>
     
   </channel>

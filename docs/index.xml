@@ -11,12 +11,42 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>The Imaging Pipeline</title>
+      <link>http://markbuckler.com/talk/imaging-pipeline/</link>
+      <pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/talk/imaging-pipeline/</guid>
+      <description>&lt;p&gt;Compact talk describing the imaging pipeline from photons to pixels&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EVA²: Exploiting Temporal Redundancy in Live Computer Vision</title>
+      <link>http://markbuckler.com/talk/isca2018/</link>
+      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/talk/isca2018/</guid>
+      <description>&lt;p&gt;Hardware support for deep convolutional neural networks (CNNs) is critical to advanced computer vision in mobile and embedded devices. Current designs, however, accelerate generic CNNs; they do not exploit the unique characteristics of real-time vision. We propose to use the temporal redundancy in natural video to avoid unnecessary computation on most frames. A new algorithm, activation motion compensation, detects changes in the visual input and incrementally updates a previously-computed output. The technique takes inspiration from video compression and applies well-known motion estimation techniques to adapt to visual changes. We use an adaptive key frame rate to control the trade-off between efficiency and vision quality as the input changes. We implement the technique in hardware as an extension to existing state-of-the-art CNN accelerator designs. The new unit reduces the average energy per frame by 54.2%, 61.7%, and 87.6% for three CNNs with less than 1% loss in vision accuracy.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>EVA²: Exploiting Temporal Redundancy in Live Computer Vision</title>
       <link>http://markbuckler.com/publication/isca2018/</link>
       <pubDate>Sun, 18 Mar 2018 19:37:01 -0400</pubDate>
       
       <guid>http://markbuckler.com/publication/isca2018/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Patenting</title>
+      <link>http://markbuckler.com/talk/patenting/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/talk/patenting/</guid>
+      <description>&lt;p&gt;Useful information all about how to patent in both academia and industry.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -422,6 +452,26 @@ if you&amp;rsquo;d like to read on!&lt;/p&gt;&lt;/li&gt;
     </item>
     
     <item>
+      <title>Reconfiguring The Imaging Pipeline For Computer Vision</title>
+      <link>http://markbuckler.com/talk/iccv2017/</link>
+      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/talk/iccv2017/</guid>
+      <description>&lt;p&gt;Advancements in deep learning have ignited an explosion of research on efficient hardware for embedded computer vision. Hardware vision acceleration, however, does not address the cost of capturing and processing the image data that feeds these algorithms. We examine the role of the image signal processing (ISP) pipeline in computer vision to identify opportunities to reduce computation and save energy. The key insight is that imaging pipelines should be designed to be configurable: to switch between a traditional photography mode and a low-power vision mode that produces lower-quality image data suitable only for computer vision. We use eight computer vision algorithms and a reversible pipeline simulation tool to study the imaging system&amp;rsquo;s impact on vision performance. For both CNN-based and classical vision algorithms, we observe that only two ISP stages, demosaicing and gamma compression, are critical for task performance. We propose a new image sensor design that can compensate for skipping these stages. The sensor design features an adjustable resolution and tunable analog-to-digital converters (ADCs). Our proposed imaging system&amp;rsquo;s vision mode disables the ISP entirely and configures the sensor to produce subsampled, lower-precision image data. This vision mode can save ~75% of the average energy of a baseline photography mode while having only a small impact on vision task accuracy.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Developing in Docker</title>
+      <link>http://markbuckler.com/talk/docker/</link>
+      <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/talk/docker/</guid>
+      <description>&lt;p&gt;Docker is awesome, and this talk will tell you why.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Cutting Videos with FFmpeg</title>
       <link>http://markbuckler.com/post/cutting-ffmpeg/</link>
       <pubDate>Thu, 06 Jul 2017 16:25:31 -0400</pubDate>
@@ -589,340 +639,6 @@ what I love on &lt;a href=&#34;https://soundcloud.com/quoththeraver&#34; target=
       <pubDate>Wed, 05 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/reversible-pipeline/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Neural Network Accelerator with Logarithmic Number System</title>
-      <link>http://markbuckler.com/project/lns-neural-accel/</link>
-      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/project/lns-neural-accel/</guid>
-      <description>&lt;p&gt;For my final project in Cornell&amp;rsquo;s &lt;a href=&#34;https://web.csl.cornell.edu/courses/ece5745/&#34; target=&#34;_blank&#34;&gt;Complex ASIC Design
-course&lt;/a&gt; I built a neural network
-accelerator which used the &lt;a href=&#34;https://en.wikipedia.org/wiki/Logarithmic_number_system&#34; target=&#34;_blank&#34;&gt;Logarithmic Number System
-(LNS)&lt;/a&gt;. There has been
-some interest in &lt;a href=&#34;https://arxiv.org/pdf/1603.01025.pdf&#34; target=&#34;_blank&#34;&gt;using the LNS with neural
-networks&lt;/a&gt; as neural computation is
-multiplication heavy and multiplications in the LNS can be implemented with a
-simple adder. I augmented a
-&lt;a href=&#34;http://www.csl.cornell.edu/~cbatten/pdfs/lockhart-pymtl-micro2014.pdf&#34; target=&#34;_blank&#34;&gt;PyMTL&lt;/a&gt;
-implementation of a single threaded
-&lt;a href=&#34;https://web.csl.cornell.edu/courses/ece4750/handouts/ece4750-parc-isa.pdf&#34; target=&#34;_blank&#34;&gt;PARCv2&lt;/a&gt;
-processor with instructions to convert between LNS and fixed point, add LNS
-numbers, and multiply LNS numbers. I also built a matrix multiplication
-accelerator which could either use fixed point or the LNS. After integrating the
-accelerator with the processor and evaluating the various possible designs, it
-became clear that the delay and energy benefits gained by using the accelerator
-(generic cpu vs custom data and control path) far outweighed any savings in the
-ALU (LNS vs fixed point). This is due to two properties of matrix
-multiplication: 1) it has a regular dataflow that custom hardware can exploit
-well, and 2) benefits from cheap LNS multiplications wash out when the expensive
-but necessary LNS additions are used as well.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/cucapra/log-neural-accel&#34; target=&#34;_blank&#34;&gt;The code&lt;/a&gt; for this project is
-currently set to private due to the fact that I can&amp;rsquo;t release details about my
-baseline processor. Depending on your needs I may still be able to help you
-though, so contact me if you&amp;rsquo;re interested.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Writing LaTeX in Vim</title>
-      <link>http://markbuckler.com/post/latex-in-vim/</link>
-      <pubDate>Mon, 03 Apr 2017 16:25:31 -0400</pubDate>
-      
-      <guid>http://markbuckler.com/post/latex-in-vim/</guid>
-      <description>&lt;p&gt;As an academic I am often writing LaTeX code for publications or general
-documentation. I used to use &lt;a href=&#34;https://www.sharelatex.com/&#34; target=&#34;_blank&#34;&gt;ShareLatex&lt;/a&gt;
-and &lt;a href=&#34;https://www.overleaf.com/&#34; target=&#34;_blank&#34;&gt;Overleaf&lt;/a&gt; because I have a secret love
-of GUIs (Lord forgive me!), but recently my co-authors have prefered
-to work in LaTeX repos shared on &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;. For
-this reason my most recent paper was actually written entirely in Vim!
-This post isn&amp;rsquo;t meant to be a complete description of the best way to
-edit LaTeX in Vim, but instead I want to
-share some of the tools, tricks, and tips that I&amp;rsquo;ve
-found useful when writing LaTeX in Vim.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Vim environment setup&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve made a nice little &lt;a href=&#34;https://github.com/mbuckler/vim-config&#34; target=&#34;_blank&#34;&gt;GitHub
-repo&lt;/a&gt; to host my Vim
-configuration settings (.vimrc) so that porting it between my machines
-is made easier. No need to copy my .vimrc wholesale if you don&amp;rsquo;t like
-everything, but these are a few options that I use:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Installing &lt;a href=&#34;https://github.com/VundleVim/Vundle.vim&#34; target=&#34;_blank&#34;&gt;Vundle&lt;/a&gt; for Vim
-package management and &lt;a href=&#34;https://github.com/tpope/vim-sensible&#34; target=&#34;_blank&#34;&gt;sensible.vim&lt;/a&gt;
-for near-universal improvements to the default Vim settings.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Tabs vs spaces&amp;hellip; We could &lt;a href=&#34;https://www.youtube.com/watch?v=SsoOG6ZeyUI&#34; target=&#34;_blank&#34;&gt;fight all
-day&lt;/a&gt; about using tabs or
-spaces, but you&amp;rsquo;ll want to put your preferred settings in your .vimrc.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Automatic text wrapping with &lt;code&gt;set wrap&lt;/code&gt;. This is one of the most
-useful settings when writing LaTeX in Vim.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Change out that ugly red column border with a nice grey column border
-with &lt;code&gt;set colorcolumn=+1&lt;/code&gt; and &lt;code&gt;hi ColorColumn ctermbg=7&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Show line numbers for easy reference: &lt;code&gt;set number&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Set your preferred spell check default. As an American I do &lt;code&gt;set
-spelllang=en_us&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Useful Vim commands&lt;/p&gt;
-
-&lt;p&gt;In addition to having a good setup for Vim, here are a few commands that
-I am constantly using.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Search: &lt;code&gt;/foo&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Search and replace: &lt;code&gt;:%s/foo/bar/g&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Toggle line numbers: &lt;code&gt;set nu&lt;/code&gt;, &lt;code&gt;set nu!&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Enable pasting without auto-indentation: &lt;code&gt;set paste&lt;/code&gt;, &lt;code&gt;set paste!&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Turn on and off spell checking: &lt;code&gt;set spell&lt;/code&gt;, &lt;code&gt;set spell!&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Automatically wrap a block of text: First select with &lt;code&gt;v&lt;/code&gt; for
-visual, and then use &lt;code&gt;gq&lt;/code&gt; to perform the wrapping.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Indent an entire section: First select with &lt;code&gt;v&lt;/code&gt; and then indent
-with &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Automatic LaTeX compilation&lt;/p&gt;
-
-&lt;p&gt;This isn&amp;rsquo;t Vim specific, but you&amp;rsquo;re going to need a
-complation method to turn your LaTeX in to a PDF. On Ubuntu this works
-very well for me:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Install texlive and latexmk from your package manager. This will require more
-than a Gigabyte of space on your disk and so will take a while, but that
-sure beats having to selectively install LaTeX packages.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get install texlive-full latexmk
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Start a background process to automatically compile your LaTeX and
-generate a PDF. You can edit your document in a separate terminal tab
-and have the PDF on the other side of your screen. Seemless editing!&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;latexmk -pvc -pdf main.tex &amp;amp;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Configurable Imaging Sensor</title>
-      <link>http://markbuckler.com/project/image-sensor/</link>
-      <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/project/image-sensor/</guid>
-      <description>&lt;p&gt;While most image sensors can be configured to output a subset of their total
-resolution, this doesn&amp;rsquo;t usually lead to energy savings as might have been
-expected &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=2464448&#34; target=&#34;_blank&#34;&gt;[LiKamWa-2013]&lt;/a&gt;. LiKamWa
-et al. explored energy saving methods possible when using existing sensors, but
-our project took the idea further by making a new energy-proportional image
-sensor. &lt;a href=&#34;http://www.andrew.cmu.edu/user/sjayasur/website.html&#34; target=&#34;_blank&#34;&gt;Suren Jayasuriya&lt;/a&gt;
-and I did this by adding power gating transistors to the amplifier and ADC in
-each of the sensor&amp;rsquo;s readout columns.&lt;/p&gt;
-
-&lt;p&gt;As the digital design lead on the project I wrote Verilog RTL to describe a
-state machine based controller for the rolling-shutter readout and control of
-the column power gating. I pushed my design through Synopsys synthesis and Suren
-connected the resulting digital layout to his pixels and other analog circuitry.
-We taped out this design in IBM&amp;rsquo;s 130nm technology.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Developing in Docker</title>
-      <link>http://markbuckler.com/post/docker-use/</link>
-      <pubDate>Sun, 02 Apr 2017 16:25:31 -0400</pubDate>
-      
-      <guid>http://markbuckler.com/post/docker-use/</guid>
-      <description>&lt;p&gt;Most of us academic/industrial ECE/CS researchers want to make our
-results as reproducible as possible. Its good for the integrity of our
-field and it also helps future researchers and developers to build on
-our prior work. &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; is great for distributing
-software, but code can rarely be compiled and run on its own as nearly
-all modern software relies heavily on packages and dependencies.
-Installing these dependencies can be incredibly frustrating or possibly
-even impossible depending on how long ago the code was written.
-Thankfully, &lt;a href=&#34;https://www.docker.com/&#34; target=&#34;_blank&#34;&gt;Docker&lt;/a&gt; is here to save the day!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;What benefits does Docker provide?&lt;/p&gt;
-
-&lt;p&gt;Running code or even product deployment without ever installing
-dependencies, enabling multiple dependency versions on a server without
-conflicts, &amp;ldquo;pulling&amp;rdquo; of environments from &lt;a href=&#34;https://hub.docker.com/&#34; target=&#34;_blank&#34;&gt;Docker
-Hub&lt;/a&gt; as simply and easily as cloning a GitHub
-repository, and all without noticeable performance degradation.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;How does Docker provide all of this modularity and portability?&lt;/p&gt;
-
-&lt;p&gt;By very nearly being a Virtual Machine (VM) but not going the full way.
-&lt;a href=&#34;https://docs.docker.com/get-started/#containers-vs-virtual-machines&#34; target=&#34;_blank&#34;&gt;See here for more
-details&lt;/a&gt;,
-but rather than implementing an entire OS as a VM might do, an
-instantiation of a Docker image (called a &amp;ldquo;Container&amp;rdquo;) only implements
-binaries, libraries, and applications. This makes running a Windows
-image on Linux or vice versa tricky since they don&amp;rsquo;t have the same
-kernel, but since most of the folks I know develop on Linux this hasn&amp;rsquo;t
-been a problem for me. In case you&amp;rsquo;re interested in running Docker on
-macOS or Windows check out &lt;a href=&#34;http://containerjournal.com/2016/08/15/docker-not-just-linux-anymore/&#34; target=&#34;_blank&#34;&gt;this blog
-post&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;From a practical standpoint, how do I use Docker?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/docker_high_level.png&#34; alt=&#34;Docker at a high level&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;First, write an installation script for all of your dependencies. This
-script is written with Docker specific syntax and is called a
-Dockerfile. Then, run these commands to build a Docker image of your
-environment by using &lt;code&gt;docker build&lt;/code&gt;. Once successfully built, you can
-instantiate copies of this image as many times as you would like by
-using &lt;code&gt;docker run&lt;/code&gt; to create Docker containers. It is in these
-containers that you will run or develop your code. If you would like
-other people to be able to use your Docker image you can push to
-DockerHub (with &lt;code&gt;docker push&lt;/code&gt;), and if you want to use someone else&amp;rsquo;s
-image you can pull from DockerHub (with &lt;code&gt;docker pull&lt;/code&gt;).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;How do I write a Dockerfile?&lt;/p&gt;
-
-&lt;p&gt;You can check out the &lt;a href=&#34;https://docs.docker.com/engine/reference/builder/&#34; target=&#34;_blank&#34;&gt;full reference&lt;/a&gt;, but here is
-a simple example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# Start with an existing Docker image to give yourself a head start
-FROM ubuntu:14.04
-
-# Change to a given directory
-WORKDIR /root
-
-# Run some shell commands to install dependencies
-RUN apt-get update &amp;amp;&amp;amp; apt-get upgrade &amp;amp;&amp;amp; apt-get install -y \
-    build-essential \
-    git \
-    etc...
-
-# Clone and build code not available through your package manager
-RUN git clone https://github.com/halide/Halide.git
-WORKDIR /root/Halide
-RUN make -j8
-
-# Set any necessary environment variables
-ENV LD_LIBRARY_PATH /root/Halide/bin:$LD_LIBRARY_PATH
-
-# Lastly, set your workdir to be your default when starting the image
-WORKDIR /root
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;How do I run a Docker image (create a docker container)?&lt;/p&gt;
-
-&lt;p&gt;First, pull the image you&amp;rsquo;d like to use or build one from a Dockerfile
-like the one shown above.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;docker pull mbuckler/approx-vision
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then, use the docker run command.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;docker run \
--v &amp;lt;path to datasets&amp;gt;:/datasets \
--v &amp;lt;path to approx-vision&amp;gt;:/approx-vision \
--it mbuckler/approx-vision \
-/bin/bash
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the example command above you see that I start with &lt;code&gt;docker run&lt;/code&gt;, and
-then create two &lt;a href=&#34;https://docs.docker.com/engine/tutorials/dockervolumes/&#34; target=&#34;_blank&#34;&gt;docker
-volumes&lt;/a&gt;. These
-volumes allow me to interact with data outside of the docker container.
-Then I choose which image to run, and start myself off with a bash
-shell.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What if I want to use my GPU from within a Docker container?&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;re in luck! NVIDIA provides
-&lt;a href=&#34;https://github.com/NVIDIA/nvidia-docker&#34; target=&#34;_blank&#34;&gt;nvidia-docker&lt;/a&gt;, a specific
-application for linking NVIDIA GPU&amp;rsquo;s and docker.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What if I want to use X forwarding from within a Docker container?&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://people.ece.cornell.edu/skand/&#34; target=&#34;_blank&#34;&gt;Skand Hurkat&lt;/a&gt; and I figured
-out a great way to do this. He&amp;rsquo;s posted the instructions
-&lt;a href=&#34;https://people.ece.cornell.edu/skand/post/x-forwarding-on-docker/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
-but I&amp;rsquo;ll cross-post them here for completeness.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Include the X packages within your Docker image by adding these
-commands to your Dockerfile.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;RUN apt-get update
-RUN apt-get install -qqy x11-apps
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Set the path to your &lt;code&gt;.Xauthority&lt;/code&gt; file. Your &lt;code&gt;.Xauthority&lt;/code&gt; file
-will automatically be created in your home directory if using X11
-forwarding on a server you&amp;rsquo;re accessing remotely, but if you&amp;rsquo;re using
-Docker on your local device then you&amp;rsquo;ll need to create the file with
-touch.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;XAUTH=$HOME/.Xauthority
-touch $XAUTH
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Run your Docker image. Use the host&amp;rsquo;s networking stack and
-connect both the display and Xauthority environment variables.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;docker run --network=host --env DISPLAY=$DISPLAY -v $XAUTH:/root/.Xauthority -it &amp;lt;dockerimagename&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;OK Docker fanboy, tell me the downsides&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;For one, creating/pulling lots of Docker images can take up a lot of
-disk space. The real downside however is that Docker users have sudo
-privileges on the local machine when running containers. You can find a
-really excellent blog post about this
-&lt;a href=&#34;https://fosterelli.co/privilege-escalation-via-docker.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, but
-at the end of the day you have two choices:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Require that users invoke sudo when executing docker commands.&lt;/p&gt;
-
-&lt;p&gt;This isn&amp;rsquo;t super attractive since it makes usage less convenient,
-but it is the safest option.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Create and use a docker group.&lt;/p&gt;
-
-&lt;p&gt;With this option anyone who is in the docker group can run docker
-commands without sudo. This is the option I use, where I only add users to the docker
-group that I would consider adding to the sudo group. I also inform new
-users about the dangers, as you can do a lot of damage by mounting
-sensitive volumes.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Network-on-Chip Synchronization</title>
-      <link>http://markbuckler.com/project/ms-thesis/</link>
-      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/project/ms-thesis/</guid>
       <description></description>
     </item>
     
