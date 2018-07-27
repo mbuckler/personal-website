@@ -462,6 +462,17 @@ if you&amp;rsquo;d like to read on!&lt;/p&gt;&lt;/li&gt;
     </item>
     
     <item>
+      <title>How to Make Espresso</title>
+      <link>http://markbuckler.com/talk/espresso/</link>
+      <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/talk/espresso/</guid>
+      <description>&lt;p&gt;Instructions on how to use a conical burr coffee grinder and semi-automatic
+espresso machine.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Developing in Docker</title>
       <link>http://markbuckler.com/talk/docker/</link>
       <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
@@ -630,15 +641,6 @@ what I love on &lt;a href=&#34;https://soundcloud.com/quoththeraver&#34; target=
       <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/youtube-bb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reversible Imaging Pipeline</title>
-      <link>http://markbuckler.com/project/reversible-pipeline/</link>
-      <pubDate>Wed, 05 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/project/reversible-pipeline/</guid>
       <description></description>
     </item>
     
