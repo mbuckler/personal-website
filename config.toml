@@ -21,7 +21,7 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Mark Buckler"
-  role = "PhD Student"
+  role = "PhD Candidate"
   organization = "Cornell University"
   organization_url = "https://www.cornell.edu/"
   avatar = "portrait.jpg"

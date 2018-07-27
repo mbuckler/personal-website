@@ -38,7 +38,7 @@ weight = 1
 
 # Biography
 
-I'm currently a PhD student in the Electrical and Computer Engineering
+I'm currently a PhD Candidate in the Electrical and Computer Engineering
 department here at Cornell University. I'm advised by [Prof Adrian
 Sampson](http://www.cs.cornell.edu/~asampson/).
 
