@@ -142,6 +142,11 @@ defaultContentLanguageInSubdir = false
     link = "https://www.linkedin.com/in/markbuckler/"
 
   [[params.social]]
+    icon = "youtube"
+    icon_pack = "fa"
+    link = "https://www.youtube.com/channel/UC-GpGo9w6kW2UfJobgDFjcw?view_as=subscriber"
+
+  [[params.social]]
     icon = "soundcloud"
     icon_pack = "fa"
     link = "https://soundcloud.com/quoththeraver"
