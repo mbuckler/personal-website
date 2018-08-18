@@ -77,39 +77,65 @@ CUDA!
 	    <summary>Why is this so bad?</summary>
 		One of the most fundamental concepts in computer architecture is the
 specialization-generalization trade-off. One extreme example of this trade-off
-would be taking any given algorithm and baking it into specialized hardware,
-dramatically improving computational efficiency. This may sound like a great
-idea, and it can be, but optimizing hardware for a specific algorithm means that
-the resulting hardware can't do anything other than compute that algorithm. So,
-optimizing your hardware for the network of the moment is a dangerous
-proposition considering the deluge of papers every year from NIPS, ICML, ICCV,
-and CVPR. 
+is taking any given algorithm and baking it into specialized hardware. This
+dramatically improves computational efficiency, but optimizing hardware for a
+single algorithm means that the resulting hardware can't do anything other than
+compute that algorithm. So, optimizing your hardware for the network of the
+moment is a dangerous proposition considering the deluge of papers every year
+from NIPS, ICML, ICCV, and CVPR. Consider the evolution from
+[AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf),
+to [ResNet](https://arxiv.org/abs/1512.03385), to
+[SqueezeNet](https://arxiv.org/abs/1602.07360), to
+[MobileNet](https://arxiv.org/abs/1704.04861). The software development cycle
+(from idea to implementation) can be around 6 months, while the hardware
+development cycle is often closer to 2 years. This means that over
+specialization can lead to your chip being obsolete before it's even built.
+
+	The opposite extreme on the specialization-generalization trade-off is
+to be purely general. It may seem strange to think of GPUs as general purpose
+hardware, but they are one of the most popular choices for
+throughput focused commodity hardware. You may correctly point to
+the fact that GPUs have modules within them that are optimized for nothing but
+graphics, and thus there may be an opening for a truly generic throughput
+accelerator. This point is becoming less and less valid however as deep learning
+continues to be one of the most popular applications for GPUs, so both NVIDIA
+and AMD have become optimizing their GPUs for deep learning workloads. Overall,
+you don't want to make a general purpose GPU because NVIDIA and AMD are already
+working to beat you to the punch.
 	</details>
 
 3. *Avoid All Complexity*
 
 	Exploiting [sparsity](https://arxiv.org/abs/1708.04485), [model
-compression](https://arxiv.org/abs/1602.01528), or [temporal
-redundancy](https://arxiv.org/abs/1803.06312) seems hard. Waffle back and forth about
-if your hardware will support these features, and in the end just do the bare minimum.
+compression](https://arxiv.org/abs/1602.01528), [systolic
+arrays](https://arxiv.org/abs/1704.04760), or [temporal
+redundancy](https://arxiv.org/abs/1803.06312) seems hard. Waffle back and forth
+about if your hardware will support these features, and in the end just do the
+bare minimum.
 
 	<details>
 	    <summary>Why is this so bad?</summary>
-		Template
+		As we discussed above, choosing where your device falls on the
+specialization-generalization trade-off curve is a critical decision. The one
+benefit that custom hardware can provide is specialization after all, so it is
+important to specialize in a meaningful way. Without any special optimizations
+for your application of choice your system will be no better than a general
+purpose CPU or GPU.
 	</details>
 
 4. *All DNNs are CNNs*
 
 	The most famous DNN paper in recent memory is
 [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf).
-From this we can conclude that all neural networks are convolutional. Optimize
-your system for `3x3` (or better yet, `5x5`!) convolutions and then claim that
-your system is a generic neural network accelerator.
+From this we can conclude that absolutely all neural networks are convolutional
+image classifiers. Optimize your system for `3x3` (or better yet, `5x5`!)
+convolutions and then claim that your system is a generic neural network
+accelerator.
 
 	<details>
 	    <summary>Why is this so bad?</summary>
-	    Cite the TPU 1 paper
-		d
+	    As the [first TPU paper](https://arxiv.org/abs/1704.04760) was quick to
+point out, CNNs are actually in the minority when it comes to 
 	</details>
 
 5. *Hammer that DRAM*
