@@ -52,10 +52,14 @@ maximum amount of potential users while doing the least amount of work.
 
 	<details>
 	    <summary>Why is this so bad?</summary>
-	    Users interested in training and users interested in inference often
-have fundamentally different hardware needs. For example: hardware
-for training is generally evaluated on its throughput above all else, while
-hardware for inference is typically optimized for latency. While some hardware
+		Users interested in training and users interested in inference often
+have fundamentally different hardware needs. For example: hardware for training
+is generally evaluated on its throughput above all else, while hardware for
+inference is typically optimized for latency. Data locality can be different as
+well since activations  must be stored for all layers when training but
+activations can be discarded during inference. Finally, training hardware will
+often need to support much higher precision than inference hardware
+due to the need for gradient computation in training. So while some hardware
 optimizations improve performance overall, many design decisions will end up
 placing your hardware somewhere along a trade-off curve. Without a clear focus
 for what your potential users need, you'll find that what you've built isn't
@@ -100,8 +104,8 @@ hardware. GPUs do have modules within them that are optimized for nothing but
 graphics, but the impact of these modules is becoming less and less relevant as
 deep learning continues to be one of the most popular applications for GPUs.
 NVIDIA and AMD have been optimizing their GPUs for deep learning workloads for
-quite a while now. So, to avoid simply making another GPU, use application
-specific optimizations such as those mentioned in the next point.
+quite a while now. You can avoid simply making another GPU by using application
+specific optimizations such as those mentioned in the next piece of advice.
 	</details>
 
 3. *Avoid All Complexity*
@@ -145,7 +149,7 @@ networks. If you plan on making a generic deep learning processor then
 optimizing for only CNNs is a huge oversight.
 
 	It is important to point out however that not all hardware must aspire to be
-purely generic. Part of the reason why the hardware
+purely generic. After all, part of the reason why the hardware
 community has been so interested in CNNs is the many
 interesting and effective ways to accelerate them. This includes
 [my own work](https://arxiv.org/abs/1803.06312)! Also, while Google servers may
@@ -166,7 +170,8 @@ saving precious area for logic instead of on-chip memory.
 temporal locality of data in their applications of choice. While many GPU
 applications don't have significant temporal locality (hence the reason for
 small on-chip memory) this is certainly not the case for deep learning
-workloads. As Song Han and others point out in their paper about the [Efficient Inference
+workloads. As [Song Han](https://stanford.edu/~songhan/) and others point out in
+their paper on the [Efficient Inference
 Engine](https://arxiv.org/pdf/1602.01528.pdf): even without changing the
 underlying computation, huge amounts of energy and time can be saved by simply
 keeping network activations and model parameters on chip.
@@ -174,10 +179,10 @@ keeping network activations and model parameters on chip.
 
 6. *All DNN Computation is Regular*
 
-	Literally all DNN computation is dense matrix matrix multiplication. The
-regularity of this computation means that we can always assume maximum DRAM
-bandwidth, and there's no need for any hardware or software support for load
-balancing!
+	Literally all DNN computation is dense matrix multiplication. The regularity
+and predictability of this computation means that we can always assume
+maximum DRAM bandwidth, and there's no need for any hardware or software support
+for load balancing!
 
 	<details>
 	    <summary>Why is this so bad?</summary>
@@ -192,20 +197,7 @@ those in the [TPU](https://arxiv.org/pdf/1704.04760.pdf) or
 [Eyeriss](https://people.csail.mit.edu/emer/papers/2016.06.isca.eyeriss_architecture.pdf).
 	</details>
 
-7. *ISA FTW*
-
-	Some of the most exciting innovations in classical computer architecture
-have come in the form of instruction set architecture (ISA) improvements. As we know,
-the one constant in technology is that it never changes, so we can conclude that
-ISA innovations will be the most impactful in DNN hardware.
-
-	<details>
-	    <summary>Why is this so bad?</summary>
-		While it can be exciting to create a fancy new ISA for deep neural
-networks, dataflow and memory usage are much more important in DNN hardware.
-	</details>
-
-8. *8 Bit Means 8 Bit*
+7. *8 Bit Means 8 Bit*
 
 	DNNs are famously well suited for low precision computation, so we only need
 to support 8 bit accumulations. Don't tell anyone that this is what your
@@ -219,10 +211,13 @@ multiplying two 8 bit numbers together results in a 16 bit product. Additionally
 (pun totally intended), many products will be added together as a part of the
 multiply accumulate chains inherent to matrix-matrix multiplication. For this
 reason, hardware systems must accumulate with precision significantly larger
-than that used to store activations and weights.
+than that used to store activations and weights. For a more in depth discussion
+of the different kinds of precision and their importance in deep neural
+networks I recommend [Chris De Sa](http://www.cs.cornell.edu/~cdesa/)'s
+paper on [low-precision SGD](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5789782/).
 	</details>
 
-9. *Latency = 1 / Throughput*
+8. *Latency = 1 / Throughput*
 
 	Latency is clearly the inverse of throughput, so only report frames per
 second with large batch sizes.
@@ -234,11 +229,35 @@ data when training. This significantly reduces the average time needed to
 process each frame. For this reason supporting large batch sizes and reporting
 performance when using large batch sizes can be completely reasonable. This is
 certainly not the case however for applications which require real-time
-inference like self driving cars and augmented reality. For these applications,
+inference like self driving cars and augmented reality however. For these applications,
 waiting to group multiple frames into a batch is unacceptable since a result is
 expected for each frame immediately after being received. So, "average time per
-frame" is only equal to real-time latency if the batch size is equal to 1.
+frame" is only equal to real-time latency if the batch size is equal to 1. The
+[Project Brainwave](https://www.microsoft.com/en-us/research/uploads/prod/2018/03/mi0218_Chung-2018Mar25.pdf) paper has some great details on this.
 	</details>
+
+9. *The Yield Will Get Better, I Promise*
+
+	The device physics folks down the hall can surely scale their experimental
+technology to production level soon. CMOS is old news. Its all about graphene,
+spintronics, optical computing, \<insert your own post-CMOS tech here\>.
+
+	<details>
+	    <summary>Why is this so bad?</summary>
+		This advice can go for pretty much any kind of computer architecture
+research but is especially relevant for deep learning hardware due to its
+popularity. Hardware architects often get really excited when they find
+themselves speaking with device physics people. New computing technologies sound
+very promising and have all kinds of desirable properties. The challenge with
+nearly all of these new technologies however is scaling the process from tens of
+devices per chip to millions or billions of devices per chip. If you are a
+process design engineer or a device physics person yourself then by all means do
+research in that field, but if you are just a hardware engineer then be wary of
+any technology that isn't being used at an industrial scale. Otherwise you'll
+find yourself putting bogus numbers in your architectural simulator and/or never
+be able to fabricate your chip.
+	</details>
+
 
 10. *Software? Lame.*
 
@@ -260,5 +279,6 @@ complexities of their hardware, they should be actively involved in the
 development of the software stack for their system.
 	</details>
 
-Have I missed any classic hardware design sins? If you can think of any, feel
-free to let me know in the comments below.
+I hope this helps you develop a useless deep learning chip of your very own!
+Did I missed any classic hardware design sins? If you can think of any, feel
+free to let me know in the comments below. :smile:
