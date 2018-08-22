@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="cornellcsl">
+  <meta name="generator" content="Hugo 0.41" />
+  <meta name="author" content="Mark Buckler">
+  <meta name="description" content="PhD Candidate">
+
+  
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
+  <link rel="stylesheet" href="/css/cornellcsl.min.css">
+  
+
+  <link rel="alternate" href="http://markbuckler.com/index.xml" type="application/rss+xml" title="Mark Buckler">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://markbuckler.com/post/bad-dnn-asic/">
+
+  
+
+  <title>How to Make Bad Deep Learning Hardware | Mark Buckler</title>
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#ffffff",
+        "text": "#000000"
+      },
+      "button": {
+        "background": "#b31b1b",
+        "text": "#ffffff"
+      }
+    },
+    "showLink": false,
+    "content": {
+      "message": "This website uses cookies for analytics and to enable comments.",
+      "dismiss": "Cool! I get it."
+    }
+  })});
+  </script>
+</head>
+<body data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+    
+    <a class="sr-only" href="#content">Skip to main content</a>
+    <header id="top" class="cu-banner">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 cu-csl-logo-div">
+	    
+                <a href="https://www.cornell.edu/" target="_blank">
+            
+		    <img src="/img/org-logo.svg"
+		        class="img-responsive"
+                        alt="Cornell University"
+		        style="margin: 0;" />
+            
+                </a>
+            
+            </div>
+	    
+        </div>
+    </div>
+    </header>
+
+
+<div class="nav-wrapper">
+<nav class="navbar navbar-default" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Mark Buckler</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#publications">
+            
+            <span>Publications</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#patents">
+            
+            <span>Patents</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#talks">
+            
+            <span>Talks</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+</div>
+
+
+<article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+  
+
+  <div class="article-container">
+    <h1 itemprop="name headline">How to Make Bad Deep Learning Hardware</h1>
+    
+
+<div class="article-metadata">
+
+  
+  <span class="article-date">
+    <time datetime="2018-08-15T16:25:31-04:00" itemprop="datePublished">
+      Wed, Aug 15, 2018
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fmarkbuckler.com%2fpost%2fbad-dnn-asic%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=How%20to%20Make%20Bad%20Deep%20Learning%20Hardware&amp;url=http%3a%2f%2fmarkbuckler.com%2fpost%2fbad-dnn-asic%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fmarkbuckler.com%2fpost%2fbad-dnn-asic%2f&amp;title=How%20to%20Make%20Bad%20Deep%20Learning%20Hardware"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fmarkbuckler.com%2fpost%2fbad-dnn-asic%2f&amp;title=How%20to%20Make%20Bad%20Deep%20Learning%20Hardware"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=How%20to%20Make%20Bad%20Deep%20Learning%20Hardware&amp;body=http%3a%2f%2fmarkbuckler.com%2fpost%2fbad-dnn-asic%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>I&rsquo;ve greatly enjoyed my time as a graduate research intern at
+<a href="http://deepscale.ai/" target="_blank">DeepScale</a> and so I was pleased when <a href="http://www.forrestiandola.com/" target="_blank">Forrest
+Iandola</a> asked me to give a talk to his team on
+deep learning hardware. To keep the talk from being a boring list of slides
+recounting famous (but dry) neural network hardware papers, we decided to structure it
+like one of <a href="https://en.wikipedia.org/wiki/David_Patterson_(computer_scientist)" target="_blank">David
+Patterson</a>&rsquo;s
+talks which describe <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-123.pdf" target="_blank">what <em>not</em> to
+do</a>. The
+talk was well received, so I decided to reformat it into this blog post. This
+post does assume some knowledge of DNN processing, but for those of you who are
+new to the topic I also provide explanations for each piece of advice in spoiler
+tags. If you want to learn more about DNN processing, I recommend this excellent
+<a href="https://arxiv.org/abs/1703.09039" target="_blank">survey paper</a> by <a href="http://www.rle.mit.edu/eems/people/" target="_blank">Vivienne
+Sze</a> and others.</p>
+
+<p>Fun fact by the way: Forrest and I first met way back in 2007 when our
+respective projects made it to the AAAS national high school science fair! The
+project I made for that competition developed into <a href="https://patents.google.com/patent/US8289363B2/en" target="_blank">my first
+patent</a> and eventually <a href="http://firebrandinnovations.com/" target="_blank">my
+first company</a>.</p>
+
+<p>Before we begin, a few disclaimers. 1) While I have read and written many papers
+on DNN hardware design, I have never built DNN hardware in a corporate context.
+2) These are my personal opinions and don&rsquo;t reflect those held by DeepScale.</p>
+
+<p>Alright, lets make some awful hardware!</p>
+
+<h2 id="guidelines-for-making-bad-dnn-hardware">Guidelines for Making Bad DNN Hardware</h2>
+
+<ol>
+<li><p><em>Be Vague</em></p>
+
+<p>The first step whenever making any bad system is to have no clear goal in
+mind. When it comes to DNN hardware your system could be optimized for
+inference, training, or both. Rather than focusing your design on any particular
+use case, simply include all buzzwords on your website to attract the
+maximum amount of potential users while doing the least amount of work.</p>
+
+<p><details>
+    <summary>Why is this so bad?</summary>
+    Users interested in training and users interested in inference often
+have fundamentally different hardware needs. For example: hardware
+for training is generally evaluated on its throughput above all else, while
+hardware for inference is typically optimized for latency. While some hardware
+optimizations improve performance overall, many design decisions will end up
+placing your hardware somewhere along a trade-off curve. Without a clear focus
+for what your potential users need, you&rsquo;ll find that what you&rsquo;ve built isn&rsquo;t
+useful to anyone in particular.
+</details></p></li>
+
+<li><p><em>Specialization: All or Nothing</em></p>
+
+<p>You have only two options when it comes to hardware specialization:</p>
+
+<p><strong>Option 1:</strong> Fully optimize for the NoM (Network of the Moment). Clearly the fact
+that the NoM is popular now means that it will always be popular, ensuring that
+your hardware will get the most users!</p>
+
+<p><strong>Option 2:</strong> DNNs want
+throughput, so make a generic throughput accelerator. <em>Bonus:</em> There are a lot
+of languages for throughput accelerators already. Your hardware can even support
+CUDA!</p>
+
+<p><details>
+    <summary>Why is this so bad?</summary>
+    One of the most fundamental concepts in computer architecture is the
+specialization-generalization trade-off. One extreme example of this trade-off
+is taking any given algorithm and baking it into specialized hardware. This
+dramatically improves computational efficiency, but optimizing hardware for a
+single algorithm means that the resulting hardware can&rsquo;t do anything other than
+compute that algorithm. So, optimizing your hardware for the network of the
+moment is a dangerous proposition considering the deluge of papers every year
+from NIPS, ICML, ICCV, and CVPR. As an example consider the evolution from
+<a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf" target="_blank">AlexNet</a>,
+to <a href="https://arxiv.org/abs/1512.03385" target="_blank">ResNet</a>, to
+<a href="https://arxiv.org/abs/1602.07360" target="_blank">SqueezeNet</a>, to
+<a href="https://arxiv.org/abs/1704.04861" target="_blank">MobileNet</a>. The software development cycle
+(from idea to implementation) can be around 6 months, while the hardware
+development cycle is often closer to 2 years. This means that over
+specialization can lead to your chip being obsolete before it&rsquo;s even built.</p>
+
+<p>The opposite extreme on the specialization-generalization trade-off is to be
+purely general. It may seem strange to think of GPUs as general purpose
+hardware, but they are the most popular choice for throughput focused commodity
+hardware. GPUs do have modules within them that are optimized for nothing but
+graphics, but the impact of these modules is becoming less and less relevant as
+deep learning continues to be one of the most popular applications for GPUs.
+NVIDIA and AMD have been optimizing their GPUs for deep learning workloads for
+quite a while now. So, to avoid simply making another GPU, use application
+specific optimizations such as those mentioned in the next point.
+</details></p></li>
+
+<li><p><em>Avoid All Complexity</em></p>
+
+<p>Exploiting <a href="https://arxiv.org/abs/1708.04485" target="_blank">sparsity</a>, <a href="https://arxiv.org/abs/1602.01528" target="_blank">model
+compression</a>, <a href="https://arxiv.org/abs/1704.04760" target="_blank">systolic
+arrays</a>, or <a href="https://arxiv.org/abs/1803.06312" target="_blank">temporal
+redundancy</a> seems hard. Waffle back and forth
+about if your hardware will support these features, and in the end just do the
+bare minimum.</p>
+
+<p><details>
+    <summary>Why is this so bad?</summary>
+    As we discussed above, choosing where your device falls on the
+specialization-generalization trade-off curve is a critical decision. The one
+benefit that custom hardware can provide is specialization after all, so it is
+important to specialize in a meaningful way. Without any special optimizations
+for your application of choice your system will be no better than a general
+purpose CPU or GPU.
+</details></p></li>
+
+<li><p><em>All DNNs are CNNs</em></p>
+
+<p>The most famous DNN paper in recent memory is
+<a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf" target="_blank">AlexNet</a>.
+From this we can conclude that absolutely all neural networks are convolutional
+image classifiers. Optimize your system for <code>3x3</code> (or better yet, <code>5x5</code>!)
+convolutions and then claim that your system is a generic neural network
+accelerator.</p>
+
+<p><details>
+    <summary>Why is this so bad?</summary>
+    CNNs are far from the only kind of neural network. Despite their
+popularity in the hardware research community, Google found that CNNs accounted
+for <a href="https://arxiv.org/abs/1704.04760" target="_blank">only 5%</a> of their total DNN workload. The
+other big players
+include <a href="https://en.wikipedia.org/wiki/Multilayer_perceptron" target="_blank">Multi-Layer Perceptrons</a> and
+<a href="https://en.wikipedia.org/wiki/Recurrent_neural_network" target="_blank">Recurrent Neural Networks</a> such as
+<a href="https://en.wikipedia.org/wiki/Long_short-term_memory" target="_blank">Long Short-Term Memory</a>
+networks. If you plan on making a generic deep learning processor then
+optimizing for only CNNs is a huge oversight.</p>
+
+<p>It is important to point out however that not all hardware must aspire to be
+purely generic. Part of the reason why the hardware
+community has been so interested in CNNs is the many
+interesting and effective ways to accelerate them. This includes
+<a href="https://arxiv.org/abs/1803.06312" target="_blank">my own work</a>! Also, while Google servers may
+not run CNN inference frequently, vision-heavy applications like self driving cars and
+augmented reality rely heavily on CNNs. So, rather than claiming that optimizing
+for CNNs is always a bad idea, I simply want to point out that choosing to
+specialize for CNN computation must be done intentionally.
+</details></p></li>
+
+<li><p><em>Hammer that DRAM</em></p>
+
+<p>GPUs are good at deep learning and have tiny caches, so learn from this by
+saving precious area for logic instead of on-chip memory.</p>
+
+<p><details>
+    <summary>Why is this so bad?</summary>
+    Good computer architects must always be thinking about the spatial and
+temporal locality of data in their applications of choice. While many GPU
+applications don&rsquo;t have significant temporal locality (hence the reason for
+small on-chip memory) this is certainly not the case for deep learning
+workloads. As Song Han and others point out in their paper about the <a href="https://arxiv.org/pdf/1602.01528.pdf" target="_blank">Efficient Inference
+Engine</a>: even without changing the
+underlying computation, huge amounts of energy and time can be saved by simply
+keeping network activations and model parameters on chip.
+</details></p></li>
+
+<li><p><em>All DNN Computation is Regular</em></p>
+
+<p>Literally all DNN computation is dense matrix matrix multiplication. The
+regularity of this computation means that we can always assume maximum DRAM
+bandwidth, and there&rsquo;s no need for any hardware or software support for load
+balancing!</p>
+
+<p><details>
+    <summary>Why is this so bad?</summary>
+    As it turns out, lots of DNN computation can be irregular and load
+balancing can be a hard problem even with fully regular computation. Irregular
+DNN computation be a result of <a href="https://s3-us-west-2.amazonaws.com/openai-assets/blocksparse/blocksparsepaper.pdf" target="_blank">leveraging
+sparsity</a>,
+<a href="https://arxiv.org/abs/1510.00149" target="_blank">model compression</a>, or a variety of other
+techniques. Load balancing issues can come from this irregular computation, but
+can also come from general challenges when using systolic arrays such as
+those in the <a href="https://arxiv.org/pdf/1704.04760.pdf" target="_blank">TPU</a> or
+<a href="https://people.csail.mit.edu/emer/papers/2016.06.isca.eyeriss_architecture.pdf" target="_blank">Eyeriss</a>.
+</details></p></li>
+
+<li><p><em>ISA FTW</em></p>
+
+<p>Some of the most exciting innovations in classical computer architecture
+have come in the form of instruction set architecture (ISA) improvements. As we know,
+the one constant in technology is that it never changes, so we can conclude that
+ISA innovations will be the most impactful in DNN hardware.</p>
+
+<p><details>
+    <summary>Why is this so bad?</summary>
+    While it can be exciting to create a fancy new ISA for deep neural
+networks, dataflow and memory usage are much more important in DNN hardware.
+</details></p></li>
+
+<li><p><em>8 Bit Means 8 Bit</em></p>
+
+<p>DNNs are famously well suited for low precision computation, so we only need
+to support 8 bit accumulations. Don&rsquo;t tell anyone that this is what your
+hardware does, instead keep it as a trade secret.</p>
+
+<p><details>
+    <summary>Why is this so bad?</summary>
+    Computing with 8 bit weights and activations may be one thing, but
+accumulating in 8 bits will lead to extreme overflow issues. To begin with,
+multiplying two 8 bit numbers together results in a 16 bit product. Additionally
+(pun totally intended), many products will be added together as a part of the
+multiply accumulate chains inherent to matrix-matrix multiplication. For this
+reason, hardware systems must accumulate with precision significantly larger
+than that used to store activations and weights.
+</details></p></li>
+
+<li><p><em>Latency = 1 / Throughput</em></p>
+
+<p>Latency is clearly the inverse of throughput, so only report frames per
+second with large batch sizes.</p>
+
+<p><details>
+    <summary>Why is this so bad?</summary>
+    Large batch sizes are often used to increase the temporal locality of
+data when training. This significantly reduces the average time needed to
+process each frame. For this reason supporting large batch sizes and reporting
+performance when using large batch sizes can be completely reasonable. This is
+certainly not the case however for applications which require real-time
+inference like self driving cars and augmented reality. For these applications,
+waiting to group multiple frames into a batch is unacceptable since a result is
+expected for each frame immediately after being received. So, &ldquo;average time per
+frame&rdquo; is only equal to real-time latency if the batch size is equal to 1.
+</details></p></li>
+
+<li><p><em>Software? Lame.</em></p>
+
+<p>Listen, if we wanted to make software we would have joined Facebook. Let&rsquo;s
+just have one engineer extend gcc so that we aren&rsquo;t <em>technically</em> lying when we
+say that you can write code for our chip.</p>
+
+<p><details>
+    <summary>Why is this so bad?</summary>
+    Hardware designers can get dismissive about software simply because it
+isn&rsquo;t their area of expertise, but hardware is useless without software support!
+With a few exceptions here and there, even application specific hardware must be
+programmed. Any pitch for a new piece of hardware must include both the exciting
+new features that the hardware provides as well as a in-depth description of the
+software stack used to program the hardware. The features are why someone might
+be interested and the software stack is how they can leverage these great
+features. Because hardware designers are the most comfortable with the
+complexities of their hardware, they should be actively involved in the
+development of the software stack for their system.
+</details></p></li>
+</ol>
+
+<p>Have I missed any classic hardware design sins? If you can think of any, feel
+free to let me know in the comments below.</p>
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://markbuckler.com/post/idf/"><span
+      aria-hidden="true">&larr;</span> All About Invention Disclosures</a></li>
+    
+
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread">
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "markbuckler" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</section>
+
+
+</div>
+
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/cornellcsl.min.js"></script>
+    
+
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-98211041-1', 'auto');
+        ga('send', 'pageview');
+
+         
+        var links = document.querySelectorAll('a');
+        Array.prototype.map.call(links, function(item) {
+            if (item.host != document.location.host) {
+                item.addEventListener('click', function() {
+                    var action = item.getAttribute('data-action') || 'follow';
+                    ga('send', 'event', 'outbound', action, item.href);
+                });
+            }
+        });
+    </script>
+    
+
+    
+    
+
+    
+    
+
+  </body>
+</html>
+
