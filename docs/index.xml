@@ -11,6 +11,288 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>How to Make Bad Deep Learning Hardware</title>
+      <link>http://markbuckler.com/post/bad-dnn-asic/</link>
+      <pubDate>Wed, 15 Aug 2018 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/bad-dnn-asic/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve greatly enjoyed my time as a graduate research intern at
+&lt;a href=&#34;http://deepscale.ai/&#34; target=&#34;_blank&#34;&gt;DeepScale&lt;/a&gt; and so I was pleased when &lt;a href=&#34;http://www.forrestiandola.com/&#34; target=&#34;_blank&#34;&gt;Forrest
+Iandola&lt;/a&gt; asked me to give a talk to his team on
+deep learning hardware. To keep the talk from being a boring list of slides
+recounting famous (but dry) neural network hardware papers, we decided to structure it
+like one of &lt;a href=&#34;https://en.wikipedia.org/wiki/David_Patterson_(computer_scientist)&#34; target=&#34;_blank&#34;&gt;David
+Patterson&lt;/a&gt;&amp;rsquo;s
+talks which describe &lt;a href=&#34;https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-123.pdf&#34; target=&#34;_blank&#34;&gt;what &lt;em&gt;not&lt;/em&gt; to
+do&lt;/a&gt;. The
+talk was well received, so I decided to reformat it into this blog post. This
+post does assume some knowledge of DNN processing, but for those of you who are
+new to the topic I also provide explanations for each piece of advice in spoiler
+tags. If you want to learn more about DNN processing, I recommend this excellent
+&lt;a href=&#34;https://arxiv.org/abs/1703.09039&#34; target=&#34;_blank&#34;&gt;survey paper&lt;/a&gt; by &lt;a href=&#34;http://www.rle.mit.edu/eems/people/&#34; target=&#34;_blank&#34;&gt;Vivienne
+Sze&lt;/a&gt; and others.&lt;/p&gt;
+
+&lt;p&gt;Fun fact by the way: Forrest and I first met way back in 2007 when our
+respective projects made it to the AAAS national high school science fair! The
+project I made for that competition developed into &lt;a href=&#34;https://patents.google.com/patent/US8289363B2/en&#34; target=&#34;_blank&#34;&gt;my first
+patent&lt;/a&gt; and eventually &lt;a href=&#34;http://firebrandinnovations.com/&#34; target=&#34;_blank&#34;&gt;my
+first company&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Before we begin, a few disclaimers. 1) While I have read and written many papers
+on DNN hardware design, I have never built DNN hardware in a corporate context.
+2) These are my personal opinions and don&amp;rsquo;t reflect those held by DeepScale.&lt;/p&gt;
+
+&lt;p&gt;Alright, lets make some awful hardware!&lt;/p&gt;
+
+&lt;h2 id=&#34;guidelines-for-making-bad-dnn-hardware&#34;&gt;Guidelines for Making Bad DNN Hardware&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Be Vague&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The first step whenever making any bad system is to have no clear goal in
+mind. When it comes to DNN hardware your system could be optimized for
+inference, training, or both. Rather than focusing your design on any particular
+use case, simply include all buzzwords on your website to attract the
+maximum amount of potential users while doing the least amount of work.&lt;/p&gt;
+
+&lt;p&gt;&lt;details&gt;
+    &lt;summary&gt;Why is this so bad?&lt;/summary&gt;
+    Users interested in training and users interested in inference often
+have fundamentally different hardware needs. For example: hardware for training
+is generally evaluated on its throughput above all else, while hardware for
+inference is typically optimized for latency. Data locality can be different as
+well since activations  must be stored for all layers when training but
+activations can be discarded during inference. Finally, training hardware will
+often need to support much higher precision than inference hardware
+due to the need for gradient computation in training. So while some hardware
+optimizations improve performance overall, many design decisions will end up
+placing your hardware somewhere along a trade-off curve. Without a clear focus
+for what your potential users need, you&amp;rsquo;ll find that what you&amp;rsquo;ve built isn&amp;rsquo;t
+useful to anyone in particular.
+&lt;/details&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Specialization: All or Nothing&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;You have only two options when it comes to hardware specialization:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Option 1:&lt;/strong&gt; Fully optimize for the NoM (Network of the Moment). Clearly the fact
+that the NoM is popular now means that it will always be popular, ensuring that
+your hardware will get the most users!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Option 2:&lt;/strong&gt; DNNs want
+throughput, so make a generic throughput accelerator. &lt;em&gt;Bonus:&lt;/em&gt; There are a lot
+of languages for throughput accelerators already. Your hardware can even support
+CUDA!&lt;/p&gt;
+
+&lt;p&gt;&lt;details&gt;
+    &lt;summary&gt;Why is this so bad?&lt;/summary&gt;
+    One of the most fundamental concepts in computer architecture is the
+specialization-generalization trade-off. One extreme example of this trade-off
+is taking any given algorithm and baking it into specialized hardware. This
+dramatically improves computational efficiency, but optimizing hardware for a
+single algorithm means that the resulting hardware can&amp;rsquo;t do anything other than
+compute that algorithm. So, optimizing your hardware for the network of the
+moment is a dangerous proposition considering the deluge of papers every year
+from NIPS, ICML, ICCV, and CVPR. As an example consider the evolution from
+&lt;a href=&#34;https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf&#34; target=&#34;_blank&#34;&gt;AlexNet&lt;/a&gt;,
+to &lt;a href=&#34;https://arxiv.org/abs/1512.03385&#34; target=&#34;_blank&#34;&gt;ResNet&lt;/a&gt;, to
+&lt;a href=&#34;https://arxiv.org/abs/1602.07360&#34; target=&#34;_blank&#34;&gt;SqueezeNet&lt;/a&gt;, to
+&lt;a href=&#34;https://arxiv.org/abs/1704.04861&#34; target=&#34;_blank&#34;&gt;MobileNet&lt;/a&gt;. The software development cycle
+(from idea to implementation) can be around 6 months, while the hardware
+development cycle is often closer to 2 years. This means that over
+specialization can lead to your chip being obsolete before it&amp;rsquo;s even built.&lt;/p&gt;
+
+&lt;p&gt;The opposite extreme on the specialization-generalization trade-off is to be
+purely general. It may seem strange to think of GPUs as general purpose
+hardware, but they are the most popular choice for throughput focused commodity
+hardware. GPUs do have modules within them that are optimized for nothing but
+graphics, but the impact of these modules is becoming less and less relevant as
+deep learning continues to be one of the most popular applications for GPUs.
+NVIDIA and AMD have been optimizing their GPUs for deep learning workloads for
+quite a while now. You can avoid simply making another GPU by using application
+specific optimizations such as those mentioned in the next piece of advice.
+&lt;/details&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Avoid All Complexity&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Exploiting &lt;a href=&#34;https://arxiv.org/abs/1708.04485&#34; target=&#34;_blank&#34;&gt;sparsity&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/1602.01528&#34; target=&#34;_blank&#34;&gt;model
+compression&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/1704.04760&#34; target=&#34;_blank&#34;&gt;systolic
+arrays&lt;/a&gt;, or &lt;a href=&#34;https://arxiv.org/abs/1803.06312&#34; target=&#34;_blank&#34;&gt;temporal
+redundancy&lt;/a&gt; seems hard. Waffle back and forth
+about if your hardware will support these features, and in the end just do the
+bare minimum.&lt;/p&gt;
+
+&lt;p&gt;&lt;details&gt;
+    &lt;summary&gt;Why is this so bad?&lt;/summary&gt;
+    As we discussed above, choosing where your device falls on the
+specialization-generalization trade-off curve is a critical decision. The one
+benefit that custom hardware can provide is specialization after all, so it is
+important to specialize in a meaningful way. Without any special optimizations
+for your application of choice your system will be no better than a general
+purpose CPU or GPU.
+&lt;/details&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;All DNNs are CNNs&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The most famous DNN paper in recent memory is
+&lt;a href=&#34;https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf&#34; target=&#34;_blank&#34;&gt;AlexNet&lt;/a&gt;.
+From this we can conclude that absolutely all neural networks are convolutional
+image classifiers. Optimize your system for &lt;code&gt;3x3&lt;/code&gt; (or better yet, &lt;code&gt;5x5&lt;/code&gt;!)
+convolutions and then claim that your system is a generic neural network
+accelerator.&lt;/p&gt;
+
+&lt;p&gt;&lt;details&gt;
+    &lt;summary&gt;Why is this so bad?&lt;/summary&gt;
+    CNNs are far from the only kind of neural network. Despite their
+popularity in the hardware research community, Google found that CNNs accounted
+for &lt;a href=&#34;https://arxiv.org/abs/1704.04760&#34; target=&#34;_blank&#34;&gt;only 5%&lt;/a&gt; of their total DNN workload. The
+other big players
+include &lt;a href=&#34;https://en.wikipedia.org/wiki/Multilayer_perceptron&#34; target=&#34;_blank&#34;&gt;Multi-Layer Perceptrons&lt;/a&gt; and
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Recurrent_neural_network&#34; target=&#34;_blank&#34;&gt;Recurrent Neural Networks&lt;/a&gt; such as
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Long_short-term_memory&#34; target=&#34;_blank&#34;&gt;Long Short-Term Memory&lt;/a&gt;
+networks. If you plan on making a generic deep learning processor then
+optimizing for only CNNs is a huge oversight.&lt;/p&gt;
+
+&lt;p&gt;It is important to point out however that not all hardware must aspire to be
+purely generic. After all, part of the reason why the hardware
+community has been so interested in CNNs is the many
+interesting and effective ways to accelerate them. This includes
+&lt;a href=&#34;https://arxiv.org/abs/1803.06312&#34; target=&#34;_blank&#34;&gt;my own work&lt;/a&gt;! Also, while Google servers may
+not run CNN inference frequently, vision-heavy applications like self driving cars and
+augmented reality rely heavily on CNNs. So, rather than claiming that optimizing
+for CNNs is always a bad idea, I simply want to point out that choosing to
+specialize for CNN computation must be done intentionally.
+&lt;/details&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Hammer that DRAM&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;GPUs are good at deep learning and have tiny caches, so learn from this by
+saving precious area for logic instead of on-chip memory.&lt;/p&gt;
+
+&lt;p&gt;&lt;details&gt;
+    &lt;summary&gt;Why is this so bad?&lt;/summary&gt;
+    Good computer architects must always be thinking about the spatial and
+temporal locality of data in their applications of choice. While many GPU
+applications don&amp;rsquo;t have significant temporal locality (hence the reason for
+small on-chip memory) this is certainly not the case for deep learning
+workloads. As &lt;a href=&#34;https://stanford.edu/~songhan/&#34; target=&#34;_blank&#34;&gt;Song Han&lt;/a&gt; and others point out in
+their paper on the &lt;a href=&#34;https://arxiv.org/pdf/1602.01528.pdf&#34; target=&#34;_blank&#34;&gt;Efficient Inference
+Engine&lt;/a&gt;: even without changing the
+underlying computation, huge amounts of energy and time can be saved by simply
+keeping network activations and model parameters on chip.
+&lt;/details&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;All DNN Computation is Regular&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Literally all DNN computation is dense matrix multiplication. The regularity
+and predictability of this computation means that we can always assume
+maximum DRAM bandwidth, and there&amp;rsquo;s no need for any hardware or software support
+for load balancing!&lt;/p&gt;
+
+&lt;p&gt;&lt;details&gt;
+    &lt;summary&gt;Why is this so bad?&lt;/summary&gt;
+    As it turns out, lots of DNN computation can be irregular and load
+balancing can be a hard problem even with fully regular computation. Irregular
+DNN computation be a result of &lt;a href=&#34;https://s3-us-west-2.amazonaws.com/openai-assets/blocksparse/blocksparsepaper.pdf&#34; target=&#34;_blank&#34;&gt;leveraging
+sparsity&lt;/a&gt;,
+&lt;a href=&#34;https://arxiv.org/abs/1510.00149&#34; target=&#34;_blank&#34;&gt;model compression&lt;/a&gt;, or a variety of other
+techniques. Load balancing issues can come from this irregular computation, but
+can also come from general challenges when using systolic arrays such as
+those in the &lt;a href=&#34;https://arxiv.org/pdf/1704.04760.pdf&#34; target=&#34;_blank&#34;&gt;TPU&lt;/a&gt; or
+&lt;a href=&#34;https://people.csail.mit.edu/emer/papers/2016.06.isca.eyeriss_architecture.pdf&#34; target=&#34;_blank&#34;&gt;Eyeriss&lt;/a&gt;.
+&lt;/details&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;8 Bit Means 8 Bit&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;DNNs are famously well suited for low precision computation, so we only need
+to support 8 bit accumulations. Don&amp;rsquo;t tell anyone that this is what your
+hardware does, instead keep it as a trade secret.&lt;/p&gt;
+
+&lt;p&gt;&lt;details&gt;
+    &lt;summary&gt;Why is this so bad?&lt;/summary&gt;
+    Computing with 8 bit weights and activations may be one thing, but
+accumulating in 8 bits will lead to extreme overflow issues. To begin with,
+multiplying two 8 bit numbers together results in a 16 bit product. Additionally
+(pun totally intended), many products will be added together as a part of the
+multiply accumulate chains inherent to matrix-matrix multiplication. For this
+reason, hardware systems must accumulate with precision significantly larger
+than that used to store activations and weights. For a more in depth discussion
+of the different kinds of precision and their importance in deep neural
+networks I recommend &lt;a href=&#34;http://www.cs.cornell.edu/~cdesa/&#34; target=&#34;_blank&#34;&gt;Chris De Sa&lt;/a&gt;&amp;rsquo;s
+paper on &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5789782/&#34; target=&#34;_blank&#34;&gt;low-precision SGD&lt;/a&gt;.
+&lt;/details&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Latency = 1 / Throughput&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Latency is clearly the inverse of throughput, so only report frames per
+second with large batch sizes.&lt;/p&gt;
+
+&lt;p&gt;&lt;details&gt;
+    &lt;summary&gt;Why is this so bad?&lt;/summary&gt;
+    Large batch sizes are often used to increase the temporal locality of
+data when training. This significantly reduces the average time needed to
+process each frame. For this reason supporting large batch sizes and reporting
+performance when using large batch sizes can be completely reasonable. This is
+certainly not the case however for applications which require real-time
+inference like self driving cars and augmented reality however. For these applications,
+waiting to group multiple frames into a batch is unacceptable since a result is
+expected for each frame immediately after being received. So, &amp;ldquo;average time per
+frame&amp;rdquo; is only equal to real-time latency if the batch size is equal to 1. The
+&lt;a href=&#34;https://www.microsoft.com/en-us/research/uploads/prod/2018/03/mi0218_Chung-2018Mar25.pdf&#34; target=&#34;_blank&#34;&gt;Project Brainwave&lt;/a&gt; paper has some great details on this.
+&lt;/details&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;The Yield Will Get Better, I Promise&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The device physics folks down the hall can surely scale their experimental
+technology to production level soon. CMOS is old news. Its all about graphene,
+spintronics, optical computing, &amp;lt;insert your own post-CMOS tech here&amp;gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;details&gt;
+    &lt;summary&gt;Why is this so bad?&lt;/summary&gt;
+    This advice can go for pretty much any kind of computer architecture
+research but is especially relevant for deep learning hardware due to its
+popularity. Hardware architects often get really excited when they find
+themselves speaking with device physics people. New computing technologies sound
+very promising and have all kinds of desirable properties. The challenge with
+nearly all of these new technologies however is scaling the process from tens of
+devices per chip to millions or billions of devices per chip. If you are a
+process design engineer or a device physics person yourself then by all means do
+research in that field, but if you are just a hardware engineer then be wary of
+any technology that isn&amp;rsquo;t being used at an industrial scale. Otherwise you&amp;rsquo;ll
+find yourself putting bogus numbers in your architectural simulator and/or never
+be able to fabricate your chip.
+&lt;/details&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Software? Lame.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Listen, if we wanted to make software we would have joined Facebook. Let&amp;rsquo;s
+just have one engineer extend gcc so that we aren&amp;rsquo;t &lt;em&gt;technically&lt;/em&gt; lying when we
+say that you can write code for our chip.&lt;/p&gt;
+
+&lt;p&gt;&lt;details&gt;
+    &lt;summary&gt;Why is this so bad?&lt;/summary&gt;
+    Hardware designers can get dismissive about software simply because it
+isn&amp;rsquo;t their area of expertise, but hardware is useless without software support!
+With a few exceptions here and there, even application specific hardware must be
+programmed. Any pitch for a new piece of hardware must include both the exciting
+new features that the hardware provides as well as an in-depth description of
+the software stack used to program the hardware. The features are why someone
+might be interested and the software stack is how they can leverage these great
+features. Because hardware designers are the most comfortable with the
+complexities of their hardware, they should be actively involved in the
+development of the software stack for their system.
+&lt;/details&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I hope this helps you develop a useless deep learning chip of your very own!
+Did I missed any classic hardware design sins? If you can think of any, feel
+free to let me know in the comments below. 😄&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>The Imaging Pipeline</title>
       <link>http://markbuckler.com/talk/imaging-pipeline/</link>
       <pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate>
@@ -632,15 +914,6 @@ what I love on &lt;a href=&#34;https://soundcloud.com/quoththeraver&#34; target=
       <pubDate>Wed, 26 Apr 2017 19:37:01 -0400</pubDate>
       
       <guid>http://markbuckler.com/publication/iccv2017/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>YouTube BoundingBox Dataset Downloader</title>
-      <link>http://markbuckler.com/project/youtube-bb/</link>
-      <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/project/youtube-bb/</guid>
       <description></description>
     </item>
     

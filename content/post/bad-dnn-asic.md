@@ -271,9 +271,9 @@ say that you can write code for our chip.
 isn't their area of expertise, but hardware is useless without software support!
 With a few exceptions here and there, even application specific hardware must be
 programmed. Any pitch for a new piece of hardware must include both the exciting
-new features that the hardware provides as well as a in-depth description of the
-software stack used to program the hardware. The features are why someone might
-be interested and the software stack is how they can leverage these great
+new features that the hardware provides as well as an in-depth description of
+the software stack used to program the hardware. The features are why someone
+might be interested and the software stack is how they can leverage these great
 features. Because hardware designers are the most comfortable with the
 complexities of their hardware, they should be actively involved in the
 development of the software stack for their system.
