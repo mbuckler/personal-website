@@ -37,6 +37,7 @@ first company](http://firebrandinnovations.com/).
 Before we begin, a few disclaimers. 1) While I have read and written many papers
 on DNN hardware design, I have never built DNN hardware in a corporate context.
 2) These are my personal opinions and don't reflect those held by DeepScale.
+
 Alright, lets make some awful hardware!
 
 ## Guidelines for Making Bad DNN Hardware
@@ -47,14 +48,12 @@ Alright, lets make some awful hardware!
 mind. When it comes to DNN hardware your system could be optimized for
 inference, training, or both. Rather than focusing your design on any particular
 use case, simply include all buzzwords on your website to attract the
-maximum amount of customers while doing the least amount of work. *Bonus:* Think
-of all the time you'll save when potential customers hang up on your marketing
-calls when they realize your hardware doesn't do what they need!
+maximum amount of potential users while doing the least amount of work.
 
 	<details>
 	    <summary>Why is this so bad?</summary>
 	    Users interested in training and users interested in inference often
-have fundamentally different needs from their hardware. For example: hardware
+have fundamentally different hardware needs. For example: hardware
 for training is generally evaluated on its throughput above all else, while
 hardware for inference is typically optimized for latency. While some hardware
 optimizations improve performance overall, many design decisions will end up
@@ -65,10 +64,13 @@ useful to anyone in particular.
 
 2. *Specialization: All or Nothing*
 
-	You have only two options when it comes to hardware specialization.
-Option 1: Fully optimize for the NoM (Network of the Moment). Clearly the fact
+	You have only two options when it comes to hardware specialization:
+
+	**Option 1:** Fully optimize for the NoM (Network of the Moment). Clearly the fact
 that the NoM is popular now means that it will always be popular, ensuring that
-your hardware will get the most users! Option 2: DNNs want
+your hardware will get the most users!
+
+	**Option 2:** DNNs want
 throughput, so make a generic throughput accelerator. *Bonus:* There are a lot
 of languages for throughput accelerators already. Your hardware can even support
 CUDA!
@@ -82,7 +84,7 @@ dramatically improves computational efficiency, but optimizing hardware for a
 single algorithm means that the resulting hardware can't do anything other than
 compute that algorithm. So, optimizing your hardware for the network of the
 moment is a dangerous proposition considering the deluge of papers every year
-from NIPS, ICML, ICCV, and CVPR. Consider the evolution from
+from NIPS, ICML, ICCV, and CVPR. As an example consider the evolution from
 [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf),
 to [ResNet](https://arxiv.org/abs/1512.03385), to
 [SqueezeNet](https://arxiv.org/abs/1602.07360), to
@@ -91,17 +93,15 @@ to [ResNet](https://arxiv.org/abs/1512.03385), to
 development cycle is often closer to 2 years. This means that over
 specialization can lead to your chip being obsolete before it's even built.
 
-	The opposite extreme on the specialization-generalization trade-off is
-to be purely general. It may seem strange to think of GPUs as general purpose
-hardware, but they are one of the most popular choices for
-throughput focused commodity hardware. You may correctly point to
-the fact that GPUs have modules within them that are optimized for nothing but
-graphics, and thus there may be an opening for a truly generic throughput
-accelerator. This point is becoming less and less valid however as deep learning
-continues to be one of the most popular applications for GPUs, so both NVIDIA
-and AMD have become optimizing their GPUs for deep learning workloads. Overall,
-you don't want to make a general purpose GPU because NVIDIA and AMD are already
-working to beat you to the punch.
+	The opposite extreme on the specialization-generalization trade-off is to be
+purely general. It may seem strange to think of GPUs as general purpose
+hardware, but they are the most popular choice for throughput focused commodity
+hardware. GPUs do have modules within them that are optimized for nothing but
+graphics, but the impact of these modules is becoming less and less relevant as
+deep learning continues to be one of the most popular applications for GPUs.
+NVIDIA and AMD have been optimizing their GPUs for deep learning workloads for
+quite a while now. So, to avoid simply making another GPU, use application
+specific optimizations such as those mentioned in the next point.
 	</details>
 
 3. *Avoid All Complexity*
@@ -134,8 +134,25 @@ accelerator.
 
 	<details>
 	    <summary>Why is this so bad?</summary>
-	    As the [first TPU paper](https://arxiv.org/abs/1704.04760) was quick to
-point out, CNNs are actually in the minority when it comes to 
+		CNNs are far from the only kind of neural network. Despite their
+popularity in the hardware research community, Google found that CNNs accounted
+for [only 5%](https://arxiv.org/abs/1704.04760) of their total DNN workload. The
+other big players
+include [Multi-Layer Perceptrons](https://en.wikipedia.org/wiki/Multilayer_perceptron) and
+[Recurrent Neural Networks](https://en.wikipedia.org/wiki/Recurrent_neural_network) such as
+[Long Short-Term Memory](https://en.wikipedia.org/wiki/Long_short-term_memory)
+networks. If you plan on making a generic deep learning processor then
+optimizing for only CNNs is a huge oversight.
+
+	It is important to point out however that not all hardware must aspire to be
+purely generic. Part of the reason why the hardware
+community has been so interested in CNNs is the many
+interesting and effective ways to accelerate them. This includes
+[my own work](https://arxiv.org/abs/1803.06312)! Also, while Google servers may
+not run CNN inference frequently, vision-heavy applications like self driving cars and
+augmented reality rely heavily on CNNs. So, rather than claiming that optimizing
+for CNNs is always a bad idea, I simply want to point out that choosing to
+specialize for CNN computation must be done intentionally.
 	</details>
 
 5. *Hammer that DRAM*
@@ -145,7 +162,14 @@ saving precious area for logic instead of on-chip memory.
 
 	<details>
 	    <summary>Why is this so bad?</summary>
-		Template
+		Good computer architects must always be thinking about the spatial and
+temporal locality of data in their applications of choice. While many GPU
+applications don't have significant temporal locality (hence the reason for
+small on-chip memory) this is certainly not the case for deep learning
+workloads. As Song Han and others point out in their paper about the [Efficient Inference
+Engine](https://arxiv.org/pdf/1602.01528.pdf): even without changing the
+underlying computation, huge amounts of energy and time can be saved by simply
+keeping network activations and model parameters on chip.
 	</details>
 
 6. *All DNN Computation is Regular*
@@ -157,7 +181,15 @@ balancing!
 
 	<details>
 	    <summary>Why is this so bad?</summary>
-		Template
+		As it turns out, lots of DNN computation can be irregular and load
+balancing can be a hard problem even with fully regular computation. Irregular
+DNN computation be a result of [leveraging
+sparsity](https://s3-us-west-2.amazonaws.com/openai-assets/blocksparse/blocksparsepaper.pdf),
+[model compression](https://arxiv.org/abs/1510.00149), or a variety of other
+techniques. Load balancing issues can come from this irregular computation, but
+can also come from general challenges when using systolic arrays such as
+those in the [TPU](https://arxiv.org/pdf/1704.04760.pdf) or
+[Eyeriss](https://people.csail.mit.edu/emer/papers/2016.06.isca.eyeriss_architecture.pdf).
 	</details>
 
 7. *ISA FTW*
@@ -169,7 +201,8 @@ ISA innovations will be the most impactful in DNN hardware.
 
 	<details>
 	    <summary>Why is this so bad?</summary>
-		Dataflow and memory usage is much more imporant in DNN hardware
+		While it can be exciting to create a fancy new ISA for deep neural
+networks, dataflow and memory usage are much more important in DNN hardware.
 	</details>
 
 8. *8 Bit Means 8 Bit*
@@ -180,7 +213,13 @@ hardware does, instead keep it as a trade secret.
 
 	<details>
 	    <summary>Why is this so bad?</summary>
-		Template
+		Computing with 8 bit weights and activations may be one thing, but
+accumulating in 8 bits will lead to extreme overflow issues. To begin with,
+multiplying two 8 bit numbers together results in a 16 bit product. Additionally
+(pun totally intended), many products will be added together as a part of the
+multiply accumulate chains inherent to matrix-matrix multiplication. For this
+reason, hardware systems must accumulate with precision significantly larger
+than that used to store activations and weights.
 	</details>
 
 9. *Latency = 1 / Throughput*
@@ -190,7 +229,15 @@ second with large batch sizes.
 
 	<details>
 	    <summary>Why is this so bad?</summary>
-		Template
+		Large batch sizes are often used to increase the temporal locality of
+data when training. This significantly reduces the average time needed to
+process each frame. For this reason supporting large batch sizes and reporting
+performance when using large batch sizes can be completely reasonable. This is
+certainly not the case however for applications which require real-time
+inference like self driving cars and augmented reality. For these applications,
+waiting to group multiple frames into a batch is unacceptable since a result is
+expected for each frame immediately after being received. So, "average time per
+frame" is only equal to real-time latency if the batch size is equal to 1.
 	</details>
 
 10. *Software? Lame.*
@@ -201,10 +248,17 @@ say that you can write code for our chip.
 
 	<details>
 	    <summary>Why is this so bad?</summary>
-		Template
+		Hardware designers can get dismissive about software simply because it
+isn't their area of expertise, but hardware is useless without software support!
+With a few exceptions here and there, even application specific hardware must be
+programmed. Any pitch for a new piece of hardware must include both the exciting
+new features that the hardware provides as well as a in-depth description of the
+software stack used to program the hardware. The features are why someone might
+be interested and the software stack is how they can leverage these great
+features. Because hardware designers are the most comfortable with the
+complexities of their hardware, they should be actively involved in the
+development of the software stack for their system.
 	</details>
 
-## Guidelines for Making Good DNN Hardware
-
-Of course, its much easier to point out mistakes and problems than to actually
-provide solutions. 
+Have I missed any classic hardware design sins? If you can think of any, feel
+free to let me know in the comments below.
