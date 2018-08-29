@@ -8,73 +8,7 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://markbuckler.com/home/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>http://markbuckler.com/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/home/about/</guid>
-      <description>Biography I&amp;rsquo;m currently a PhD Candidate in the Electrical and Computer Engineering department here at Cornell University. I&amp;rsquo;m advised by Prof Adrian Sampson.
-My graduate research focusses on hardware for embedded computer vision. In my work I&amp;rsquo;ve found that abstractions can simplify the design process, but breaking down boundaries through hardware-software co-design can produce superior results. For this reason I see myself as a system creator rather than a hardware or software developer.</description>
-    </item>
-    
-    <item>
-      <title>Selected Publications</title>
-      <link>http://markbuckler.com/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/home/publications/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Selected Patents</title>
-      <link>http://markbuckler.com/home/patents/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/home/patents/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recent Posts</title>
-      <link>http://markbuckler.com/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/home/posts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>http://markbuckler.com/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/home/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Past Talks &amp; Useful Slides</title>
-      <link>http://markbuckler.com/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/home/talks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>http://markbuckler.com/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/home/contact/</guid>
-      <description></description>
-    </item>
+    <atom:link href="/home/" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

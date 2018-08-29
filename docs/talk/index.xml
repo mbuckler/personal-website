@@ -8,9 +8,7 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Mark Buckler</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://markbuckler.com/talk/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The Imaging Pipeline</title>
@@ -18,7 +16,8 @@
       <pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/talk/imaging-pipeline/</guid>
-      <description>Compact talk describing the imaging pipeline from photons to pixels</description>
+      <description>&lt;p&gt;Compact talk describing the imaging pipeline from photons to pixels&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -27,7 +26,8 @@
       <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/talk/isca2018/</guid>
-      <description>Hardware support for deep convolutional neural networks (CNNs) is critical to advanced computer vision in mobile and embedded devices. Current designs, however, accelerate generic CNNs; they do not exploit the unique characteristics of real-time vision. We propose to use the temporal redundancy in natural video to avoid unnecessary computation on most frames. A new algorithm, activation motion compensation, detects changes in the visual input and incrementally updates a previously-computed output. The technique takes inspiration from video compression and applies well-known motion estimation techniques to adapt to visual changes.</description>
+      <description>&lt;p&gt;Hardware support for deep convolutional neural networks (CNNs) is critical to advanced computer vision in mobile and embedded devices. Current designs, however, accelerate generic CNNs; they do not exploit the unique characteristics of real-time vision. We propose to use the temporal redundancy in natural video to avoid unnecessary computation on most frames. A new algorithm, activation motion compensation, detects changes in the visual input and incrementally updates a previously-computed output. The technique takes inspiration from video compression and applies well-known motion estimation techniques to adapt to visual changes. We use an adaptive key frame rate to control the trade-off between efficiency and vision quality as the input changes. We implement the technique in hardware as an extension to existing state-of-the-art CNN accelerator designs. The new unit reduces the average energy per frame by 54.2%, 61.7%, and 87.6% for three CNNs with less than 1% loss in vision accuracy.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -36,7 +36,8 @@
       <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/talk/patenting/</guid>
-      <description>Useful information all about how to patent in both academia and industry.</description>
+      <description>&lt;p&gt;Useful information all about how to patent in both academia and industry.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -45,7 +46,8 @@
       <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/talk/iccv2017/</guid>
-      <description>Advancements in deep learning have ignited an explosion of research on efficient hardware for embedded computer vision. Hardware vision acceleration, however, does not address the cost of capturing and processing the image data that feeds these algorithms. We examine the role of the image signal processing (ISP) pipeline in computer vision to identify opportunities to reduce computation and save energy. The key insight is that imaging pipelines should be designed to be configurable: to switch between a traditional photography mode and a low-power vision mode that produces lower-quality image data suitable only for computer vision.</description>
+      <description>&lt;p&gt;Advancements in deep learning have ignited an explosion of research on efficient hardware for embedded computer vision. Hardware vision acceleration, however, does not address the cost of capturing and processing the image data that feeds these algorithms. We examine the role of the image signal processing (ISP) pipeline in computer vision to identify opportunities to reduce computation and save energy. The key insight is that imaging pipelines should be designed to be configurable: to switch between a traditional photography mode and a low-power vision mode that produces lower-quality image data suitable only for computer vision. We use eight computer vision algorithms and a reversible pipeline simulation tool to study the imaging system&amp;rsquo;s impact on vision performance. For both CNN-based and classical vision algorithms, we observe that only two ISP stages, demosaicing and gamma compression, are critical for task performance. We propose a new image sensor design that can compensate for skipping these stages. The sensor design features an adjustable resolution and tunable analog-to-digital converters (ADCs). Our proposed imaging system&amp;rsquo;s vision mode disables the ISP entirely and configures the sensor to produce subsampled, lower-precision image data. This vision mode can save ~75% of the average energy of a baseline photography mode while having only a small impact on vision task accuracy.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -54,7 +56,9 @@
       <pubDate>Wed, 04 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/talk/espresso/</guid>
-      <description>Instructions on how to use a conical burr coffee grinder and semi-automatic espresso machine.</description>
+      <description>&lt;p&gt;Instructions on how to use a conical burr coffee grinder and semi-automatic
+espresso machine.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -63,7 +67,8 @@
       <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/talk/docker/</guid>
-      <description>Docker is awesome, and this talk will tell you why.</description>
+      <description>&lt;p&gt;Docker is awesome, and this talk will tell you why.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
