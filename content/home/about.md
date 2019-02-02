@@ -42,7 +42,7 @@ I'm currently a PhD Candidate in the Electrical and Computer Engineering
 department here at Cornell University. I'm advised by [Prof Adrian
 Sampson](http://www.cs.cornell.edu/~asampson/).
 
-My graduate research focusses on embedded computer vision.
+My graduate research focuses on embedded computer vision.
 In my work I've found that abstractions can simplify the design process,
 but breaking down boundaries through hardware-software co-design can
 produce superior results. For this reason I see myself as a system
@@ -51,7 +51,7 @@ creator rather than a hardware or software developer.
 As an entrepreneurial engineer I quickly gravitated to both industrial
 and academic research. While finishing my M.S. at UMass Amherst I formed
 [Firebrand Innovations](http://www.firebrandinnovations.com/) as a way
-of monetizing intellectual property I developed while in highschool.
+of monetizing intellectual property I developed while in high school.
 These days I can be found in Cornell's [Computer Systems
 Laboratory](http://www.csl.cornell.edu/) plugging away at code for
 powerful new computer vision systems.
