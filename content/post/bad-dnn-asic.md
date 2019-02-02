@@ -161,6 +161,11 @@ to [ResNet](https://arxiv.org/abs/1512.03385), to
 (from idea to implementation) can be around 6 months, while the hardware
 development cycle is often closer to 2 years. This means that
 overspecialization can lead to your chip being obsolete before it's even built.
+
+	The opposite issue can also come up if there is too much of a focus on
+antiquated models. Computer architecture researchers in academia are especially
+susceptible to this issue, but hardware companies can be too if they aren't
+careful. For more discussion on this take a look [here](https://ieeexplore.ieee.org/document/8259424).
 	</details>
 
 6. *8 Bit Means 8 Bit*
@@ -171,17 +176,19 @@ your hardware does, hide it inside your proprietary DNN framework.
 
 	<details>
 	    <summary>Why is this so bad?</summary>
-		Computing with 8 bit weights and activations may be one thing, but
-accumulating in 8 bits will lead to extreme overflow issues. To begin with,
-multiplying two 8 bit numbers together results in a 16 bit product. Additionally
-(pun totally intended), many products will be added together as a part of the
-multiply accumulate chains inherent to matrix-matrix multiplication. For this
-reason, hardware systems must accumulate with precision significantly larger
-than that used to store activations and weights. For a more in-depth discussion
-of the different kinds of precision and their importance in deep neural
-networks I recommend [Chris De Sa](http://www.cs.cornell.edu/~cdesa/)'s
-paper on [low-precision SGD](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5789782/).
-	</details>
+		Computing with 8 bit weights and activations for inference may be one
+thing, but accumulating in 8 bits will lead to extreme overflow issues. To begin
+with, multiplying two 8 bit numbers together results in a 16 bit product.
+Additionally (pun totally intended), many products will be added together as a
+part of the multiply accumulate chains inherent to matrix-matrix multiplication.
+For this reason, hardware systems must accumulate with precision significantly
+larger than that used to store activations and weights. For a more in-depth
+discussion of the different kinds of precision and their importance in deep
+neural networks I recommend [Chris De Sa](http://www.cs.cornell.edu/~cdesa/)'s
+paper on [low-precision
+SGD](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5789782/), which includes
+details focused on training which is an entirely different issue altogether.
+</details>
 
 
 7. *Latency = 1 / Throughput*
@@ -195,12 +202,19 @@ second with large batch sizes.
 data when training. This significantly reduces the average time needed to
 process each frame. For this reason supporting large batch sizes and reporting
 performance when using large batch sizes can be completely reasonable. This is
-not at all the case for applications which require real-time
-inference like self driving cars and augmented reality however. For these applications,
-waiting to group multiple frames into a batch is unacceptable since a result is
-expected for each frame soon after being received. So, "average time per
-frame" is only equal to real-time latency if the batch size is equal to 1. The
-[Project Brainwave](https://www.microsoft.com/en-us/research/uploads/prod/2018/03/mi0218_Chung-2018Mar25.pdf) paper has some great details on this.
+not at all the case for applications which require real-time inference like self
+driving cars and augmented reality however. For these applications, waiting to
+group multiple frames into a batch is unacceptable since a result is expected
+for each frame soon after being received. So, "average time per frame" is only
+equal to real-time latency if the batch size is equal to 1. The [Project
+Brainwave](https://www.microsoft.com/en-us/research/uploads/prod/2018/03/mi0218_Chung-2018Mar25.pdf)
+paper has some great details on this.
+
+	This confusion between latency and
+throughput is only one of many issues that can crop up when comparing the
+metrics for one deep learning accelerator over the other. For more details, see
+slide 20-25 of this [excellent
+presentation](http://www.rle.mit.edu/eems/wp-content/uploads/2018/04/2018_cicc_forum.pdf).
 	</details>
 
 8. *Avoid All Complexity*
