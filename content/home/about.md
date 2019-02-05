@@ -42,7 +42,7 @@ I'm currently a PhD Candidate in the Electrical and Computer Engineering
 department here at Cornell University. I'm advised by [Prof Adrian
 Sampson](http://www.cs.cornell.edu/~asampson/).
 
-My graduate research focuses on embedded computer vision.
+My graduate research focuses on efficient computer vision.
 In my work I've found that abstractions can simplify the design process,
 but breaking down boundaries through hardware-software co-design can
 produce superior results. For this reason I see myself as a system
