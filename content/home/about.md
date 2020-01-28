@@ -21,7 +21,7 @@ weight = 1
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Computer Engineering"
+  course = "PhD in Electrical and Computer Engineering"
   institution = "Cornell University"
   year = 2019
 
@@ -39,11 +39,11 @@ weight = 1
 
 # Biography
 
-I'm currently an Applied Scientist at Amazon where I help this [cute little
-robot](https://www.youtube.com/watch?v=peaKnkNX4vc) see the world with fast and
-energy efficient computer vision. I recently graduated with a PhD in Electrical
-and Computer Engineering from Cornell University. In my research I was advised
-by [Prof Adrian Sampson](http://www.cs.cornell.edu/~asampson/).
+I'm currently an Applied Scientist at Amazon where I help this [cute
+robot](https://www.youtube.com/watch?v=peaKnkNX4vc) see the world with fast,
+accurate, and energy efficient computer vision. I recently graduated with a PhD
+in Electrical and Computer Engineering from Cornell University where I was
+advised by [Prof Adrian Sampson](http://www.cs.cornell.edu/~asampson/).
 
 My graduate research focused on efficient computer vision. I've found that
 abstractions can simplify the design process, but breaking down boundaries
@@ -55,5 +55,5 @@ As an entrepreneurial engineer I quickly gravitated to both industrial and
 academic research. While finishing my M.S. at UMass Amherst I formed [Firebrand
 Innovations](http://www.firebrandinnovations.com/) as a way of monetizing
 intellectual property I developed while in high school. These days I can be
-found in Amazon's robotics lab plugging away at code for powerful new computer
+found in Amazon's robotics lab building powerful and exciting new computer
 vision systems.
