@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="cornellcsl">
+  {{ .Hugo.Generator }}
+  {{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ with .Site.Params.role }}<meta name="description" content="{{ . }}">{{ end }}
+
+  {{/* Default to enabling highlighting, but allow the user to override it in .Params or .Site.Params.
+       Use $.Scratch to store "highlight_enabled", so that we can read it again in footer.html. */}}
+  {{ $.Scratch.Set "highlight_enabled" true }}
+  {{ if isset .Params "highlight" }}
+    {{ $.Scratch.Set "highlight_enabled" .Params.highlight }}
+  {{ else if isset .Site.Params "highlight" }}
+    {{ $.Scratch.Set "highlight_enabled" .Site.Params.highlight }}
+  {{ end }}
+  {{ if $.Scratch.Get "highlight_enabled" }}
+    {{ $v := .Site.Params.highlight_version | default "9.9.0" }}
+    {{ with .Site.Params.highlight_style }}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/styles/{{ . }}.min.css">
+    {{ else }}
+    <link rel="stylesheet" href="{{ "/css/highlight.min.css" | relURL }}">
+    {{ end }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "/css/academicons.min.css" | relURL }}">
+  <link rel="stylesheet" href="{{"//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono" | safeURL }}">
+  <link rel="stylesheet" href="{{ "/css/cornellcsl.min.css" | relURL }}">
+  {{ range .Site.Params.custom_css }}
+  <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
+  {{ end }}
+
+  <link rel="alternate" href="{{ .RSSLink | default .Site.RSSLink  }}" type="application/rss+xml" title="{{ .Site.Title }}">
+
+  <link rel="icon" type="image/png" href="{{ index .Site.Params "icon" | default "/img/icon.png" | relURL }}">
+  <link rel="apple-touch-icon" type="image/png" href="{{ index .Site.Params "apple_touch_icon" | default "/img/apple-touch-icon.png" | relURL }}">
+
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  {{ partial "head_custom" . }}
+
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script defer>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#ffffff",
+        "text": "#000000"
+      },
+      "button": {
+        "background": "#b31b1b",
+        "text": "#ffffff"
+      }
+    },
+    "showLink": false,
+    "content": {
+      "message": "This website uses cookies for analytics and to enable comments.",
+      "dismiss": "Cool! I get it."
+    }
+  })});
+  </script>
+</head>
+<body data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+    <!-- Page header -->
+    <a class="sr-only" href="#content">Skip to main content</a>
+    <header id="top" class="cu-banner">
+    {{ if .Site.Params.search_url }}
+    <div class="container">
+        <form action="{{ .Site.Params.search_url }}" id="cu-search"
+        method="get" role="search" class="collapse">
+        {{ $search_params := .Site.Params.search_params }}
+        {{ $len_params := (div (len $search_params) 2) }}
+        {{ range $i, $foo := (seq ($len_params)) }}
+        {{ $key_index := (mul 2 $i) }} {{ $val_index := (add (mul 2 $i) 1) }}
+        <input type="hidden" name="{{ index $search_params $key_index }}"
+        value="{{ index $search_params $val_index }}">
+        <div class="input-group col-xs-12">
+            {{ end }}
+            <input autocomplete="off" id="search-query" name="q"
+            placeholder="{{ .Site.Params.search_placeholder | default "Search" | html }}"
+            required type="search" class="col-xs-12 cu-search-box">
+            <label for="search-query" class="sr-only">
+                 {{ .Site.Params.search_placeholder | default "Search" | html }}
+            </label>
+        </div>
+        </form>
+    </div>
+    {{ end }}
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-xs-10 cu-csl-logo-div">
+	    {{ with .Site.Params.organization_url }}
+                <a href="{{ . }}" target="_blank">
+            {{ end }}
+		    <img src="{{ "img/org-logo.svg" | relURL }}"
+		        class="img-responsive"
+                        alt="{{ $.Site.Params.organization | html }}"
+		        style="margin: 0;" />
+            {{ with .Site.Params.organization_url }}
+                </a>
+            {{ end }}
+            </div>
+	    {{ if .Site.Params.search_url }}
+            <div class="col-xs-2 col-middle cu-search-toggle-div">
+                <span class="pull-right">
+                    <button class="btn btn-cu-banner" type="button"
+                    data-toggle="collapse" data-target="#cu-search"
+                    id="cu-search-toggle" style="position:relative;">
+                        <span class="sr-only">Toggle search</span>
+                        <span class="cu-search-toggle glyphicon glyphicon-search">
+                        </span>
+                    </button>
+                </span>
+            </div>
+	    {{ end }}
+        </div>
+    </div> -->
+    </header>
