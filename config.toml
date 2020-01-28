@@ -1,6 +1,6 @@
 baseurl = "http://markbuckler.com"
 title = "Mark Buckler"
-copyright = "&copy; 2017 Mark Buckler"
+copyright = "&copy; 2020 Mark Buckler"
 theme = "personaltheme"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -21,12 +21,12 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Mark Buckler"
-  role = "PhD Candidate"
-  organization = "Cornell University"
-  organization_url = "https://www.cornell.edu/"
+  role = "Applied Scientist"
+  organization = "Amazon Scout"
+  organization_url = "https://blog.aboutamazon.com/transportation/meet-scout"
   avatar = "portrait.jpg"
-  email = "mab598@cornell.edu"
-  address = "Rhodes Hall, Room 471C, Cornell University, New York, Ithaca, 14850, USA"
+  email = "markabuckler@gmail.com"
+  address = "Seattle WA, USA"
   #office_hours = "Monday 10:00 to 13:00 or email for appointment"
   #phone = "888 888 88 88"
   #skype = "echo123"
@@ -147,14 +147,9 @@ defaultContentLanguageInSubdir = false
     link = "https://www.youtube.com/channel/UC-GpGo9w6kW2UfJobgDFjcw?view_as=subscriber"
 
   [[params.social]]
-    icon = "soundcloud"
-    icon_pack = "fa"
-    link = "https://soundcloud.com/quoththeraver"
-
-  [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:mab598@cornell.edu"
+    link = "mailto:markabuckler@gmail.com"
 
 
 # Navigation Links
