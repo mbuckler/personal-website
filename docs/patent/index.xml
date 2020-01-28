@@ -6,9 +6,20 @@
     <description>Recent content in Publications on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Mark Buckler</copyright>
+    <copyright>&amp;copy; 2020 Mark Buckler</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/patent/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://markbuckler.com/patent/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configurable image processing system and methods for operating a configurable image processing system for multiple applications</title>
+      <link>http://markbuckler.com/patent/20190320127/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/patent/20190320127/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Continuous Frequency Measurement for Predictive Periodic Synchronization</title>
@@ -16,15 +27,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/patent/9344099/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Methods and Systems of Synchronizer Selection</title>
-      <link>http://markbuckler.com/patent/9294263/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/patent/9294263/</guid>
       <description></description>
     </item>
     

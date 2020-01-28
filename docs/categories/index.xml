@@ -6,8 +6,10 @@
     <description>Recent content in Categories on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Mark Buckler</copyright>
-    <atom:link href="/categories/" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2020 Mark Buckler</copyright>
+    
+	<atom:link href="http://markbuckler.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>

@@ -6,9 +6,11 @@
     <description>Recent content in Publication_types on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Mark Buckler</copyright>
+    <copyright>&amp;copy; 2020 Mark Buckler</copyright>
     <lastBuildDate>Sun, 18 Mar 2018 19:37:01 -0400</lastBuildDate>
-    <atom:link href="/publication_types/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://markbuckler.com/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>1</title>

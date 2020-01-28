@@ -6,9 +6,11 @@
     <description>Recent content in Projects on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Mark Buckler</copyright>
+    <copyright>&amp;copy; 2020 Mark Buckler</copyright>
     <lastBuildDate>Fri, 02 Mar 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/project/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://markbuckler.com/project/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Low Precision SqueezeDet</title>
@@ -52,33 +54,7 @@
       <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/lns-neural-accel/</guid>
-      <description>&lt;p&gt;For my final project in Cornell&amp;rsquo;s &lt;a href=&#34;https://web.csl.cornell.edu/courses/ece5745/&#34; target=&#34;_blank&#34;&gt;Complex ASIC Design
-course&lt;/a&gt; I built a neural network
-accelerator which used the &lt;a href=&#34;https://en.wikipedia.org/wiki/Logarithmic_number_system&#34; target=&#34;_blank&#34;&gt;Logarithmic Number System
-(LNS)&lt;/a&gt;. There has been
-some interest in &lt;a href=&#34;https://arxiv.org/pdf/1603.01025.pdf&#34; target=&#34;_blank&#34;&gt;using the LNS with neural
-networks&lt;/a&gt; as neural computation is
-multiplication heavy and multiplications in the LNS can be implemented with a
-simple adder. I augmented a
-&lt;a href=&#34;http://www.csl.cornell.edu/~cbatten/pdfs/lockhart-pymtl-micro2014.pdf&#34; target=&#34;_blank&#34;&gt;PyMTL&lt;/a&gt;
-implementation of a single threaded
-&lt;a href=&#34;https://web.csl.cornell.edu/courses/ece4750/handouts/ece4750-parc-isa.pdf&#34; target=&#34;_blank&#34;&gt;PARCv2&lt;/a&gt;
-processor with instructions to convert between LNS and fixed point, add LNS
-numbers, and multiply LNS numbers. I also built a matrix multiplication
-accelerator which could either use fixed point or the LNS. After integrating the
-accelerator with the processor and evaluating the various possible designs, it
-became clear that the delay and energy benefits gained by using the accelerator
-(generic cpu vs custom data and control path) far outweighed any savings in the
-ALU (LNS vs fixed point). This is due to two properties of matrix
-multiplication: 1) it has a regular dataflow that custom hardware can exploit
-well, and 2) benefits from cheap LNS multiplications wash out when the expensive
-but necessary LNS additions are used as well.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/cucapra/log-neural-accel&#34; target=&#34;_blank&#34;&gt;The code&lt;/a&gt; for this project is
-currently set to private due to the fact that I can&amp;rsquo;t release details about my
-baseline processor. Depending on your needs I may still be able to help you
-though, so contact me if you&amp;rsquo;re interested.&lt;/p&gt;
-</description>
+      <description>For my final project in Cornell&amp;rsquo;s Complex ASIC Design course I built a neural network accelerator which used the Logarithmic Number System (LNS). There has been some interest in using the LNS with neural networks as neural computation is multiplication heavy and multiplications in the LNS can be implemented with a simple adder. I augmented a PyMTL implementation of a single threaded PARCv2 processor with instructions to convert between LNS and fixed point, add LNS numbers, and multiply LNS numbers.</description>
     </item>
     
     <item>
@@ -87,21 +63,7 @@ though, so contact me if you&amp;rsquo;re interested.&lt;/p&gt;
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://markbuckler.com/project/image-sensor/</guid>
-      <description>&lt;p&gt;While most image sensors can be configured to output a subset of their total
-resolution, this doesn&amp;rsquo;t usually lead to energy savings as might have been
-expected &lt;a href=&#34;http://dl.acm.org/citation.cfm?id=2464448&#34; target=&#34;_blank&#34;&gt;[LiKamWa-2013]&lt;/a&gt;. LiKamWa
-et al. explored energy saving methods possible when using existing sensors, but
-our project took the idea further by making a new energy-proportional image
-sensor. &lt;a href=&#34;http://www.andrew.cmu.edu/user/sjayasur/website.html&#34; target=&#34;_blank&#34;&gt;Suren Jayasuriya&lt;/a&gt;
-and I did this by adding power gating transistors to the amplifier and ADC in
-each of the sensor&amp;rsquo;s readout columns.&lt;/p&gt;
-
-&lt;p&gt;As the digital design lead on the project I wrote Verilog RTL to describe a
-state machine based controller for the rolling-shutter readout and control of
-the column power gating. I pushed my design through Synopsys synthesis and Suren
-connected the resulting digital layout to his pixels and other analog circuitry.
-We taped out this design in IBM&amp;rsquo;s 130nm technology.&lt;/p&gt;
-</description>
+      <description>While most image sensors can be configured to output a subset of their total resolution, this doesn&amp;rsquo;t usually lead to energy savings as might have been expected [LiKamWa-2013]. LiKamWa et al. explored energy saving methods possible when using existing sensors, but our project took the idea further by making a new energy-proportional image sensor. Suren Jayasuriya and I did this by adding power gating transistors to the amplifier and ADC in each of the sensor&amp;rsquo;s readout columns.</description>
     </item>
     
     <item>
