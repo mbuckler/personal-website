@@ -106,21 +106,21 @@ DJ software is [Rekordbox](https://rekordbox.com/en/) because of its excellent
 organization and USB export tools, so the rest of this blog post will describe
 how to make a mix using Rekordbox specifically.
 
-![Rekordbox window](/img/dj-post/rekordbox.PNG)
+    ![Rekordbox window](/img/dj-post/rekordbox.PNG)
 
 3. DJ Hardware
 
     Your home DJ studio will consist of a few components: a DJ controller or
-CDJs+mixer, speakers, headphones, and optionally a formatted USB stick. Most people
-already have speakers, headphones, and USB sticks, so here I'll quickly go over
-the differences between DJ controllers, all-in-one DJ systems, and CDJs. Each
-kind of DJ hardware has a different price point and different functionality, but
-any of these types of hardware can be used to learn how to DJ. Because [Pioneer
-DJ](https://www.pioneerdj.com/en-us/) is the standard in most bars and clubs
-(and I also use Pioneer DJ hardware) all of the examples given below are from
-Pioneer DJ, but hardware from other manufacturers like [Denon
-DJ](https://www.denondj.com/) can also work for you. Also, the costs that I list
-are for new equipment, but it is often possible to find used equipment on
+CDJs+mixer, speakers, headphones, and optionally a formatted USB stick. Most
+people already have speakers, headphones, and USB sticks, so here I'll quickly
+go over the differences between DJ controllers, all-in-one DJ systems, and CDJs.
+Each kind of DJ hardware has a different price point and different
+functionality, but any of these types of hardware can be used to learn how to
+DJ. Because [Pioneer DJ](https://www.pioneerdj.com/en-us/) is the standard in
+most bars and clubs (and I also use Pioneer DJ hardware) all of the examples
+given below are from Pioneer DJ, but hardware from other manufacturers like
+[Denon DJ](https://www.denondj.com/) can also work for you. Also, the costs that
+I list are for new equipment, but it is often possible to find used equipment on
 Facebook marketplace or even in stores like Guitar Center. Older versions of
 this hardware are often available as well, so keep an eye out for those if
 you're trying to save money.
@@ -146,7 +146,8 @@ amount of money to spend on a full club system for your home studio, you may be
 interested in an all-in-one DJ system. All-in-one DJ systems offer all of the
 same functionality of a DJ controller but also offer a built-in screen for
 viewing waveforms & browsing songs, balanced connections for connecting to
-professional speakers/monitors, and don't require a laptop. The layout of
+professional speakers/monitors, physically larger controls (easier to change
+BPM), and don't require a laptop. The layout of
 all-in-one DJ systems is also very similar to the corresponding CDJs, which will
 help you become familiar with that layout. Finally, all-in-one DJ systems work
 by importing music from a USB (just like CDJs), so these systems are great for
@@ -161,19 +162,20 @@ which is very similar to the system that I currently use at home.
 
         Most dance clubs that I am familiar with use CDJs and a mixer for their
 DJ hardware. Clubs like to use CDJ + mixer setups because they are physically
-more robust, they can have 4 or more audio sources (such as additional CDJs),
-and because individual CDJs or mixers can be replaced without needing to replace
-the entire system. Before you dump $5k on a few CDJs though you should be aware
-that they also have a lot of drawbacks! Beyond being very expensive, CDJ +
-mixer setups don't typically have performance pads for cue points (sometimes
-limiting you to 3 cue points total), don't enable you to beatmatch by eye since
-each display only shows one track at a time, and are physically huge which can
-be real problem for folks in small apartments. So why would you as a bedroom DJ
-ever want CDJs and a mixer? The only real reason to do this is so that you can
-practice on equipment that is similar or identical to what you will be playing
-on live at a club. If you rely on many cue points and beatmatching by eye while
-practicing then you might be caught totally off guard when you're asked to play
-without those nice tools. The example I show below is a pair of [Pioneer
+more robust, they can have 4 or more audio sources (such as additional CDJs,
+analog turntables, or instruments), and because individual CDJs or mixers can be
+replaced without needing to replace the entire system. Before you dump $5k on a
+few CDJs though you should be aware that they also have a lot of drawbacks!
+Beyond being very expensive, CDJ + mixer setups don't typically have performance
+pads for cue points (sometimes limiting you to 3 cue points total), don't enable
+you to beatmatch by eye since each display only shows one track at a time, and
+are physically huge which can be real problem for folks in small apartments. So
+why would you as a bedroom DJ ever want CDJs and a mixer? The only real reason
+to do this is so that you can practice on equipment that is similar or identical
+to what you will be playing on live at a club. If you rely on many cue points
+and beatmatching by eye while practicing then you might be caught totally off
+guard when you're asked to play without those nice tools. The example I show
+below is a pair of [Pioneer
 CDJ-3000s](https://www.pioneerdj.com/en/product/player/cdj-3000/black/overview/)
 and a [Pioneer DJM-900NXS2
 mixer](https://www.pioneerdj.com/en-us/product/mixer/djm-900nxs2/black/overview/).
@@ -183,10 +185,68 @@ mixer](https://www.pioneerdj.com/en-us/product/mixer/djm-900nxs2/black/overview/
 4. Musical Knowledge
 
     The last thing that you'll need before you get started on DJing is some
-musical knowledge. 
+musical knowledge. The act of making a smooth transition between tracks is core
+to DJing, and these smooth transitions are only possible due to patterns that
+are shared between different pieces of music. By learning what these patterns
+are and what words to use to describe them you will become a much better DJ. If
+you aren't classically trained in music, the five most important new vocabulary
+words you will need to learn are beats, bars, phrases, BPM, and key signature.
 
-Beats, bars, phrases, BPM, key
+    - Beats, bars, and phrases are each a different level of hierarchy in the
+      structure of music. Each song is made up of multiple phrases
+(introduction, breakdown, drop, bridge, etc), each phrase is made up of multiple
+bars (typically 8 bars in EDM), and each bar is made up of multiple beats
+(typically 4 beats in EDM). When transitioning from one track to another it is
+helpful to keep phrasing in mind since overlapping certain phrases tends to
+sound better than others. For a much less dry description of these ideas
+which includes examples, check out this [excellent
+video](https://www.youtube.com/watch?v=ZqGUt1U8gPo&ab_channel=PhilHarris) from
+my red-headed brother from another mother [Phil
+Harris](https://www.youtube.com/channel/UCv5TGu1jwiqWhzw9wj01mIQ).
 
+    - BPM stands for Beats Per Minute, so it is a measurement of the speed of a
+      given song. When we transition between songs we typically want each of
+these songs to be playing at the same speed and for the beats to be aligned. In
+engineering terminology we would say that we want both the frequency and the
+phase of the songs to be the same. By using a DJ controller we can adjust the
+frequency (BPM) of a song by adjusting the tempo slider, and we can adjust the
+phase (alignment in time) by spinning the side of the jog wheel. The act of
+getting the beats of two songs to match is called "beat matching", and
+[Crossfader](https://www.youtube.com/channel/UCM4u0gp8gm99w9MXQ7ZI8Mw) has a
+great video on how to do that
+[here](https://www.youtube.com/watch?v=GuE5x65XZF4&ab_channel=Crossfader). Also,
+when adjusting the tempo slide to change the BPM, remember to make sure that key
+lock is on! So that you can learn why that matters, I explain what a key
+signature is below.
+
+    - The key signature of a given song corresponds to the specific set of notes
+      used to create that song. The easiest key signature to explain is C Major,
+which includes just the white keys on a piano. Certain key signatures share a
+lot of the same notes, and so you can predict how well two songs will sound
+together if you know both of their key signatures. To make it easier for people
+to remember which key signatures share the most notes, the Camelot system (shown
+in the image below) was created. On the Camelot wheel, each cell represents a
+given key with a classical name (such as C Major) and a Camelot name (such as 8B
+for C Major). The keys that are adjacent on the wheel  to any particular key
+share the most amount of notes, and therefore will sound the best to mix
+between. If you use Camelot notation you don't even need to look at the wheel to
+know which keys will sound good with any other given key, since all adjacent
+cells either share a number with the key you're interested in or they
+increase/decrease the number of the key by one. For a great explanation of
+mixing in key I recommend [this
+video](https://www.youtube.com/watch?v=U_tS7iMwU54&ab_channel=Crossfader) from
+[Crossfader](https://www.youtube.com/channel/UCM4u0gp8gm99w9MXQ7ZI8Mw).
+
+        It is worth mentioning that Rekordbox does now support displaying keys
+in Camelot notation, and also that it isn't always necessary to strictly mix in
+key. The ultimate test of whether or not a transition sounds good is whether you
+think it sounds good. Software tools do their best to identify what key a song
+is in, but sometimes they can get it wrong. Also, depending on how the songs are
+written it may be possible to jump by 2 cells instead of 1 on the Camelot wheel,
+since those keys will only differ by 2 notes. A good rule of thumb worth
+repeating is when DJing, always remember to trust your ears!
+
+        ![CDJs and Mixer](/img/dj-post/CamelotWheel.jpg)
 
 ## How to make your very first DJ mix!
 
