@@ -4,7 +4,7 @@ highlight = false
 math = false
 draft = false
 tags = []
-title = "How to Make A DJ Mix from Scratch"
+title = "What You Need to Start DJing"
 
 [header]
   caption = ""
@@ -12,11 +12,11 @@ title = "How to Make A DJ Mix from Scratch"
 
 +++
 
-![Me DJing at a local show](/img/headers/me-djing.jpg)
+![Me DJing at a local show](/img/dj-post/me-djing.jpg)
 
 Those of you who know me well know that I have been a massive fan of electronic
 dance music (aka EDM) for a long time. Every EDM fan has a different story for
-how they got started, but I first learned about EDM back in around
+how they got started, but I first learned about EDM back in
 2008\. I always loved the energy and excitement of guitar solos in rock and
 metal, and I soon realized that I could find that same energy and
 excitement but for the entirety of a song in electronic music. Starting on
@@ -57,11 +57,77 @@ There are many other ways to succeed.
 
 ## What you need to get started
 
-OK, thats enough of me telling my life story before sharing the recipe! Lets
-start with what you will need before you can get started. Specifically, a music
-library, DJ software, DJ hardware, and some musical knowledge.
+OK, thats enough of me telling my life story before sharing the recipe! Let's
+start with what you will need before you can get started. Specifically, some
+musical knowledge, a music library, DJ software, and DJ hardware.
 
-1. Music Library
+1. Musical Knowledge
+
+    The first thing that you'll need before you get started on DJing is some
+knowledge of music theory. The act of making a smooth transition between tracks is core
+to DJing, and these smooth transitions are only possible due to patterns that
+are shared between different pieces of music. By learning what these patterns
+are and what words to use to describe them you will become a much better DJ. If
+you aren't classically trained in music, the five most important new vocabulary
+words you will need to learn are beats, bars, phrases, BPM, and key signature.
+
+    - Beats, bars, and phrases are each a different level of hierarchy in the
+      structure of music. Each song is made up of multiple phrases
+(introduction, breakdown, drop, bridge, etc), each phrase is made up of multiple
+bars (typically 8 bars in EDM), and each bar is made up of multiple beats
+(typically 4 beats in EDM). When transitioning from one track to another it is
+helpful to keep phrasing in mind since overlapping certain phrases tends to
+sound better than others. For a much less dry description of these ideas
+which includes examples, check out this [excellent
+video](https://www.youtube.com/watch?v=ZqGUt1U8gPo&ab_channel=PhilHarris) from
+my red-headed brother from another mother [Phil
+Harris](https://www.youtube.com/channel/UCv5TGu1jwiqWhzw9wj01mIQ).
+
+    - BPM stands for Beats Per Minute, so it is a measurement of the speed of a
+      given song. When we transition between songs we typically want each of
+these songs to be playing at the same speed and for the beats to be aligned. In
+engineering terminology we would say that we want both the frequency and the
+phase of the songs to be the same. By using a DJ controller we can adjust the
+frequency (BPM) of a song by adjusting the tempo slider, and we can adjust the
+phase (alignment in time) by spinning the side of the jog wheel. The act of
+getting the beats of two songs to match is called "beat matching", and
+[Crossfader](https://www.youtube.com/channel/UCM4u0gp8gm99w9MXQ7ZI8Mw) has a
+great video on how to do that
+[here](https://www.youtube.com/watch?v=GuE5x65XZF4&ab_channel=Crossfader). Also,
+when adjusting the tempo slider to change the BPM, remember to make sure that key
+lock is on! This will ensure that when you speed up or slow down a song the key
+will stay the same. Read the next point to learn why that matters.
+
+    - The key signature of a given song corresponds to the specific set of notes
+      used to create that song. The easiest key signature to explain is C Major,
+which includes just the white keys on a piano. Certain key signatures share a
+lot of the same notes, and so you can predict how well two songs will sound
+together if you know both of their key signatures. To make it easier for people
+to remember which key signatures share the most notes, the Camelot system (shown
+in the image below) was created. On the Camelot wheel, each cell represents a
+given key with a classical name (such as C Major) and a Camelot name (such as 8B
+for C Major). The keys that are adjacent on the wheel  to any particular key
+share the most amount of notes, and therefore will sound the best to mix
+between. If you use Camelot notation you don't even need to look at the wheel to
+know which keys will sound good with any other given key, since all adjacent
+cells either share a number with the key you're interested in or they
+increase/decrease the number of the key by one. For a great explanation of
+mixing in key I recommend [this
+video](https://www.youtube.com/watch?v=U_tS7iMwU54&ab_channel=Crossfader) from
+[Crossfader](https://www.youtube.com/channel/UCM4u0gp8gm99w9MXQ7ZI8Mw).
+
+        ![Camelot Wheel](/img/dj-post/CamelotWheel.jpg)
+
+        It is worth mentioning that Rekordbox does now support displaying keys
+in Camelot notation, and also that it isn't always necessary to strictly mix in
+key. The ultimate test of whether or not a transition sounds good is if you
+think it sounds good. Software tools do their best to identify what key a song
+is in, but sometimes they can get it wrong. Also, depending on how the songs are
+written it may be possible to jump by 2 cells instead of 1 on the Camelot wheel,
+since those keys will only differ by 2 notes. A good rule of thumb worth
+repeating is when DJing, always remember to trust your ears!
+
+2. Music Library
 
     Because we live in an age when streaming is king, most people listen to music
 through Spotify, Soundcloud, and Apple Music. Thankfully some DJ software
@@ -69,15 +135,15 @@ through Spotify, Soundcloud, and Apple Music. Thankfully some DJ software
 services, but this functionality requires that you bring a laptop and have a
 good internet connection wherever you play. Most DJs prefer to work with actual
 song files instead since that offers the most flexibility and reliability.
-[Pioneer CDJs](https://www.pioneerdj.com/en-us/product/player/) are an industry
-standard and can conveniently load music from a properly formatted USB, so most
+[Pioneer CDJs](https://www.pioneerdj.com/en-us/product/player/) are industry
+standard and can load music from a properly formatted USB, so most
 DJs don't need to bring anything other than a USB filled with their music files
 when they go to play at a club.
 
-    OK cool, so if you want to get music files for DJing how should you get
+    OK cool, so if you want music files for DJing then how should you get
 them? This is a legitimate question if you've become used to streaming.
 Frustratingly, Spotify and the other streaming services purposefully make it
-hard for you to buy music on their platform since otherwise you would have less
+hard for you to buy music on their site since otherwise you would have less
 of a need for them. The best way that I've found so far to buy songs from a
 Spotify playlist is a web app called [Merch
 Table](https://hypem.com/merch-table) which can convert a spotify playlist into
@@ -87,12 +153,12 @@ website optimized for DJing then you should check out
 [Beatport](https://www.beatport.com/). Beatport has a significant advantage over
 iTunes for a few reasons, but the biggest thing for me is seeing the BPM and key
 for every track (this will become important when you're deciding which songs to
-mix with others). Finally, you might not be aware of DJ Pools, which are monthly
+mix with others). Finally, there are DJ Pools which are monthly
 subscriptions to services which enable you to download unlimited song files. For
 more details and a recent review of the top DJ Pools, check out [this
 post](https://djtechreviews.com/audio-software/best-dj-pool).
 
-2. DJ Software
+3. DJ Software
 
     Once you have your music library, you're ready to import it into your choice
 of DJ software! DJ software will play a few important roles for you: music
@@ -108,7 +174,7 @@ how to make a mix using Rekordbox specifically.
 
     ![Rekordbox window](/img/dj-post/rekordbox.PNG)
 
-3. DJ Hardware
+4. DJ Hardware
 
     Your home DJ studio will consist of a few components: a DJ controller or
 CDJs+mixer, speakers, headphones, and optionally a formatted USB stick. Most
@@ -182,115 +248,6 @@ mixer](https://www.pioneerdj.com/en-us/product/mixer/djm-900nxs2/black/overview/
 
         ![CDJs and Mixer](/img/dj-post/DJM-900NXS2-and-CDJ-3000-pair.png)
 
-4. Musical Knowledge
-
-    The last thing that you'll need before you get started on DJing is some
-musical knowledge. The act of making a smooth transition between tracks is core
-to DJing, and these smooth transitions are only possible due to patterns that
-are shared between different pieces of music. By learning what these patterns
-are and what words to use to describe them you will become a much better DJ. If
-you aren't classically trained in music, the five most important new vocabulary
-words you will need to learn are beats, bars, phrases, BPM, and key signature.
-
-    - Beats, bars, and phrases are each a different level of hierarchy in the
-      structure of music. Each song is made up of multiple phrases
-(introduction, breakdown, drop, bridge, etc), each phrase is made up of multiple
-bars (typically 8 bars in EDM), and each bar is made up of multiple beats
-(typically 4 beats in EDM). When transitioning from one track to another it is
-helpful to keep phrasing in mind since overlapping certain phrases tends to
-sound better than others. For a much less dry description of these ideas
-which includes examples, check out this [excellent
-video](https://www.youtube.com/watch?v=ZqGUt1U8gPo&ab_channel=PhilHarris) from
-my red-headed brother from another mother [Phil
-Harris](https://www.youtube.com/channel/UCv5TGu1jwiqWhzw9wj01mIQ).
-
-    - BPM stands for Beats Per Minute, so it is a measurement of the speed of a
-      given song. When we transition between songs we typically want each of
-these songs to be playing at the same speed and for the beats to be aligned. In
-engineering terminology we would say that we want both the frequency and the
-phase of the songs to be the same. By using a DJ controller we can adjust the
-frequency (BPM) of a song by adjusting the tempo slider, and we can adjust the
-phase (alignment in time) by spinning the side of the jog wheel. The act of
-getting the beats of two songs to match is called "beat matching", and
-[Crossfader](https://www.youtube.com/channel/UCM4u0gp8gm99w9MXQ7ZI8Mw) has a
-great video on how to do that
-[here](https://www.youtube.com/watch?v=GuE5x65XZF4&ab_channel=Crossfader). Also,
-when adjusting the tempo slide to change the BPM, remember to make sure that key
-lock is on! So that you can learn why that matters, I explain what a key
-signature is below.
-
-    - The key signature of a given song corresponds to the specific set of notes
-      used to create that song. The easiest key signature to explain is C Major,
-which includes just the white keys on a piano. Certain key signatures share a
-lot of the same notes, and so you can predict how well two songs will sound
-together if you know both of their key signatures. To make it easier for people
-to remember which key signatures share the most notes, the Camelot system (shown
-in the image below) was created. On the Camelot wheel, each cell represents a
-given key with a classical name (such as C Major) and a Camelot name (such as 8B
-for C Major). The keys that are adjacent on the wheel  to any particular key
-share the most amount of notes, and therefore will sound the best to mix
-between. If you use Camelot notation you don't even need to look at the wheel to
-know which keys will sound good with any other given key, since all adjacent
-cells either share a number with the key you're interested in or they
-increase/decrease the number of the key by one. For a great explanation of
-mixing in key I recommend [this
-video](https://www.youtube.com/watch?v=U_tS7iMwU54&ab_channel=Crossfader) from
-[Crossfader](https://www.youtube.com/channel/UCM4u0gp8gm99w9MXQ7ZI8Mw).
-
-        It is worth mentioning that Rekordbox does now support displaying keys
-in Camelot notation, and also that it isn't always necessary to strictly mix in
-key. The ultimate test of whether or not a transition sounds good is whether you
-think it sounds good. Software tools do their best to identify what key a song
-is in, but sometimes they can get it wrong. Also, depending on how the songs are
-written it may be possible to jump by 2 cells instead of 1 on the Camelot wheel,
-since those keys will only differ by 2 notes. A good rule of thumb worth
-repeating is when DJing, always remember to trust your ears!
-
-        ![CDJs and Mixer](/img/dj-post/CamelotWheel.jpg)
-
-## How to make your very first DJ mix!
-
-1. Import your music into Rekordbox
-
-Describe what settings to change
-
-2. Organize your music library
-
-Describe smart crates, our tagging method, etc
-
-1. Decide on the vibe you want your mix to have
-
-Think about your audience
-Try to come up with a challenge or goal
-
-
-3. Select a few signpost songs
-
-4. Expand your signpost songs into song groups
-
-![Related tracks window](/img/dj-post/rekordbox_related_tracks.png)
-
-5. Check the beat grid and add cue points (optional)
-
-![Assigning cue points](/img/dj-post/rekordbox_cue_points.png)
-
-6. Export your playlist to USB
-
-7. Practice and experiment with transitions
-
-You will need a DJ controller for this step
-
-8. Decide on what order to play your songs
-
-9. Practice your set from beginning to end
-
-10. Add/remove songs and cue points as needed
-
-11. Play and/or record your mix!
-
-
-
-
-
-[example link](https://en.wikipedia.org/wiki/Multilayer_perceptron)
-
+OK great, now you know what you need to get started DJing! To learn how to use
+your musical knowledge, music library, and DJ setup to create your very first DJ
+mix, check out [my next blog post](/post/how-to-mix) :)
