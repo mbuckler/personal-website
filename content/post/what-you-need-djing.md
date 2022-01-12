@@ -4,7 +4,7 @@ highlight = false
 math = false
 draft = false
 tags = []
-title = "What You Need to Start DJing"
+title = "What You Need to Start DJing (1/3)"
 
 [header]
   caption = ""
@@ -13,6 +13,18 @@ title = "What You Need to Start DJing"
 +++
 
 ![Me DJing at a local show](/img/dj-post/me-djing.jpg)
+
+Welcome! If you want to learn how to DJ for the first time, then you're in the
+right place. This post is the first in a series of three which will bring you
+from knowing nothing to being able to play a mix of your very own at your next
+party. Below I'll explain what you need to get started, then in the next post
+I'll help you [learn the basics](/post/learn-djing-basics) of DJing, and finally
+I'll show you exactly [how I prepare my DJ mixes](/post/how-to-mix). Below I
+share a little about how I got started in DJing, but if you just want technical
+details feel free to skip that and jump to "What you need to get started." I
+hope you enjoy!
+
+## How I got started DJing
 
 Those of you who know me well know that I have been a massive fan of electronic
 dance music (aka EDM) for a long time. Every EDM fan has a different story for
@@ -77,11 +89,11 @@ words you will need to learn are beats, bars, phrases, BPM, and key signature.
 bars (typically 8 bars in EDM), and each bar is made up of multiple beats
 (typically 4 beats in EDM). When transitioning from one track to another it is
 helpful to keep phrasing in mind since overlapping certain phrases tends to
-sound better than others. For a much less dry description of these ideas
-which includes examples, check out this [excellent
-video](https://www.youtube.com/watch?v=ZqGUt1U8gPo&ab_channel=PhilHarris) from
-my red-headed brother from another mother [Phil
+sound better than others. For great examples and a deep explanation, check out
+the video below by my red-headed brother from another mother [Phil
 Harris](https://www.youtube.com/channel/UCv5TGu1jwiqWhzw9wj01mIQ).
+
+        {{< youtube ZqGUt1U8gPo >}}
 
     - BPM stands for Beats Per Minute, so it is a measurement of the speed of a
       given song. When we transition between songs we typically want each of
@@ -89,22 +101,19 @@ these songs to be playing at the same speed and for the beats to be aligned. In
 engineering terminology we would say that we want both the frequency and the
 phase of the songs to be the same. By using a DJ controller we can adjust the
 frequency (BPM) of a song by adjusting the tempo slider, and we can adjust the
-phase (alignment in time) by spinning the side of the jog wheel. The act of
-getting the beats of two songs to match is called "beat matching", and
-[Crossfader](https://www.youtube.com/channel/UCM4u0gp8gm99w9MXQ7ZI8Mw) has a
-great video on how to do that
-[here](https://www.youtube.com/watch?v=GuE5x65XZF4&ab_channel=Crossfader). Also,
-when adjusting the tempo slider to change the BPM, remember to make sure that key
-lock is on! This will ensure that when you speed up or slow down a song the key
-will stay the same. Read the next point to learn why that matters.
+phase (alignment in time) by spinning the side of the jog wheel.
 
     - The key signature of a given song corresponds to the specific set of notes
       used to create that song. The easiest key signature to explain is C Major,
 which includes just the white keys on a piano. Certain key signatures share a
 lot of the same notes, and so you can predict how well two songs will sound
-together if you know both of their key signatures. To make it easier for people
+together if you know both of their key signatures. 
+
+        ![Camelot Wheel](/img/dj-post/CamelotWheel.jpg)
+
+        To make it easier for people
 to remember which key signatures share the most notes, the Camelot system (shown
-in the image below) was created. On the Camelot wheel, each cell represents a
+in the image above) was created. On the Camelot wheel, each cell represents a
 given key with a classical name (such as C Major) and a Camelot name (such as 8B
 for C Major). The keys that are adjacent on the wheel  to any particular key
 share the most amount of notes, and therefore will sound the best to mix
@@ -112,11 +121,10 @@ between. If you use Camelot notation you don't even need to look at the wheel to
 know which keys will sound good with any other given key, since all adjacent
 cells either share a number with the key you're interested in or they
 increase/decrease the number of the key by one. For a great explanation of
-mixing in key I recommend [this
-video](https://www.youtube.com/watch?v=U_tS7iMwU54&ab_channel=Crossfader) from
+mixing in key I recommend the video below by
 [Crossfader](https://www.youtube.com/channel/UCM4u0gp8gm99w9MXQ7ZI8Mw).
 
-        ![Camelot Wheel](/img/dj-post/CamelotWheel.jpg)
+        {{< youtube  U_tS7iMwU54>}}
 
         It is worth mentioning that Rekordbox does now support displaying keys
 in Camelot notation, and also that it isn't always necessary to strictly mix in
@@ -156,7 +164,7 @@ for every track (this will become important when you're deciding which songs to
 mix with others). Finally, there are DJ Pools which are monthly
 subscriptions to services which enable you to download unlimited song files. For
 more details and a recent review of the top DJ Pools, check out [this
-post](https://djtechreviews.com/audio-software/best-dj-pool).
+article](https://djtechreviews.com/audio-software/best-dj-pool).
 
 3. DJ Software
 
@@ -189,7 +197,12 @@ given below are from Pioneer DJ, but hardware from other manufacturers like
 I list are for new equipment, but it is often possible to find used equipment on
 Facebook marketplace or even in stores like Guitar Center. Older versions of
 this hardware are often available as well, so keep an eye out for those if
-you're trying to save money.
+you're trying to save money. Finally, if you would like to try out DJing before
+spending money on hardware then you might be interested in one of the [many DJ
+apps](https://plus.pointblankmusicschool.com/7-best-dj-apps-for-mixing-on-the-go/)
+for tablets and phones. Personally, I would recommend a cheap controller instead
+of an app since even the cheap controllers have a lot more in common with
+standard hardware than apps.
 
     * DJ Controller ($150-$250)
 
@@ -248,6 +261,6 @@ mixer](https://www.pioneerdj.com/en-us/product/mixer/djm-900nxs2/black/overview/
 
         ![CDJs and Mixer](/img/dj-post/DJM-900NXS2-and-CDJ-3000-pair.png)
 
-OK great, now you know what you need to get started DJing! To learn how to use
-your musical knowledge, music library, and DJ setup to create your very first DJ
-mix, check out [my next blog post](/post/how-to-mix) :)
+OK great, now you know what you need to get started DJing! To learn how to take
+your musical knowledge, music library, and DJ setup to the next level with DJ
+basics, check out [my next blog post](/post/learn-djing-basics) :)
