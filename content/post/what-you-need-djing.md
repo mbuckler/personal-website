@@ -4,7 +4,7 @@ highlight = false
 math = false
 draft = false
 tags = []
-title = "What You Need to Start DJing (1/3)"
+title = "What You Need to Start DJing"
 
 [header]
   caption = ""
@@ -14,31 +14,30 @@ title = "What You Need to Start DJing (1/3)"
 
 ![Me DJing at a local show](/img/dj-post/me-djing.jpg)
 
-Welcome! If you want to learn how to DJ for the first time, then you're in the
-right place. This post is the first in a series of three which will bring you
-from knowing nothing to being able to play a mix of your very own at your next
-party. Below I'll explain what you need to get started, then in the next post
-I'll help you [learn the basics](/post/learn-djing-basics) of DJing, and finally
-I'll show you exactly [how I prepare my DJ mixes](/post/how-to-mix). Below I
-share a little about how I got started in DJing, but if you just want technical
-details feel free to skip that and jump to "What you need to get started." I
-hope you enjoy!
+Welcome! If you want to learn how to DJ, then you're in the right place. This is
+the first in a series of three posts teaching you how to go from knowing nothing
+to being able to play at your first party. Below I share a few personal details
+about how I got started, but feel free to skip to "What you need to get started"
+if you just want technical details. I hope you enjoy :)
+
+Part 1: [What You Need to Start DJing](/post/what-you-need-djing)  
+Part 2: [How to Learn DJ Basics](/post/learn-djing-basics)  
+Part 3: [How to Make a DJ Mix](/post/how-to-mix)  
 
 ## How I got started DJing
 
 Those of you who know me well know that I have been a massive fan of electronic
-dance music (aka EDM) for a long time. Every EDM fan has a different story for
-how they got started, but I first learned about EDM back in
-2008\. I always loved the energy and excitement of guitar solos in rock and
-metal, and I soon realized that I could find that same energy and
-excitement but for the entirety of a song in electronic music. Starting on
-Tiesto and Daft Punk got me hooked on Trance and House, and I soon found a home
-in the Electro, Dubstep, and Drum & Bass communities.
+dance music (aka EDM) ever since I first found it in 2008. I always loved the
+energy and excitement of guitar solos in rock and metal, and I soon realized
+that I could find that same energy and excitement but for the entirety of a song
+in electronic music. Starting on Tiesto and Daft Punk got me hooked on Trance
+and House, and I soon found a home in the Electro, Dubstep, and Drum & Bass
+communities.
 
 What some of you might not know is that from 2010 to 2012 I actually ran [my own
 EDM blog](https://quoththeraverarchive.wordpress.com/). While admittedly the
 writing quality is a bit amateurish, I remember having a huge amount of fun
-spending time digging around for new EDM and sharing it with curious friends. By
+spending time digging around for new music and sharing it with curious friends. By
 2012 the music of Skrillex and others had become so mainstream though that fewer
 and fewer people were asking me for suggestions, and so I chose to end the blog.
 Speaking of Skrillex, I actually [posted about
@@ -58,10 +57,10 @@ that I finally have my weekends back, I've been diving deep into DJing and music
 production. While I am still relatively new to music production, I am thrilled
 to say that I have now successfully DJed more than a few raves and parties. You
 can find recordings of my favorite mixes on [my Soundcloud
-profile](https://soundcloud.com/quoththeraver). I've recently been having a ton
-of fun teaching my wife Becky and a few friends how to DJ, and so I thought that
-it would be worth sharing my system for how to DJ in this blog post. I hope you
-enjoy!
+profile](https://soundcloud.com/quoththeraver). When I told folks that I was
+teaching my wife Becky how to DJ, a few other people expressed interest in
+learning. So, I've written these blog posts to serve as a  reference
+for anyone who might like to learn. I hope you enjoy!
 
 If you have any questions about what I've written here, feel free to write them
 in the comments below! Also, these are only my thoughts and systems for DJing.
