@@ -11,6 +11,643 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>How to Make a DJ Mix</title>
+      <link>http://markbuckler.com/post/how-to-mix/</link>
+      <pubDate>Sun, 09 Jan 2022 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/how-to-mix/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/dj-post/me-djing3.jpg&#34; alt=&#34;Me DJing at a local show&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the third in a series of three posts teaching you how to DJ!&lt;br /&gt;
+Part 1: &lt;a href=&#34;http://markbuckler.com/post/what-you-need-djing&#34;&gt;What You Need to Start DJing&lt;/a&gt;&lt;br /&gt;
+Part 2: &lt;a href=&#34;http://markbuckler.com/post/learn-djing-basics&#34;&gt;How to Learn DJ Basics&lt;/a&gt;&lt;br /&gt;
+Part 3: &lt;a href=&#34;http://markbuckler.com/post/how-to-mix&#34;&gt;How to Make a DJ Mix&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Alright, you&amp;rsquo;ve got your gear and you&amp;rsquo;ve practiced a few transitions. Now is the
+time to dig into the meat of DJing: creating your mix. Below I describe my
+personal method, but as I&amp;rsquo;ve mentioned before there are many ways to succeed. If
+you want to use Traktor instead of Rekordbox, ignore cue points completely,
+never organize your music, or anything else go ahead! Just make sure that you&amp;rsquo;re
+having fun and that you like the sound of your mix.&lt;/p&gt;
+
+&lt;p&gt;Also, if you get stuck at any point that&amp;rsquo;s OK! There are often ways to make
+things easier for yourself. For example, I often recommend that new DJs practice
+on House music since the clear repetitive beat is great for learning beat
+matching and the long intros and outros make mixing a bit easier. As another
+example, lets say you&amp;rsquo;re struggling to find songs with the right key and BPM. No
+worries! You can search around for more tracks on Beatport to expand your
+library, giving yourself more options.&lt;/p&gt;
+
+&lt;p&gt;Alright, lets get started!&lt;/p&gt;
+
+&lt;h2 id=&#34;instructions-for-how-to-make-a-dj-mix&#34;&gt;Instructions for how to make a DJ mix!&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Listen to and label new music you&amp;rsquo;ve added recently&lt;/p&gt;
+
+&lt;p&gt;Some people have an insanely good memory and can easily remember what songs
+they want to play for any given mood or genre. I am not that kind of person! For
+me, I find it very helpful to do a few small things whenever I load in new music
+that help me down the line. When creating a new mix or playing live I am often
+interested in finding tracks which fit a certain mood, are a certain genre, or
+even just only showing my absolute favorite tracks. While BPM and key are easy
+to filter by since they are automatically analyzed by Rekordbox, there is no
+feature for analyzing mood, genre, or your personal taste. This is where
+labeling and Rekordbox intelligent playlists come in.&lt;/p&gt;
+
+&lt;p&gt;Whenever I add new music into my library I will first analyze the tracks to
+get BPM and key, but then I will label each track. By labeling I mean that in
+Rekordbox I add labels in brackets in the comments of each track which describe
+the genre, mood, and anything else I might want to sort by later. I also rate
+the track from 0-5 stars. As an example, in the comments of one of my favorite
+songs called &lt;a href=&#34;https://soundcloud.com/ophelia_records/caster-ironheart-kingslayer&#34; target=&#34;_blank&#34;&gt;Kingslayer by Caster &amp;amp;
+Ironheart&lt;/a&gt;
+I&amp;rsquo;ve written: &amp;ldquo;[Dubstep], [Epic], [Orchestral]&amp;rdquo; and I&amp;rsquo;ve rated it 5 stars.
+When labeling a song I try to have at least one label for genre and mood
+respectively. Feel free to use whatever labels make sense for you!&lt;/p&gt;
+
+&lt;p&gt;To conveniently view all songs that you&amp;rsquo;ve labeled by any given mood or
+genre, you can create &lt;a href=&#34;https://www.youtube.com/watch?v=rBCIzg-84xM&amp;amp;ab_channel=DirtySecretz&#34; target=&#34;_blank&#34;&gt;intelligent
+playlists&lt;/a&gt;
+in Rekordbox. Each new intelligent playlist you create will pull songs from your
+entire collection based on a few rules that you set. For example, I have an
+intelligent playlist labeled Dubstep which includes all tracks that contain the
+text &amp;ldquo;[Dubstep]&amp;rdquo; in their comments. This means that every time I add a new
+track and label it as Dubstep, it will automatically be added to this playlist.
+I&amp;rsquo;ve set up intelligent playlists for all of my favorite genres and moods,
+making it very easy for me to find what I need!&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Decide on what you&amp;rsquo;d like to accomplish with this mix&lt;/p&gt;
+
+&lt;p&gt;The answers to the questions below should inform all other decisions you make in
+the rest of planning out your mix. Here your goal is to decide on what you are
+trying to create.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What experience would you like your audience to have? What is the general
+vibe you&amp;rsquo;re going for? Do you want people on the dance floor to just nod
+slightly, sway, shuffle, headbang, mosh, break the rail, etc? Is this a
+promotional recording? If so, what kinds of songs and transitions would the
+reviewer be looking for?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Will this set be in-person, on a livestream, or just Soundcloud? If live,
+consider what the DJs before and after you will be playing. Are you an
+opener or headliner? If on a livestream, give yourself opportunities in the mix
+to respond to comments, or be prepared to change what you play based on requests
+that come in.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What DJ skills would you like to use? If this is your first mix, maybe
+you&amp;rsquo;ll rely on simple fades. If you&amp;rsquo;ve been playing for a while, try to
+come up with a challenge or goal. Would you like to do mashups, use more of your
+controller&amp;rsquo;s performance features, use drop swaps, or mix genres in ambitious
+ways?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How long should the mix be? Standard set times include 15, 30, or 60
+minutes. If you&amp;rsquo;re playing live then timing is very important.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Select a few signpost songs&lt;/p&gt;
+
+&lt;p&gt;This is arguably the most important step of all: deciding on your main
+tracks. Consider all of the answers you gave to the questions above when making
+these decisions. Here the goal isn&amp;rsquo;t to choose all of the songs you will play,
+but instead to choose songs that you think are especially good. In the next step
+you will add songs to glue these together. I&amp;rsquo;ve provided a few suggestions below
+for guidance on how to select songs. To start, make a new Rekordbox playlist for
+your mix, and add tracks to the playlist when you decide you&amp;rsquo;d like to play
+them.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;For your first track, choose a song that has an interesting introduction.
+Look for something dramatic and slow building. Avoid a song with extremely
+high energy or one that starts with a boring drum loop. If none of the tracks
+you&amp;rsquo;d like to play have interesting introductions, consider making it your own
+by adding in some kind of voice-over.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For your last track, be especially concious of who will be playing after
+you. If you are playing as support for a headlining DJ, consider slowly
+bringing down the energy a little bit at the end to give the crowd time to
+recover. If you are the headliner, try to have something really fun saved for
+the end like a new song you&amp;rsquo;ve made or at least an especially epic track.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For the tracks in between, there are many reasons to choose a
+specific song.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Songs that define the vibe you&amp;rsquo;re going for&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Songs that you&amp;rsquo;ve recently added to your collection or are especially
+excited about&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Songs that you think the audience will get excited by (classics, brand new
+music, EDM remixes of non-EDM songs)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Songs you&amp;rsquo;ve produced&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Songs that you&amp;rsquo;ve identified are good for mashups or can be used to
+play with performance features.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add some glue songs&lt;/p&gt;
+
+&lt;p&gt;Alright, so now you have a good sense of what songs you would like to play
+in your mix. While you&amp;rsquo;re probably excited about all of the songs in your
+playlist, they might not be especially easy to mix between. Of course you can
+always echo out and fade in the next track, but an entire set consisting of just
+that transition would be pretty rough to listen to. This step is all about
+filling in the gaps between your signpost songs with other songs which can be
+conveniently transitioned between.&lt;/p&gt;
+
+&lt;p&gt;Start by sorting your songs by BPM and by key, just to get a general sense
+for what BPM and key ranges you are in. Then, sort by track number which will
+enable you to drag tracks up and down the playlist. Bring your starting song to
+the front and your ending song to the bottom.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As a general rule of
+thumb, try to start with a lower BPM and end with a higher BPM. Knowing where
+you are starting and where you want to end up will give you a nice path to
+follow when you choose more tracks in the next step. By path, I mean to say that
+if we assume that every transition involves blending two tracks together (not
+always necessary, but a good general assumption) then we know that each track
+has to be similar in BPM (&amp;lt;5 BPM different) and in key (adjacent on the camelot
+key wheel). For example, if we have a starting song with a key of 9A and an
+ending song of 5A, then we know that we will need at least one song in 7A and
+one song in 6A to be able to bridge that gap in those key signatures.&lt;/p&gt;
+
+&lt;p&gt;Then, add roughly twice as many songs to the playlist as you expect to play
+during your set. Giving yourself options is important since when you eventually
+get to mixing you may find that a transition you thought would be great doesn&amp;rsquo;t
+actually sound as good as you thought. To make this step easier, Rekordbox has
+an awesome &amp;ldquo;related tracks&amp;rdquo; feature which can really help simplify your song
+selection process by filtering your library. Check out a tutorial on that here.
+It is worth including some relatively low and high energy tracks in this list,
+since every set needs to build up tension, release it, and repeat. High
+intensity is really fun, but an entire set of max intensity gets boring quickly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/dj-post/rekordbox_related_tracks.png&#34; alt=&#34;Related tracks window&#34; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Check the beat grid and add cue points (optional)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Export mode, set beat jump to 8 bars&lt;/p&gt;
+
+&lt;p&gt;Add cue points to all of the songs that you&amp;rsquo;d like to try transitions on. Phil
+Harris, my red-headed brother from another mother, has an excellent tutorial on
+that here. I use a very similar system to his. He also has this nice basic video
+which describes the concepts of beats, bars, and song phrasing which is useful
+to help build some vocabulary if you aren&amp;rsquo;t already familiar. By the way, in
+case you don&amp;rsquo;t know how to jump by 8 bars in Rekordbox (the cue point tutorial
+uses a Serato instead so the interface is different) you can jump back and
+forward in the song with the left and right arrow keys on your keyboard, and you
+can select the amount of time to jump right above the cue and play buttons (I
+circled it in red in the picture below). In case you&amp;rsquo;re wondering where the cue
+buttons are, I circled them in blue below as well. One annoying thing that
+sometimes comes up and isn&amp;rsquo;t mentioned in that tutorial is that oftentimes
+Rekordbox will analyze a song and get the BPM right but get the timing of the
+bars wrong. You will want the start of the drop to also be the start of a new
+bar (an example is shown at the green cue point below). This is why the first
+cue point I always add to a song is the first drop, since if the grid is offset
+it becomes obvious quickly. You can slide the beat grid back and forth by
+clicking on the &amp;ldquo;GRID&amp;rdquo; tab next to the cue and play button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/dj-post/rekordbox_cue_points.png&#34; alt=&#34;Assigning cue points&#34; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Export your playlist to USB&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you use CDJs or an all-in-one DJ system, export your playlist to USB so you
+can load you music. For a video explaining how, take a look
+&lt;a href=&#34;https://www.youtube.com/watch?v=1sGxfi--y2I&amp;amp;ab_channel=Crossfader&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Experiment with transitions and build song blocks&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You will need a DJ controller for this step&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Decide on what order to play your songs&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Decide on what order to play your songs (and where you&amp;rsquo;ll transition in/out)
+based on what transitions you thought sounded good and the emotional journey
+that you would like your audience to go through. Remember to build and release
+tension like you would in a fictional story! I&amp;rsquo;m a nerd, so I like to write down
+my songs in a spreadsheet. Here&amp;rsquo;s what my list looks like for the BOH! you guys
+heard me play.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Practice your set from beginning to end&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add/remove songs and cue points as needed&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;May need to remove cue points if playing on old CDJs&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Play and/or record your mix!&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to Learn DJ Basics</title>
+      <link>http://markbuckler.com/post/learn-djing-basics/</link>
+      <pubDate>Sat, 08 Jan 2022 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/learn-djing-basics/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/dj-post/me-djing2.jpg&#34; alt=&#34;Me DJing at a local show&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the second in a series of three posts teaching you how to DJ!&lt;br /&gt;
+Part 1: &lt;a href=&#34;http://markbuckler.com/post/what-you-need-djing&#34;&gt;What You Need to Start DJing&lt;/a&gt;&lt;br /&gt;
+Part 2: &lt;a href=&#34;http://markbuckler.com/post/learn-djing-basics&#34;&gt;How to Learn DJ Basics&lt;/a&gt;&lt;br /&gt;
+Part 3: &lt;a href=&#34;http://markbuckler.com/post/how-to-mix&#34;&gt;How to Make a DJ Mix&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Great, you&amp;rsquo;ve got your musical knowledge, DJ software &amp;amp; hardware, and your music
+library. Lets get started on learning the fundamentals!&lt;/p&gt;
+
+&lt;h2 id=&#34;first-time-setup&#34;&gt;First time setup&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Import your music library into your DJ software&lt;/p&gt;
+
+&lt;p&gt;Your first step is to get your music library into your Rekordbox collection.
+You will also want to analyze all of your songs to get their BPM and key
+signature. To do this, simply click and drag songs into the Rekordbox window. If
+they don&amp;rsquo;t begin analyzing automatically, you can select them and then select
+analyze tracks when right clicking.&lt;/p&gt;
+
+&lt;p&gt;I also recommend changing a few settings in Rekordbox. For example, I
+recommend you set your column headers to be the following: Preview, Artwork,
+Track Title, Artist, BPM, Key, Rating, and Comments. You can choose whatever
+columns you want displayed by right clicking on the header of your collection
+display window. I also recommend setting the waveform display to be RGB (this
+makes it easier to identify phrases in the waveform) and the key display to be
+Camelot notation (this makes it easier to check if tracks are in key). Both of
+these modes can be changed in the Rekordbox settings.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Set up and familiarize yourself with your hardware&lt;/p&gt;
+
+&lt;p&gt;Hook up your DJ controller to your laptop, some speakers, and a pair of
+headphones. Because this is your first time DJing, you might not be familiar
+with all of the different buttons and knobs on your controller. The video below
+is a great explanation of how to use the DDJ-400 controller. The DDJ-400 is my
+recommendation for a good beginner controller, but even if you have different
+hardware the video will still be helpful since it goes over all the basics which
+are included on all DJ hardware. Once you watch that video, you will have a much
+better idea of how to use your new equipment!&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/_gktzXnZVJk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;basic-skills-to-learn&#34;&gt;Basic skills to learn&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Practice beat matching by ear&lt;/p&gt;
+
+&lt;p&gt;When transitioning between two tracks, it is important that the beats of the
+two songs are synchronized (matched). When playing two tracks on a controller or
+all-in-one DJ system you can visually see if the beats are aligned or not. To be
+honest, using this visual cue to beat match is how I got started, but it does
+have some issues. The problem comes in if the beat grid of one of the songs has
+been analyzed incorrectly, or if you are using CDJs (which display song
+waveforms separately without being on top of each other). For this reason it is
+important for all new DJs to learn how to beat match by ear. For an excellent
+explanation and demonstration of beat matching by ear I recommend the video
+below.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/GuE5x65XZF4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Practice transitioning between songs&lt;/p&gt;
+
+&lt;p&gt;Now that you have your music library in your DJ software, you&amp;rsquo;ve set up your
+hardware, familiarized yourself with its knobs, and you&amp;rsquo;ve practiced beat
+matching by ear, you&amp;rsquo;re finally ready to do your first transition! Start by
+finding a House track which has an intro and outro which consists almost
+entirely of just a simple drum beat (this keeps it simple). Then, add this track
+to both of your decks and practice transitioning from the outro of the song on
+one track into the outro of the song on the other track. Transitions are much
+better demonstrated than explained, so take a look at the video below to learn
+more.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/Y4dqD-g7SHE?start=1545?&#34;
+  style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Once you feel more comfortable with the basic fade, try transitioning
+between two different songs with similar BPM and key. Once you feel comfortable
+with BPM adjustment, beat matching, EQs and fading, you&amp;rsquo;re off to the races!
+There are many other types of transitions of course (and feel free to create
+your own!), but for EDM DJs the basic fade can get you nearly all of the way
+there. For more creative transition ideas check out &lt;a href=&#34;https://www.youtube.com/watch?v=0Hc8bmEaCqM&amp;amp;ab_channel=Crossfader&#34; target=&#34;_blank&#34;&gt;this
+video&lt;/a&gt;, and
+for examples of how to transition between two songs with significantly different
+BPMs or genres, check out &lt;a href=&#34;https://www.youtube.com/watch?v=-yuKamRvQOc&amp;amp;ab_channel=Crossfader&#34; target=&#34;_blank&#34;&gt;this
+video&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Alright, now that you know how to use your DJ controller and have practiced a
+few different transitions, you&amp;rsquo;re ready to move on to making your first mix! For
+some guidance on how to do that, check out &lt;a href=&#34;http://markbuckler.com/post/how-to-mix&#34;&gt;my next blog
+post&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What You Need to Start DJing</title>
+      <link>http://markbuckler.com/post/what-you-need-djing/</link>
+      <pubDate>Fri, 07 Jan 2022 16:25:31 -0400</pubDate>
+      
+      <guid>http://markbuckler.com/post/what-you-need-djing/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/dj-post/me-djing.jpg&#34; alt=&#34;Me DJing at a local show&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Welcome! If you want to learn how to DJ, then you&amp;rsquo;re in the right place. This is
+the first in a series of three posts teaching you how to go from knowing nothing
+to being able to play at your first party. Below I share a few personal details
+about how I got started, but feel free to skip to &amp;ldquo;What you need to get started&amp;rdquo;
+if you just want technical details. I hope you enjoy :)&lt;/p&gt;
+
+&lt;p&gt;Part 1: &lt;a href=&#34;http://markbuckler.com/post/what-you-need-djing&#34;&gt;What You Need to Start DJing&lt;/a&gt;&lt;br /&gt;
+Part 2: &lt;a href=&#34;http://markbuckler.com/post/learn-djing-basics&#34;&gt;How to Learn DJ Basics&lt;/a&gt;&lt;br /&gt;
+Part 3: &lt;a href=&#34;http://markbuckler.com/post/how-to-mix&#34;&gt;How to Make a DJ Mix&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;how-i-got-started-djing&#34;&gt;How I got started DJing&lt;/h2&gt;
+
+&lt;p&gt;Those of you who know me well know that I have been a massive fan of electronic
+dance music (aka EDM) ever since I first found it in 2008. I always loved the
+energy and excitement of guitar solos in rock and metal, and I soon realized
+that I could find that same energy and excitement but for the entirety of a song
+in electronic music. Starting on Tiesto and Daft Punk got me hooked on Trance
+and House, and I soon found a home in the Electro, Dubstep, and Drum &amp;amp; Bass
+communities.&lt;/p&gt;
+
+&lt;p&gt;What some of you might not know is that from 2010 to 2012 I actually ran &lt;a href=&#34;https://quoththeraverarchive.wordpress.com/&#34; target=&#34;_blank&#34;&gt;my own
+EDM blog&lt;/a&gt;. While admittedly the
+writing quality is a bit amateurish, I remember having a huge amount of fun
+spending time digging around for new music and sharing it with curious friends. By
+2012 the music of Skrillex and others had become so mainstream though that fewer
+and fewer people were asking me for suggestions, and so I chose to end the blog.
+Speaking of Skrillex, I actually &lt;a href=&#34;https://quoththeraverarchive.wordpress.com/2010/08/03/week-of-electro-part-3-skrillex/&#34; target=&#34;_blank&#34;&gt;posted about
+him&lt;/a&gt;
+way back in 2010 before he released his eventually Grammy-winning and massively
+influential EP Scary Monsters and Nice Sprites. For those of you who don&amp;rsquo;t know,
+Skrillex&amp;rsquo;s earlier EDM production was a lot more electro focused, so back then I
+chose &lt;a href=&#34;https://www.youtube.com/watch?v=O3Q7LtUGfUg&amp;amp;ab_channel=SkrillexFullHD&#34; target=&#34;_blank&#34;&gt;Slats Slats
+Slats&lt;/a&gt; as
+my favorite track by him. I still love that track, so much so that I played it
+in my &lt;a href=&#34;https://soundcloud.com/quoththeraver/sawtooth-soiree-set&#34; target=&#34;_blank&#34;&gt;Sawtooth Soiree rave
+mix&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since ending my blog I had a dream of DJing and producing my own music, but
+getting a bachelors, masters, and PhD in engineering took up all of my time. Now
+that I finally have my weekends back, I&amp;rsquo;ve been diving deep into DJing and music
+production. While I am still relatively new to music production, I am thrilled
+to say that I have now successfully DJed more than a few raves and parties. You
+can find recordings of my favorite mixes on &lt;a href=&#34;https://soundcloud.com/quoththeraver&#34; target=&#34;_blank&#34;&gt;my Soundcloud
+profile&lt;/a&gt;. When I told folks that I was
+teaching &lt;a href=&#34;https://soundcloud.com/rebecca-smith-186&#34; target=&#34;_blank&#34;&gt;my wife&lt;/a&gt; how to DJ, a few
+other people expressed interest in learning. So, I&amp;rsquo;ve written these blog posts
+to serve as a  reference for anyone who might like to learn. I hope you enjoy!&lt;/p&gt;
+
+&lt;p&gt;If you have any questions about what I&amp;rsquo;ve written here, feel free to write them
+in the comments below! Also, these are only my thoughts and systems for DJing.
+There are many other ways to succeed.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-you-need-to-get-started&#34;&gt;What you need to get started&lt;/h2&gt;
+
+&lt;p&gt;OK, thats enough of me telling my life story before sharing the recipe! Let&amp;rsquo;s
+start with what you will need before you can get started. Specifically, some
+musical knowledge, a music library, DJ software, and DJ hardware.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Musical Knowledge&lt;/p&gt;
+
+&lt;p&gt;The first thing that you&amp;rsquo;ll need before you get started on DJing is some
+knowledge of music theory. The act of making a smooth transition between tracks is core
+to DJing, and these smooth transitions are only possible due to patterns that
+are shared between different pieces of music. By learning what these patterns
+are and what words to use to describe them you will become a much better DJ. If
+you aren&amp;rsquo;t classically trained in music, the five most important new vocabulary
+words you will need to learn are beats, bars, phrases, BPM, and key signature.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Beats, bars, and phrases are each a different level of hierarchy in the
+structure of music. Each song is made up of multiple phrases
+(introduction, breakdown, drop, bridge, etc), each phrase is made up of multiple
+bars (typically 8 bars in EDM), and each bar is made up of multiple beats
+(typically 4 beats in EDM). When transitioning from one track to another it is
+helpful to keep phrasing in mind since overlapping certain phrases tends to
+sound better than others. For great examples and a deep explanation, check out
+the video below by my red-headed brother from another mother &lt;a href=&#34;https://www.youtube.com/channel/UCv5TGu1jwiqWhzw9wj01mIQ&#34; target=&#34;_blank&#34;&gt;Phil
+Harris&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/ZqGUt1U8gPo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;BPM stands for Beats Per Minute, so it is a measurement of the speed of a
+given song. When we transition between songs we typically want each of
+these songs to be playing at the same speed and for the beats to be aligned. In
+engineering terminology we would say that we want both the frequency and the
+phase of the songs to be the same. By using a DJ controller we can adjust the
+frequency (BPM) of a song by adjusting the tempo slider, and we can adjust the
+phase (alignment in time) by spinning the side of the jog wheel.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The key signature of a given song corresponds to the specific set of notes
+used to create that song. The easiest key signature to explain is C Major,
+which includes just the white keys on a piano. Certain key signatures share a
+lot of the same notes, and so you can predict how well two songs will sound
+together if you know both of their key signatures.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/dj-post/CamelotWheel.jpg&#34; alt=&#34;Camelot Wheel&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To make it easier for people
+to remember which key signatures share the most notes, the Camelot system (shown
+in the image above) was created. On the Camelot wheel, each cell represents a
+given key with a classical name (such as C Major) and a Camelot name (such as 8B
+for C Major). The keys that are adjacent on the wheel  to any particular key
+share the most amount of notes, and therefore will sound the best to mix
+between. If you use Camelot notation you don&amp;rsquo;t even need to look at the wheel to
+know which keys will sound good with any other given key, since all adjacent
+cells either share a number with the key you&amp;rsquo;re interested in or they
+increase/decrease the number of the key by one. For a great explanation of
+mixing in key I recommend the video below by
+&lt;a href=&#34;https://www.youtube.com/channel/UCM4u0gp8gm99w9MXQ7ZI8Mw&#34; target=&#34;_blank&#34;&gt;Crossfader&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/U_tS7iMwU54&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;It is worth mentioning that Rekordbox does now support displaying keys
+in Camelot notation, and also that it isn&amp;rsquo;t always necessary to strictly mix in
+key. The ultimate test of whether or not a transition sounds good is if you
+think it sounds good. Software tools do their best to identify what key a song
+is in, but sometimes they can get it wrong. Also, depending on how the songs are
+written it may be possible to jump by 2 cells instead of 1 on the Camelot wheel,
+since those keys will only differ by 2 notes. A good rule of thumb worth
+repeating is when DJing, always remember to trust your ears!&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Music Library&lt;/p&gt;
+
+&lt;p&gt;Because we live in an age when streaming is king, most people listen to music
+through Spotify, Soundcloud, and Apple Music. Thankfully some DJ software
+(including Rekordbox) does enable you to play music from &lt;em&gt;some&lt;/em&gt; streaming
+services, but this functionality requires that you bring a laptop and have a
+good internet connection wherever you play. Most DJs prefer to work with actual
+song files instead since that offers the most flexibility and reliability.
+&lt;a href=&#34;https://www.pioneerdj.com/en-us/product/player/&#34; target=&#34;_blank&#34;&gt;Pioneer CDJs&lt;/a&gt; are industry
+standard and can load music from a properly formatted USB, so most
+DJs don&amp;rsquo;t need to bring anything other than a USB filled with their music files
+when they go to play at a club.&lt;/p&gt;
+
+&lt;p&gt;OK cool, so if you want music files for DJing then how should you get
+them? This is a legitimate question if you&amp;rsquo;ve become used to streaming.
+Frustratingly, Spotify and the other streaming services purposefully make it
+hard for you to buy music on their site since otherwise you would have less
+of a need for them. The best way that I&amp;rsquo;ve found so far to buy songs from a
+Spotify playlist is a web app called &lt;a href=&#34;https://hypem.com/merch-table&#34; target=&#34;_blank&#34;&gt;Merch
+Table&lt;/a&gt; which can convert a spotify playlist into
+a convenient list of links to buy the songs on
+&lt;a href=&#34;https://bandcamp.com/&#34; target=&#34;_blank&#34;&gt;Bandcamp&lt;/a&gt;. If instead you&amp;rsquo;re looking for an iTunes-esque
+website optimized for DJing then you should check out
+&lt;a href=&#34;https://www.beatport.com/&#34; target=&#34;_blank&#34;&gt;Beatport&lt;/a&gt;. Beatport has a significant advantage over
+iTunes for a few reasons, but the biggest thing for me is seeing the BPM and key
+for every track (this will become important when you&amp;rsquo;re deciding which songs to
+mix with others). Finally, there are DJ Pools which are monthly
+subscriptions to services which enable you to download unlimited song files. For
+more details and a recent review of the top DJ Pools, check out &lt;a href=&#34;https://djtechreviews.com/audio-software/best-dj-pool&#34; target=&#34;_blank&#34;&gt;this
+article&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;DJ Software&lt;/p&gt;
+
+&lt;p&gt;Once you have your music library, you&amp;rsquo;re ready to import it into your choice
+of DJ software! DJ software will play a few important roles for you: music
+library organization, track preparation for performance, and either exporting
+your library to a USB or enabling a non-standalone DJ controller to play music.
+There are quite a few options for DJ software, so if you&amp;rsquo;re not sure which to
+choose then I recommend taking a look at &lt;a href=&#34;https://www.sweetwater.com/insync/which-dj-software-is-right-for-me/&#34; target=&#34;_blank&#34;&gt;this
+post&lt;/a&gt;
+which describes the pros and cons of the top 3 platforms. My personal favorite
+DJ software is &lt;a href=&#34;https://rekordbox.com/en/&#34; target=&#34;_blank&#34;&gt;Rekordbox&lt;/a&gt; because of its excellent
+organization and USB export tools, so the rest of this blog post will describe
+how to make a mix using Rekordbox specifically.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/dj-post/rekordbox.PNG&#34; alt=&#34;Rekordbox window&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;DJ Hardware&lt;/p&gt;
+
+&lt;p&gt;Your home DJ studio will consist of a few components: a DJ controller or
+CDJs+mixer, speakers, headphones, and optionally a formatted USB stick. Most
+people already have speakers, headphones, and USB sticks, so here I&amp;rsquo;ll quickly
+go over the differences between DJ controllers, all-in-one DJ systems, and CDJs.
+Each kind of DJ hardware has a different price point and different
+functionality, but any of these types of hardware can be used to learn how to
+DJ. Because &lt;a href=&#34;https://www.pioneerdj.com/en-us/&#34; target=&#34;_blank&#34;&gt;Pioneer DJ&lt;/a&gt; is the standard in
+most bars and clubs (and I also use Pioneer DJ hardware) all of the examples
+given below are from Pioneer DJ, but hardware from other manufacturers like
+&lt;a href=&#34;https://www.denondj.com/&#34; target=&#34;_blank&#34;&gt;Denon DJ&lt;/a&gt; can also work for you. Also, the costs that
+I list are for new equipment, but it is often possible to find used equipment on
+Facebook marketplace or even in stores like Guitar Center. Older versions of
+this hardware are often available as well, so keep an eye out for those if
+you&amp;rsquo;re trying to save money. Finally, if you would like to try out DJing before
+spending money on hardware then you might be interested in one of the &lt;a href=&#34;https://plus.pointblankmusicschool.com/7-best-dj-apps-for-mixing-on-the-go/&#34; target=&#34;_blank&#34;&gt;many DJ
+apps&lt;/a&gt;
+for tablets and phones. Personally, I would recommend a cheap controller instead
+of an app since even the cheap controllers have a lot more in common with
+standard hardware than apps.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;DJ Controller ($150-$250)&lt;/p&gt;
+
+&lt;p&gt;If you are a beginner then a DJ controller is right for you. This is the
+cheapest DJ hardware available, and when combined with a laptop it can do
+absolutely everything you need to practice DJing.  You will need a computer to
+organize your music anyway, so there is no harm in needing a computer to play
+music. Most controllers also have convenient performance pads mapped to cue
+points which I find to be especially helpful. Effects and looping functionality
+are nearly always available as well. The example I show below is the &lt;a href=&#34;https://www.pioneerdj.com/en-us/product/controller/ddj-400/gold/overview/#/color-picker&#34; target=&#34;_blank&#34;&gt;Pioneer
+DDJ-400-N&lt;/a&gt;,
+which is very similar to the controller that I started out with.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/dj-post/DDJ-400.png&#34; alt=&#34;DJ Controller&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;All-in-one DJ System ($1,500-$2,000)&lt;/p&gt;
+
+&lt;p&gt;If you are lucky enough to start DJing in clubs but don&amp;rsquo;t have a ridiculous
+amount of money to spend on a full club system for your home studio, you may be
+interested in an all-in-one DJ system. All-in-one DJ systems offer all of the
+same functionality of a DJ controller but also offer a built-in screen for
+viewing waveforms &amp;amp; browsing songs, balanced connections for connecting to
+professional speakers/monitors, physically larger controls (easier to change
+BPM), and don&amp;rsquo;t require a laptop. The layout of
+all-in-one DJ systems is also very similar to the corresponding CDJs, which will
+help you become familiar with that layout. Finally, all-in-one DJ systems work
+by importing music from a USB (just like CDJs), so these systems are great for
+big parties with multiple DJs since each new DJ only needs to connect their USB
+to get started. The example I show below is the &lt;a href=&#34;https://www.pioneerdj.com/en/product/all-in-one-system/xdj-rx3/black/overview/&#34; target=&#34;_blank&#34;&gt;Pioneer
+XDJ-RX2&lt;/a&gt;,
+which is very similar to the system that I currently use at home.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/dj-post/XDJ-RX3.png&#34; alt=&#34;DJ System&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CDJs and Mixer ($3,000-$7,000+)&lt;/p&gt;
+
+&lt;p&gt;Most dance clubs that I am familiar with use CDJs and a mixer for their
+DJ hardware. Clubs like to use CDJ + mixer setups because they are physically
+more robust, they can have 4 or more audio sources (such as additional CDJs,
+analog turntables, or instruments), and because individual CDJs or mixers can be
+replaced without needing to replace the entire system. Before you dump $5k on a
+few CDJs though you should be aware that they also have a lot of drawbacks!
+Beyond being very expensive, CDJ + mixer setups don&amp;rsquo;t typically have performance
+pads for cue points (sometimes limiting you to 3 cue points total), don&amp;rsquo;t enable
+you to beatmatch by eye since each display only shows one track at a time, and
+are physically huge which can be real problem for folks in small apartments. So
+why would you as a bedroom DJ ever want CDJs and a mixer? The only real reason
+to do this is so that you can practice on equipment that is similar or identical
+to what you will be playing on live at a club. If you rely on many cue points
+and beatmatching by eye while practicing then you might be caught totally off
+guard when you&amp;rsquo;re asked to play without those nice tools. The example I show
+below is a pair of &lt;a href=&#34;https://www.pioneerdj.com/en/product/player/cdj-3000/black/overview/&#34; target=&#34;_blank&#34;&gt;Pioneer
+CDJ-3000s&lt;/a&gt;
+and a &lt;a href=&#34;https://www.pioneerdj.com/en-us/product/mixer/djm-900nxs2/black/overview/&#34; target=&#34;_blank&#34;&gt;Pioneer DJM-900NXS2
+mixer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/dj-post/DJM-900NXS2-and-CDJ-3000-pair.png&#34; alt=&#34;CDJs and Mixer&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;OK great, now you know what you need to get started DJing! To learn how to take
+your musical knowledge, music library, and DJ setup to the next level with DJ
+basics, check out &lt;a href=&#34;http://markbuckler.com/post/learn-djing-basics&#34;&gt;my next blog post&lt;/a&gt; :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to Make Bad Deep Learning Hardware</title>
       <link>http://markbuckler.com/post/bad-dnn-asic/</link>
       <pubDate>Wed, 15 Aug 2018 16:25:31 -0400</pubDate>
@@ -869,50 +1506,6 @@ copy a frame-exact section of video you have to re-encode. At least now you
 know!&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Approximate Vision Pipeline</title>
-      <link>http://markbuckler.com/project/approx-vision/</link>
-      <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://markbuckler.com/project/approx-vision/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My Old Electronic Music Blog</title>
-      <link>http://markbuckler.com/post/quoth_the_raver/</link>
-      <pubDate>Tue, 02 May 2017 16:25:31 -0400</pubDate>
-      
-      <guid>http://markbuckler.com/post/quoth_the_raver/</guid>
-      <description>&lt;p&gt;Back in 2010 I started a blog dedicated to electronic music called Quoth
-the Raver (a play on Quoth the Raven). It was a huge amount of fun
-sharing the music I found with everyone on the site, and it inspired me
-to get even more familiar with the various genres, artists, and labels.
-These days electronic music (also known as EDM) has exploded in
-popularity, so the novelty of sharing new artists has worn off to a
-certain extent. For this reason I haven&amp;rsquo;t updated the blog in quite a
-long time, but I did recently go through to fix up some broken components
-for archiving the site.&lt;/p&gt;
-
-&lt;p&gt;If anyone is curious to see what I was listening to and raving about
-back then feel free to &lt;a href=&#34;https://quoththeraverarchive.wordpress.com/&#34; target=&#34;_blank&#34;&gt;check out the
-website!&lt;/a&gt; If you&amp;rsquo;re more
-interested in what I&amp;rsquo;m listening to these days, go ahead and check out
-what I love on &lt;a href=&#34;https://soundcloud.com/quoththeraver&#34; target=&#34;_blank&#34;&gt;SoundCloud&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://markbuckler.com/img/quoth_the_raver.jpg&#34; alt=&#34;Quoth the Raver&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Reconfiguring the Imaging Pipeline for Computer Vision</title>
-      <link>http://markbuckler.com/publication/iccv2017/</link>
-      <pubDate>Wed, 26 Apr 2017 19:37:01 -0400</pubDate>
-      
-      <guid>http://markbuckler.com/publication/iccv2017/</guid>
-      <description></description>
     </item>
     
   </channel>

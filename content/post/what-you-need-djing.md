@@ -58,9 +58,9 @@ production. While I am still relatively new to music production, I am thrilled
 to say that I have now successfully DJed more than a few raves and parties. You
 can find recordings of my favorite mixes on [my Soundcloud
 profile](https://soundcloud.com/quoththeraver). When I told folks that I was
-teaching my wife Becky how to DJ, a few other people expressed interest in
-learning. So, I've written these blog posts to serve as a  reference
-for anyone who might like to learn. I hope you enjoy!
+teaching [my wife](https://soundcloud.com/rebecca-smith-186) how to DJ, a few
+other people expressed interest in learning. So, I've written these blog posts
+to serve as a  reference for anyone who might like to learn. I hope you enjoy!
 
 If you have any questions about what I've written here, feel free to write them
 in the comments below! Also, these are only my thoughts and systems for DJing.

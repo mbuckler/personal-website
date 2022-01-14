@@ -66,5 +66,14 @@
       <description>Docker is awesome, and this talk will tell you why.</description>
     </item>
     
+    <item>
+      <title>Example Talk</title>
+      <link>http://markbuckler.com/talk/example-talk/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://markbuckler.com/talk/example-talk/</guid>
+      <description>Embed your slides or video here using shortcodes. Further details can easily be added using Markdown and $\rm \LaTeX$ math code.</description>
+    </item>
+    
   </channel>
 </rss>
