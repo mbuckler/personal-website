@@ -12,7 +12,7 @@ title = "How to Learn DJ Basics"
 
 +++
 
-![Me DJing at a local show](/img/dj-post/me-djing2.jpg)
+![Me DJing at a local show](/img/dj-post/me-djing.jpg)
 
 This is the second in a series of three posts teaching you how to DJ!  
 Part 1: [What You Need to Start DJing](/post/what-you-need-djing)  

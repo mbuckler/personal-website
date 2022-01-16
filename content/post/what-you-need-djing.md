@@ -12,7 +12,7 @@ title = "What You Need to Start DJing"
 
 +++
 
-![Me DJing at a local show](/img/dj-post/me-djing.jpg)
+![Me DJing at a local show](/img/dj-post/me-djing2.jpg)
 
 Welcome! If you want to learn how to DJ, then you're in the right place. This is
 the first in a series of three posts teaching you how to go from knowing nothing

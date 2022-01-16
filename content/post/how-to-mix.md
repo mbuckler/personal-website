@@ -2,7 +2,7 @@
 date = "2022-01-09T16:25:31-04:00"
 highlight = false
 math = false
-draft = true
+draft = false
 tags = []
 title = "How to Make a DJ Mix"
 
@@ -99,7 +99,7 @@ ways?
     - How long should the mix be? Standard set times include 15, 30, or 60
       minutes. If you're playing live then timing is very important.
 
-3. Select a few signpost songs
+3. Select your signpost songs
 
     This is arguably the most important step of all: deciding on your main
 tracks. Consider all of the answers you gave to the questions above when making
@@ -138,97 +138,175 @@ music, EDM remixes of non-EDM songs)
         - Songs that you've identified are good for mashups or can be used to
           play with performance features.
 
-4. Add some glue songs
+4. Add some breaks in the action
 
-    Alright, so now you have a good sense of what songs you would like to play
-in your mix. While you're probably excited about all of the songs in your
-playlist, they might not be especially easy to mix between. Of course you can
-always echo out and fade in the next track, but an entire set consisting of just
-that transition would be pretty rough to listen to. This step is all about
-filling in the gaps between your signpost songs with other songs which can be
-conveniently transitioned between.
+    To me, choosing the songs to play in a mix is like a combination between
+writing a story and building a puzzle. Just like when writing a story, your goal
+should be to intentionally raise and lower tension by playing songs with certain
+energy levels at certain times. There are a few different ways to think about
+structuring a story, but I think the [three act
+structure](https://blog.reedsy.com/guide/story-structure/three-act-structure/)
+is especially helpful for this analogy. As you can see in the image below, each
+of the story's three acts consist of rising tension and then releasing tension.
+Each subsequent act builds tension higher than the previous, resulting in a very
+captivating story. When selecting signpost songs most people immediately
+gravitate to the most exciting or highest energy songs they want to play, so now
+is the time to add in a few lower energy songs. Make sure that the new songs
+still fit your vibe but will help you lower the tension. Giving your audience
+time to recover in-between increasingly intense climaxes will make for an
+amazing experience.
 
-    Start by sorting your songs by BPM and by key, just to get a general sense
-for what BPM and key ranges you are in. Then, sort by track number which will
-enable you to drag tracks up and down the playlist. Bring your starting song to
-the front and your ending song to the bottom. 
+    ![Three act structure](/img/dj-post/three-act-structure.jpg)
 
-As a general rule of
-thumb, try to start with a lower BPM and end with a higher BPM. Knowing where
-you are starting and where you want to end up will give you a nice path to
-follow when you choose more tracks in the next step. By path, I mean to say that
-if we assume that every transition involves blending two tracks together (not
-always necessary, but a good general assumption) then we know that each track
-has to be similar in BPM (<5 BPM different) and in key (adjacent on the camelot
-key wheel). For example, if we have a starting song with a key of 9A and an
-ending song of 5A, then we know that we will need at least one song in 7A and
-one song in 6A to be able to bridge that gap in those key signatures.
+5. Add any puzzle pieces you might be missing
 
+    Remember the analogies of the story and the puzzle? Well now lets talk about
+the puzzle. At the end of the day, it is always technically possible to
+transition from one track to any other track, but not all transitions are
+created equal. Large changes in key, BPM, or genre might force you to use a
+simple "[echo out and then press play](https://youtu.be/tb5hlwCWdiQ?t=358)"
+transition which can take your audience out of the experience if used too
+frequently. Personally, I like to use as many smooth transitions as possible in
+my mixes while still giving myself the option to use a few harsher transitions
+if it fits the mood. To give myself more opportunities to discover great smooth
+transitions (when practicing in the next few steps), I take this time to add a
+few extra tracks to the list which bridge gaps in BPM and key.
 
-Then, add roughly twice as many songs to the playlist as you expect to play
-during your set. Giving yourself options is important since when you eventually
-get to mixing you may find that a transition you thought would be great doesn't
-actually sound as good as you thought. To make this step easier, Rekordbox has
-an awesome "related tracks" feature which can really help simplify your song
-selection process by filtering your library. Check out a tutorial on that here.
-It is worth including some relatively low and high energy tracks in this list,
-since every set needs to build up tension, release it, and repeat. High
-intensity is really fun, but an entire set of max intensity gets boring quickly.
+    As an example, lets say that you have a song that you'd really like to play
+with a BPM/key of 120/7A and another song with a BPM/key of 128/9A. To make this
+transition easier, add a few songs in-between these tracks which have BPMs of
+120-128 and keys of 7A, 8A, and 9A. Its sometimes hard to know which songs will
+have great points for transitioning before practicing, so give yourself a few
+options before eventually cutting down the total number of songs in later steps.
 
-![Related tracks window](/img/dj-post/rekordbox_related_tracks.png)
+    ![Related tracks window](/img/dj-post/rekordbox_related_tracks.png)
 
-5. Check the beat grid and add cue points (optional)
+    To make this step easier, Rekordbox has an awesome feature called "related
+tracks" (highlighted in green in the image above). A helpful tutorial on related
+tracks can be found [here](https://www.youtube.com/watch?v=z2ctw3kmC2c) and
+there quite a few different ways to use the feature, but the most common way is
+to search your entire collection and filter for tracks within a certain BPM
+range and key range around a track of your choice. This is really great and can
+often dramatically simplify the act of finding the right track for the right
+place in your mix.
 
-Export mode, set beat jump to 8 bars
+6. Adjust the beat grid and add cue points
 
-Add cue points to all of the songs that you'd like to try transitions on. Phil
-Harris, my red-headed brother from another mother, has an excellent tutorial on
-that here. I use a very similar system to his. He also has this nice basic video
-which describes the concepts of beats, bars, and song phrasing which is useful
-to help build some vocabulary if you aren't already familiar. By the way, in
-case you don't know how to jump by 8 bars in Rekordbox (the cue point tutorial
-uses a Serato instead so the interface is different) you can jump back and
-forward in the song with the left and right arrow keys on your keyboard, and you
-can select the amount of time to jump right above the cue and play buttons (I
-circled it in red in the picture below). In case you're wondering where the cue
-buttons are, I circled them in blue below as well. One annoying thing that
-sometimes comes up and isn't mentioned in that tutorial is that oftentimes
-Rekordbox will analyze a song and get the BPM right but get the timing of the
-bars wrong. You will want the start of the drop to also be the start of a new
-bar (an example is shown at the green cue point below). This is why the first
-cue point I always add to a song is the first drop, since if the grid is offset
-it becomes obvious quickly. You can slide the beat grid back and forth by
-clicking on the "GRID" tab next to the cue and play button.
+    Just as not everyone labels their music, not everyone uses cue points. For
+folks with great memory there is no need, but for me I find cue points to be an
+especially valuable tool. Adding cue points can take a bit of time and it
+doesn't help with sorting music, so while I have labeled all of the tracks in my
+collection I'll only add cue points to tracks that I think I might play in my
+next mix. So, once you've got a list of tracks you'd like to practice
+transitions on lets get to setting cue points!
 
-![Assigning cue points](/img/dj-post/rekordbox_cue_points.png)
+    The primary goal when setting cue points is to put visual indicators on
+specific parts of the song which you think would lend themselves well to
+transitioning. If both of the two songs you're transitioning between have lots
+of complexity (intense synths, drums, or vocals) then the listener will feel
+overwhelmed if you fade between them. Thankfully, as you learned earlier, songs
+are constructed from phrases (typically with a standard 8 bar length) which each
+have certain properties. While every song is different, it is typical for songs
+to have most of their complexity reserved to the drop or chorus of the song,
+which leaves other phrases like the introduction, buildup, breakdown, and outro
+as good potential opportunities for fading between songs. So, lets identify
+where these phrases are in the song and then set our cue points!
 
-6. Export your playlist to USB
+    In the image below I've shown what a track looks like when its filled out
+with all of the cue points I use in my system ([Phil Harris'
+system](https://www.youtube.com/watch?v=b8MlYWO9BNM)). Each cue point is color
+coded as well which helps me immediately remember what the points mean even if I
+haven't listened to the song in a long time. The orange cue point is for the
+start of the song and the green cue point is for the start of the first drop.
+Each red cue point represents the start of an 8 bar phrase which I expect to be
+especially good for transitioning (either into or out of this song). When
+choosing which 8 bar phrases to put a red cue point on, I'll typically start
+with 8 bars before the first drop, 8 bars before the end of the song, and then
+the least complex 8 bars in-between the first and the second drop. Each blue cue
+point is simply 8 bars before the upcoming red cue point. When transitioning
+between tracks with this system I'll typically set up the new track to start at
+a blue cue point, and then press play when the blue cue points on each track are
+aligned. This gives me 8 bars of extra time to beatmatch in-between pressing
+play and fading in the next track.
 
-If you use CDJs or an all-in-one DJ system, export your playlist to USB so you
+    ![Assigning cue points](/img/dj-post/rekordbox_cue_points.png)
+
+    To start setting your own cue points, put your Rekordbox in export mode and
+set your beat jump value to be 8 bars. I've drawn a light blue box in the image
+below to highlight where you can set your beat jump. The arrows in the light
+blue box can be clicked to jump forward or back in the track by the amount of
+time shown below. Ok, now set each cue point one by one! I've written it out in
+a few convenient steps below:
+
+    - Find the start of the drop. This is a great place to start since the start
+      of the drop is the easiest place to check if your beat grid is aligned
+properly or not. You should see that just like the image above, the start of the
+drop should be aligned with the red arrows on the beat grid, which indicate the
+start of each bar. If this isn't true, you can click on grid (highlighted by the
+pink box in the image above) to adjust the grid placement. Once you've verified
+your grid is aligned, place a green cue point on D (by clicking on D as shown in
+the red box) at the start of the first drop.
+
+    - Jump back by 8 bars (left arrow in light blue box) and place a red cue
+      point in C. You can change the color of cue points by right clicking.
+
+    - Jump back another 8 bars and set a blue cue point on B.
+
+    - For cue point A, place an orange cue point at the start of the first
+      measure of the song.
+
+    - Go to the end of the last bar of the song. Jump back 8 bars and place a
+      red cue point in H.
+
+    - Jump back another 8 bars and place a blue cue point in G.
+
+    - Find the simplest 8 bars in-between the two (or more) drops. Place a red
+      cue point in F at the start of this 8 bars.
+
+    - Jump back 8 bars and place a blue cue point in E.
+
+7. Export your playlist to USB
+
+    If you use CDJs or an all-in-one DJ system, export your playlist to USB so you
 can load you music. For a video explaining how, take a look
 [here](https://www.youtube.com/watch?v=1sGxfi--y2I&ab_channel=Crossfader)
 
-7. Experiment with transitions and build song blocks
+8. Experiment with transitions!
 
-You will need a DJ controller for this step
+    You will need a DJ controller for this step. Start going down your set list
+and experiment with fade transitions, drop swaps, and all kinds of different
+transitions to see what you like best. Feel free to get creative! Use loops to
+extend certain parts of the song for easier transitioning, or fill empty space
+within the transition with noise effects. Have some fun with it! You can keep
+track of what transitions you like with a notepad or spreadsheet.
 
-8. Decide on what order to play your songs
+9. Finalize your set list and transitions
 
-Decide on what order to play your songs (and where you'll transition in/out)
-based on what transitions you thought sounded good and the emotional journey
-that you would like your audience to go through. Remember to build and release
-tension like you would in a fictional story! I'm a nerd, so I like to write down
-my songs in a spreadsheet. Here's what my list looks like for the BOH! you guys
-heard me play.
+    Once you have groups of songs that you really like the transitions between,
+you can combine these groups and create your final set list! Remember that you
+will want to tell your story with building and releasing tension, so keep this
+in mind when making your final decisions. Also, your total set time will need to
+match whatever you set out to have as your goal, so make sure to practice your
+full set from beginning to end to know your total set time. You may need to
+remove or add songs to get to the right time. Lastly, if you are playing live on
+a different set of hardware (for example CDJs) you will need to make sure that
+your cue points will work with that hardware. For example, some old CDJs only
+allow 3 cue points, so you will need to remove additional cue points before
+exporting if you want them to show up. Thankfully you really only need 2 (one
+for when you transition in and one when you transition out). I still like
+starting with more cue points though since it gives you many
+options when finding your favorite transition between tracks.
 
-9. Practice your set from beginning to end
+10. Play and/or record your mix!
 
-10. Add/remove songs and cue points as needed
+    Time to perform. Enjoy the ride! If the
+audience sees that you are having fun, then they will feel like they can have
+fun with it too :)
 
-May need to remove cue points if playing on old CDJs
-
-11. Play and/or record your mix!
-
+That's all there is to it! Thank you for reading, I hope you found this helpful.
+If you have any questions then feel free to add them below, and if you'd like to
+hear some of the mixes that I've made you can check out my Soundcloud profile
+[at this link](https://soundcloud.com/quoththeraver).
 
 
 
