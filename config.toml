@@ -21,8 +21,8 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Mark Buckler"
-  role = "Applied Scientist"
-  organization = "Amazon Scout"
+  role = "AI Researcher & Applied Scientist"
+  organization = ""
   organization_url = "https://blog.aboutamazon.com/transportation/meet-scout"
   avatar = "portrait.jpg"
   email = "markabuckler@gmail.com"
@@ -127,9 +127,9 @@ defaultContentLanguageInSubdir = false
   #   Full list: https://jpswalsh.github.io/academicons/
 
   [[params.social]]
-    icon = "github"
+    icon = "linkedin"
     icon_pack = "fa"
-    link = "https://github.com/mbuckler"
+    link = "https://www.linkedin.com/in/markbuckler/"
 
   [[params.social]]
     icon = "google-scholar"
@@ -137,19 +137,19 @@ defaultContentLanguageInSubdir = false
     link = "https://scholar.google.co.uk/citations?user=pb8dVvsAAAAJ"
 
   [[params.social]]
-    icon = "linkedin"
+    icon = "github"
     icon_pack = "fa"
-    link = "https://www.linkedin.com/in/markbuckler/"
+    link = "https://github.com/mbuckler"
 
   [[params.social]]
     icon = "soundcloud"
     icon_pack = "fa"
     link = "https://soundcloud.com/quoththeraver"
 
-  [[params.social]]
-    icon = "youtube"
-    icon_pack = "fa"
-    link = "https://www.youtube.com/channel/UC-GpGo9w6kW2UfJobgDFjcw?view_as=subscriber"
+  #[[params.social]]
+  #  icon = "youtube"
+  #  icon_pack = "fa"
+  #  link = "https://www.youtube.com/channel/UC-GpGo9w6kW2UfJobgDFjcw?view_as=subscriber"
 
   [[params.social]]
     icon = "envelope"
