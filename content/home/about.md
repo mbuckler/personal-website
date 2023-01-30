@@ -56,6 +56,6 @@ in [Prof Adrian Sampson's](http://www.cs.cornell.edu/~asampson/) research group 
 hardware-software co-design for computer vision and deep learning.
 
 My entrepreneurial spirit has led me to found the [Codex Collective](https://www.instagram.com/codex_collective/), an electronic music event
-production company which I currently run, and [Firebrand Innovations](http://www.firebrandinnovations.com/), which sold patents on
-videoconferencing that I developed while in high school. In addition to running music events with
+production company which I currently run, and [Firebrand Innovations](http://www.firebrandinnovations.com/), which sold [patents on
+videoconferencing](https://patents.google.com/patent/US8289363B2/en) that I developed while in high school. In addition to running music events with
 my team at Codex Collective, I also enjoy [writing music](https://soundcloud.com/quoththeraver) and [DJing](https://www.instagram.com/quoth_the_raver/) at clubs around Seattle.
