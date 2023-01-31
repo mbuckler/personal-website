@@ -269,7 +269,10 @@ the red box) at the start of the first drop.
 
     If you use CDJs or an all-in-one DJ system, export your playlist to USB so you
 can load you music. For a video explaining how, take a look
-[here](https://www.youtube.com/watch?v=1sGxfi--y2I&ab_channel=Crossfader)
+[here](https://www.youtube.com/watch?v=1sGxfi--y2I&ab_channel=Crossfader). If you're on Windows, you
+may find [this
+guide](https://www.howtogeek.com/316977/how-to-format-usb-drives-larger-than-32gb-with-fat32-on-windows/)
+helpful as you'll need FAT32 format but will likely have a USB which is larger than 32 GB.
 
 8. Experiment with transitions!
 
