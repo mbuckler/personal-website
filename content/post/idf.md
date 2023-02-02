@@ -12,7 +12,7 @@ title = "All About Invention Disclosures"
 +++
 
 If you've read my post about
-[patenting in academia and industry](http://www.markbuckler.com/post/patenting/)
+[patenting in academia and industry](https://www.markbuckler.com/post/patenting/)
 then you know why you might want to file a patent with your university or
 company. The first step to filing a patent in most organizations (after creating
 the invention of course!) is filling out an Invention Disclosure Form or IDF.
@@ -28,7 +28,7 @@ This post is written as a guide for those of you who might be filling out your
 first IDF. This may also be helpful to any of you who are creating the first
 standard disclosure form for your organization. I'll describe some common
 questions in IDFs and strategies for answering these questions well. As I say in
-my [previous post](http://www.markbuckler.com/post/patenting/), I am not a
+my [previous post](https://www.markbuckler.com/post/patenting/), I am not a
 patent attorney so please don't take any of what I say here as legal advice!
 
 1. Who are the inventors?
@@ -127,7 +127,7 @@ your work may make it more valuable and enable broader claims.
 9. How can the use of this invention be detected?
 
 	As I discuss in my post on
-[patenting in academia and industry](http://www.markbuckler.com/post/patenting/),
+[patenting in academia and industry](https://www.markbuckler.com/post/patenting/),
 part of a patent's value is how easy it is to detect when the invention is
 being used without permission. Without the ability to detect the use of the
 invention, the patent can't be enforced and is therefore useless. Your patent

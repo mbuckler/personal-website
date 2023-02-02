@@ -219,6 +219,6 @@ great invention that would be well protected by a patent. Congratulations! If
 you are in a company or university your next step is to fill out and submit an
 Invention Disclosure Form. This process can be complex in and of itself, and so
 I have written about it in its own separate blog post.
-[Click here](http://www.markbuckler.com/post/idf/)
+[Click here](https://www.markbuckler.com/post/idf/)
 if you'd like to read on!
 
