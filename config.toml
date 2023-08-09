@@ -4,7 +4,7 @@ copyright = "&copy; 2020 Mark Buckler"
 theme = "personaltheme"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
-publishDir = "docs"
+publishDir = "./docs"
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = "markbuckler"
@@ -22,8 +22,8 @@ defaultContentLanguageInSubdir = false
 [params]
   name = "Mark Buckler"
   role = "AI Researcher & Entrepreneur"
-  organization = ""
-  organization_url = "https://blog.aboutamazon.com/transportation/meet-scout"
+  organization = "Soundry AI"
+  organization_url = "https://soundry.ai/"
   avatar = "portrait.jpg"
   email = "markabuckler@gmail.com"
   address = "Seattle WA, USA"

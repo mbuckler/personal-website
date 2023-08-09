@@ -13,10 +13,8 @@ weight = 1
 [interests]
   interests = [
     "Generative AI",
+    "Deep Learning",
     "Computer Vision",
-    "Efficient Deep Learning",
-	"Robotics",
-    "Hardware Acceleration",
     "Computer Architecture"
   ]
 
@@ -44,18 +42,22 @@ I would describe myself as an endlessly curious, ambitious, and creative person.
 begin by identifying the most important goals and questioning any built-in assumptions. This first
 principles approach frequently leads me to unique solutions which span multiple levels of hierarchy.
 I’ve made contributions in many fields including
-[generative AI](https://www.harmonai.org/),
+[generative AI](https://soundry.ai/),
 [robotics](https://www.aboutamazon.com/news/transportation/meet-scout),
 [biomedical imaging](https://patents.google.com/patent/US20210312622A1/en),
 [computer vision](https://openaccess.thecvf.com/content_iccv_2017/html/Buckler_Reconfiguring_the_Imaging_ICCV_2017_paper.html),
 [hardware acceleration](https://arxiv.org/abs/1803.06312),
 and [computer architecture](https://patents.google.com/patent/US9294263B2/en).
 
-My passion for deep learning, computer vision, and hardware design was super-charged during my PhD
-in [Prof Adrian Sampson's](http://www.cs.cornell.edu/~asampson/) research group at Cornell University. [My thesis](https://ecommons.cornell.edu/handle/1813/67614) focused on
-hardware-software co-design for computer vision and deep learning.
+My passion for AI, deep learning, and hardware acceleration was super-charged during my PhD
+in [Prof Adrian Sampson's](http://www.cs.cornell.edu/~asampson/) research group at [Cornell University](https://www.cornell.edu/). [My thesis](https://ecommons.cornell.edu/handle/1813/67614) focused on
+hardware-accelerated deep learning for computer vision.
 
-My entrepreneurial spirit has led me to found the [Codex Collective](https://www.instagram.com/codex_collective/), an electronic music event
-production company and [Firebrand Innovations](http://www.firebrandinnovations.com/), which sold [patents on
-videoconferencing](https://patents.google.com/patent/US8289363B2/en) that I developed while in high school. In addition to running music events with
-my team at Codex Collective, I also enjoy [writing music](https://soundcloud.com/quoththeraver) and [DJing](https://www.instagram.com/quoth_the_raver/) at clubs around Seattle.
+My entrepreneurial spirit has led me to found three companies so far: [Firebrand
+Innovations](http://www.firebrandinnovations.com/) which sold videoconferencing
+IP, [Codex Collective](https://codexcollective.co/press-kit)
+which produces electronic music events in Seattle, and most recently
+[Soundry AI](https://soundry.ai/) which provides an AI text-to-sample generator
+for music producers & songwriters. In my free time I enjoy [writing
+music](https://soundcloud.com/quoththeraver) and
+[DJing](https://www.instagram.com/quoth_the_raver/).
