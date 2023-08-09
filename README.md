@@ -6,5 +6,7 @@ Many thanks to [Skand Hurkat](https://people.ece.cornell.edu/skand/) for his
 [rework of the Hugo Academic Theme](https://github.com/skandhurkat/hugo-theme-cornellcsl)
 
 This site depends on an old version of Hugo and is tested with version 0.40.1. To install on Ubuntu:
-- `wget https://github.com/gohugoio/hugo/releases/download/v0.40.1/hugo_0.40.1_Linux-64bit.deb`
-- `sudo dpkg -i hugo_0.40.1_Linux-64bit.deb`
+```
+wget https://github.com/gohugoio/hugo/releases/download/v0.40.1/hugo_0.40.1_Linux-64bit.deb
+sudo dpkg -i hugo_0.40.1_Linux-64bit.deb
+```
