@@ -38,7 +38,7 @@ weight = 1
 
 # Biography
 
-I would describe myself as an endlessly curious, ambitious, and creative person. In all my work I
+I would describe myself as an endlessly curious, ambitious, and creative person. In all my work, I
 begin by identifying the most important goals and questioning any built-in assumptions. This first
 principles approach frequently leads me to unique solutions which span multiple levels of hierarchy.
 I’ve made contributions in many fields including
