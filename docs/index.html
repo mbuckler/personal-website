@@ -1,1810 +1,1972 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme" content="cornellcsl" />
+    <meta name="generator" content="Hugo 0.40.1" />
+    <meta name="author" content="Mark Buckler" />
+    <meta name="description" content="AI Researcher &amp; Entrepreneur" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme" content="cornellcsl">
-  <meta name="generator" content="Hugo 0.40.1" />
-  <meta name="author" content="Mark Buckler">
-  <meta name="description" content="AI Researcher &amp; Entrepreneur">
+    <link rel="stylesheet" href="/css/highlight.min.css" />
 
-  
-  
-  
-    
-  
-  
-    
-    
-    <link rel="stylesheet" href="/css/highlight.min.css">
-    
-  
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/academicons.min.css">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono">
-  <link rel="stylesheet" href="/css/cornellcsl.min.css">
-  
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/academicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Lato:400,700%7cMerriweather%7cRoboto&#43;Mono"
+    />
+    <link rel="stylesheet" href="/css/cornellcsl.min.css" />
 
-  <link rel="alternate" href="https://markbuckler.com/index.xml" type="application/rss+xml" title="Mark Buckler">
+    <link
+      rel="alternate"
+      href="https://markbuckler.com/index.xml"
+      type="application/rss+xml"
+      title="Mark Buckler"
+    />
 
-  <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/img/icon.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="/img/apple-touch-icon.png"
+    />
 
-  <link rel="canonical" href="https://markbuckler.com/">
+    <link rel="canonical" href="https://markbuckler.com/" />
 
-  
+    <title>Mark Buckler</title>
 
-  <title>Mark Buckler</title>
-
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-  <script async src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-  <script defer>
-  window.addEventListener("load", function(){
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#ffffff",
-        "text": "#000000"
-      },
-      "button": {
-        "background": "#b31b1b",
-        "text": "#ffffff"
-      }
-    },
-    "showLink": false,
-    "content": {
-      "message": "This website uses cookies for analytics and to enable comments.",
-      "dismiss": "Cool! I get it."
-    }
-  })});
-  </script>
-</head>
-<body data-spy="scroll" data-target="#navbar-main" data-offset="71">
-
-    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"
+    />
+    <script
+      async
+      src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"
+    ></script>
+    <script defer>
+      window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+          palette: {
+            popup: {
+              background: "#ffffff",
+              text: "#000000",
+            },
+            button: {
+              background: "#b31b1b",
+              text: "#ffffff",
+            },
+          },
+          showLink: false,
+          content: {
+            message:
+              "This website uses cookies for analytics and to enable comments.",
+            dismiss: "Cool! I get it.",
+          },
+        });
+      });
+    </script>
+  </head>
+  <body data-spy="scroll" data-target="#navbar-main" data-offset="71">
     <a class="sr-only" href="#content">Skip to main content</a>
-    <header id="top" class="cu-banner">
-    
-    
-    </header>
-
-
-<div class="nav-wrapper">
-<nav class="navbar navbar-default" id="navbar-main">
-  <div class="container">
-
-    
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target=".navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">Mark Buckler</a>
-    </div>
-
-    
-    <div class="collapse navbar-collapse">
-
-      
-      <ul class="nav navbar-nav navbar-right">
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#about" data-target="#about">
-            
-            <span>Home</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#publications" data-target="#publications">
-            
-            <span>Publications</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#patents" data-target="#patents">
-            
-            <span>Patents</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#posts" data-target="#posts">
-            
-            <span>Posts</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#projects" data-target="#projects">
-            
-            <span>Projects</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#talks" data-target="#talks">
-            
-            <span>Talks</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#contact" data-target="#contact">
-            
-            <span>Contact</span>
-          </a>
-        </li>
-
-        
-        
-      </ul>
-
-    </div>
-  </div>
-</nav>
-</div>
-
-
-
-<span id="homepage" style="display: none"></span>
-
-
-
-  
-  
-  <section id="about" class="home-section">
-    <div class="container">
-      
-
-
-
-<div class="row" itemscope itemtype="http://schema.org/Person">
-  <div class="col-xs-12 col-md-4">
-    <div id="profile">
-
-      
-      <img class="portrait" itemprop="image" src="/img/portrait.jpg" />
-      
-
-      <div class="portrait-title">
-        <h2 itemprop="name">Mark Buckler</h2>
-        <h3 itemprop="jobTitle">AI Researcher &amp; Entrepreneur</h3>
-        
-        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <a href="https://soundry.ai/" target="_blank" itemprop="url">
-          <span itemprop="name">Soundry AI</span>
-          </a>
-        </h3>
-        
-      <link itemprop="url" href="https://markbuckler.com" >
-      </div>
-
-      <ul class="social-icon" aria-hidden="true">
-        
-        
-        <li>
-          <a href="https://www.linkedin.com/in/markbuckler/" target="_blank" itemprop="sameAs">
-            <i class="fa fa-linkedin big-icon"></i>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a href="https://scholar.google.co.uk/citations?user=pb8dVvsAAAAJ" target="_blank" itemprop="sameAs">
-            <i class="ai ai-google-scholar big-icon"></i>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a href="https://github.com/mbuckler" target="_blank" itemprop="sameAs">
-            <i class="fa fa-github big-icon"></i>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a href="https://soundcloud.com/quoththeraver" target="_blank" itemprop="sameAs">
-            <i class="fa fa-soundcloud big-icon"></i>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a href="mailto:markabuckler@gmail.com" target="_blank" itemprop="sameAs">
-            <i class="fa fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-      </ul>
-
-    </div>
-  </div>
-  <div class="col-xs-12 col-md-8">
-    <div itemprop="description">
-
-    
-
-<h1 id="biography">Biography</h1>
-
-<p>I would describe myself as endlessly curious, creative, and ambitious. In all my work, I
-begin by identifying the most important goals and questioning any built-in assumptions. This first
-principles approach frequently leads me to unique solutions which span multiple levels of hierarchy.</p>
-
-<p>I’ve made contributions to many fields including
-<a href="https://soundry.ai/" target="_blank">generative AI</a>,
-<a href="https://www.aboutamazon.com/news/transportation/meet-scout" target="_blank">robotics</a>,
-<a href="https://patents.google.com/patent/US20210312622A1/en" target="_blank">biomedical imaging</a>,
-<a href="https://openaccess.thecvf.com/content_iccv_2017/html/Buckler_Reconfiguring_the_Imaging_ICCV_2017_paper.html" target="_blank">computer vision</a>,
-and <a href="https://patents.google.com/patent/US9294263B2/en" target="_blank">computer architecture</a>. My passion for AI was super-charged during my PhD at <a href="https://www.cornell.edu/" target="_blank">Cornell University</a> where my <a href="https://ecommons.cornell.edu/handle/1813/67614" target="_blank">thesis</a> focused on computer vision AI.</p>
-
-<p>My entrepreneurial spirit has led me to found three companies so far: <a href="http://www.firebrandinnovations.com/" target="_blank">Firebrand
-Innovations</a> which sold videoconferencing
-IP, the <a href="https://codexcollective.co/press-kit" target="_blank">Codex Collective</a>
-which produces live electronic music events in Seattle, and most recently
-<a href="https://soundry.ai/" target="_blank">Soundry AI</a> which
-provides generative tools for <a href="https://groove.fm/" target="_blank">DJs</a> and
-<a href="https://www.sampleplanet.fm/" target="_blank">songwriters</a>.
-Perhaps unsurprisingly in my free time I enjoy <a href="https://www.instagram.com/quoth_the_raver/" target="_blank">DJing</a> and <a href="https://soundcloud.com/quoththeraver" target="_blank">songwriting</a>.</p>
-
-
-    </div>
-
-    <div class="row">
-
-      
-      <div class="col-sm-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Generative AI</li>
-          
-          <li>Deep Learning</li>
-          
-          <li>Computer Vision</li>
-          
-          <li>Computer Architecture</li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-sm-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD in Electrical and Computer Engineering, 2019</p>
-              <p class="institution"><span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><span itemprop="name">Cornell University</span></span></p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">M.S. in Electrical and Computer Engineering, 2014</p>
-              <p class="institution"><span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><span itemprop="name">University of Massachusetts, Amherst</span></span></p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">B.S. in Electrical Engineering, 2012</p>
-              <p class="institution"><span itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><span itemprop="name">Rensselaer Polytechnic Institute</span></span></p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  <section id="publications" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Selected Publications</h1>
-    
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
-
-    
-    <ul class="fa-ul">
-      
-      <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span class="pub-authors">
-    
-    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mark Buckler</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Philip Bedoukian</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Suren Jayasuriya</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Adrian Sampson</span></span>,
-  </span>
-  <span itemprop="name"><i>EVA²: Exploiting Temporal Redundancy in Live Computer Vision</i></span>, in
-  <span itemprop="isPartOf">International Symposium on Computer Architecture (ISCA)</span>.
-  <time datetime = "2018-03-18" itemprop="datePublished">
-    March, 2018
-  </time>
-  <p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/publication/isca2018/">
-  Details
-</a>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="//arxiv.org/abs/1803.06312" target="_blank" itemprop="sameAs">
-  arXiv
-</a>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/pdf/isca-2018.pdf">
-  PDF
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/slides/isca-2018.pptx">
-  Slides
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.youtube.com/watch?v=IX-xfBTcPyo&amp;feature=youtu.be">
-  Video
-</a>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://capra.cs.cornell.edu/research/eva2">
-  Project
-</a>
-
-
-</p>
-</li>
-
-      
-      <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span class="pub-authors">
-    
-    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mark Buckler</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Suren Jayasuriya</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Adrian Sampson</span></span>,
-  </span>
-  <span itemprop="name"><i>Reconfiguring the Imaging Pipeline for Computer Vision</i></span>, in
-  <span itemprop="isPartOf">International Conference on Computer Vision (ICCV)</span>.
-  <time datetime = "2017-04-26" itemprop="datePublished">
-    April, 2017
-  </time>
-  <p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/publication/iccv2017/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="//dx.doi.org/10.1109/ICCV.2017.111" target="_blank" itemprop="sameAs">
-  DOI
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="//arxiv.org/abs/1705.04352" target="_blank" itemprop="sameAs">
-  arXiv
-</a>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/pdf/iccv-2017.pdf">
-  PDF
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/slides/iccv-2017.pdf">
-  Slides
-</a>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/cucapra/approx-vision">
-  Code
-</a>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://capra.cs.cornell.edu/research/visionmode/">
-  Project
-</a>
-
-
-</p>
-</li>
-
-      
-      <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span class="pub-authors">
-    
-    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mark Buckler</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Arpan Vaidya</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Xiaobin Liu</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Wayne Burleson</span></span>,
-  </span>
-  <span itemprop="name"><i>Dynamic synchronizer flip-flop performance in FinFET technologies</i></span>, in
-  <span itemprop="isPartOf">IEEE Symposium on Networks-on-Chip (NOCS)</span>.
-  <time datetime = "2014-09-17" itemprop="datePublished">
-    September, 2014
-  </time>
-  <p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/publication/nocs2014/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="//dx.doi.org/10.1109/NOCS.2014.7008768" target="_blank" itemprop="sameAs">
-  DOI
-</a>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/pdf/nocs-2014.pdf">
-  PDF
-</a>
-
-
-
-
-
-
-
-</p>
-</li>
-
-      
-      <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span class="pub-authors">
-    
-    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mark Buckler</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Wayne Burleson</span></span>,
-  </span>
-  <span itemprop="name"><i>Predictive synchronization for DVFS-enabled multi-processor systems</i></span>, in
-  <span itemprop="isPartOf">IEEE Symposium on Quality Electronic Design (ISQED)</span>.
-  <time datetime = "2014-03-05" itemprop="datePublished">
-    March, 2014
-  </time>
-  <p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/publication/isqed2014/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="//dx.doi.org/10.1109/ISQED.2014.6783336" target="_blank" itemprop="sameAs">
-  DOI
-</a>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/pdf/isqed-2014.pdf">
-  PDF
-</a>
-
-
-
-
-
-
-
-</p>
-</li>
-
-      
-      <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span class="pub-authors">
-    
-    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mark Buckler</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Wayne Burleson</span></span>, <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Greg Sadowski</span></span>,
-  </span>
-  <span itemprop="name"><i>Low-power networks-on-chip: Progress and remaining challenges</i></span>, in
-  <span itemprop="isPartOf">IEEE Symposium on Low Power Electronics and Design (ISLPED)</span>.
-  <time datetime = "2013-09-06" itemprop="datePublished">
-    September, 2013
-  </time>
-  <p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/publication/islped2013/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="//dx.doi.org/10.1109/ISLPED.2013.6629279" target="_blank" itemprop="sameAs">
-  DOI
-</a>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/pdf/islped-2013.pdf">
-  PDF
-</a>
-
-
-
-
-
-
-
-</p>
-</li>
-
-      
-    </ul>
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  <section id="patents" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Selected Patents</h1>
-    
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
-
-    
-    <ul class="fa-ul">
-      
-      <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span class="pub-authors">
-    
-    <span itemprop="author">Mark Buckler</span>, <span itemprop="author">Adrian Sampson</span>, <span itemprop="author">Suren Jayasuriya</span>,
-  </span>
-  <span itemprop="name"><i>Configurable image processing system and methods for operating a configurable image processing system for multiple applications</i></span>, filed: <time datetime = "2018-04-13" itemprop="datePublished">
-    April 13, 2018</time><p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/patent/20190320127/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs"
-	href="//patents.google.com/patent/US20190320127A1" target="_blank" itemprop="sameAs">
-  Google Patents
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-</li>
-
-      
-      <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span class="pub-authors">
-    
-    <span itemprop="author">Mark Buckler</span>,
-  </span>
-  <span itemprop="name"><i>Continuous Frequency Measurement for Predictive Periodic Synchronization</i></span>, filed: <time datetime = "2013-10-23" itemprop="datePublished">
-    October 23, 2013</time>, granted: <time datetime = "2016-05-17" itemprop="datePublished">
-    May 17, 2016</time><p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/patent/9344099/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs"
-	href="//patents.google.com/patent/US9344099B2" target="_blank" itemprop="sameAs">
-  Google Patents
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs"
-	href="//patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/9344099" target="_blank" itemprop="sameAs">
-  USPTO
-</a>
-
-
-
-
-
-
-
-
-
-
-
-</p>
-</li>
-
-      
-      <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span class="pub-authors">
-    
-    <span itemprop="author">Mark Buckler</span>, <span itemprop="author">Sudha Thiruvengadam</span>,
-  </span>
-  <span itemprop="name"><i>Predictive Periodic Synchronization Using Phase-Locked Loop Digital Ratio Updates</i></span>, filed: <time datetime = "2013-10-25" itemprop="datePublished">
-    October 25, 2013</time>, granted: <time datetime = "2015-09-22" itemprop="datePublished">
-    September 22, 2015</time><p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/patent/9143315/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs"
-	href="//patents.google.com/patent/US9143315B2" target="_blank" itemprop="sameAs">
-  Google Patents
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs"
-	href="//patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/9143315" target="_blank" itemprop="sameAs">
-  USPTO
-</a>
-
-
-
-
-
-
-
-
-
-
-
-</p>
-</li>
-
-      
-      <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span class="pub-authors">
-    
-    <span itemprop="author">Andrew Buckler</span>, <span itemprop="author">Mark Buckler</span>,
-  </span>
-  <span itemprop="name"><i>Quantitative imaging for detecting histopathologically defined plaque fissure non-invasively</i></span>, filed: <time datetime = "2015-12-04" itemprop="datePublished">
-    December 04, 2015</time><p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/patent/17314766/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs"
-	href="//patents.google.com/patent/US20220012877A1" target="_blank" itemprop="sameAs">
-  Google Patents
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-</li>
-
-      
-      <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span class="pub-authors">
-    
-    <span itemprop="author">Mark Buckler</span>,
-  </span>
-  <span itemprop="name"><i>Synchronizer Circuits With Failure-Condition Detection and Correction</i></span>, filed: <time datetime = "2013-09-11" itemprop="datePublished">
-    September 11, 2013</time>, granted: <time datetime = "2014-09-30" itemprop="datePublished">
-    September 30, 2014</time><p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/patent/8847647/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs"
-	href="//patents.google.com/patent/US8847647B1" target="_blank" itemprop="sameAs">
-  Google Patents
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs"
-	href="//patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/8847647" target="_blank" itemprop="sameAs">
-  USPTO
-</a>
-
-
-
-
-
-
-
-
-
-
-
-</p>
-</li>
-
-      
-      <li itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <span class="pub-authors">
-    
-    <span itemprop="author">Mark Buckler</span>,
-  </span>
-  <span itemprop="name"><i>Video Conferencing</i></span>, filed: <time datetime = "2007-12-11" itemprop="datePublished">
-    December 11, 2007</time>, granted: <time datetime = "2012-10-11" itemprop="datePublished">
-    October 11, 2012</time><p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/patent/8289363/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs"
-	href="//patents.google.com/patent/US8289363B2" target="_blank" itemprop="sameAs">
-  Google Patents
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs"
-	href="//patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/8289363" target="_blank" itemprop="sameAs">
-  USPTO
-</a>
-
-
-
-
-
-
-
-
-
-
-
-</p>
-</li>
-
-      
-    </ul>
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  <section id="posts" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-
-    <h1>Recent Posts</h1>
-    
-    
-    <p class="view-all">
-      <a href="/post/">
-        More Posts
-        <i class="fa fa-angle-double-right"></i>
-      </a>
-    </p>
-    
-
-  </div>
-  <div class="col-xs-12 col-md-8">
-
-    
-
-    
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemtype="http://schema.org/blogPosting">
-  
-  
-  <h3 class="article-title" itemprop="name headline">
-    <a href="https://markbuckler.com/post/how-to-mix/" itemprop="url">How to Make a DJ Mix</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  
-  <span class="article-date">
-    <time datetime="2022-01-09T16:25:31-04:00" itemprop="datePublished">
-      Sun, Jan 9, 2022
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    This is the third in a series of three posts teaching you how to DJ!
-Part 1: What You Need to Start DJing
-Part 2: How to Learn DJ Basics
-Part 3: How to Make a DJ Mix
-Alright, you&rsquo;ve got your gear and you&rsquo;ve practiced a few transitions. Now is the time to dig into the meat of DJing: creating your mix. Below I describe my personal method, but as I&rsquo;ve mentioned before there are many ways to succeed.
-    
-  </div>
-  <p class="read-more">
-    <a href="https://markbuckler.com/post/how-to-mix/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemtype="http://schema.org/blogPosting">
-  
-  
-  <h3 class="article-title" itemprop="name headline">
-    <a href="https://markbuckler.com/post/learn-djing-basics/" itemprop="url">How to Learn DJ Basics</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  
-  <span class="article-date">
-    <time datetime="2022-01-08T16:25:31-04:00" itemprop="datePublished">
-      Sat, Jan 8, 2022
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    This is the second in a series of three posts teaching you how to DJ!
-Part 1: What You Need to Start DJing
-Part 2: How to Learn DJ Basics
-Part 3: How to Make a DJ Mix
-Great, you&rsquo;ve got your musical knowledge, DJ software &amp; hardware, and your music library. Lets get started on learning the fundamentals!
-First time setup  Import your music library into your DJ software
-    
-  </div>
-  <p class="read-more">
-    <a href="https://markbuckler.com/post/learn-djing-basics/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemtype="http://schema.org/blogPosting">
-  
-  
-  <h3 class="article-title" itemprop="name headline">
-    <a href="https://markbuckler.com/post/what-you-need-djing/" itemprop="url">What You Need to Start DJing</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  
-  <span class="article-date">
-    <time datetime="2022-01-07T16:25:31-04:00" itemprop="datePublished">
-      Fri, Jan 7, 2022
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    Welcome! If you want to learn how to DJ, then you&rsquo;re in the right place. This is the first in a series of three posts teaching you how to go from knowing nothing to being able to play at your first party. Below I share a few personal details about how I got started, but feel free to skip to &ldquo;What you need to get started&rdquo; if you just want technical details.
-    
-  </div>
-  <p class="read-more">
-    <a href="https://markbuckler.com/post/what-you-need-djing/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemtype="http://schema.org/blogPosting">
-  
-  
-  <h3 class="article-title" itemprop="name headline">
-    <a href="https://markbuckler.com/post/bad-dnn-asic/" itemprop="url">How to Make Bad Deep Learning Hardware</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  
-  <span class="article-date">
-    <time datetime="2018-08-15T16:25:31-04:00" itemprop="datePublished">
-      Wed, Aug 15, 2018
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    I&rsquo;ve greatly enjoyed my time as a graduate research intern at DeepScale and so I was pleased when Forrest Iandola asked me to give a talk to his team on deep learning hardware. To keep the talk from being a boring list of slides recounting famous (but dry) neural network hardware papers, we decided to structure it like one of David Patterson&rsquo;s talks which describe what not to do. The talk was well received, so I decided to reformat it into this blog post.
-    
-  </div>
-  <p class="read-more">
-    <a href="https://markbuckler.com/post/bad-dnn-asic/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemtype="http://schema.org/blogPosting">
-  
-  
-  <h3 class="article-title" itemprop="name headline">
-    <a href="https://markbuckler.com/post/idf/" itemprop="url">All About Invention Disclosures</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  
-  <span class="article-date">
-    <time datetime="2018-02-26T16:25:31-04:00" itemprop="datePublished">
-      Mon, Feb 26, 2018
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    If you&rsquo;ve read my post about patenting in academia and industry then you know why you might want to file a patent with your university or company. The first step to filing a patent in most organizations (after creating the invention of course!) is filling out an Invention Disclosure Form or IDF. These forms will be created, provided by, and reviewed by your organization&rsquo;s technology transfer office or center for technology licensing.
-    
-  </div>
-  <p class="read-more">
-    <a href="https://markbuckler.com/post/idf/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  <section id="projects" class="home-section">
-    <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Projects</h1>
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
-
-    <div class="project-toolbar">
-      <div id="filters">
-        <div class="btn-toolbar">
-          <div class="btn-group">
-          
-            <a href="#" data-filter="*" class="btn btn-primary btn-large active">All</a>
-          
-            <a href="#" data-filter=".computer-architecture" class="btn btn-primary btn-large">Computer Architecture</a>
-          
-            <a href="#" data-filter=".machine-learning" class="btn btn-primary btn-large">Machine Learning</a>
-          
-            <a href="#" data-filter=".imaging" class="btn btn-primary btn-large">Imaging</a>
-          
-            <a href="#" data-filter=".video" class="btn btn-primary btn-large">Video</a>
-          
-            <a href="#" data-filter=".demo" class="btn btn-primary btn-large">Other</a>
-          
+    <header id="top" class="cu-banner"></header>
+
+    <div class="nav-wrapper">
+      <nav class="navbar navbar-default" id="navbar-main">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Mark Buckler</a>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item">
+                <a href="/#about" data-target="#about">
+                  <span>Home</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/#publications" data-target="#publications">
+                  <span>Publications</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/#patents" data-target="#patents">
+                  <span>Patents</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/#posts" data-target="#posts">
+                  <span>Posts</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/#projects" data-target="#projects">
+                  <span>Projects</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/#talks" data-target="#talks">
+                  <span>Talks</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/#contact" data-target="#contact">
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </nav>
     </div>
 
-    
+    <span id="homepage" style="display: none"></span>
 
-    <div id="container-projects" class="row isotope">
+    <section id="about" class="home-section">
+      <div class="container">
+        <div class="row" itemscope itemtype="http://schema.org/Person">
+          <div class="col-xs-12 col-md-4">
+            <div id="profile">
+              <img class="portrait" itemprop="image" src="/img/portrait.jpg" />
 
-      
-      
-      
-      
-      
-      
-      
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item machine-learning neural-networks">
-        <div class="card">
-          
-          <a href="https://github.com/mbuckler/squeezeDet-low-precision" title="" class="card-image hover-overlay"
-             target="_blank">
-            <img src="/img/quantization_sweep.PNG" alt="" class="img-responsive">
-          </a>
-          
-          <div class="card-text">
-            <h4><a href="https://github.com/mbuckler/squeezeDet-low-precision" target="_blank">Low Precision SqueezeDet</a></h4>
-            <div class="card-desription">
-              <p>Simulated fixed point model evaluation for SqueezeDet</p>
+              <div class="portrait-title">
+                <h2 itemprop="name">Mark Buckler</h2>
+                <h3 itemprop="jobTitle">AI Researcher &amp; Entrepreneur</h3>
+
+                <h3
+                  itemprop="worksFor"
+                  itemscope
+                  itemtype="http://schema.org/Organization"
+                >
+                  <a href="https://soundry.ai/" target="_blank" itemprop="url">
+                    <span itemprop="name">Soundry AI</span>
+                  </a>
+                </h3>
+
+                <link itemprop="url" href="https://markbuckler.com" />
+              </div>
+
+              <ul class="social-icon" aria-hidden="true">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/markbuckler/"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    <i class="fa fa-linkedin big-icon"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://scholar.google.co.uk/citations?user=pb8dVvsAAAAJ"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    <i class="ai ai-google-scholar big-icon"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://github.com/mbuckler"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    <i class="fa fa-github big-icon"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://soundcloud.com/quoththeraver"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    <i class="fa fa-soundcloud big-icon"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="mailto:markabuckler@gmail.com"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    <i class="fa fa-envelope big-icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <div itemprop="description">
+              <h1 id="biography">Biography</h1>
+
+              <p>
+                I would describe myself as endlessly curious, creative, and
+                ambitious. In all my work, I begin by identifying the most
+                important goals and questioning any built-in assumptions. This
+                first principles approach frequently leads me to unique
+                solutions which span multiple levels of hierarchy.
+              </p>
+
+              <p>
+                I’ve made contributions to many fields including
+                <a href="https://soundry.ai/" target="_blank">generative AI</a>,
+                <a
+                  href="https://www.aboutamazon.com/news/transportation/meet-scout"
+                  target="_blank"
+                  >robotics</a
+                >,
+                <a
+                  href="https://patents.google.com/patent/US20210312622A1/en"
+                  target="_blank"
+                  >biomedical imaging</a
+                >,
+                <a
+                  href="https://openaccess.thecvf.com/content_iccv_2017/html/Buckler_Reconfiguring_the_Imaging_ICCV_2017_paper.html"
+                  target="_blank"
+                  >computer vision</a
+                >, and
+                <a
+                  href="https://patents.google.com/patent/US9294263B2/en"
+                  target="_blank"
+                  >computer architecture</a
+                >. My passion for AI was super-charged during my PhD at
+                <a href="https://www.cornell.edu/" target="_blank"
+                  >Cornell University</a
+                >
+                where my
+                <a
+                  href="https://ecommons.cornell.edu/handle/1813/67614"
+                  target="_blank"
+                  >thesis</a
+                >
+                focused on computer vision AI.
+              </p>
+
+              <p>
+                My entrepreneurial spirit has led me to found three companies so
+                far:
+                <a href="https://www.firebrandinnovations.com/" target="_blank"
+                  >Firebrand Innovations</a
+                >
+                which sold videoconferencing IP, the
+                <a href="https://codexcollective.co/press-kit" target="_blank"
+                  >Codex Collective</a
+                >
+                which produces live electronic music events in Seattle, and most
+                recently
+                <a href="https://soundry.ai/" target="_blank">Soundry AI</a>
+                which provides generative tools for
+                <a href="https://groove.fm/" target="_blank">DJs</a> and
+                <a href="https://www.sampleplanet.fm/" target="_blank"
+                  >songwriters</a
+                >. Perhaps unsurprisingly in my free time I enjoy
+                <a
+                  href="https://www.instagram.com/quoth_the_raver/"
+                  target="_blank"
+                  >DJing</a
+                >
+                and
+                <a href="https://soundcloud.com/quoththeraver" target="_blank"
+                  >songwriting</a
+                >.
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-5">
+                <h3>Interests</h3>
+                <ul class="ul-interests">
+                  <li>Generative AI</li>
+
+                  <li>Deep Learning</li>
+
+                  <li>Computer Vision</li>
+
+                  <li>Computer Architecture</li>
+                </ul>
+              </div>
+
+              <div class="col-sm-7">
+                <h3>Education</h3>
+                <ul class="ul-edu fa-ul">
+                  <li>
+                    <i class="fa-li fa fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">
+                        PhD in Electrical and Computer Engineering, 2019
+                      </p>
+                      <p class="institution">
+                        <span
+                          itemprop="alumniOf"
+                          itemscope
+                          itemtype="http://schema.org/EducationalOrganization"
+                          ><span itemprop="name">Cornell University</span></span
+                        >
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <i class="fa-li fa fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">
+                        M.S. in Electrical and Computer Engineering, 2014
+                      </p>
+                      <p class="institution">
+                        <span
+                          itemprop="alumniOf"
+                          itemscope
+                          itemtype="http://schema.org/EducationalOrganization"
+                          ><span itemprop="name"
+                            >University of Massachusetts, Amherst</span
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <i class="fa-li fa fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">B.S. in Electrical Engineering, 2012</p>
+                      <p class="institution">
+                        <span
+                          itemprop="alumniOf"
+                          itemscope
+                          itemtype="http://schema.org/EducationalOrganization"
+                          ><span itemprop="name"
+                            >Rensselaer Polytechnic Institute</span
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
-      
-      
-      
-      
-      
-      
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item machine-learning computer-architecture imaging">
-        <div class="card">
-          
-          <a href="https://github.com/cucapra/approx-vision" title="" class="card-image hover-overlay"
-             target="_blank">
-            <img src="/img/CRIP.jpg" alt="" class="img-responsive">
-          </a>
-          
-          <div class="card-text">
-            <h4><a href="https://github.com/cucapra/approx-vision" target="_blank">Approximate Vision Pipeline</a></h4>
-            <div class="card-desription">
-              <p>Using a reversible imaging pipeline to optimize sensor and ISP design for computer vision</p>
+    </section>
+
+    <section id="publications" class="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4 section-heading">
+            <h1>Selected Publications</h1>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <ul class="fa-ul">
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i
+                  class="fa-li fa fa-file-text-o pub-icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="pub-authors">
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Mark Buckler</span></span
+                  >,
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Philip Bedoukian</span></span
+                  >,
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Suren Jayasuriya</span></span
+                  >,
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Adrian Sampson</span></span
+                  >,
+                </span>
+                <span itemprop="name"
+                  ><i
+                    >EVA²: Exploiting Temporal Redundancy in Live Computer
+                    Vision</i
+                  ></span
+                >, in
+                <span itemprop="isPartOf"
+                  >International Symposium on Computer Architecture (ISCA)</span
+                >.
+                <time datetime="2018-03-18" itemprop="datePublished">
+                  March, 2018
+                </time>
+                <p>
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/publication/isca2018/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//arxiv.org/abs/1803.06312"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    arXiv
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="/pdf/isca-2018.pdf"
+                  >
+                    PDF
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/slides/isca-2018.pptx"
+                  >
+                    Slides
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://www.youtube.com/watch?v=IX-xfBTcPyo&amp;feature=youtu.be"
+                  >
+                    Video
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://capra.cs.cornell.edu/research/eva2"
+                  >
+                    Project
+                  </a>
+                </p>
+              </li>
+
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i
+                  class="fa-li fa fa-file-text-o pub-icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="pub-authors">
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Mark Buckler</span></span
+                  >,
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Suren Jayasuriya</span></span
+                  >,
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Adrian Sampson</span></span
+                  >,
+                </span>
+                <span itemprop="name"
+                  ><i
+                    >Reconfiguring the Imaging Pipeline for Computer Vision</i
+                  ></span
+                >, in
+                <span itemprop="isPartOf"
+                  >International Conference on Computer Vision (ICCV)</span
+                >.
+                <time datetime="2017-04-26" itemprop="datePublished">
+                  April, 2017
+                </time>
+                <p>
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/publication/iccv2017/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//dx.doi.org/10.1109/ICCV.2017.111"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    DOI
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//arxiv.org/abs/1705.04352"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    arXiv
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="/pdf/iccv-2017.pdf"
+                  >
+                    PDF
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/slides/iccv-2017.pdf"
+                  >
+                    Slides
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://github.com/cucapra/approx-vision"
+                  >
+                    Code
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://capra.cs.cornell.edu/research/visionmode/"
+                  >
+                    Project
+                  </a>
+                </p>
+              </li>
+
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i
+                  class="fa-li fa fa-file-text-o pub-icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="pub-authors">
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Mark Buckler</span></span
+                  >,
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Arpan Vaidya</span></span
+                  >,
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Xiaobin Liu</span></span
+                  >,
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Wayne Burleson</span></span
+                  >,
+                </span>
+                <span itemprop="name"
+                  ><i
+                    >Dynamic synchronizer flip-flop performance in FinFET
+                    technologies</i
+                  ></span
+                >, in
+                <span itemprop="isPartOf"
+                  >IEEE Symposium on Networks-on-Chip (NOCS)</span
+                >.
+                <time datetime="2014-09-17" itemprop="datePublished">
+                  September, 2014
+                </time>
+                <p>
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/publication/nocs2014/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//dx.doi.org/10.1109/NOCS.2014.7008768"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    DOI
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="/pdf/nocs-2014.pdf"
+                  >
+                    PDF
+                  </a>
+                </p>
+              </li>
+
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i
+                  class="fa-li fa fa-file-text-o pub-icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="pub-authors">
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Mark Buckler</span></span
+                  >,
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Wayne Burleson</span></span
+                  >,
+                </span>
+                <span itemprop="name"
+                  ><i
+                    >Predictive synchronization for DVFS-enabled multi-processor
+                    systems</i
+                  ></span
+                >, in
+                <span itemprop="isPartOf"
+                  >IEEE Symposium on Quality Electronic Design (ISQED)</span
+                >.
+                <time datetime="2014-03-05" itemprop="datePublished">
+                  March, 2014
+                </time>
+                <p>
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/publication/isqed2014/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//dx.doi.org/10.1109/ISQED.2014.6783336"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    DOI
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="/pdf/isqed-2014.pdf"
+                  >
+                    PDF
+                  </a>
+                </p>
+              </li>
+
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i
+                  class="fa-li fa fa-file-text-o pub-icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="pub-authors">
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Mark Buckler</span></span
+                  >,
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Wayne Burleson</span></span
+                  >,
+                  <span
+                    itemprop="author"
+                    itemscope
+                    itemtype="http://schema.org/Person"
+                    ><span itemprop="name">Greg Sadowski</span></span
+                  >,
+                </span>
+                <span itemprop="name"
+                  ><i
+                    >Low-power networks-on-chip: Progress and remaining
+                    challenges</i
+                  ></span
+                >, in
+                <span itemprop="isPartOf"
+                  >IEEE Symposium on Low Power Electronics and Design
+                  (ISLPED)</span
+                >.
+                <time datetime="2013-09-06" itemprop="datePublished">
+                  September, 2013
+                </time>
+                <p>
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/publication/islped2013/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//dx.doi.org/10.1109/ISLPED.2013.6629279"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    DOI
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="/pdf/islped-2013.pdf"
+                  >
+                    PDF
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="patents" class="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4 section-heading">
+            <h1>Selected Patents</h1>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <ul class="fa-ul">
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i
+                  class="fa-li fa fa-file-text-o pub-icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="pub-authors">
+                  <span itemprop="author">Mark Buckler</span>,
+                  <span itemprop="author">Adrian Sampson</span>,
+                  <span itemprop="author">Suren Jayasuriya</span>,
+                </span>
+                <span itemprop="name"
+                  ><i
+                    >Configurable image processing system and methods for
+                    operating a configurable image processing system for
+                    multiple applications</i
+                  ></span
+                >, filed:
+                <time datetime="2018-04-13" itemprop="datePublished">
+                  April 13, 2018</time
+                >
+                <p>
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/patent/20190320127/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//patents.google.com/patent/US20190320127A1"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    Google Patents
+                  </a>
+                </p>
+              </li>
+
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i
+                  class="fa-li fa fa-file-text-o pub-icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="pub-authors">
+                  <span itemprop="author">Mark Buckler</span>,
+                </span>
+                <span itemprop="name"
+                  ><i
+                    >Continuous Frequency Measurement for Predictive Periodic
+                    Synchronization</i
+                  ></span
+                >, filed:
+                <time datetime="2013-10-23" itemprop="datePublished">
+                  October 23, 2013</time
+                >, granted:
+                <time datetime="2016-05-17" itemprop="datePublished">
+                  May 17, 2016</time
+                >
+                <p>
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/patent/9344099/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//patents.google.com/patent/US9344099B2"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    Google Patents
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/9344099"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    USPTO
+                  </a>
+                </p>
+              </li>
+
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i
+                  class="fa-li fa fa-file-text-o pub-icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="pub-authors">
+                  <span itemprop="author">Mark Buckler</span>,
+                  <span itemprop="author">Sudha Thiruvengadam</span>,
+                </span>
+                <span itemprop="name"
+                  ><i
+                    >Predictive Periodic Synchronization Using Phase-Locked Loop
+                    Digital Ratio Updates</i
+                  ></span
+                >, filed:
+                <time datetime="2013-10-25" itemprop="datePublished">
+                  October 25, 2013</time
+                >, granted:
+                <time datetime="2015-09-22" itemprop="datePublished">
+                  September 22, 2015</time
+                >
+                <p>
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/patent/9143315/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//patents.google.com/patent/US9143315B2"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    Google Patents
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/9143315"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    USPTO
+                  </a>
+                </p>
+              </li>
+
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i
+                  class="fa-li fa fa-file-text-o pub-icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="pub-authors">
+                  <span itemprop="author">Andrew Buckler</span>,
+                  <span itemprop="author">Mark Buckler</span>,
+                </span>
+                <span itemprop="name"
+                  ><i
+                    >Quantitative imaging for detecting histopathologically
+                    defined plaque fissure non-invasively</i
+                  ></span
+                >, filed:
+                <time datetime="2015-12-04" itemprop="datePublished">
+                  December 04, 2015</time
+                >
+                <p>
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/patent/17314766/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//patents.google.com/patent/US20220012877A1"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    Google Patents
+                  </a>
+                </p>
+              </li>
+
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i
+                  class="fa-li fa fa-file-text-o pub-icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="pub-authors">
+                  <span itemprop="author">Mark Buckler</span>,
+                </span>
+                <span itemprop="name"
+                  ><i
+                    >Synchronizer Circuits With Failure-Condition Detection and
+                    Correction</i
+                  ></span
+                >, filed:
+                <time datetime="2013-09-11" itemprop="datePublished">
+                  September 11, 2013</time
+                >, granted:
+                <time datetime="2014-09-30" itemprop="datePublished">
+                  September 30, 2014</time
+                >
+                <p>
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/patent/8847647/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//patents.google.com/patent/US8847647B1"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    Google Patents
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/8847647"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    USPTO
+                  </a>
+                </p>
+              </li>
+
+              <li itemscope itemtype="http://schema.org/ScholarlyArticle">
+                <i
+                  class="fa-li fa fa-file-text-o pub-icon"
+                  aria-hidden="true"
+                ></i>
+                <span class="pub-authors">
+                  <span itemprop="author">Mark Buckler</span>,
+                </span>
+                <span itemprop="name"><i>Video Conferencing</i></span
+                >, filed:
+                <time datetime="2007-12-11" itemprop="datePublished">
+                  December 11, 2007</time
+                >, granted:
+                <time datetime="2012-10-11" itemprop="datePublished">
+                  October 11, 2012</time
+                >
+                <p>
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/patent/8289363/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//patents.google.com/patent/US8289363B2"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    Google Patents
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="//patft.uspto.gov/netacgi/nph-Parser?Sect2=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&d=PALL&RefSrch=yes&Query=PN/8289363"
+                    target="_blank"
+                    itemprop="sameAs"
+                  >
+                    USPTO
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="posts" class="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4 section-heading">
+            <h1>Recent Posts</h1>
+
+            <p class="view-all">
+              <a href="/post/">
+                More Posts
+                <i class="fa fa-angle-double-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <div
+              class="article-list-item"
+              itemscope
+              itemtype="http://schema.org/blogPosting"
+            >
+              <h3 class="article-title" itemprop="name headline">
+                <a
+                  href="https://markbuckler.com/post/how-to-mix/"
+                  itemprop="url"
+                  >How to Make a DJ Mix</a
+                >
+              </h3>
+
+              <div class="article-metadata">
+                <span class="article-date">
+                  <time
+                    datetime="2022-01-09T16:25:31-04:00"
+                    itemprop="datePublished"
+                  >
+                    Sun, Jan 9, 2022
+                  </time>
+                </span>
+              </div>
+
+              <div class="article-style" itemprop="articleBody">
+                This is the third in a series of three posts teaching you how to
+                DJ! Part 1: What You Need to Start DJing Part 2: How to Learn DJ
+                Basics Part 3: How to Make a DJ Mix Alright, you&rsquo;ve got
+                your gear and you&rsquo;ve practiced a few transitions. Now is
+                the time to dig into the meat of DJing: creating your mix. Below
+                I describe my personal method, but as I&rsquo;ve mentioned
+                before there are many ways to succeed.
+              </div>
+              <p class="read-more">
+                <a
+                  href="https://markbuckler.com/post/how-to-mix/"
+                  class="btn btn-primary btn-outline"
+                >
+                  CONTINUE READING
+                </a>
+              </p>
+            </div>
+
+            <div
+              class="article-list-item"
+              itemscope
+              itemtype="http://schema.org/blogPosting"
+            >
+              <h3 class="article-title" itemprop="name headline">
+                <a
+                  href="https://markbuckler.com/post/learn-djing-basics/"
+                  itemprop="url"
+                  >How to Learn DJ Basics</a
+                >
+              </h3>
+
+              <div class="article-metadata">
+                <span class="article-date">
+                  <time
+                    datetime="2022-01-08T16:25:31-04:00"
+                    itemprop="datePublished"
+                  >
+                    Sat, Jan 8, 2022
+                  </time>
+                </span>
+              </div>
+
+              <div class="article-style" itemprop="articleBody">
+                This is the second in a series of three posts teaching you how
+                to DJ! Part 1: What You Need to Start DJing Part 2: How to Learn
+                DJ Basics Part 3: How to Make a DJ Mix Great, you&rsquo;ve got
+                your musical knowledge, DJ software &amp; hardware, and your
+                music library. Lets get started on learning the fundamentals!
+                First time setup Import your music library into your DJ software
+              </div>
+              <p class="read-more">
+                <a
+                  href="https://markbuckler.com/post/learn-djing-basics/"
+                  class="btn btn-primary btn-outline"
+                >
+                  CONTINUE READING
+                </a>
+              </p>
+            </div>
+
+            <div
+              class="article-list-item"
+              itemscope
+              itemtype="http://schema.org/blogPosting"
+            >
+              <h3 class="article-title" itemprop="name headline">
+                <a
+                  href="https://markbuckler.com/post/what-you-need-djing/"
+                  itemprop="url"
+                  >What You Need to Start DJing</a
+                >
+              </h3>
+
+              <div class="article-metadata">
+                <span class="article-date">
+                  <time
+                    datetime="2022-01-07T16:25:31-04:00"
+                    itemprop="datePublished"
+                  >
+                    Fri, Jan 7, 2022
+                  </time>
+                </span>
+              </div>
+
+              <div class="article-style" itemprop="articleBody">
+                Welcome! If you want to learn how to DJ, then you&rsquo;re in
+                the right place. This is the first in a series of three posts
+                teaching you how to go from knowing nothing to being able to
+                play at your first party. Below I share a few personal details
+                about how I got started, but feel free to skip to &ldquo;What
+                you need to get started&rdquo; if you just want technical
+                details.
+              </div>
+              <p class="read-more">
+                <a
+                  href="https://markbuckler.com/post/what-you-need-djing/"
+                  class="btn btn-primary btn-outline"
+                >
+                  CONTINUE READING
+                </a>
+              </p>
+            </div>
+
+            <div
+              class="article-list-item"
+              itemscope
+              itemtype="http://schema.org/blogPosting"
+            >
+              <h3 class="article-title" itemprop="name headline">
+                <a
+                  href="https://markbuckler.com/post/bad-dnn-asic/"
+                  itemprop="url"
+                  >How to Make Bad Deep Learning Hardware</a
+                >
+              </h3>
+
+              <div class="article-metadata">
+                <span class="article-date">
+                  <time
+                    datetime="2018-08-15T16:25:31-04:00"
+                    itemprop="datePublished"
+                  >
+                    Wed, Aug 15, 2018
+                  </time>
+                </span>
+              </div>
+
+              <div class="article-style" itemprop="articleBody">
+                I&rsquo;ve greatly enjoyed my time as a graduate research intern
+                at DeepScale and so I was pleased when Forrest Iandola asked me
+                to give a talk to his team on deep learning hardware. To keep
+                the talk from being a boring list of slides recounting famous
+                (but dry) neural network hardware papers, we decided to
+                structure it like one of David Patterson&rsquo;s talks which
+                describe what not to do. The talk was well received, so I
+                decided to reformat it into this blog post.
+              </div>
+              <p class="read-more">
+                <a
+                  href="https://markbuckler.com/post/bad-dnn-asic/"
+                  class="btn btn-primary btn-outline"
+                >
+                  CONTINUE READING
+                </a>
+              </p>
+            </div>
+
+            <div
+              class="article-list-item"
+              itemscope
+              itemtype="http://schema.org/blogPosting"
+            >
+              <h3 class="article-title" itemprop="name headline">
+                <a href="https://markbuckler.com/post/idf/" itemprop="url"
+                  >All About Invention Disclosures</a
+                >
+              </h3>
+
+              <div class="article-metadata">
+                <span class="article-date">
+                  <time
+                    datetime="2018-02-26T16:25:31-04:00"
+                    itemprop="datePublished"
+                  >
+                    Mon, Feb 26, 2018
+                  </time>
+                </span>
+              </div>
+
+              <div class="article-style" itemprop="articleBody">
+                If you&rsquo;ve read my post about patenting in academia and
+                industry then you know why you might want to file a patent with
+                your university or company. The first step to filing a patent in
+                most organizations (after creating the invention of course!) is
+                filling out an Invention Disclosure Form or IDF. These forms
+                will be created, provided by, and reviewed by your
+                organization&rsquo;s technology transfer office or center for
+                technology licensing.
+              </div>
+              <p class="read-more">
+                <a
+                  href="https://markbuckler.com/post/idf/"
+                  class="btn btn-primary btn-outline"
+                >
+                  CONTINUE READING
+                </a>
+              </p>
             </div>
           </div>
         </div>
       </div>
-      
-      
-      
-      
-      
-      
-      
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item machine-learning video imaging">
-        <div class="card">
-          
-          <a href="https://github.com/mbuckler/youtube-bb" title="" class="card-image hover-overlay"
-             target="_blank">
-            <img src="/img/bounding_box.PNG" alt="" class="img-responsive">
-          </a>
-          
-          <div class="card-text">
-            <h4><a href="https://github.com/mbuckler/youtube-bb" target="_blank">YouTube BoundingBox Dataset Downloader</a></h4>
-            <div class="card-desription">
-              <p>Helpful scripts I wrote for downloading and parsing Google&rsquo;s huge video dataset</p>
+    </section>
+
+    <section id="projects" class="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4 section-heading">
+            <h1>Projects</h1>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <div class="project-toolbar">
+              <div id="filters">
+                <div class="btn-toolbar">
+                  <div class="btn-group">
+                    <a
+                      href="#"
+                      data-filter="*"
+                      class="btn btn-primary btn-large active"
+                      >All</a
+                    >
+
+                    <a
+                      href="#"
+                      data-filter=".computer-architecture"
+                      class="btn btn-primary btn-large"
+                      >Computer Architecture</a
+                    >
+
+                    <a
+                      href="#"
+                      data-filter=".machine-learning"
+                      class="btn btn-primary btn-large"
+                      >Machine Learning</a
+                    >
+
+                    <a
+                      href="#"
+                      data-filter=".imaging"
+                      class="btn btn-primary btn-large"
+                      >Imaging</a
+                    >
+
+                    <a
+                      href="#"
+                      data-filter=".video"
+                      class="btn btn-primary btn-large"
+                      >Video</a
+                    >
+
+                    <a
+                      href="#"
+                      data-filter=".demo"
+                      class="btn btn-primary btn-large"
+                      >Other</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="container-projects" class="row isotope">
+              <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item machine-learning neural-networks"
+              >
+                <div class="card">
+                  <a
+                    href="https://github.com/mbuckler/squeezeDet-low-precision"
+                    title=""
+                    class="card-image hover-overlay"
+                    target="_blank"
+                  >
+                    <img
+                      src="/img/quantization_sweep.PNG"
+                      alt=""
+                      class="img-responsive"
+                    />
+                  </a>
+
+                  <div class="card-text">
+                    <h4>
+                      <a
+                        href="https://github.com/mbuckler/squeezeDet-low-precision"
+                        target="_blank"
+                        >Low Precision SqueezeDet</a
+                      >
+                    </h4>
+                    <div class="card-desription">
+                      <p>
+                        Simulated fixed point model evaluation for SqueezeDet
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item machine-learning computer-architecture imaging"
+              >
+                <div class="card">
+                  <a
+                    href="https://github.com/cucapra/approx-vision"
+                    title=""
+                    class="card-image hover-overlay"
+                    target="_blank"
+                  >
+                    <img src="/img/CRIP.jpg" alt="" class="img-responsive" />
+                  </a>
+
+                  <div class="card-text">
+                    <h4>
+                      <a
+                        href="https://github.com/cucapra/approx-vision"
+                        target="_blank"
+                        >Approximate Vision Pipeline</a
+                      >
+                    </h4>
+                    <div class="card-desription">
+                      <p>
+                        Using a reversible imaging pipeline to optimize sensor
+                        and ISP design for computer vision
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item machine-learning video imaging"
+              >
+                <div class="card">
+                  <a
+                    href="https://github.com/mbuckler/youtube-bb"
+                    title=""
+                    class="card-image hover-overlay"
+                    target="_blank"
+                  >
+                    <img
+                      src="/img/bounding_box.PNG"
+                      alt=""
+                      class="img-responsive"
+                    />
+                  </a>
+
+                  <div class="card-text">
+                    <h4>
+                      <a
+                        href="https://github.com/mbuckler/youtube-bb"
+                        target="_blank"
+                        >YouTube BoundingBox Dataset Downloader</a
+                      >
+                    </h4>
+                    <div class="card-desription">
+                      <p>
+                        Helpful scripts I wrote for downloading and parsing
+                        Google&rsquo;s huge video dataset
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item imaging"
+              >
+                <div class="card">
+                  <a
+                    href="https://github.com/mbuckler/ReversiblePipeline"
+                    title=""
+                    class="card-image hover-overlay"
+                    target="_blank"
+                  >
+                    <img src="/img/camera.jpeg" alt="" class="img-responsive" />
+                  </a>
+
+                  <div class="card-text">
+                    <h4>
+                      <a
+                        href="https://github.com/mbuckler/ReversiblePipeline"
+                        target="_blank"
+                        >Reversible Imaging Pipeline</a
+                      >
+                    </h4>
+                    <div class="card-desription">
+                      <p>
+                        A Halide implementation of a forward and reverse
+                        computational photography pipeline
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item machine-learning computer-architecture neural-networks"
+              >
+                <div class="card">
+                  <a
+                    href="https://markbuckler.com/project/lns-neural-accel/"
+                    title=""
+                    class="card-image hover-overlay"
+                  >
+                    <img
+                      src="/img/LNS_Accel.PNG"
+                      alt=""
+                      class="img-responsive"
+                    />
+                  </a>
+
+                  <div class="card-text">
+                    <h4>
+                      <a
+                        href="https://markbuckler.com/project/lns-neural-accel/"
+                        >Neural Network Accelerator with Logarithmic Number
+                        System</a
+                      >
+                    </h4>
+                    <div class="card-desription">
+                      <p>
+                        Hardware accelerator for neural network computation
+                        using the LNS
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item imaging"
+              >
+                <div class="card">
+                  <a
+                    href="https://markbuckler.com/project/image-sensor/"
+                    title=""
+                    class="card-image hover-overlay"
+                  >
+                    <img
+                      src="/img/sensor_control_gds.png"
+                      alt=""
+                      class="img-responsive"
+                    />
+                  </a>
+
+                  <div class="card-text">
+                    <h4>
+                      <a href="https://markbuckler.com/project/image-sensor/"
+                        >Configurable Imaging Sensor</a
+                      >
+                    </h4>
+                    <div class="card-desription">
+                      <p>
+                        Tapeout of a configurable and energy-proportional image
+                        sensor
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item computer-architecture"
+              >
+                <div class="card">
+                  <a
+                    href="http://scholarworks.umass.edu/masters_theses_2/74/"
+                    title=""
+                    class="card-image hover-overlay"
+                    target="_blank"
+                  >
+                    <img src="/img/NoC.PNG" alt="" class="img-responsive" />
+                  </a>
+
+                  <div class="card-text">
+                    <h4>
+                      <a
+                        href="http://scholarworks.umass.edu/masters_theses_2/74/"
+                        target="_blank"
+                        >Network-on-Chip Synchronization</a
+                      >
+                    </h4>
+                    <div class="card-desription">
+                      <p>
+                        My M.S. thesis on synchronization circuits and systems
+                        for multi-clock domain Networks-on-Chip
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item video entrepreneurship"
+              >
+                <div class="card">
+                  <a
+                    href="http://firebrandinnovations.com/videoconversation.htm"
+                    title=""
+                    class="card-image hover-overlay"
+                    target="_blank"
+                  >
+                    <img
+                      src="/img/videoconversation_logo.png"
+                      alt=""
+                      class="img-responsive"
+                    />
+                  </a>
+
+                  <div class="card-text">
+                    <h4>
+                      <a
+                        href="http://firebrandinnovations.com/videoconversation.htm"
+                        target="_blank"
+                        >VideoConversation</a
+                      >
+                    </h4>
+                    <div class="card-desription">
+                      <p>
+                        What started as a Science Fair project became Firebrand
+                        Innovation&rsquo;s first product
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
-      
-      
-      
-      
-      
-      
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item imaging">
-        <div class="card">
-          
-          <a href="https://github.com/mbuckler/ReversiblePipeline" title="" class="card-image hover-overlay"
-             target="_blank">
-            <img src="/img/camera.jpeg" alt="" class="img-responsive">
-          </a>
-          
-          <div class="card-text">
-            <h4><a href="https://github.com/mbuckler/ReversiblePipeline" target="_blank">Reversible Imaging Pipeline</a></h4>
-            <div class="card-desription">
-              <p>A Halide implementation of a forward and reverse computational photography pipeline</p>
+    </section>
+
+    <section id="talks" class="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4 section-heading">
+            <h1>Past Talks &amp; Useful Slides</h1>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <div
+              class="pub-list-item"
+              itemscope
+              itemtype="http://schema.org/CreativeWork"
+            >
+              <div class="row">
+                <h3 class="article-title" itemprop="name">
+                  <a
+                    href="https://markbuckler.com/talk/imaging-pipeline/"
+                    itemprop="url"
+                    >The Imaging Pipeline</a
+                  >
+                </h3>
+
+                <div class="talk-abstract" itemprop="text"></div>
+
+                <div class="talk-event">Lunch talk</div>
+
+                <div class="talk-links">
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/talk/imaging-pipeline/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/slides/imaging-pipeline.pdf"
+                  >
+                    PDF
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://docs.google.com/presentation/d/1S4wwshjruAJ6eZLic0aZqr3XgYZ0s_1SzGf8J5TbrJs/edit?usp=sharing"
+                  >
+                    Slides
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="pub-list-item"
+              itemscope
+              itemtype="http://schema.org/CreativeWork"
+            >
+              <div class="row">
+                <h3 class="article-title" itemprop="name">
+                  <a
+                    href="https://markbuckler.com/talk/isca2018/"
+                    itemprop="url"
+                    >EVA²: Exploiting Temporal Redundancy in Live Computer
+                    Vision</a
+                  >
+                </h3>
+
+                <div class="talk-abstract" itemprop="text"></div>
+
+                <div class="talk-event">ISCA 2018</div>
+
+                <div class="talk-links">
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/talk/isca2018/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/pdf/isca-2018.pdf"
+                  >
+                    PDF
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/slides/isca-2018.pptx"
+                  >
+                    Slides
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://www.youtube.com/watch?v=IX-xfBTcPyo&amp;feature=youtu.be"
+                  >
+                    Video
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="pub-list-item"
+              itemscope
+              itemtype="http://schema.org/CreativeWork"
+            >
+              <div class="row">
+                <h3 class="article-title" itemprop="name">
+                  <a
+                    href="https://markbuckler.com/talk/patenting/"
+                    itemprop="url"
+                    >Patenting</a
+                  >
+                </h3>
+
+                <div class="talk-abstract" itemprop="text"></div>
+
+                <div class="talk-event">Lunch talk</div>
+
+                <div class="talk-links">
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/talk/patenting/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/slides/patenting.pdf"
+                  >
+                    PDF
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/slides/patenting.pptx"
+                  >
+                    Slides
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="pub-list-item"
+              itemscope
+              itemtype="http://schema.org/CreativeWork"
+            >
+              <div class="row">
+                <h3 class="article-title" itemprop="name">
+                  <a
+                    href="https://markbuckler.com/talk/iccv2017/"
+                    itemprop="url"
+                    >Reconfiguring The Imaging Pipeline For Computer Vision</a
+                  >
+                </h3>
+
+                <div class="talk-abstract" itemprop="text"></div>
+
+                <div class="talk-event">ICCV 2017</div>
+
+                <div class="talk-links">
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/talk/iccv2017/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/pdf/iccv-2017.pdf"
+                  >
+                    PDF
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/slides/iccv-2017.pdf"
+                  >
+                    Slides
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="pub-list-item"
+              itemscope
+              itemtype="http://schema.org/CreativeWork"
+            >
+              <div class="row">
+                <h3 class="article-title" itemprop="name">
+                  <a
+                    href="https://markbuckler.com/talk/espresso/"
+                    itemprop="url"
+                    >How to Make Espresso</a
+                  >
+                </h3>
+
+                <div class="talk-abstract" itemprop="text"></div>
+
+                <div class="talk-event">Tutorial</div>
+
+                <div class="talk-links">
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/talk/espresso/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://www.youtube.com/watch?v=yCndmbDYyd0&amp;"
+                  >
+                    Video
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="pub-list-item"
+              itemscope
+              itemtype="http://schema.org/CreativeWork"
+            >
+              <div class="row">
+                <h3 class="article-title" itemprop="name">
+                  <a href="https://markbuckler.com/talk/docker/" itemprop="url"
+                    >Developing in Docker</a
+                  >
+                </h3>
+
+                <div class="talk-abstract" itemprop="text"></div>
+
+                <div class="talk-event">Lunch talk</div>
+
+                <div class="talk-links">
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/talk/docker/"
+                  >
+                    Details
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/slides/docker.pdf"
+                  >
+                    PDF
+                  </a>
+
+                  <a
+                    class="btn btn-primary btn-outline btn-xs"
+                    href="https://markbuckler.com/slides/docker.pptx"
+                  >
+                    Slides
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
-      
-      
-      
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item machine-learning computer-architecture neural-networks">
-        <div class="card">
-          
-          <a href="https://markbuckler.com/project/lns-neural-accel/" title="" class="card-image hover-overlay"
-             >
-            <img src="/img/LNS_Accel.PNG" alt="" class="img-responsive">
-          </a>
-          
-          <div class="card-text">
-            <h4><a href="https://markbuckler.com/project/lns-neural-accel/" >Neural Network Accelerator with Logarithmic Number System</a></h4>
-            <div class="card-desription">
-              <p>Hardware accelerator for neural network computation using the LNS</p>
-            </div>
+    </section>
+
+    <section id="contact" class="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4 section-heading">
+            <h1>Contact</h1>
+          </div>
+          <div class="col-xs-12 col-md-8">
+            <ul class="fa-ul">
+              <li>
+                <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
+                <span>
+                  <script type="text/javascript">
+                    h = "bWFya2FidWNrbGVyQGdtYWlsLmNvbQ==";
+                    document.write(
+                      "<a h" +
+                        "ref" +
+                        "=" +
+                        "m" +
+                        "ai" +
+                        "lt" +
+                        "o:" +
+                        atob(h) +
+                        ">" +
+                        atob(h) +
+                        "<\/" +
+                        "a>"
+                    );
+                  </script>
+                  <noscript
+                    >Please enable Javascript to view this content</noscript
+                  >
+                </span>
+              </li>
+
+              <li>
+                <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                <span>Seattle WA, USA</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      
-      
-      
-      
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item imaging">
-        <div class="card">
-          
-          <a href="https://markbuckler.com/project/image-sensor/" title="" class="card-image hover-overlay"
-             >
-            <img src="/img/sensor_control_gds.png" alt="" class="img-responsive">
-          </a>
-          
-          <div class="card-text">
-            <h4><a href="https://markbuckler.com/project/image-sensor/" >Configurable Imaging Sensor</a></h4>
-            <div class="card-desription">
-              <p>Tapeout of a configurable and energy-proportional image sensor</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-      
-      
-      
-      
-      
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item computer-architecture">
-        <div class="card">
-          
-          <a href="http://scholarworks.umass.edu/masters_theses_2/74/" title="" class="card-image hover-overlay"
-             target="_blank">
-            <img src="/img/NoC.PNG" alt="" class="img-responsive">
-          </a>
-          
-          <div class="card-text">
-            <h4><a href="http://scholarworks.umass.edu/masters_theses_2/74/" target="_blank">Network-on-Chip Synchronization</a></h4>
-            <div class="card-desription">
-              <p>My M.S. thesis on synchronization circuits and systems for multi-clock domain Networks-on-Chip</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      
-      
-      
-      
-      
-      
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item video entrepreneurship">
-        <div class="card">
-          
-          <a href="http://firebrandinnovations.com/videoconversation.htm" title="" class="card-image hover-overlay"
-             target="_blank">
-            <img src="/img/videoconversation_logo.png" alt="" class="img-responsive">
-          </a>
-          
-          <div class="card-text">
-            <h4><a href="http://firebrandinnovations.com/videoconversation.htm" target="_blank">VideoConversation</a></h4>
-            <div class="card-desription">
-              <p>What started as a Science Fair project became Firebrand Innovation&rsquo;s first product</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
-    </div>
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  <section id="talks" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Past Talks &amp; Useful Slides</h1>
-    
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
-
-    
-    
-    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="row">
-
-    <h3 class="article-title" itemprop="name">
-      <a href="https://markbuckler.com/talk/imaging-pipeline/" itemprop="url">The Imaging Pipeline</a>
-    </h3>
-
-    <div class="talk-abstract" itemprop="text">
-      
-      
-      
-    </div>
-
-    <div class="talk-event">
-      
-        Lunch talk
-      
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/talk/imaging-pipeline/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/slides/imaging-pipeline.pdf">
-  PDF
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://docs.google.com/presentation/d/1S4wwshjruAJ6eZLic0aZqr3XgYZ0s_1SzGf8J5TbrJs/edit?usp=sharing">
-  Slides
-</a>
-
-
-
-
-    </div>
-
-  </div>
-</div>
-
-    
-    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="row">
-
-    <h3 class="article-title" itemprop="name">
-      <a href="https://markbuckler.com/talk/isca2018/" itemprop="url">EVA²: Exploiting Temporal Redundancy in Live Computer Vision</a>
-    </h3>
-
-    <div class="talk-abstract" itemprop="text">
-      
-      
-      
-    </div>
-
-    <div class="talk-event">
-      
-        ISCA 2018
-      
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/talk/isca2018/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/pdf/isca-2018.pdf">
-  PDF
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/slides/isca-2018.pptx">
-  Slides
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.youtube.com/watch?v=IX-xfBTcPyo&amp;feature=youtu.be">
-  Video
-</a>
-
-
-
-    </div>
-
-  </div>
-</div>
-
-    
-    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="row">
-
-    <h3 class="article-title" itemprop="name">
-      <a href="https://markbuckler.com/talk/patenting/" itemprop="url">Patenting</a>
-    </h3>
-
-    <div class="talk-abstract" itemprop="text">
-      
-      
-      
-    </div>
-
-    <div class="talk-event">
-      
-        Lunch talk
-      
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/talk/patenting/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/slides/patenting.pdf">
-  PDF
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/slides/patenting.pptx">
-  Slides
-</a>
-
-
-
-
-    </div>
-
-  </div>
-</div>
-
-    
-    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="row">
-
-    <h3 class="article-title" itemprop="name">
-      <a href="https://markbuckler.com/talk/iccv2017/" itemprop="url">Reconfiguring The Imaging Pipeline For Computer Vision</a>
-    </h3>
-
-    <div class="talk-abstract" itemprop="text">
-      
-      
-      
-    </div>
-
-    <div class="talk-event">
-      
-        ICCV 2017
-      
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/talk/iccv2017/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/pdf/iccv-2017.pdf">
-  PDF
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/slides/iccv-2017.pdf">
-  Slides
-</a>
-
-
-
-
-    </div>
-
-  </div>
-</div>
-
-    
-    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="row">
-
-    <h3 class="article-title" itemprop="name">
-      <a href="https://markbuckler.com/talk/espresso/" itemprop="url">How to Make Espresso</a>
-    </h3>
-
-    <div class="talk-abstract" itemprop="text">
-      
-      
-      
-    </div>
-
-    <div class="talk-event">
-      
-        Tutorial
-      
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/talk/espresso/">
-  Details
-</a>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.youtube.com/watch?v=yCndmbDYyd0&amp;">
-  Video
-</a>
-
-
-
-    </div>
-
-  </div>
-</div>
-
-    
-    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="row">
-
-    <h3 class="article-title" itemprop="name">
-      <a href="https://markbuckler.com/talk/docker/" itemprop="url">Developing in Docker</a>
-    </h3>
-
-    <div class="talk-abstract" itemprop="text">
-      
-      
-      
-    </div>
-
-    <div class="talk-event">
-      
-        Lunch talk
-      
-    </div>
-
-    <div class="talk-links">
-      
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/talk/docker/">
-  Details
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/slides/docker.pdf">
-  PDF
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://markbuckler.com/slides/docker.pptx">
-  Slides
-</a>
-
-
-
-
-    </div>
-
-  </div>
-</div>
-
-    
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  <section id="contact" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Contact</h1>
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
-
-    <ul class="fa-ul">
-
-      
-      <li>
-        <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
-        <span>
-	<script type="text/javascript">
-	h='bWFya2FidWNrbGVyQGdtYWlsLmNvbQ==';
-	document.write('<a h'+'ref'+'='+'m'+'ai'+'lt'+'o:'+atob(h)+'>'+atob(h)+'<\/'+'a>');
-        </script>
-	<noscript>Please enable Javascript to view this content</noscript>
-	</span>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      <li>
-        <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span>Seattle WA, USA</span>
-      </li>
-      
-
-      
-
-    </ul>
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-
-
-
-
-    <script defer src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-    <script defer src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    </section>
+
+    <script
+      defer
+      src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"
+    ></script>
+    <script
+      defer
+      src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"
+    ></script>
     <script defer src="/js/jquery-1.12.3.min.js"></script>
     <script defer src="/js/jquery.easing.min.js"></script>
     <script defer src="/js/bootstrap.min.js"></script>
     <script defer src="/js/isotope.pkgd.min.js"></script>
-    <script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+    <script
+      defer
+      src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"
+    ></script>
     <script defer src="/js/cornellcsl.min.js"></script>
-    
 
-    
     <script defer>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-98211041-1', 'auto');
-        ga('send', 'pageview');
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+      ga("create", "UA-98211041-1", "auto");
+      ga("send", "pageview");
 
-         
-        var links = document.querySelectorAll('a');
-        Array.prototype.map.call(links, function(item) {
-            if (item.host != document.location.host) {
-                item.addEventListener('click', function() {
-                    var action = item.getAttribute('data-action') || 'follow';
-                    ga('send', 'event', 'outbound', action, item.href);
-                });
-            }
-        });
+      var links = document.querySelectorAll("a");
+      Array.prototype.map.call(links, function (item) {
+        if (item.host != document.location.host) {
+          item.addEventListener("click", function () {
+            var action = item.getAttribute("data-action") || "follow";
+            ga("send", "event", "outbound", action, item.href);
+          });
+        }
+      });
     </script>
-    
 
-    
-    
-      
-      <script defer src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script
+      defer
+      src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"
+    ></script>
 
-      
-
-      
-
-      <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-    
-
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </body>
 </html>
-

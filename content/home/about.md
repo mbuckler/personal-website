@@ -50,7 +50,7 @@ I’ve made contributions to many fields including
 and [computer architecture](https://patents.google.com/patent/US9294263B2/en). My passion for AI was super-charged during my PhD at [Cornell University](https://www.cornell.edu/) where my [thesis](https://ecommons.cornell.edu/handle/1813/67614) focused on computer vision AI.
 
 My entrepreneurial spirit has led me to found three companies so far: [Firebrand
-Innovations](http://www.firebrandinnovations.com/) which sold videoconferencing
+Innovations](https://www.firebrandinnovations.com/) which sold videoconferencing
 IP, the [Codex Collective](https://codexcollective.co/press-kit)
 which produces live electronic music events in Seattle, and most recently
 [Soundry AI](https://soundry.ai/) which
