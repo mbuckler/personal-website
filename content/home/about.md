@@ -38,26 +38,22 @@ weight = 1
 
 # Biography
 
-I would describe myself as an endlessly curious, ambitious, and creative person. In all my work, I
+I would describe myself as endlessly curious, creative, and ambitious. In all my work, I
 begin by identifying the most important goals and questioning any built-in assumptions. This first
 principles approach frequently leads me to unique solutions which span multiple levels of hierarchy.
-I’ve made contributions in many fields including
+
+I’ve made contributions to many fields including
 [generative AI](https://soundry.ai/),
 [robotics](https://www.aboutamazon.com/news/transportation/meet-scout),
 [biomedical imaging](https://patents.google.com/patent/US20210312622A1/en),
 [computer vision](https://openaccess.thecvf.com/content_iccv_2017/html/Buckler_Reconfiguring_the_Imaging_ICCV_2017_paper.html),
-[hardware acceleration](https://arxiv.org/abs/1803.06312),
-and [computer architecture](https://patents.google.com/patent/US9294263B2/en).
-
-My passion for AI, deep learning, and hardware acceleration was super-charged during my PhD
-in [Prof Adrian Sampson's](http://www.cs.cornell.edu/~asampson/) research group at [Cornell University](https://www.cornell.edu/). [My thesis](https://ecommons.cornell.edu/handle/1813/67614) focused on
-hardware-accelerated deep learning for computer vision.
+and [computer architecture](https://patents.google.com/patent/US9294263B2/en). My passion for AI was super-charged during my PhD at [Cornell University](https://www.cornell.edu/) where my [thesis](https://ecommons.cornell.edu/handle/1813/67614) focused on computer vision AI.
 
 My entrepreneurial spirit has led me to found three companies so far: [Firebrand
 Innovations](http://www.firebrandinnovations.com/) which sold videoconferencing
-IP, [Codex Collective](https://codexcollective.co/press-kit)
-which produces electronic music events in Seattle, and most recently
-[Soundry AI](https://soundry.ai/) which provides an AI text-to-sample generator
-for music producers & songwriters. In my free time I enjoy [writing
-music](https://soundcloud.com/quoththeraver) and
-[DJing](https://www.instagram.com/quoth_the_raver/).
+IP, the [Codex Collective](https://codexcollective.co/press-kit)
+which produces live electronic music events in Seattle, and most recently
+[Soundry AI](https://soundry.ai/) which
+provides generative tools for [DJs](https://groove.fm/) and
+[songwriters](https://www.sampleplanet.fm/).
+Perhaps unsurprisingly in my free time I enjoy [DJing](https://www.instagram.com/quoth_the_raver/) and [songwriting](https://soundcloud.com/quoththeraver).
