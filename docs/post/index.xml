@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Mark Buckler</title>
-    <link>http://markbuckler.com/post/</link>
+    <link>https://markbuckler.com/post/</link>
     <description>Recent content in Posts on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020 Mark Buckler</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://markbuckler.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://markbuckler.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Make a DJ Mix</title>
-      <link>http://markbuckler.com/post/how-to-mix/</link>
+      <link>https://markbuckler.com/post/how-to-mix/</link>
       <pubDate>Sun, 09 Jan 2022 16:25:31 -0400</pubDate>
       
-      <guid>http://markbuckler.com/post/how-to-mix/</guid>
+      <guid>https://markbuckler.com/post/how-to-mix/</guid>
       <description>This is the third in a series of three posts teaching you how to DJ!
 Part 1: What You Need to Start DJing
 Part 2: How to Learn DJ Basics
@@ -27,10 +27,10 @@ Alright, you&amp;rsquo;ve got your gear and you&amp;rsquo;ve practiced a few tra
     
     <item>
       <title>How to Learn DJ Basics</title>
-      <link>http://markbuckler.com/post/learn-djing-basics/</link>
+      <link>https://markbuckler.com/post/learn-djing-basics/</link>
       <pubDate>Sat, 08 Jan 2022 16:25:31 -0400</pubDate>
       
-      <guid>http://markbuckler.com/post/learn-djing-basics/</guid>
+      <guid>https://markbuckler.com/post/learn-djing-basics/</guid>
       <description>This is the second in a series of three posts teaching you how to DJ!
 Part 1: What You Need to Start DJing
 Part 2: How to Learn DJ Basics
@@ -41,82 +41,82 @@ First time setup  Import your music library into your DJ software</description>
     
     <item>
       <title>What You Need to Start DJing</title>
-      <link>http://markbuckler.com/post/what-you-need-djing/</link>
+      <link>https://markbuckler.com/post/what-you-need-djing/</link>
       <pubDate>Fri, 07 Jan 2022 16:25:31 -0400</pubDate>
       
-      <guid>http://markbuckler.com/post/what-you-need-djing/</guid>
+      <guid>https://markbuckler.com/post/what-you-need-djing/</guid>
       <description>Welcome! If you want to learn how to DJ, then you&amp;rsquo;re in the right place. This is the first in a series of three posts teaching you how to go from knowing nothing to being able to play at your first party. Below I share a few personal details about how I got started, but feel free to skip to &amp;ldquo;What you need to get started&amp;rdquo; if you just want technical details.</description>
     </item>
     
     <item>
       <title>How to Make Bad Deep Learning Hardware</title>
-      <link>http://markbuckler.com/post/bad-dnn-asic/</link>
+      <link>https://markbuckler.com/post/bad-dnn-asic/</link>
       <pubDate>Wed, 15 Aug 2018 16:25:31 -0400</pubDate>
       
-      <guid>http://markbuckler.com/post/bad-dnn-asic/</guid>
+      <guid>https://markbuckler.com/post/bad-dnn-asic/</guid>
       <description>I&amp;rsquo;ve greatly enjoyed my time as a graduate research intern at DeepScale and so I was pleased when Forrest Iandola asked me to give a talk to his team on deep learning hardware. To keep the talk from being a boring list of slides recounting famous (but dry) neural network hardware papers, we decided to structure it like one of David Patterson&amp;rsquo;s talks which describe what not to do. The talk was well received, so I decided to reformat it into this blog post.</description>
     </item>
     
     <item>
       <title>All About Invention Disclosures</title>
-      <link>http://markbuckler.com/post/idf/</link>
+      <link>https://markbuckler.com/post/idf/</link>
       <pubDate>Mon, 26 Feb 2018 16:25:31 -0400</pubDate>
       
-      <guid>http://markbuckler.com/post/idf/</guid>
+      <guid>https://markbuckler.com/post/idf/</guid>
       <description>If you&amp;rsquo;ve read my post about patenting in academia and industry then you know why you might want to file a patent with your university or company. The first step to filing a patent in most organizations (after creating the invention of course!) is filling out an Invention Disclosure Form or IDF. These forms will be created, provided by, and reviewed by your organization&amp;rsquo;s technology transfer office or center for technology licensing.</description>
     </item>
     
     <item>
       <title>Patenting in Academia and Industry</title>
-      <link>http://markbuckler.com/post/patenting/</link>
+      <link>https://markbuckler.com/post/patenting/</link>
       <pubDate>Sat, 24 Feb 2018 16:25:31 -0400</pubDate>
       
-      <guid>http://markbuckler.com/post/patenting/</guid>
+      <guid>https://markbuckler.com/post/patenting/</guid>
       <description>We all get excited about doing scientific or engineering research for different reasons, but most of us seek the thrill of creating something entirely new. In this way, research can be just as wonderful as the creative arts. Publishing your new ideas is great for sharing information with the world, but sometimes you want to sell your ideas too. This is where filing for a patent can be very useful. I have some experience in this area as I have patented inventions on my own, in industry, and most recently in academia.</description>
     </item>
     
     <item>
       <title>Cutting Videos with FFmpeg</title>
-      <link>http://markbuckler.com/post/cutting-ffmpeg/</link>
+      <link>https://markbuckler.com/post/cutting-ffmpeg/</link>
       <pubDate>Thu, 06 Jul 2017 16:25:31 -0400</pubDate>
       
-      <guid>http://markbuckler.com/post/cutting-ffmpeg/</guid>
+      <guid>https://markbuckler.com/post/cutting-ffmpeg/</guid>
       <description>While building the downloading and decoding scripts for the Youtube BoundingBoxes dataset I needed to accurately cut videos into smaller clips. Some of the annotated videos were quite long and the annotations rarely covered the full video, so to save space my scripts cut out and save only the annotated sections. If done incorrectly this video cutting can cause subtle frame timing issues which I didn&amp;rsquo;t fully understand when I started writing these scripts.</description>
     </item>
     
     <item>
       <title>My Old Electronic Music Blog</title>
-      <link>http://markbuckler.com/post/quoth_the_raver/</link>
+      <link>https://markbuckler.com/post/quoth_the_raver/</link>
       <pubDate>Tue, 02 May 2017 16:25:31 -0400</pubDate>
       
-      <guid>http://markbuckler.com/post/quoth_the_raver/</guid>
+      <guid>https://markbuckler.com/post/quoth_the_raver/</guid>
       <description>Back in 2010 I started a blog dedicated to electronic music called Quoth the Raver (a play on Quoth the Raven). It was a huge amount of fun sharing the music I found with everyone on the site, and it inspired me to get even more familiar with the various genres, artists, and labels. These days electronic music (also known as EDM) has exploded in popularity, so the novelty of sharing new artists has worn off to a certain extent.</description>
     </item>
     
     <item>
       <title>Writing LaTeX in Vim</title>
-      <link>http://markbuckler.com/post/latex-in-vim/</link>
+      <link>https://markbuckler.com/post/latex-in-vim/</link>
       <pubDate>Mon, 03 Apr 2017 16:25:31 -0400</pubDate>
       
-      <guid>http://markbuckler.com/post/latex-in-vim/</guid>
+      <guid>https://markbuckler.com/post/latex-in-vim/</guid>
       <description>As an academic I am often writing LaTeX code for publications or general documentation. I used to use ShareLatex and Overleaf because I have a secret love of GUIs (Lord forgive me!), but recently my co-authors have prefered to work in LaTeX repos shared on GitHub. For this reason my most recent paper was actually written entirely in Vim! This post isn&amp;rsquo;t meant to be a complete description of the best way to edit LaTeX in Vim, but instead I want to share some of the tools, tricks, and tips that I&amp;rsquo;ve found useful when writing LaTeX in Vim.</description>
     </item>
     
     <item>
       <title>Developing in Docker</title>
-      <link>http://markbuckler.com/post/docker-use/</link>
+      <link>https://markbuckler.com/post/docker-use/</link>
       <pubDate>Sun, 02 Apr 2017 16:25:31 -0400</pubDate>
       
-      <guid>http://markbuckler.com/post/docker-use/</guid>
+      <guid>https://markbuckler.com/post/docker-use/</guid>
       <description>Most of us academic/industrial ECE/CS researchers want to make our results as reproducible as possible. Its good for the integrity of our field and it also helps future researchers and developers to build on our prior work. GitHub is great for distributing software, but code can rarely be compiled and run on its own as nearly all modern software relies heavily on packages and dependencies. Installing these dependencies can be incredibly frustrating or possibly even impossible depending on how long ago the code was written.</description>
     </item>
     
     <item>
       <title>How to Install NVIDIA GPU Drivers &amp; CUDA</title>
-      <link>http://markbuckler.com/post/install-cuda/</link>
+      <link>https://markbuckler.com/post/install-cuda/</link>
       <pubDate>Sat, 01 Apr 2017 16:25:31 -0400</pubDate>
       
-      <guid>http://markbuckler.com/post/install-cuda/</guid>
+      <guid>https://markbuckler.com/post/install-cuda/</guid>
       <description>Anyone who&amp;rsquo;s set up a new Linux based, GPU enabled, deep learning system knows the horror that is driver installation. While it is technically possible to install NVIDIA drivers and CUDA from your package manager, the most up to date versions aren&amp;rsquo;t available and in the worst case you might even break graphics on your machine. After a great deal of difficulties installing and reinstalling, I finally found a viable strategy: installing both CUDA and proprietary Linux drivers from an NVIDA run file without OpenGL libraries.</description>
     </item>
     

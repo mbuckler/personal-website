@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Neural Networks on Mark Buckler</title>
-    <link>http://markbuckler.com/tags/neural-networks/</link>
+    <link>https://markbuckler.com/tags/neural-networks/</link>
     <description>Recent content in Neural Networks on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020 Mark Buckler</copyright>
     <lastBuildDate>Fri, 02 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://markbuckler.com/tags/neural-networks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://markbuckler.com/tags/neural-networks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Low Precision SqueezeDet</title>
-      <link>http://markbuckler.com/project/squeeze-precision/</link>
+      <link>https://markbuckler.com/project/squeeze-precision/</link>
       <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/project/squeeze-precision/</guid>
+      <guid>https://markbuckler.com/project/squeeze-precision/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neural Network Accelerator with Logarithmic Number System</title>
-      <link>http://markbuckler.com/project/lns-neural-accel/</link>
+      <link>https://markbuckler.com/project/lns-neural-accel/</link>
       <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/project/lns-neural-accel/</guid>
+      <guid>https://markbuckler.com/project/lns-neural-accel/</guid>
       <description>For my final project in Cornell&amp;rsquo;s Complex ASIC Design course I built a neural network accelerator which used the Logarithmic Number System (LNS). There has been some interest in using the LNS with neural networks as neural computation is multiplication heavy and multiplications in the LNS can be implemented with a simple adder. I augmented a PyMTL implementation of a single threaded PARCv2 processor with instructions to convert between LNS and fixed point, add LNS numbers, and multiply LNS numbers.</description>
     </item>
     

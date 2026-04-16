@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Mark Buckler</title>
-    <link>http://markbuckler.com/tags/</link>
+    <link>https://markbuckler.com/tags/</link>
     <description>Recent content in Tags on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020 Mark Buckler</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://markbuckler.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://markbuckler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Content tagged as &#39;Academic&#39;</title>
-      <link>http://markbuckler.com/tags/academic/</link>
+      <link>https://markbuckler.com/tags/academic/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/tags/academic/</guid>
+      <guid>https://markbuckler.com/tags/academic/</guid>
       <description>Here is a list of all the content that has been tagged as academic.</description>
     </item>
     
     <item>
       <title>Computer Architecture</title>
-      <link>http://markbuckler.com/tags/computer-architecture/</link>
+      <link>https://markbuckler.com/tags/computer-architecture/</link>
       <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/tags/computer-architecture/</guid>
+      <guid>https://markbuckler.com/tags/computer-architecture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Entrepreneurship</title>
-      <link>http://markbuckler.com/tags/entrepreneurship/</link>
+      <link>https://markbuckler.com/tags/entrepreneurship/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/tags/entrepreneurship/</guid>
+      <guid>https://markbuckler.com/tags/entrepreneurship/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Imaging</title>
-      <link>http://markbuckler.com/tags/imaging/</link>
+      <link>https://markbuckler.com/tags/imaging/</link>
       <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/tags/imaging/</guid>
+      <guid>https://markbuckler.com/tags/imaging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>http://markbuckler.com/tags/machine-learning/</link>
+      <link>https://markbuckler.com/tags/machine-learning/</link>
       <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/tags/machine-learning/</guid>
+      <guid>https://markbuckler.com/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neural Networks</title>
-      <link>http://markbuckler.com/tags/neural-networks/</link>
+      <link>https://markbuckler.com/tags/neural-networks/</link>
       <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/tags/neural-networks/</guid>
+      <guid>https://markbuckler.com/tags/neural-networks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Video</title>
-      <link>http://markbuckler.com/tags/video/</link>
+      <link>https://markbuckler.com/tags/video/</link>
       <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/tags/video/</guid>
+      <guid>https://markbuckler.com/tags/video/</guid>
       <description></description>
     </item>
     

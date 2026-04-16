@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Entrepreneurship on Mark Buckler</title>
-    <link>http://markbuckler.com/tags/entrepreneurship/</link>
+    <link>https://markbuckler.com/tags/entrepreneurship/</link>
     <description>Recent content in Entrepreneurship on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020 Mark Buckler</copyright>
     <lastBuildDate>Sat, 01 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://markbuckler.com/tags/entrepreneurship/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://markbuckler.com/tags/entrepreneurship/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>VideoConversation</title>
-      <link>http://markbuckler.com/project/videoconversation/</link>
+      <link>https://markbuckler.com/project/videoconversation/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/project/videoconversation/</guid>
+      <guid>https://markbuckler.com/project/videoconversation/</guid>
       <description></description>
     </item>
     

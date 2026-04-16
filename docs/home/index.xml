@@ -2,77 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Mark Buckler</title>
-    <link>http://markbuckler.com/home/</link>
+    <link>https://markbuckler.com/home/</link>
     <description>Recent content in Homes on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020 Mark Buckler</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://markbuckler.com/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://markbuckler.com/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://markbuckler.com/home/about/</link>
+      <link>https://markbuckler.com/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/home/about/</guid>
-      <description>Biography I would describe myself as an endlessly curious, ambitious, and creative person. In all my work, I begin by identifying the most important goals and questioning any built-in assumptions. This first principles approach frequently leads me to unique solutions which span multiple levels of hierarchy. I’ve made contributions in many fields including generative AI, robotics, biomedical imaging, computer vision, hardware acceleration, and computer architecture.
-My passion for AI, deep learning, and hardware acceleration was super-charged during my PhD in Prof Adrian Sampson&amp;rsquo;s research group at Cornell University.</description>
+      <guid>https://markbuckler.com/home/about/</guid>
+      <description>Biography I would describe myself as endlessly curious, creative, and ambitious. In all my work, I begin by identifying the most important goals and questioning any built-in assumptions. This first principles approach frequently leads me to unique solutions which span multiple levels of hierarchy.
+I’ve made contributions to many fields including generative AI, robotics, biomedical imaging, computer vision, and computer architecture. My passion for AI was super-charged during my PhD at Cornell University where my thesis focused on computer vision AI.</description>
     </item>
     
     <item>
       <title>Selected Publications</title>
-      <link>http://markbuckler.com/home/publications/</link>
+      <link>https://markbuckler.com/home/publications/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/home/publications/</guid>
+      <guid>https://markbuckler.com/home/publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Selected Patents</title>
-      <link>http://markbuckler.com/home/patents/</link>
+      <link>https://markbuckler.com/home/patents/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/home/patents/</guid>
+      <guid>https://markbuckler.com/home/patents/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Posts</title>
-      <link>http://markbuckler.com/home/posts/</link>
+      <link>https://markbuckler.com/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/home/posts/</guid>
+      <guid>https://markbuckler.com/home/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>http://markbuckler.com/home/projects/</link>
+      <link>https://markbuckler.com/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/home/projects/</guid>
+      <guid>https://markbuckler.com/home/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Past Talks &amp; Useful Slides</title>
-      <link>http://markbuckler.com/home/talks/</link>
+      <link>https://markbuckler.com/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/home/talks/</guid>
+      <guid>https://markbuckler.com/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>http://markbuckler.com/home/contact/</link>
+      <link>https://markbuckler.com/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/home/contact/</guid>
+      <guid>https://markbuckler.com/home/contact/</guid>
       <description></description>
     </item>
     

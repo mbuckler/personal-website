@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer Architecture on Mark Buckler</title>
-    <link>http://markbuckler.com/tags/computer-architecture/</link>
+    <link>https://markbuckler.com/tags/computer-architecture/</link>
     <description>Recent content in Computer Architecture on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020 Mark Buckler</copyright>
     <lastBuildDate>Fri, 16 Jun 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://markbuckler.com/tags/computer-architecture/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://markbuckler.com/tags/computer-architecture/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Approximate Vision Pipeline</title>
-      <link>http://markbuckler.com/project/approx-vision/</link>
+      <link>https://markbuckler.com/project/approx-vision/</link>
       <pubDate>Fri, 16 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/project/approx-vision/</guid>
+      <guid>https://markbuckler.com/project/approx-vision/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neural Network Accelerator with Logarithmic Number System</title>
-      <link>http://markbuckler.com/project/lns-neural-accel/</link>
+      <link>https://markbuckler.com/project/lns-neural-accel/</link>
       <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/project/lns-neural-accel/</guid>
+      <guid>https://markbuckler.com/project/lns-neural-accel/</guid>
       <description>For my final project in Cornell&amp;rsquo;s Complex ASIC Design course I built a neural network accelerator which used the Logarithmic Number System (LNS). There has been some interest in using the LNS with neural networks as neural computation is multiplication heavy and multiplications in the LNS can be implemented with a simple adder. I augmented a PyMTL implementation of a single threaded PARCv2 processor with instructions to convert between LNS and fixed point, add LNS numbers, and multiply LNS numbers.</description>
     </item>
     
     <item>
       <title>Network-on-Chip Synchronization</title>
-      <link>http://markbuckler.com/project/ms-thesis/</link>
+      <link>https://markbuckler.com/project/ms-thesis/</link>
       <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://markbuckler.com/project/ms-thesis/</guid>
+      <guid>https://markbuckler.com/project/ms-thesis/</guid>
       <description></description>
     </item>
     

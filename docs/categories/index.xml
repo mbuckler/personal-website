@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Mark Buckler</title>
-    <link>http://markbuckler.com/categories/</link>
+    <link>https://markbuckler.com/categories/</link>
     <description>Recent content in Categories on Mark Buckler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020 Mark Buckler</copyright>
     
-	<atom:link href="http://markbuckler.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://markbuckler.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
