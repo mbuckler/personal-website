@@ -1,0 +1,8 @@
+# Hugo build lock — transient, recreated on every build
+.hugo_build.lock
+
+# Tool marker file (empty, machine-local)
+.codex
+
+# macOS folder metadata
+.DS_Store
