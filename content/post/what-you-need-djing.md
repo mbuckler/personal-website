@@ -27,38 +27,22 @@ Part 3: [How to Make a DJ Mix](/post/how-to-mix)
 ## How I got started DJing
 
 Those of you who know me well know that I have been a massive fan of electronic
-dance music (aka EDM) ever since I first found it in 2008. I always loved the
+dance music (aka EDM) ever since I first heard it. I always loved the
 energy and excitement of guitar solos in rock and metal, and I soon realized
-that I could find that same energy and excitement but for the entirety of a song
+that I could find that same rush but for the entirety of a song
 in electronic music. Starting on Tiesto and Daft Punk got me hooked on Trance
-and House, and I soon found a home in the Electro, Dubstep, and Drum & Bass
-communities.
+and House, and I soon found a home in Dubstep and Hybrid Trap.
 
-What some of you might not know is that from 2010 to 2012 I actually ran [my own
-EDM blog](https://quoththeraverarchive.wordpress.com/). While admittedly the
-writing quality is a bit amateurish, I remember having a huge amount of fun
-spending time digging around for new music and sharing it with curious friends. By
-2012 the music of Skrillex and others had become so mainstream though that fewer
-and fewer people were asking me for suggestions, and so I chose to end the blog.
-Speaking of Skrillex, I actually [posted about
-him](https://quoththeraverarchive.wordpress.com/2010/08/03/week-of-electro-part-3-skrillex/)
-way back in 2010 before he released his eventually Grammy-winning and massively
-influential EP Scary Monsters and Nice Sprites. For those of you who don't know,
-Skrillex's earlier EDM production was a lot more electro focused, so back then I
-chose [Slats Slats
-Slats](https://www.youtube.com/watch?v=O3Q7LtUGfUg&ab_channel=SkrillexFullHD) as
-my favorite track by him. I still love that track, so much so that I played it
-in my [Sawtooth Soiree rave
-mix](https://soundcloud.com/quoththeraver/sawtooth-soiree-set).
-
-Since ending my blog I had a dream of DJing and producing my own music, but
-getting a bachelors, masters, and PhD in engineering took up all of my time. Once
-I finally had my weekends back, I dove headfirst into both. Since then I've played
-raves all over Seattle, opened for artists like [AFK](https://soundcloud.com/afkdubstep)
-and [if found](https://soundcloud.com/iffoundmusic), and thrown down festival sets at
+After spending some time writing for [my own
+EDM blog](https://quoththeraverarchive.wordpress.com/) I started to feel the urge
+to DJ and write my own music. Getting a bachelors, masters, and PhD in engineering
+took up all of my time for a while, but now that I have my weekends back I've gone
+all in on both, playing raves all over Seattle, opening for artists like
+[AFK](https://open.spotify.com/artist/3eIM4tCQTGJXb0RDPfF2wL) and
+[if found](https://open.spotify.com/artist/39W8ER2QJe2x3pKLIXTiwK), and throwing down festival sets at
 [Bass Canyon](https://www.instagram.com/basscanyon/p/C-Ypb3VvMfJ) and
 [Amplitude](https://amplitudefestival.com/). You can find recordings of my songs and
-mixes on [Soundcloud](https://soundcloud.com/quoththeraver), and catch me live as
+mixes on [Soundcloud](https://soundcloud.com/quoththeraver), or catch me live as
 [Quoth the Raver](https://www.instagram.com/quoth_the_raver/). I also founded and lead
 the [Codex Collective](https://www.instagram.com/codex_collective/), a 25+ person crew
 producing live electronic music events, and I've taught a ton of people to DJ along the
