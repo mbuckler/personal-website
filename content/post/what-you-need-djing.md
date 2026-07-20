@@ -76,8 +76,7 @@ musical knowledge, a music library, DJ software, and DJ hardware.
 
 1.  Musical Knowledge
 
-        The first thing that you'll need before you get started on DJing is some
-
+    The first thing that you'll need before you get started on DJing is some
     knowledge of music theory. The act of making a smooth transition between tracks is core
     to DJing, and these smooth transitions are only possible due to patterns that
     are shared between different pieces of music. By learning what these patterns
@@ -85,9 +84,8 @@ musical knowledge, a music library, DJ software, and DJ hardware.
     you aren't classically trained in music, the five most important new vocabulary
     words you will need to learn are beats, bars, phrases, BPM, and key signature.
 
-        - Beats, bars, and phrases are each a different level of hierarchy in the
-          structure of music. Each song is made up of multiple phrases
-
+    **Beats, bars, and phrases** are each a different level of hierarchy in the
+    structure of music. Each song is made up of multiple phrases
     (introduction, breakdown, drop, bridge, etc), each phrase is made up of multiple
     bars (typically 8 bars in EDM), and each bar is made up of multiple beats
     (typically 4 beats in EDM). When transitioning from one track to another it is
@@ -96,28 +94,25 @@ musical knowledge, a music library, DJ software, and DJ hardware.
     the video below by my red-headed brother from another mother [Phil
     Harris](https://www.youtube.com/channel/UCv5TGu1jwiqWhzw9wj01mIQ).
 
-            {{< youtube ZqGUt1U8gPo >}}
+    {{< youtube ZqGUt1U8gPo >}}
 
-        - BPM stands for Beats Per Minute, so it is a measurement of the speed of a
-          given song. When we transition between songs we typically want each of
-
+    **BPM** stands for Beats Per Minute, so it is a measurement of the speed of a
+    given song. When we transition between songs we typically want each of
     these songs to be playing at the same speed and for the beats to be aligned. In
     engineering terminology we would say that we want both the frequency and the
     phase of the songs to be the same. By using a DJ controller we can adjust the
     frequency (BPM) of a song by adjusting the tempo slider, and we can adjust the
     phase (alignment in time) by spinning the side of the jog wheel.
 
-        - The key signature of a given song corresponds to the specific set of notes
-          used to create that song. The easiest key signature to explain is C Major,
-
+    **The key signature** of a given song corresponds to the specific set of notes
+    used to create that song. The easiest key signature to explain is C Major,
     which includes just the white keys on a piano. Certain key signatures share a
     lot of the same notes, and so you can predict how well two songs will sound
     together if you know both of their key signatures.
 
-            ![Camelot Wheel](/img/dj-post/CamelotWheel.jpg)
+    ![Camelot Wheel](/img/dj-post/CamelotWheel.jpg)
 
-            To make it easier for people
-
+    To make it easier for people
     to remember which key signatures share the most notes, the Camelot system (shown
     in the image above) was created. On the Camelot wheel, each cell represents a
     given key with a classical name (such as C Major) and a Camelot name (such as 8B
@@ -130,10 +125,9 @@ musical knowledge, a music library, DJ software, and DJ hardware.
     mixing in key I recommend the video below by
     [Crossfader](https://www.youtube.com/channel/UCM4u0gp8gm99w9MXQ7ZI8Mw).
 
-            {{< youtube  U_tS7iMwU54>}}
+    {{< youtube U_tS7iMwU54 >}}
 
-            It is worth mentioning that Rekordbox does now support displaying keys
-
+    It is worth mentioning that Rekordbox does now support displaying keys
     in Camelot notation, and also that it isn't always necessary to strictly mix in
     key. The ultimate test of whether or not a transition sounds good is if you
     think it sounds good. Software tools do their best to identify what key a song
@@ -144,8 +138,7 @@ musical knowledge, a music library, DJ software, and DJ hardware.
 
 2.  Music Library
 
-        Because we live in an age when streaming is king, most people listen to music
-
+    Because we live in an age when streaming is king, most people listen to music
     through Spotify, Soundcloud, and Apple Music. Thankfully some DJ software
     (including Rekordbox) does enable you to play music from _some_ streaming
     services, but this functionality requires that you bring a laptop and have a
@@ -156,8 +149,7 @@ musical knowledge, a music library, DJ software, and DJ hardware.
     DJs don't need to bring anything other than a USB filled with their music files
     when they go to play at a club.
 
-        OK cool, so if you want music files for DJing then how should you get
-
+    OK cool, so if you want music files for DJing then how should you get
     them? This is a legitimate question if you've become used to streaming.
     Frustratingly, Spotify and the other streaming services purposefully make it
     hard for you to buy music on their site since otherwise you would have less
@@ -177,8 +169,7 @@ musical knowledge, a music library, DJ software, and DJ hardware.
 
 3.  DJ Software
 
-        Once you have your music library, you're ready to import it into your choice
-
+    Once you have your music library, you're ready to import it into your choice
     of DJ software! DJ software will play a few important roles for you: music
     library organization, track preparation for performance, and either exporting
     your library to a USB or enabling a non-standalone DJ controller to play music.
@@ -190,12 +181,11 @@ musical knowledge, a music library, DJ software, and DJ hardware.
     organization and USB export tools, so the rest of this blog post will describe
     how to make a mix using Rekordbox specifically.
 
-        ![Rekordbox window](/img/dj-post/rekordbox.PNG)
+    ![Rekordbox window](/img/dj-post/rekordbox.PNG)
 
 4.  DJ Hardware
 
-        Your home DJ studio will consist of a few components: a DJ controller or
-
+    Your home DJ studio will consist of a few components: a DJ controller or
     CDJs+mixer, speakers, headphones, and optionally a formatted USB stick. Most
     people already have speakers, headphones, and USB sticks, so here I'll quickly
     go over the differences between DJ controllers, all-in-one DJ systems, and CDJs.
@@ -215,10 +205,19 @@ musical knowledge, a music library, DJ software, and DJ hardware.
     of an app since even the cheap controllers have a lot more in common with
     standard hardware than apps.
 
-        * DJ Controller ($150-$250)
+    A "properly formatted USB" is worth getting right before you show up to a
+    gig. Format your USB stick as FAT32, since that is the format every CDJ can read.
+    Newer players like the Pioneer CDJ-3000 also support exFAT, which conveniently
+    lets you use drives larger than 32 GB, but I still recommend FAT32. You want your
+    USB to work on any system you plug into, not just the incredibly expensive 3000s,
+    and plenty of clubs still run older players. If you're on Windows and your USB is
+    larger than 32 GB, [this
+    guide](https://www.howtogeek.com/316977/how-to-format-usb-drives-larger-than-32gb-with-fat32-on-windows/)
+    will walk you through formatting it as FAT32. On a Mac you can format to FAT32
+    (labeled "MS-DOS (FAT)") using the built-in Disk Utility app.
 
-            If you are a beginner then a DJ controller is right for you. This is the
-
+    **DJ Controller ($150-$250).** If you are a beginner then a DJ controller is
+    right for you. This is the
     cheapest DJ hardware available, and when combined with a laptop it can do
     absolutely everything you need to practice DJing. You will need a computer to
     organize your music anyway, so there is no harm in needing a computer to play
@@ -228,12 +227,10 @@ musical knowledge, a music library, DJ software, and DJ hardware.
     DDJ-400-N](https://www.pioneerdj.com/en-us/product/controller/ddj-400/gold/overview/#/color-picker),
     which is very similar to the controller that I started out with.
 
-            ![DJ Controller](/img/dj-post/DDJ-400.png)
+    ![DJ Controller](/img/dj-post/DDJ-400.png)
 
-        * All-in-one DJ System ($1,500-$2,000)
-
-            If you are lucky enough to start DJing in clubs but don't have a ridiculous
-
+    **All-in-one DJ System ($1,500-$2,000).** If you are lucky enough to start DJing
+    in clubs but don't have a ridiculous
     amount of money to spend on a full club system for your home studio, you may be
     interested in an all-in-one DJ system. All-in-one DJ systems offer all of the
     same functionality of a DJ controller but also offer a built-in screen for
@@ -248,12 +245,10 @@ musical knowledge, a music library, DJ software, and DJ hardware.
     XDJ-RX2](https://www.pioneerdj.com/en/product/all-in-one-system/xdj-rx3/black/overview/),
     which is very similar to the system that I currently use at home.
 
-            ![DJ System](/img/dj-post/XDJ-RX3.png)
+    ![DJ System](/img/dj-post/XDJ-RX3.png)
 
-        * CDJs and Mixer ($3,000-$7,000+)
-
-            Most dance clubs that I am familiar with use CDJs and a mixer for their
-
+    **CDJs and Mixer ($3,000-$7,000+).** Most dance clubs that I am familiar with
+    use CDJs and a mixer for their
     DJ hardware. Clubs like to use CDJ + mixer setups because they are physically
     more robust, they can have 4 or more audio sources (such as additional CDJs,
     analog turntables, or instruments), and because individual CDJs or mixers can be
@@ -273,7 +268,7 @@ musical knowledge, a music library, DJ software, and DJ hardware.
     and a [Pioneer DJM-900NXS2
     mixer](https://www.pioneerdj.com/en-us/product/mixer/djm-900nxs2/black/overview/).
 
-            ![CDJs and Mixer](/img/dj-post/DJM-900NXS2-and-CDJ-3000-pair.png)
+    ![CDJs and Mixer](/img/dj-post/DJM-900NXS2-and-CDJ-3000-pair.png)
 
 OK great, now you know what you need to get started DJing! To learn how to take
 your musical knowledge, music library, and DJ setup to the next level with DJ
